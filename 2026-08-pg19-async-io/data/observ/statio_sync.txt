@@ -1,0 +1,5 @@
+  backend_type  |  object  | context | reads | read_bytes | read_ms | hits | evictions 
+----------------+----------+---------+-------+------------+---------+------+-----------
+ client backend | relation | normal  | 58753 |  488128512 |   614.6 | 1582 |         0
+(1 row)
+

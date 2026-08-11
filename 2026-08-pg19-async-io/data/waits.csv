@@ -1,0 +1,1604 @@
+e1_bitmap_io_uring,background writer,Activity,BgwriterMain,156,20.8
+e1_bitmap_io_uring,checkpointer,Activity,CheckpointerMain,156,20.8
+e1_bitmap_io_uring,logical replication launcher,Activity,LogicalLauncherMain,156,20.8
+e1_bitmap_io_uring,walwriter,Activity,WalWriterMain,156,20.8
+e1_bitmap_io_uring,checkpointer,Activity,CheckpointerMain,155,20.8
+e1_bitmap_io_uring,logical replication launcher,Activity,LogicalLauncherMain,155,20.8
+e1_bitmap_io_uring,walwriter,Activity,WalWriterMain,155,20.8
+e1_bitmap_io_uring,background writer,Activity,BgwriterMain,154,20.6
+e1_bitmap_io_uring,background writer,Activity,BgwriterMain,154,20.8
+e1_bitmap_io_uring,checkpointer,Activity,CheckpointerMain,154,20.8
+e1_bitmap_io_uring,logical replication launcher,Activity,LogicalLauncherMain,154,20.8
+e1_bitmap_io_uring,walwriter,Activity,WalWriterMain,154,20.8
+e1_bitmap_io_uring,client backend,IO,AioIoUringExecution,96,12.8
+e1_bitmap_io_uring,client backend,IO,AioIoUringExecution,92,12.3
+e1_bitmap_io_uring,client backend,IO,AioIoUringExecution,89,12.0
+e1_bitmap_io_uring,client backend,CPU,CPU,21,2.8
+e1_bitmap_io_uring,client backend,CPU,CPU,20,2.7
+e1_bitmap_io_uring,client backend,CPU,CPU,15,2.0
+e1_bitmap_io_uring,client backend,IO,AioIoUringSubmit,14,1.9
+e1_bitmap_io_uring,client backend,IO,AioIoUringSubmit,14,1.9
+e1_bitmap_io_uring,client backend,IO,AioIoUringSubmit,13,1.7
+e1_bitmap_io_uring,background writer,CPU,CPU,1,0.1
+e1_bitmap_io_uring,client backend,IO,DataFileRead,1,0.1
+e1_bitmap_io_uring,client backend,IO,DataFileRead,1,0.1
+e1_bitmap_qd1,checkpointer,Activity,CheckpointerMain,1313,20.1
+e1_bitmap_qd1,logical replication launcher,Activity,LogicalLauncherMain,1313,20.1
+e1_bitmap_qd1,background writer,Activity,BgwriterMain,1312,20.1
+e1_bitmap_qd1,walwriter,Activity,WalWriterMain,1311,20.1
+e1_bitmap_qd1,background writer,Activity,BgwriterMain,1295,20.1
+e1_bitmap_qd1,checkpointer,Activity,CheckpointerMain,1295,20.1
+e1_bitmap_qd1,logical replication launcher,Activity,LogicalLauncherMain,1295,20.1
+e1_bitmap_qd1,walwriter,Activity,WalWriterMain,1294,20.1
+e1_bitmap_qd1,background writer,Activity,BgwriterMain,1287,20.1
+e1_bitmap_qd1,checkpointer,Activity,CheckpointerMain,1287,20.1
+e1_bitmap_qd1,logical replication launcher,Activity,LogicalLauncherMain,1287,20.1
+e1_bitmap_qd1,walwriter,Activity,WalWriterMain,1286,20.1
+e1_bitmap_qd1,client backend,IO,DataFileRead,1251,19.1
+e1_bitmap_qd1,client backend,IO,DataFileRead,1241,19.3
+e1_bitmap_qd1,client backend,IO,DataFileRead,1239,19.3
+e1_bitmap_qd1,client backend,CPU,CPU,32,0.5
+e1_bitmap_qd1,client backend,CPU,CPU,23,0.4
+e1_bitmap_qd1,client backend,CPU,CPU,18,0.3
+e1_bitmap_qd1,walwriter,CPU,CPU,2,0.0
+e1_bitmap_qd1,background writer,CPU,CPU,1,0.0
+e1_bitmap_qd1,walwriter,CPU,CPU,1,0.0
+e1_bitmap_qd1,walwriter,IO,WalSync,1,0.0
+e1_bitmap_sync,background writer,Activity,BgwriterMain,145,20.9
+e1_bitmap_sync,checkpointer,Activity,CheckpointerMain,145,20.9
+e1_bitmap_sync,logical replication launcher,Activity,LogicalLauncherMain,145,20.9
+e1_bitmap_sync,walwriter,Activity,WalWriterMain,145,20.9
+e1_bitmap_sync,background writer,Activity,BgwriterMain,144,20.9
+e1_bitmap_sync,background writer,Activity,BgwriterMain,144,20.9
+e1_bitmap_sync,checkpointer,Activity,CheckpointerMain,144,20.9
+e1_bitmap_sync,checkpointer,Activity,CheckpointerMain,144,20.9
+e1_bitmap_sync,logical replication launcher,Activity,LogicalLauncherMain,144,20.9
+e1_bitmap_sync,logical replication launcher,Activity,LogicalLauncherMain,144,20.9
+e1_bitmap_sync,walwriter,Activity,WalWriterMain,144,20.9
+e1_bitmap_sync,walwriter,Activity,WalWriterMain,144,20.9
+e1_bitmap_sync,client backend,IO,DataFileRead,67,9.7
+e1_bitmap_sync,client backend,IO,DataFileRead,56,8.1
+e1_bitmap_sync,client backend,IO,DataFileRead,52,7.5
+e1_bitmap_sync,client backend,IO,DataFilePrefetch,33,4.7
+e1_bitmap_sync,client backend,CPU,CPU,30,4.3
+e1_bitmap_sync,client backend,CPU,CPU,30,4.4
+e1_bitmap_sync,client backend,IO,DataFilePrefetch,30,4.3
+e1_bitmap_sync,client backend,CPU,CPU,28,4.1
+e1_bitmap_sync,client backend,IO,DataFilePrefetch,16,2.3
+e1_bitmap_worker,io worker,IO,DataFileRead,1368,52.9
+e1_bitmap_worker,io worker,IO,DataFileRead,1354,52.6
+e1_bitmap_worker,io worker,IO,DataFileRead,1351,51.8
+e1_bitmap_worker,checkpointer,Activity,CheckpointerMain,230,8.8
+e1_bitmap_worker,logical replication launcher,Activity,LogicalLauncherMain,230,8.8
+e1_bitmap_worker,walwriter,Activity,WalWriterMain,230,8.8
+e1_bitmap_worker,background writer,Activity,BgwriterMain,229,8.8
+e1_bitmap_worker,background writer,Activity,BgwriterMain,228,8.8
+e1_bitmap_worker,checkpointer,Activity,CheckpointerMain,228,8.8
+e1_bitmap_worker,logical replication launcher,Activity,LogicalLauncherMain,228,8.8
+e1_bitmap_worker,walwriter,Activity,WalWriterMain,228,8.8
+e1_bitmap_worker,background writer,Activity,BgwriterMain,227,8.8
+e1_bitmap_worker,checkpointer,Activity,CheckpointerMain,227,8.8
+e1_bitmap_worker,logical replication launcher,Activity,LogicalLauncherMain,227,8.8
+e1_bitmap_worker,walwriter,Activity,WalWriterMain,227,8.8
+e1_bitmap_worker,client backend,IO,AioIoCompletion,171,6.6
+e1_bitmap_worker,client backend,IO,AioIoCompletion,164,6.3
+e1_bitmap_worker,client backend,IO,AioIoCompletion,156,6.0
+e1_bitmap_worker,io worker,Activity,IoWorkerMain,101,3.9
+e1_bitmap_worker,io worker,Activity,IoWorkerMain,80,3.1
+e1_bitmap_worker,io worker,Activity,IoWorkerMain,76,3.0
+e1_bitmap_worker,io worker,CPU,CPU,38,1.5
+e1_bitmap_worker,io worker,CPU,CPU,38,1.5
+e1_bitmap_worker,client backend,CPU,CPU,33,1.3
+e1_bitmap_worker,io worker,CPU,CPU,28,1.1
+e1_bitmap_worker,client backend,CPU,CPU,27,1.0
+e1_bitmap_worker,client backend,CPU,CPU,19,0.7
+e1_bitmap_worker,client backend,IO,DataFileRead,10,0.4
+e1_bitmap_worker,client backend,IO,DataFileRead,7,0.3
+e1_bitmap_worker,client backend,IO,DataFileRead,7,0.3
+e1_bitmap_worker,background writer,CPU,CPU,1,0.0
+e1_seqscan_io_uring,background writer,Activity,BgwriterMain,3364,20.0
+e1_seqscan_io_uring,checkpointer,Activity,CheckpointerMain,3364,20.0
+e1_seqscan_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3364,20.0
+e1_seqscan_io_uring,walwriter,Activity,WalWriterMain,3363,20.0
+e1_seqscan_io_uring,background writer,Activity,BgwriterMain,3201,20.0
+e1_seqscan_io_uring,checkpointer,Activity,CheckpointerMain,3201,20.0
+e1_seqscan_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3201,20.0
+e1_seqscan_io_uring,walwriter,Activity,WalWriterMain,3200,20.0
+e1_seqscan_io_uring,checkpointer,Activity,CheckpointerMain,3117,20.0
+e1_seqscan_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3117,20.0
+e1_seqscan_io_uring,background writer,Activity,BgwriterMain,3116,20.0
+e1_seqscan_io_uring,walwriter,Activity,WalWriterMain,3116,20.0
+e1_seqscan_io_uring,client backend,IO,AioIoUringExecution,2200,13.1
+e1_seqscan_io_uring,client backend,IO,AioIoUringExecution,1982,12.4
+e1_seqscan_io_uring,client backend,IO,AioIoUringExecution,1975,12.7
+e1_seqscan_io_uring,client backend,CPU,CPU,1064,6.7
+e1_seqscan_io_uring,client backend,CPU,CPU,1034,6.2
+e1_seqscan_io_uring,client backend,CPU,CPU,1019,6.6
+e1_seqscan_io_uring,client backend,IO,AioIoUringSubmit,123,0.8
+e1_seqscan_io_uring,client backend,IO,AioIoUringSubmit,99,0.6
+e1_seqscan_io_uring,client backend,IO,AioIoUringSubmit,92,0.6
+e1_seqscan_io_uring,background writer,CPU,CPU,1,0.0
+e1_seqscan_io_uring,client backend,IO,DataFileRead,1,0.0
+e1_seqscan_io_uring,client backend,IO,DataFileRead,1,0.0
+e1_seqscan_io_uring,client backend,IO,DataFileRead,1,0.0
+e1_seqscan_io_uring,walwriter,CPU,CPU,1,0.0
+e1_seqscan_io_uring,walwriter,CPU,CPU,1,0.0
+e1_seqscan_io_uring,walwriter,CPU,CPU,1,0.0
+e1_seqscan_qd1,checkpointer,Activity,CheckpointerMain,5987,20.0
+e1_seqscan_qd1,logical replication launcher,Activity,LogicalLauncherMain,5987,20.0
+e1_seqscan_qd1,walwriter,Activity,WalWriterMain,5987,20.0
+e1_seqscan_qd1,background writer,Activity,BgwriterMain,5984,20.0
+e1_seqscan_qd1,background writer,Activity,BgwriterMain,5945,20.0
+e1_seqscan_qd1,checkpointer,Activity,CheckpointerMain,5945,20.0
+e1_seqscan_qd1,logical replication launcher,Activity,LogicalLauncherMain,5945,20.0
+e1_seqscan_qd1,walwriter,Activity,WalWriterMain,5944,20.0
+e1_seqscan_qd1,background writer,Activity,BgwriterMain,5916,20.0
+e1_seqscan_qd1,checkpointer,Activity,CheckpointerMain,5916,20.0
+e1_seqscan_qd1,logical replication launcher,Activity,LogicalLauncherMain,5916,20.0
+e1_seqscan_qd1,walwriter,Activity,WalWriterMain,5915,20.0
+e1_seqscan_qd1,client backend,IO,DataFileRead,5098,17.0
+e1_seqscan_qd1,client backend,IO,DataFileRead,5088,17.1
+e1_seqscan_qd1,client backend,IO,DataFileRead,5013,17.0
+e1_seqscan_qd1,client backend,CPU,CPU,873,3.0
+e1_seqscan_qd1,client backend,CPU,CPU,858,2.9
+e1_seqscan_qd1,client backend,CPU,CPU,827,2.8
+e1_seqscan_qd1,background writer,CPU,CPU,3,0.0
+e1_seqscan_qd1,walwriter,CPU,CPU,1,0.0
+e1_seqscan_qd1,walwriter,CPU,CPU,1,0.0
+e1_seqscan_sync,background writer,Activity,BgwriterMain,6094,20.0
+e1_seqscan_sync,checkpointer,Activity,CheckpointerMain,6094,20.0
+e1_seqscan_sync,logical replication launcher,Activity,LogicalLauncherMain,6094,20.0
+e1_seqscan_sync,walwriter,Activity,WalWriterMain,6093,20.0
+e1_seqscan_sync,background writer,Activity,BgwriterMain,6080,20.0
+e1_seqscan_sync,checkpointer,Activity,CheckpointerMain,6080,20.0
+e1_seqscan_sync,logical replication launcher,Activity,LogicalLauncherMain,6080,20.0
+e1_seqscan_sync,walwriter,Activity,WalWriterMain,6079,20.0
+e1_seqscan_sync,background writer,Activity,BgwriterMain,5985,20.0
+e1_seqscan_sync,checkpointer,Activity,CheckpointerMain,5985,20.0
+e1_seqscan_sync,logical replication launcher,Activity,LogicalLauncherMain,5985,20.0
+e1_seqscan_sync,walwriter,Activity,WalWriterMain,5984,20.0
+e1_seqscan_sync,client backend,IO,DataFileRead,5108,16.8
+e1_seqscan_sync,client backend,IO,DataFileRead,5099,16.8
+e1_seqscan_sync,client backend,IO,DataFileRead,5054,16.9
+e1_seqscan_sync,client backend,CPU,CPU,956,3.1
+e1_seqscan_sync,client backend,CPU,CPU,950,3.1
+e1_seqscan_sync,client backend,CPU,CPU,901,3.0
+e1_seqscan_sync,walwriter,CPU,CPU,1,0.0
+e1_seqscan_sync,walwriter,CPU,CPU,1,0.0
+e1_seqscan_sync,walwriter,CPU,CPU,1,0.0
+e1_seqscan_worker,io worker,IO,DataFileRead,25695,60.2
+e1_seqscan_worker,io worker,IO,DataFileRead,25039,60.0
+e1_seqscan_worker,io worker,IO,DataFileRead,24548,60.0
+e1_seqscan_worker,background writer,Activity,BgwriterMain,3313,7.8
+e1_seqscan_worker,checkpointer,Activity,CheckpointerMain,3313,7.8
+e1_seqscan_worker,logical replication launcher,Activity,LogicalLauncherMain,3313,7.8
+e1_seqscan_worker,walwriter,Activity,WalWriterMain,3313,7.8
+e1_seqscan_worker,background writer,Activity,BgwriterMain,3238,7.8
+e1_seqscan_worker,checkpointer,Activity,CheckpointerMain,3238,7.8
+e1_seqscan_worker,logical replication launcher,Activity,LogicalLauncherMain,3238,7.8
+e1_seqscan_worker,walwriter,Activity,WalWriterMain,3238,7.8
+e1_seqscan_worker,background writer,Activity,BgwriterMain,3176,7.8
+e1_seqscan_worker,checkpointer,Activity,CheckpointerMain,3176,7.8
+e1_seqscan_worker,logical replication launcher,Activity,LogicalLauncherMain,3176,7.8
+e1_seqscan_worker,walwriter,Activity,WalWriterMain,3176,7.8
+e1_seqscan_worker,client backend,IO,AioIoCompletion,2440,5.7
+e1_seqscan_worker,client backend,IO,AioIoCompletion,2404,5.8
+e1_seqscan_worker,client backend,IO,AioIoCompletion,2314,5.7
+e1_seqscan_worker,client backend,CPU,CPU,840,2.0
+e1_seqscan_worker,client backend,CPU,CPU,830,2.0
+e1_seqscan_worker,client backend,CPU,CPU,800,1.9
+e1_seqscan_worker,io worker,CPU,CPU,459,1.1
+e1_seqscan_worker,io worker,CPU,CPU,457,1.1
+e1_seqscan_worker,io worker,CPU,CPU,410,1.0
+e1_seqscan_worker,io worker,Activity,IoWorkerMain,70,0.2
+e1_seqscan_worker,io worker,Activity,IoWorkerMain,67,0.2
+e1_seqscan_worker,io worker,Activity,IoWorkerMain,63,0.1
+e1_seqscan_worker,client backend,IO,DataFileRead,3,0.0
+e1_seqscan_worker,client backend,IO,DataFileRead,3,0.0
+e1_seqscan_worker,client backend,IO,DataFileRead,2,0.0
+e1_vacuum_io_uring,checkpointer,Activity,CheckpointerMain,3442,20.0
+e1_vacuum_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3442,20.0
+e1_vacuum_io_uring,background writer,Activity,BgwriterMain,3441,20.0
+e1_vacuum_io_uring,walwriter,Activity,WalWriterMain,3441,20.0
+e1_vacuum_io_uring,background writer,Activity,BgwriterMain,3242,20.0
+e1_vacuum_io_uring,checkpointer,Activity,CheckpointerMain,3242,20.0
+e1_vacuum_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3242,20.0
+e1_vacuum_io_uring,walwriter,Activity,WalWriterMain,3241,20.0
+e1_vacuum_io_uring,background writer,Activity,BgwriterMain,3228,20.0
+e1_vacuum_io_uring,checkpointer,Activity,CheckpointerMain,3228,20.0
+e1_vacuum_io_uring,logical replication launcher,Activity,LogicalLauncherMain,3228,20.0
+e1_vacuum_io_uring,walwriter,Activity,WalWriterMain,3227,20.0
+e1_vacuum_io_uring,client backend,IO,AioIoUringExecution,2105,12.3
+e1_vacuum_io_uring,client backend,IO,AioIoUringExecution,2025,12.6
+e1_vacuum_io_uring,client backend,IO,AioIoUringExecution,1882,11.6
+e1_vacuum_io_uring,client backend,CPU,CPU,1177,7.3
+e1_vacuum_io_uring,client backend,CPU,CPU,1154,6.7
+e1_vacuum_io_uring,client backend,CPU,CPU,1060,6.6
+e1_vacuum_io_uring,client backend,IO,AioIoUringSubmit,140,0.8
+e1_vacuum_io_uring,client backend,IO,AioIoUringSubmit,138,0.9
+e1_vacuum_io_uring,client backend,IO,AioIoUringSubmit,106,0.7
+e1_vacuum_io_uring,client backend,IO,DataFileRead,16,0.1
+e1_vacuum_io_uring,client backend,IO,DataFileRead,14,0.1
+e1_vacuum_io_uring,client backend,IO,DataFileRead,7,0.0
+e1_vacuum_io_uring,background writer,CPU,CPU,1,0.0
+e1_vacuum_io_uring,walwriter,CPU,CPU,1,0.0
+e1_vacuum_io_uring,walwriter,CPU,CPU,1,0.0
+e1_vacuum_io_uring,walwriter,IO,WalSync,1,0.0
+e1_vacuum_qd1,background writer,Activity,BgwriterMain,6571,20.0
+e1_vacuum_qd1,checkpointer,Activity,CheckpointerMain,6571,20.0
+e1_vacuum_qd1,logical replication launcher,Activity,LogicalLauncherMain,6571,20.0
+e1_vacuum_qd1,walwriter,Activity,WalWriterMain,6571,20.0
+e1_vacuum_qd1,background writer,Activity,BgwriterMain,6484,20.0
+e1_vacuum_qd1,checkpointer,Activity,CheckpointerMain,6484,20.0
+e1_vacuum_qd1,logical replication launcher,Activity,LogicalLauncherMain,6484,20.0
+e1_vacuum_qd1,walwriter,Activity,WalWriterMain,6483,20.0
+e1_vacuum_qd1,checkpointer,Activity,CheckpointerMain,6043,20.0
+e1_vacuum_qd1,logical replication launcher,Activity,LogicalLauncherMain,6043,20.0
+e1_vacuum_qd1,background writer,Activity,BgwriterMain,6042,20.0
+e1_vacuum_qd1,walwriter,Activity,WalWriterMain,6042,20.0
+e1_vacuum_qd1,client backend,IO,DataFileRead,5708,17.4
+e1_vacuum_qd1,client backend,IO,DataFileRead,5591,17.3
+e1_vacuum_qd1,client backend,IO,DataFileRead,5255,17.4
+e1_vacuum_qd1,client backend,CPU,CPU,864,2.7
+e1_vacuum_qd1,client backend,CPU,CPU,831,2.5
+e1_vacuum_qd1,client backend,CPU,CPU,757,2.5
+e1_vacuum_qd1,background writer,CPU,CPU,1,0.0
+e1_vacuum_qd1,walwriter,CPU,CPU,1,0.0
+e1_vacuum_qd1,walwriter,CPU,CPU,1,0.0
+e1_vacuum_sync,checkpointer,Activity,CheckpointerMain,6897,20.0
+e1_vacuum_sync,logical replication launcher,Activity,LogicalLauncherMain,6897,20.0
+e1_vacuum_sync,background writer,Activity,BgwriterMain,6896,20.0
+e1_vacuum_sync,walwriter,Activity,WalWriterMain,6896,20.0
+e1_vacuum_sync,background writer,Activity,BgwriterMain,6810,20.0
+e1_vacuum_sync,checkpointer,Activity,CheckpointerMain,6810,20.0
+e1_vacuum_sync,logical replication launcher,Activity,LogicalLauncherMain,6810,20.0
+e1_vacuum_sync,walwriter,Activity,WalWriterMain,6809,20.0
+e1_vacuum_sync,background writer,Activity,BgwriterMain,6734,20.0
+e1_vacuum_sync,checkpointer,Activity,CheckpointerMain,6734,20.0
+e1_vacuum_sync,logical replication launcher,Activity,LogicalLauncherMain,6734,20.0
+e1_vacuum_sync,walwriter,Activity,WalWriterMain,6733,20.0
+e1_vacuum_sync,client backend,IO,DataFileRead,5781,17.0
+e1_vacuum_sync,client backend,IO,DataFileRead,5772,16.8
+e1_vacuum_sync,client backend,IO,DataFileRead,5545,16.5
+e1_vacuum_sync,client backend,CPU,CPU,1160,3.4
+e1_vacuum_sync,client backend,CPU,CPU,1095,3.2
+e1_vacuum_sync,client backend,CPU,CPU,998,2.9
+e1_vacuum_sync,background writer,CPU,CPU,1,0.0
+e1_vacuum_sync,walwriter,CPU,CPU,1,0.0
+e1_vacuum_sync,walwriter,CPU,CPU,1,0.0
+e1_vacuum_sync,walwriter,IO,WalSync,1,0.0
+e1_vacuum_worker,io worker,IO,DataFileRead,18881,52.4
+e1_vacuum_worker,io worker,IO,DataFileRead,14156,42.6
+e1_vacuum_worker,io worker,IO,DataFileRead,13357,42.6
+e1_vacuum_worker,background writer,Activity,BgwriterMain,3704,11.1
+e1_vacuum_worker,checkpointer,Activity,CheckpointerMain,3704,11.1
+e1_vacuum_worker,logical replication launcher,Activity,LogicalLauncherMain,3704,11.1
+e1_vacuum_worker,walwriter,Activity,WalWriterMain,3703,11.1
+e1_vacuum_worker,background writer,Activity,BgwriterMain,3493,11.1
+e1_vacuum_worker,checkpointer,Activity,CheckpointerMain,3493,11.1
+e1_vacuum_worker,logical replication launcher,Activity,LogicalLauncherMain,3493,11.1
+e1_vacuum_worker,walwriter,Activity,WalWriterMain,3492,11.1
+e1_vacuum_worker,background writer,Activity,BgwriterMain,3297,9.1
+e1_vacuum_worker,checkpointer,Activity,CheckpointerMain,3297,9.1
+e1_vacuum_worker,logical replication launcher,Activity,LogicalLauncherMain,3297,9.1
+e1_vacuum_worker,walwriter,Activity,WalWriterMain,3296,9.1
+e1_vacuum_worker,client backend,IO,AioIoCompletion,2715,8.2
+e1_vacuum_worker,client backend,IO,AioIoCompletion,2529,8.1
+e1_vacuum_worker,client backend,IO,AioIoCompletion,2231,6.2
+e1_vacuum_worker,client backend,CPU,CPU,1011,2.8
+e1_vacuum_worker,client backend,CPU,CPU,941,2.8
+e1_vacuum_worker,client backend,CPU,CPU,920,2.9
+e1_vacuum_worker,io worker,CPU,CPU,521,1.6
+e1_vacuum_worker,io worker,CPU,CPU,504,1.4
+e1_vacuum_worker,io worker,CPU,CPU,470,1.5
+e1_vacuum_worker,io worker,Activity,IoWorkerMain,216,0.6
+e1_vacuum_worker,io worker,Activity,IoWorkerMain,73,0.2
+e1_vacuum_worker,io worker,Activity,IoWorkerMain,67,0.2
+e1_vacuum_worker,client backend,IO,DataFileRead,25,0.1
+e1_vacuum_worker,client backend,IO,DataFileRead,17,0.1
+e1_vacuum_worker,client backend,IO,DataFileRead,14,0.0
+e1_vacuum_worker,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e1_vacuum_worker,walwriter,CPU,CPU,1,0.0
+e1_vacuum_worker,walwriter,CPU,CPU,1,0.0
+e1_vacuum_worker,walwriter,CPU,CPU,1,0.0
+e2_adaptive_c1,io worker,IO,DataFileRead,1435,53.5
+e2_adaptive_c1,io worker,IO,DataFileRead,1379,53.6
+e2_adaptive_c1,io worker,IO,DataFileRead,1375,53.2
+e2_adaptive_c1,checkpointer,Activity,CheckpointerMain,236,8.8
+e2_adaptive_c1,logical replication launcher,Activity,LogicalLauncherMain,236,8.8
+e2_adaptive_c1,walwriter,Activity,WalWriterMain,236,8.8
+e2_adaptive_c1,background writer,Activity,BgwriterMain,235,8.8
+e2_adaptive_c1,background writer,Activity,BgwriterMain,229,8.9
+e2_adaptive_c1,checkpointer,Activity,CheckpointerMain,229,8.9
+e2_adaptive_c1,logical replication launcher,Activity,LogicalLauncherMain,229,8.9
+e2_adaptive_c1,walwriter,Activity,WalWriterMain,229,8.9
+e2_adaptive_c1,background writer,Activity,BgwriterMain,227,8.8
+e2_adaptive_c1,checkpointer,Activity,CheckpointerMain,227,8.8
+e2_adaptive_c1,logical replication launcher,Activity,LogicalLauncherMain,227,8.8
+e2_adaptive_c1,walwriter,Activity,WalWriterMain,227,8.8
+e2_adaptive_c1,client backend,IO,AioIoCompletion,177,6.6
+e2_adaptive_c1,client backend,IO,AioIoCompletion,164,6.4
+e2_adaptive_c1,client backend,IO,AioIoCompletion,161,6.2
+e2_adaptive_c1,io worker,Activity,IoWorkerMain,74,2.9
+e2_adaptive_c1,io worker,Activity,IoWorkerMain,70,2.7
+e2_adaptive_c1,io worker,Activity,IoWorkerMain,69,2.6
+e2_adaptive_c1,client backend,CPU,CPU,33,1.3
+e2_adaptive_c1,client backend,CPU,CPU,28,1.1
+e2_adaptive_c1,client backend,CPU,CPU,26,1.0
+e2_adaptive_c1,io worker,CPU,CPU,26,1.0
+e2_adaptive_c1,io worker,CPU,CPU,25,0.9
+e2_adaptive_c1,io worker,CPU,CPU,15,0.6
+e2_adaptive_c1,client backend,IO,DataFileRead,5,0.2
+e2_adaptive_c1,client backend,IO,DataFileRead,4,0.2
+e2_adaptive_c1,client backend,IO,DataFileRead,3,0.1
+e2_adaptive_c1,background writer,CPU,CPU,1,0.0
+e2_adaptive_c1,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_adaptive_c1,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_adaptive_c16,client backend,IO,DataFileRead,19080,50.5
+e2_adaptive_c16,client backend,IO,DataFileRead,18771,50.5
+e2_adaptive_c16,client backend,IO,DataFileRead,18651,50.5
+e2_adaptive_c16,io worker,IO,DataFileRead,10475,27.7
+e2_adaptive_c16,io worker,IO,DataFileRead,10325,27.8
+e2_adaptive_c16,io worker,IO,DataFileRead,10274,27.8
+e2_adaptive_c16,client backend,IO,AioIoCompletion,1788,4.8
+e2_adaptive_c16,client backend,IO,AioIoCompletion,1768,4.8
+e2_adaptive_c16,client backend,IO,AioIoCompletion,1762,4.7
+e2_adaptive_c16,checkpointer,Activity,CheckpointerMain,1385,3.7
+e2_adaptive_c16,logical replication launcher,Activity,LogicalLauncherMain,1385,3.7
+e2_adaptive_c16,walwriter,Activity,WalWriterMain,1384,3.7
+e2_adaptive_c16,background writer,Activity,BgwriterMain,1381,3.7
+e2_adaptive_c16,checkpointer,Activity,CheckpointerMain,1361,3.7
+e2_adaptive_c16,logical replication launcher,Activity,LogicalLauncherMain,1361,3.7
+e2_adaptive_c16,walwriter,Activity,WalWriterMain,1360,3.7
+e2_adaptive_c16,background writer,Activity,BgwriterMain,1357,3.7
+e2_adaptive_c16,checkpointer,Activity,CheckpointerMain,1354,3.7
+e2_adaptive_c16,logical replication launcher,Activity,LogicalLauncherMain,1354,3.7
+e2_adaptive_c16,walwriter,Activity,WalWriterMain,1352,3.7
+e2_adaptive_c16,background writer,Activity,BgwriterMain,1348,3.6
+e2_adaptive_c16,client backend,CPU,CPU,721,1.9
+e2_adaptive_c16,client backend,CPU,CPU,664,1.8
+e2_adaptive_c16,client backend,CPU,CPU,637,1.7
+e2_adaptive_c16,io worker,CPU,CPU,140,0.4
+e2_adaptive_c16,io worker,CPU,CPU,104,0.3
+e2_adaptive_c16,io worker,CPU,CPU,101,0.3
+e2_adaptive_c16,io worker,Activity,IoWorkerMain,87,0.2
+e2_adaptive_c16,io worker,Activity,IoWorkerMain,87,0.2
+e2_adaptive_c16,io worker,Activity,IoWorkerMain,83,0.2
+e2_adaptive_c16,background writer,CPU,CPU,6,0.0
+e2_adaptive_c16,background writer,CPU,CPU,4,0.0
+e2_adaptive_c16,background writer,CPU,CPU,4,0.0
+e2_adaptive_c16,client backend,IPC,BufferIo,2,0.0
+e2_adaptive_c16,client backend,LWLock,BufferMapping,2,0.0
+e2_adaptive_c16,walwriter,CPU,CPU,2,0.0
+e2_adaptive_c16,client backend,IPC,BufferIo,1,0.0
+e2_adaptive_c16,client backend,Timeout,SpinDelay,1,0.0
+e2_adaptive_c16,client backend,Timeout,SpinDelay,1,0.0
+e2_adaptive_c16,client backend,Timeout,SpinDelay,1,0.0
+e2_adaptive_c16,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_adaptive_c16,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_adaptive_c16,walwriter,CPU,CPU,1,0.0
+e2_adaptive_c16,walwriter,CPU,CPU,1,0.0
+e2_adaptive_c2,io worker,IO,DataFileRead,2860,52.5
+e2_adaptive_c2,io worker,IO,DataFileRead,2815,52.6
+e2_adaptive_c2,io worker,IO,DataFileRead,2803,52.6
+e2_adaptive_c2,client backend,IO,AioIoCompletion,694,12.7
+e2_adaptive_c2,client backend,IO,AioIoCompletion,683,12.8
+e2_adaptive_c2,client backend,IO,AioIoCompletion,664,12.4
+e2_adaptive_c2,checkpointer,Activity,CheckpointerMain,419,7.7
+e2_adaptive_c2,logical replication launcher,Activity,LogicalLauncherMain,419,7.7
+e2_adaptive_c2,walwriter,Activity,WalWriterMain,419,7.7
+e2_adaptive_c2,background writer,Activity,BgwriterMain,418,7.7
+e2_adaptive_c2,checkpointer,Activity,CheckpointerMain,411,7.7
+e2_adaptive_c2,logical replication launcher,Activity,LogicalLauncherMain,411,7.7
+e2_adaptive_c2,walwriter,Activity,WalWriterMain,411,7.7
+e2_adaptive_c2,background writer,Activity,BgwriterMain,410,7.7
+e2_adaptive_c2,background writer,Activity,BgwriterMain,410,7.7
+e2_adaptive_c2,checkpointer,Activity,CheckpointerMain,410,7.7
+e2_adaptive_c2,logical replication launcher,Activity,LogicalLauncherMain,410,7.7
+e2_adaptive_c2,walwriter,Activity,WalWriterMain,410,7.7
+e2_adaptive_c2,client backend,CPU,CPU,79,1.5
+e2_adaptive_c2,io worker,Activity,IoWorkerMain,72,1.3
+e2_adaptive_c2,io worker,CPU,CPU,70,1.3
+e2_adaptive_c2,io worker,Activity,IoWorkerMain,68,1.2
+e2_adaptive_c2,io worker,Activity,IoWorkerMain,66,1.2
+e2_adaptive_c2,io worker,CPU,CPU,63,1.2
+e2_adaptive_c2,client backend,CPU,CPU,62,1.1
+e2_adaptive_c2,client backend,CPU,CPU,58,1.1
+e2_adaptive_c2,io worker,CPU,CPU,53,1.0
+e2_adaptive_c2,client backend,IO,DataFileRead,21,0.4
+e2_adaptive_c2,client backend,IO,DataFileRead,19,0.4
+e2_adaptive_c2,client backend,IO,DataFileRead,18,0.3
+e2_adaptive_c2,background writer,CPU,CPU,1,0.0
+e2_adaptive_c2,background writer,CPU,CPU,1,0.0
+e2_adaptive_c2,client backend,LWLock,BufferMapping,1,0.0
+e2_adaptive_c4,io worker,IO,DataFileRead,5616,47.3
+e2_adaptive_c4,io worker,IO,DataFileRead,5485,47.2
+e2_adaptive_c4,io worker,IO,DataFileRead,5406,47.0
+e2_adaptive_c4,client backend,IO,AioIoCompletion,2768,23.3
+e2_adaptive_c4,client backend,IO,AioIoCompletion,2724,23.4
+e2_adaptive_c4,client backend,IO,AioIoCompletion,2686,23.3
+e2_adaptive_c4,background writer,Activity,BgwriterMain,772,6.5
+e2_adaptive_c4,checkpointer,Activity,CheckpointerMain,772,6.5
+e2_adaptive_c4,logical replication launcher,Activity,LogicalLauncherMain,772,6.5
+e2_adaptive_c4,walwriter,Activity,WalWriterMain,772,6.5
+e2_adaptive_c4,background writer,Activity,BgwriterMain,756,6.5
+e2_adaptive_c4,checkpointer,Activity,CheckpointerMain,756,6.5
+e2_adaptive_c4,logical replication launcher,Activity,LogicalLauncherMain,756,6.5
+e2_adaptive_c4,walwriter,Activity,WalWriterMain,756,6.5
+e2_adaptive_c4,checkpointer,Activity,CheckpointerMain,749,6.5
+e2_adaptive_c4,logical replication launcher,Activity,LogicalLauncherMain,749,6.5
+e2_adaptive_c4,walwriter,Activity,WalWriterMain,749,6.5
+e2_adaptive_c4,background writer,Activity,BgwriterMain,746,6.5
+e2_adaptive_c4,io worker,CPU,CPU,166,1.4
+e2_adaptive_c4,client backend,CPU,CPU,163,1.4
+e2_adaptive_c4,client backend,CPU,CPU,154,1.3
+e2_adaptive_c4,client backend,CPU,CPU,147,1.3
+e2_adaptive_c4,io worker,CPU,CPU,141,1.2
+e2_adaptive_c4,io worker,CPU,CPU,130,1.1
+e2_adaptive_c4,io worker,Activity,IoWorkerMain,76,0.6
+e2_adaptive_c4,io worker,Activity,IoWorkerMain,67,0.6
+e2_adaptive_c4,io worker,Activity,IoWorkerMain,66,0.6
+e2_adaptive_c4,client backend,IO,DataFileRead,35,0.3
+e2_adaptive_c4,client backend,IO,DataFileRead,33,0.3
+e2_adaptive_c4,client backend,IO,DataFileRead,25,0.2
+e2_adaptive_c4,background writer,CPU,CPU,3,0.0
+e2_adaptive_c4,client backend,IPC,BufferIo,2,0.0
+e2_adaptive_c4,client backend,IPC,BufferIo,1,0.0
+e2_adaptive_c4,io worker,Timeout,SpinDelay,1,0.0
+e2_adaptive_c8,io worker,IO,DataFileRead,7553,38.4
+e2_adaptive_c8,io worker,IO,DataFileRead,7314,38.4
+e2_adaptive_c8,io worker,IO,DataFileRead,7293,38.3
+e2_adaptive_c8,client backend,IO,DataFileRead,5064,25.8
+e2_adaptive_c8,client backend,IO,DataFileRead,4900,25.7
+e2_adaptive_c8,client backend,IO,DataFileRead,4839,25.4
+e2_adaptive_c8,client backend,IO,AioIoCompletion,2466,12.5
+e2_adaptive_c8,client backend,IO,AioIoCompletion,2452,12.9
+e2_adaptive_c8,client backend,IO,AioIoCompletion,2422,12.7
+e2_adaptive_c8,checkpointer,Activity,CheckpointerMain,1014,5.2
+e2_adaptive_c8,logical replication launcher,Activity,LogicalLauncherMain,1014,5.2
+e2_adaptive_c8,walwriter,Activity,WalWriterMain,1014,5.2
+e2_adaptive_c8,background writer,Activity,BgwriterMain,1012,5.1
+e2_adaptive_c8,checkpointer,Activity,CheckpointerMain,982,5.2
+e2_adaptive_c8,logical replication launcher,Activity,LogicalLauncherMain,982,5.2
+e2_adaptive_c8,walwriter,Activity,WalWriterMain,982,5.2
+e2_adaptive_c8,checkpointer,Activity,CheckpointerMain,981,5.2
+e2_adaptive_c8,logical replication launcher,Activity,LogicalLauncherMain,981,5.2
+e2_adaptive_c8,walwriter,Activity,WalWriterMain,981,5.2
+e2_adaptive_c8,background writer,Activity,BgwriterMain,979,5.1
+e2_adaptive_c8,background writer,Activity,BgwriterMain,978,5.1
+e2_adaptive_c8,client backend,CPU,CPU,323,1.7
+e2_adaptive_c8,client backend,CPU,CPU,322,1.6
+e2_adaptive_c8,client backend,CPU,CPU,281,1.5
+e2_adaptive_c8,io worker,CPU,CPU,134,0.7
+e2_adaptive_c8,io worker,CPU,CPU,129,0.7
+e2_adaptive_c8,io worker,CPU,CPU,123,0.6
+e2_adaptive_c8,io worker,Activity,IoWorkerMain,76,0.4
+e2_adaptive_c8,io worker,Activity,IoWorkerMain,74,0.4
+e2_adaptive_c8,io worker,Activity,IoWorkerMain,70,0.4
+e2_adaptive_c8,background writer,CPU,CPU,3,0.0
+e2_adaptive_c8,background writer,CPU,CPU,3,0.0
+e2_adaptive_c8,client backend,IPC,BufferIo,3,0.0
+e2_adaptive_c8,background writer,CPU,CPU,2,0.0
+e2_adaptive_c8,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_fixed3_c1,io worker,IO,DataFileRead,1218,34.0
+e2_fixed3_c1,io worker,IO,DataFileRead,1203,33.9
+e2_fixed3_c1,io worker,IO,DataFileRead,1196,34.0
+e2_fixed3_c1,background writer,Activity,BgwriterMain,451,12.6
+e2_fixed3_c1,checkpointer,Activity,CheckpointerMain,451,12.6
+e2_fixed3_c1,logical replication launcher,Activity,LogicalLauncherMain,451,12.6
+e2_fixed3_c1,walwriter,Activity,WalWriterMain,451,12.6
+e2_fixed3_c1,checkpointer,Activity,CheckpointerMain,447,12.6
+e2_fixed3_c1,logical replication launcher,Activity,LogicalLauncherMain,447,12.6
+e2_fixed3_c1,walwriter,Activity,WalWriterMain,447,12.6
+e2_fixed3_c1,background writer,Activity,BgwriterMain,446,12.6
+e2_fixed3_c1,checkpointer,Activity,CheckpointerMain,444,12.6
+e2_fixed3_c1,logical replication launcher,Activity,LogicalLauncherMain,444,12.6
+e2_fixed3_c1,walwriter,Activity,WalWriterMain,444,12.6
+e2_fixed3_c1,background writer,Activity,BgwriterMain,443,12.6
+e2_fixed3_c1,client backend,IO,AioIoCompletion,394,11.0
+e2_fixed3_c1,client backend,IO,AioIoCompletion,384,10.8
+e2_fixed3_c1,client backend,IO,AioIoCompletion,377,10.7
+e2_fixed3_c1,io worker,Activity,IoWorkerMain,102,2.9
+e2_fixed3_c1,io worker,Activity,IoWorkerMain,99,2.8
+e2_fixed3_c1,io worker,Activity,IoWorkerMain,99,2.8
+e2_fixed3_c1,io worker,CPU,CPU,38,1.1
+e2_fixed3_c1,client backend,CPU,CPU,37,1.1
+e2_fixed3_c1,io worker,CPU,CPU,37,1.1
+e2_fixed3_c1,io worker,CPU,CPU,33,0.9
+e2_fixed3_c1,client backend,CPU,CPU,29,0.8
+e2_fixed3_c1,client backend,CPU,CPU,24,0.7
+e2_fixed3_c1,client backend,IO,DataFileRead,4,0.1
+e2_fixed3_c1,client backend,IO,DataFileRead,3,0.1
+e2_fixed3_c1,background writer,CPU,CPU,1,0.0
+e2_fixed3_c1,background writer,CPU,CPU,1,0.0
+e2_fixed3_c1,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_fixed3_c16,client backend,IO,DataFileRead,16910,38.4
+e2_fixed3_c16,client backend,IO,DataFileRead,16886,38.2
+e2_fixed3_c16,client backend,IO,DataFileRead,16791,38.2
+e2_fixed3_c16,client backend,IO,AioIoCompletion,12999,29.4
+e2_fixed3_c16,client backend,IO,AioIoCompletion,12859,29.2
+e2_fixed3_c16,client backend,IO,AioIoCompletion,12839,29.2
+e2_fixed3_c16,io worker,IO,DataFileRead,5611,12.7
+e2_fixed3_c16,io worker,IO,DataFileRead,5607,12.7
+e2_fixed3_c16,io worker,IO,DataFileRead,5576,12.7
+e2_fixed3_c16,checkpointer,Activity,CheckpointerMain,1946,4.4
+e2_fixed3_c16,logical replication launcher,Activity,LogicalLauncherMain,1946,4.4
+e2_fixed3_c16,walwriter,Activity,WalWriterMain,1946,4.4
+e2_fixed3_c16,background writer,Activity,BgwriterMain,1943,4.4
+e2_fixed3_c16,checkpointer,Activity,CheckpointerMain,1939,4.4
+e2_fixed3_c16,logical replication launcher,Activity,LogicalLauncherMain,1939,4.4
+e2_fixed3_c16,walwriter,Activity,WalWriterMain,1938,4.4
+e2_fixed3_c16,checkpointer,Activity,CheckpointerMain,1935,4.4
+e2_fixed3_c16,logical replication launcher,Activity,LogicalLauncherMain,1935,4.4
+e2_fixed3_c16,background writer,Activity,BgwriterMain,1934,4.4
+e2_fixed3_c16,walwriter,Activity,WalWriterMain,1934,4.4
+e2_fixed3_c16,background writer,Activity,BgwriterMain,1930,4.4
+e2_fixed3_c16,client backend,CPU,CPU,736,1.7
+e2_fixed3_c16,client backend,CPU,CPU,701,1.6
+e2_fixed3_c16,client backend,CPU,CPU,666,1.5
+e2_fixed3_c16,io worker,CPU,CPU,122,0.3
+e2_fixed3_c16,io worker,CPU,CPU,117,0.3
+e2_fixed3_c16,io worker,Activity,IoWorkerMain,114,0.3
+e2_fixed3_c16,io worker,Activity,IoWorkerMain,107,0.2
+e2_fixed3_c16,io worker,CPU,CPU,105,0.2
+e2_fixed3_c16,io worker,Activity,IoWorkerMain,101,0.2
+e2_fixed3_c16,background writer,CPU,CPU,5,0.0
+e2_fixed3_c16,background writer,CPU,CPU,5,0.0
+e2_fixed3_c16,background writer,CPU,CPU,3,0.0
+e2_fixed3_c16,client backend,IPC,BufferIo,2,0.0
+e2_fixed3_c16,client backend,IPC,BufferIo,1,0.0
+e2_fixed3_c16,client backend,LWLock,BufferMapping,1,0.0
+e2_fixed3_c16,client backend,Timeout,SpinDelay,1,0.0
+e2_fixed3_c16,walwriter,CPU,CPU,1,0.0
+e2_fixed3_c16,walwriter,CPU,CPU,1,0.0
+e2_fixed3_c2,io worker,IO,DataFileRead,2398,31.6
+e2_fixed3_c2,io worker,IO,DataFileRead,2389,31.5
+e2_fixed3_c2,io worker,IO,DataFileRead,2356,31.4
+e2_fixed3_c2,client backend,IO,AioIoCompletion,1576,20.7
+e2_fixed3_c2,client backend,IO,AioIoCompletion,1576,20.8
+e2_fixed3_c2,client backend,IO,AioIoCompletion,1542,20.6
+e2_fixed3_c2,background writer,Activity,BgwriterMain,851,11.2
+e2_fixed3_c2,checkpointer,Activity,CheckpointerMain,851,11.2
+e2_fixed3_c2,logical replication launcher,Activity,LogicalLauncherMain,851,11.2
+e2_fixed3_c2,walwriter,Activity,WalWriterMain,851,11.2
+e2_fixed3_c2,background writer,Activity,BgwriterMain,850,11.2
+e2_fixed3_c2,checkpointer,Activity,CheckpointerMain,850,11.2
+e2_fixed3_c2,logical replication launcher,Activity,LogicalLauncherMain,850,11.2
+e2_fixed3_c2,walwriter,Activity,WalWriterMain,850,11.2
+e2_fixed3_c2,checkpointer,Activity,CheckpointerMain,840,11.2
+e2_fixed3_c2,logical replication launcher,Activity,LogicalLauncherMain,840,11.2
+e2_fixed3_c2,walwriter,Activity,WalWriterMain,840,11.2
+e2_fixed3_c2,background writer,Activity,BgwriterMain,838,11.2
+e2_fixed3_c2,io worker,Activity,IoWorkerMain,102,1.3
+e2_fixed3_c2,io worker,Activity,IoWorkerMain,102,1.3
+e2_fixed3_c2,io worker,Activity,IoWorkerMain,99,1.3
+e2_fixed3_c2,io worker,CPU,CPU,65,0.9
+e2_fixed3_c2,io worker,CPU,CPU,59,0.8
+e2_fixed3_c2,client backend,CPU,CPU,58,0.8
+e2_fixed3_c2,client backend,CPU,CPU,53,0.7
+e2_fixed3_c2,io worker,CPU,CPU,53,0.7
+e2_fixed3_c2,client backend,CPU,CPU,43,0.6
+e2_fixed3_c2,client backend,IO,DataFileRead,18,0.2
+e2_fixed3_c2,client backend,IO,DataFileRead,14,0.2
+e2_fixed3_c2,client backend,IO,DataFileRead,10,0.1
+e2_fixed3_c2,background writer,CPU,CPU,2,0.0
+e2_fixed3_c4,client backend,IO,AioIoCompletion,6345,35.2
+e2_fixed3_c4,client backend,IO,AioIoCompletion,6252,35.3
+e2_fixed3_c4,client backend,IO,AioIoCompletion,6226,35.2
+e2_fixed3_c4,io worker,IO,DataFileRead,4718,26.2
+e2_fixed3_c4,io worker,IO,DataFileRead,4655,26.3
+e2_fixed3_c4,io worker,IO,DataFileRead,4649,26.3
+e2_fixed3_c4,background writer,Activity,BgwriterMain,1650,9.2
+e2_fixed3_c4,checkpointer,Activity,CheckpointerMain,1650,9.2
+e2_fixed3_c4,logical replication launcher,Activity,LogicalLauncherMain,1650,9.2
+e2_fixed3_c4,walwriter,Activity,WalWriterMain,1650,9.2
+e2_fixed3_c4,checkpointer,Activity,CheckpointerMain,1623,9.2
+e2_fixed3_c4,logical replication launcher,Activity,LogicalLauncherMain,1623,9.2
+e2_fixed3_c4,walwriter,Activity,WalWriterMain,1623,9.2
+e2_fixed3_c4,background writer,Activity,BgwriterMain,1621,9.1
+e2_fixed3_c4,checkpointer,Activity,CheckpointerMain,1621,9.2
+e2_fixed3_c4,logical replication launcher,Activity,LogicalLauncherMain,1621,9.2
+e2_fixed3_c4,background writer,Activity,BgwriterMain,1620,9.1
+e2_fixed3_c4,walwriter,Activity,WalWriterMain,1620,9.1
+e2_fixed3_c4,io worker,CPU,CPU,130,0.7
+e2_fixed3_c4,client backend,CPU,CPU,120,0.7
+e2_fixed3_c4,client backend,CPU,CPU,116,0.6
+e2_fixed3_c4,io worker,CPU,CPU,115,0.6
+e2_fixed3_c4,io worker,CPU,CPU,112,0.6
+e2_fixed3_c4,client backend,CPU,CPU,104,0.6
+e2_fixed3_c4,io worker,Activity,IoWorkerMain,102,0.6
+e2_fixed3_c4,io worker,Activity,IoWorkerMain,102,0.6
+e2_fixed3_c4,io worker,Activity,IoWorkerMain,99,0.6
+e2_fixed3_c4,client backend,IO,DataFileRead,16,0.1
+e2_fixed3_c4,client backend,IO,DataFileRead,16,0.1
+e2_fixed3_c4,client backend,IO,DataFileRead,12,0.1
+e2_fixed3_c4,background writer,CPU,CPU,2,0.0
+e2_fixed3_c4,background writer,CPU,CPU,1,0.0
+e2_fixed3_c4,walwriter,CPU,CPU,1,0.0
+e2_fixed3_c8,client backend,IO,AioIoCompletion,8392,32.4
+e2_fixed3_c8,client backend,IO,AioIoCompletion,8369,32.5
+e2_fixed3_c8,client backend,IO,AioIoCompletion,8216,32.5
+e2_fixed3_c8,client backend,IO,DataFileRead,5031,19.4
+e2_fixed3_c8,io worker,IO,DataFileRead,5012,19.3
+e2_fixed3_c8,client backend,IO,DataFileRead,4991,19.4
+e2_fixed3_c8,io worker,IO,DataFileRead,4983,19.3
+e2_fixed3_c8,io worker,IO,DataFileRead,4911,19.4
+e2_fixed3_c8,client backend,IO,DataFileRead,4897,19.4
+e2_fixed3_c8,checkpointer,Activity,CheckpointerMain,1744,6.7
+e2_fixed3_c8,logical replication launcher,Activity,LogicalLauncherMain,1744,6.7
+e2_fixed3_c8,walwriter,Activity,WalWriterMain,1743,6.7
+e2_fixed3_c8,background writer,Activity,BgwriterMain,1741,6.7
+e2_fixed3_c8,checkpointer,Activity,CheckpointerMain,1735,6.7
+e2_fixed3_c8,logical replication launcher,Activity,LogicalLauncherMain,1735,6.7
+e2_fixed3_c8,walwriter,Activity,WalWriterMain,1734,6.7
+e2_fixed3_c8,background writer,Activity,BgwriterMain,1731,6.7
+e2_fixed3_c8,background writer,Activity,BgwriterMain,1701,6.7
+e2_fixed3_c8,checkpointer,Activity,CheckpointerMain,1701,6.7
+e2_fixed3_c8,logical replication launcher,Activity,LogicalLauncherMain,1701,6.7
+e2_fixed3_c8,walwriter,Activity,WalWriterMain,1700,6.7
+e2_fixed3_c8,client backend,CPU,CPU,275,1.1
+e2_fixed3_c8,client backend,CPU,CPU,267,1.0
+e2_fixed3_c8,client backend,CPU,CPU,245,1.0
+e2_fixed3_c8,io worker,CPU,CPU,119,0.5
+e2_fixed3_c8,io worker,CPU,CPU,112,0.4
+e2_fixed3_c8,io worker,Activity,IoWorkerMain,105,0.4
+e2_fixed3_c8,io worker,Activity,IoWorkerMain,103,0.4
+e2_fixed3_c8,io worker,Activity,IoWorkerMain,102,0.4
+e2_fixed3_c8,io worker,CPU,CPU,90,0.4
+e2_fixed3_c8,background writer,CPU,CPU,4,0.0
+e2_fixed3_c8,background writer,CPU,CPU,3,0.0
+e2_fixed3_c8,client backend,IPC,BufferIo,2,0.0
+e2_fixed3_c8,io worker,LWLock,AioWorkerSubmissionQueue,2,0.0
+e2_fixed3_c8,client backend,IPC,BufferIo,1,0.0
+e2_fixed3_c8,io worker,Timeout,SpinDelay,1,0.0
+e2_fixed3_c8,walwriter,CPU,CPU,1,0.0
+e2_fixed3_c8,walwriter,CPU,CPU,1,0.0
+e2_fixed3_c8,walwriter,IO,WalSync,1,0.0
+e2_fixed8_c1,io worker,IO,DataFileRead,1475,51.2
+e2_fixed8_c1,io worker,IO,DataFileRead,1464,51.5
+e2_fixed8_c1,io worker,IO,DataFileRead,1455,51.2
+e2_fixed8_c1,io worker,Activity,IoWorkerMain,287,10.0
+e2_fixed8_c1,io worker,Activity,IoWorkerMain,282,9.9
+e2_fixed8_c1,io worker,Activity,IoWorkerMain,277,9.7
+e2_fixed8_c1,background writer,Activity,BgwriterMain,224,7.8
+e2_fixed8_c1,checkpointer,Activity,CheckpointerMain,224,7.8
+e2_fixed8_c1,logical replication launcher,Activity,LogicalLauncherMain,224,7.8
+e2_fixed8_c1,walwriter,Activity,WalWriterMain,224,7.8
+e2_fixed8_c1,background writer,Activity,BgwriterMain,221,7.8
+e2_fixed8_c1,checkpointer,Activity,CheckpointerMain,221,7.8
+e2_fixed8_c1,checkpointer,Activity,CheckpointerMain,221,7.8
+e2_fixed8_c1,logical replication launcher,Activity,LogicalLauncherMain,221,7.8
+e2_fixed8_c1,logical replication launcher,Activity,LogicalLauncherMain,221,7.8
+e2_fixed8_c1,walwriter,Activity,WalWriterMain,221,7.8
+e2_fixed8_c1,walwriter,Activity,WalWriterMain,221,7.8
+e2_fixed8_c1,background writer,Activity,BgwriterMain,220,7.7
+e2_fixed8_c1,client backend,IO,AioIoCompletion,162,5.7
+e2_fixed8_c1,client backend,IO,AioIoCompletion,157,5.4
+e2_fixed8_c1,client backend,IO,AioIoCompletion,150,5.3
+e2_fixed8_c1,io worker,CPU,CPU,36,1.3
+e2_fixed8_c1,client backend,CPU,CPU,34,1.2
+e2_fixed8_c1,io worker,CPU,CPU,30,1.0
+e2_fixed8_c1,client backend,CPU,CPU,28,1.0
+e2_fixed8_c1,client backend,CPU,CPU,22,0.8
+e2_fixed8_c1,io worker,CPU,CPU,22,0.8
+e2_fixed8_c1,client backend,IO,DataFileRead,8,0.3
+e2_fixed8_c1,client backend,IO,DataFileRead,6,0.2
+e2_fixed8_c1,client backend,IO,DataFileRead,6,0.2
+e2_fixed8_c1,background writer,CPU,CPU,1,0.0
+e2_fixed8_c16,client backend,IO,DataFileRead,19603,50.0
+e2_fixed8_c16,client backend,IO,DataFileRead,19480,50.0
+e2_fixed8_c16,client backend,IO,DataFileRead,19371,50.1
+e2_fixed8_c16,io worker,IO,DataFileRead,10972,28.0
+e2_fixed8_c16,io worker,IO,DataFileRead,10868,27.9
+e2_fixed8_c16,io worker,IO,DataFileRead,10792,27.9
+e2_fixed8_c16,client backend,IO,AioIoCompletion,1841,4.7
+e2_fixed8_c16,client backend,IO,AioIoCompletion,1808,4.7
+e2_fixed8_c16,client backend,IO,AioIoCompletion,1734,4.4
+e2_fixed8_c16,checkpointer,Activity,CheckpointerMain,1422,3.6
+e2_fixed8_c16,logical replication launcher,Activity,LogicalLauncherMain,1422,3.6
+e2_fixed8_c16,walwriter,Activity,WalWriterMain,1421,3.6
+e2_fixed8_c16,background writer,Activity,BgwriterMain,1418,3.6
+e2_fixed8_c16,checkpointer,Activity,CheckpointerMain,1413,3.6
+e2_fixed8_c16,logical replication launcher,Activity,LogicalLauncherMain,1413,3.6
+e2_fixed8_c16,walwriter,Activity,WalWriterMain,1412,3.6
+e2_fixed8_c16,background writer,Activity,BgwriterMain,1406,3.6
+e2_fixed8_c16,checkpointer,Activity,CheckpointerMain,1401,3.6
+e2_fixed8_c16,logical replication launcher,Activity,LogicalLauncherMain,1401,3.6
+e2_fixed8_c16,walwriter,Activity,WalWriterMain,1400,3.6
+e2_fixed8_c16,background writer,Activity,BgwriterMain,1396,3.6
+e2_fixed8_c16,client backend,CPU,CPU,804,2.1
+e2_fixed8_c16,client backend,CPU,CPU,712,1.8
+e2_fixed8_c16,client backend,CPU,CPU,676,1.7
+e2_fixed8_c16,io worker,Activity,IoWorkerMain,306,0.8
+e2_fixed8_c16,io worker,Activity,IoWorkerMain,298,0.8
+e2_fixed8_c16,io worker,Activity,IoWorkerMain,291,0.7
+e2_fixed8_c16,io worker,CPU,CPU,122,0.3
+e2_fixed8_c16,io worker,CPU,CPU,118,0.3
+e2_fixed8_c16,io worker,CPU,CPU,112,0.3
+e2_fixed8_c16,background writer,CPU,CPU,7,0.0
+e2_fixed8_c16,io worker,LWLock,AioWorkerSubmissionQueue,7,0.0
+e2_fixed8_c16,background writer,CPU,CPU,5,0.0
+e2_fixed8_c16,background writer,CPU,CPU,4,0.0
+e2_fixed8_c16,client backend,LWLock,BufferMapping,4,0.0
+e2_fixed8_c16,client backend,IPC,BufferIo,3,0.0
+e2_fixed8_c16,client backend,Timeout,SpinDelay,3,0.0
+e2_fixed8_c16,client backend,Timeout,SpinDelay,2,0.0
+e2_fixed8_c16,client backend,IPC,BufferIo,1,0.0
+e2_fixed8_c16,client backend,IPC,BufferIo,1,0.0
+e2_fixed8_c16,client backend,LWLock,BufferMapping,1,0.0
+e2_fixed8_c16,client backend,Timeout,SpinDelay,1,0.0
+e2_fixed8_c16,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_fixed8_c16,io worker,Timeout,SpinDelay,1,0.0
+e2_fixed8_c16,walwriter,CPU,CPU,1,0.0
+e2_fixed8_c16,walwriter,CPU,CPU,1,0.0
+e2_fixed8_c16,walwriter,CPU,CPU,1,0.0
+e2_fixed8_c2,io worker,IO,DataFileRead,2891,51.3
+e2_fixed8_c2,io worker,IO,DataFileRead,2802,51.8
+e2_fixed8_c2,io worker,IO,DataFileRead,2761,51.7
+e2_fixed8_c2,client backend,IO,AioIoCompletion,676,12.0
+e2_fixed8_c2,client backend,IO,AioIoCompletion,643,11.9
+e2_fixed8_c2,client backend,IO,AioIoCompletion,619,11.6
+e2_fixed8_c2,checkpointer,Activity,CheckpointerMain,407,7.2
+e2_fixed8_c2,logical replication launcher,Activity,LogicalLauncherMain,407,7.2
+e2_fixed8_c2,walwriter,Activity,WalWriterMain,407,7.2
+e2_fixed8_c2,background writer,Activity,BgwriterMain,406,7.2
+e2_fixed8_c2,checkpointer,Activity,CheckpointerMain,391,7.2
+e2_fixed8_c2,logical replication launcher,Activity,LogicalLauncherMain,391,7.2
+e2_fixed8_c2,walwriter,Activity,WalWriterMain,391,7.2
+e2_fixed8_c2,background writer,Activity,BgwriterMain,390,7.2
+e2_fixed8_c2,checkpointer,Activity,CheckpointerMain,386,7.2
+e2_fixed8_c2,logical replication launcher,Activity,LogicalLauncherMain,386,7.2
+e2_fixed8_c2,walwriter,Activity,WalWriterMain,386,7.2
+e2_fixed8_c2,background writer,Activity,BgwriterMain,385,7.2
+e2_fixed8_c2,io worker,Activity,IoWorkerMain,287,5.1
+e2_fixed8_c2,io worker,Activity,IoWorkerMain,270,5.0
+e2_fixed8_c2,io worker,Activity,IoWorkerMain,264,4.9
+e2_fixed8_c2,io worker,CPU,CPU,78,1.4
+e2_fixed8_c2,client backend,CPU,CPU,74,1.4
+e2_fixed8_c2,io worker,CPU,CPU,63,1.2
+e2_fixed8_c2,client backend,CPU,CPU,61,1.1
+e2_fixed8_c2,client backend,CPU,CPU,58,1.1
+e2_fixed8_c2,io worker,CPU,CPU,56,1.0
+e2_fixed8_c2,client backend,IO,DataFileRead,19,0.4
+e2_fixed8_c2,client backend,IO,DataFileRead,18,0.3
+e2_fixed8_c2,client backend,IO,DataFileRead,15,0.3
+e2_fixed8_c2,background writer,CPU,CPU,1,0.0
+e2_fixed8_c2,background writer,CPU,CPU,1,0.0
+e2_fixed8_c2,background writer,CPU,CPU,1,0.0
+e2_fixed8_c2,client backend,IPC,BufferIo,1,0.0
+e2_fixed8_c4,io worker,IO,DataFileRead,5691,47.2
+e2_fixed8_c4,io worker,IO,DataFileRead,5578,47.0
+e2_fixed8_c4,io worker,IO,DataFileRead,5521,46.7
+e2_fixed8_c4,client backend,IO,AioIoCompletion,2718,22.5
+e2_fixed8_c4,client backend,IO,AioIoCompletion,2706,22.8
+e2_fixed8_c4,client backend,IO,AioIoCompletion,2655,22.5
+e2_fixed8_c4,checkpointer,Activity,CheckpointerMain,762,6.3
+e2_fixed8_c4,logical replication launcher,Activity,LogicalLauncherMain,762,6.3
+e2_fixed8_c4,walwriter,Activity,WalWriterMain,762,6.3
+e2_fixed8_c4,background writer,Activity,BgwriterMain,759,6.3
+e2_fixed8_c4,checkpointer,Activity,CheckpointerMain,749,6.3
+e2_fixed8_c4,logical replication launcher,Activity,LogicalLauncherMain,749,6.3
+e2_fixed8_c4,walwriter,Activity,WalWriterMain,749,6.3
+e2_fixed8_c4,background writer,Activity,BgwriterMain,748,6.3
+e2_fixed8_c4,checkpointer,Activity,CheckpointerMain,746,6.3
+e2_fixed8_c4,logical replication launcher,Activity,LogicalLauncherMain,746,6.3
+e2_fixed8_c4,walwriter,Activity,WalWriterMain,746,6.3
+e2_fixed8_c4,background writer,Activity,BgwriterMain,743,6.3
+e2_fixed8_c4,io worker,Activity,IoWorkerMain,281,2.3
+e2_fixed8_c4,io worker,Activity,IoWorkerMain,271,2.3
+e2_fixed8_c4,io worker,Activity,IoWorkerMain,266,2.2
+e2_fixed8_c4,client backend,CPU,CPU,168,1.4
+e2_fixed8_c4,io worker,CPU,CPU,168,1.4
+e2_fixed8_c4,client backend,CPU,CPU,167,1.4
+e2_fixed8_c4,io worker,CPU,CPU,148,1.2
+e2_fixed8_c4,client backend,CPU,CPU,133,1.1
+e2_fixed8_c4,io worker,CPU,CPU,124,1.0
+e2_fixed8_c4,client backend,IO,DataFileRead,40,0.3
+e2_fixed8_c4,client backend,IO,DataFileRead,37,0.3
+e2_fixed8_c4,client backend,IO,DataFileRead,33,0.3
+e2_fixed8_c4,io worker,LWLock,AioWorkerSubmissionQueue,7,0.1
+e2_fixed8_c4,background writer,CPU,CPU,3,0.0
+e2_fixed8_c4,background writer,CPU,CPU,3,0.0
+e2_fixed8_c4,client backend,IPC,BufferIo,2,0.0
+e2_fixed8_c4,background writer,CPU,CPU,1,0.0
+e2_fixed8_c4,client backend,LWLock,BufferMapping,1,0.0
+e2_fixed8_c4,io worker,Timeout,SpinDelay,1,0.0
+e2_fixed8_c8,io worker,IO,DataFileRead,8184,38.6
+e2_fixed8_c8,io worker,IO,DataFileRead,7675,38.3
+e2_fixed8_c8,io worker,IO,DataFileRead,7568,38.4
+e2_fixed8_c8,client backend,IO,DataFileRead,5315,25.1
+e2_fixed8_c8,client backend,IO,DataFileRead,5058,25.3
+e2_fixed8_c8,client backend,IO,DataFileRead,5033,25.6
+e2_fixed8_c8,client backend,IO,AioIoCompletion,2665,12.6
+e2_fixed8_c8,client backend,IO,AioIoCompletion,2457,12.3
+e2_fixed8_c8,client backend,IO,AioIoCompletion,2382,12.1
+e2_fixed8_c8,checkpointer,Activity,CheckpointerMain,1071,5.1
+e2_fixed8_c8,logical replication launcher,Activity,LogicalLauncherMain,1071,5.1
+e2_fixed8_c8,walwriter,Activity,WalWriterMain,1071,5.1
+e2_fixed8_c8,background writer,Activity,BgwriterMain,1067,5.0
+e2_fixed8_c8,checkpointer,Activity,CheckpointerMain,1014,5.1
+e2_fixed8_c8,logical replication launcher,Activity,LogicalLauncherMain,1014,5.1
+e2_fixed8_c8,walwriter,Activity,WalWriterMain,1014,5.1
+e2_fixed8_c8,background writer,Activity,BgwriterMain,1012,5.1
+e2_fixed8_c8,checkpointer,Activity,CheckpointerMain,998,5.1
+e2_fixed8_c8,logical replication launcher,Activity,LogicalLauncherMain,998,5.1
+e2_fixed8_c8,walwriter,Activity,WalWriterMain,998,5.1
+e2_fixed8_c8,background writer,Activity,BgwriterMain,996,5.1
+e2_fixed8_c8,client backend,CPU,CPU,361,1.7
+e2_fixed8_c8,client backend,CPU,CPU,338,1.7
+e2_fixed8_c8,client backend,CPU,CPU,299,1.5
+e2_fixed8_c8,io worker,Activity,IoWorkerMain,296,1.5
+e2_fixed8_c8,io worker,Activity,IoWorkerMain,285,1.4
+e2_fixed8_c8,io worker,Activity,IoWorkerMain,248,1.2
+e2_fixed8_c8,io worker,CPU,CPU,152,0.8
+e2_fixed8_c8,io worker,CPU,CPU,136,0.6
+e2_fixed8_c8,io worker,CPU,CPU,119,0.6
+e2_fixed8_c8,background writer,CPU,CPU,4,0.0
+e2_fixed8_c8,client backend,IPC,BufferIo,3,0.0
+e2_fixed8_c8,background writer,CPU,CPU,2,0.0
+e2_fixed8_c8,background writer,CPU,CPU,2,0.0
+e2_fixed8_c8,client backend,LWLock,BufferMapping,1,0.0
+e2_fixed8_c8,client backend,Timeout,SpinDelay,1,0.0
+e2_fixed8_c8,client backend,Timeout,SpinDelay,1,0.0
+e2_fixed8_c8,io worker,LWLock,AioWorkerSubmissionQueue,1,0.0
+e2_sync_c1,checkpointer,Activity,CheckpointerMain,161,20.8
+e2_sync_c1,logical replication launcher,Activity,LogicalLauncherMain,161,20.8
+e2_sync_c1,walwriter,Activity,WalWriterMain,161,20.8
+e2_sync_c1,background writer,Activity,BgwriterMain,160,20.6
+e2_sync_c1,checkpointer,Activity,CheckpointerMain,155,20.8
+e2_sync_c1,logical replication launcher,Activity,LogicalLauncherMain,155,20.8
+e2_sync_c1,walwriter,Activity,WalWriterMain,155,20.8
+e2_sync_c1,background writer,Activity,BgwriterMain,154,20.7
+e2_sync_c1,background writer,Activity,BgwriterMain,151,20.8
+e2_sync_c1,checkpointer,Activity,CheckpointerMain,151,20.8
+e2_sync_c1,logical replication launcher,Activity,LogicalLauncherMain,151,20.8
+e2_sync_c1,walwriter,Activity,WalWriterMain,151,20.8
+e2_sync_c1,client backend,IO,DataFileRead,65,9.0
+e2_sync_c1,client backend,IO,DataFileRead,64,8.6
+e2_sync_c1,client backend,IO,DataFileRead,60,7.7
+e2_sync_c1,client backend,IO,DataFilePrefetch,39,5.0
+e2_sync_c1,client backend,IO,DataFilePrefetch,39,5.2
+e2_sync_c1,client backend,IO,DataFilePrefetch,34,4.7
+e2_sync_c1,client backend,CPU,CPU,32,4.1
+e2_sync_c1,client backend,CPU,CPU,22,3.0
+e2_sync_c1,client backend,CPU,CPU,22,3.0
+e2_sync_c1,background writer,CPU,CPU,1,0.1
+e2_sync_c1,background writer,CPU,CPU,1,0.1
+e2_sync_c16,client backend,IO,DataFileRead,16135,69.4
+e2_sync_c16,client backend,IO,DataFileRead,15971,71.2
+e2_sync_c16,client backend,IO,DataFileRead,15851,70.9
+e2_sync_c16,client backend,IO,DataFilePrefetch,1335,5.7
+e2_sync_c16,checkpointer,Activity,CheckpointerMain,1192,5.1
+e2_sync_c16,logical replication launcher,Activity,LogicalLauncherMain,1192,5.1
+e2_sync_c16,walwriter,Activity,WalWriterMain,1192,5.1
+e2_sync_c16,background writer,Activity,BgwriterMain,1185,5.1
+e2_sync_c16,checkpointer,Activity,CheckpointerMain,1151,5.1
+e2_sync_c16,logical replication launcher,Activity,LogicalLauncherMain,1151,5.1
+e2_sync_c16,walwriter,Activity,WalWriterMain,1151,5.1
+e2_sync_c16,checkpointer,Activity,CheckpointerMain,1147,5.1
+e2_sync_c16,logical replication launcher,Activity,LogicalLauncherMain,1147,5.1
+e2_sync_c16,walwriter,Activity,WalWriterMain,1146,5.1
+e2_sync_c16,background writer,Activity,BgwriterMain,1143,5.1
+e2_sync_c16,background writer,Activity,BgwriterMain,1140,5.1
+e2_sync_c16,client backend,IO,DataFilePrefetch,986,4.4
+e2_sync_c16,client backend,IO,DataFilePrefetch,945,4.2
+e2_sync_c16,client backend,CPU,CPU,893,3.8
+e2_sync_c16,client backend,CPU,CPU,836,3.7
+e2_sync_c16,client backend,CPU,CPU,810,3.6
+e2_sync_c16,client backend,IO,AioIoCompletion,71,0.3
+e2_sync_c16,client backend,IO,AioIoCompletion,63,0.3
+e2_sync_c16,client backend,IO,AioIoCompletion,63,0.3
+e2_sync_c16,client backend,Timeout,SpinDelay,40,0.2
+e2_sync_c16,client backend,LWLock,BufferMapping,30,0.1
+e2_sync_c16,client backend,Timeout,SpinDelay,22,0.1
+e2_sync_c16,client backend,LWLock,BufferMapping,21,0.1
+e2_sync_c16,client backend,Timeout,SpinDelay,21,0.1
+e2_sync_c16,client backend,LWLock,BufferMapping,10,0.0
+e2_sync_c16,background writer,CPU,CPU,8,0.0
+e2_sync_c16,background writer,CPU,CPU,7,0.0
+e2_sync_c16,background writer,CPU,CPU,7,0.0
+e2_sync_c16,walwriter,CPU,CPU,1,0.0
+e2_sync_c2,background writer,Activity,BgwriterMain,201,17.6
+e2_sync_c2,checkpointer,Activity,CheckpointerMain,201,17.6
+e2_sync_c2,checkpointer,Activity,CheckpointerMain,201,17.6
+e2_sync_c2,logical replication launcher,Activity,LogicalLauncherMain,201,17.6
+e2_sync_c2,logical replication launcher,Activity,LogicalLauncherMain,201,17.6
+e2_sync_c2,walwriter,Activity,WalWriterMain,201,17.6
+e2_sync_c2,walwriter,Activity,WalWriterMain,201,17.6
+e2_sync_c2,background writer,Activity,BgwriterMain,200,17.5
+e2_sync_c2,background writer,Activity,BgwriterMain,194,17.5
+e2_sync_c2,checkpointer,Activity,CheckpointerMain,194,17.5
+e2_sync_c2,logical replication launcher,Activity,LogicalLauncherMain,194,17.5
+e2_sync_c2,walwriter,Activity,WalWriterMain,194,17.5
+e2_sync_c2,client backend,IO,DataFileRead,187,16.3
+e2_sync_c2,client backend,IO,DataFileRead,187,16.4
+e2_sync_c2,client backend,IO,DataFileRead,187,16.9
+e2_sync_c2,client backend,IO,DataFilePrefetch,98,8.6
+e2_sync_c2,client backend,IO,DataFilePrefetch,88,7.9
+e2_sync_c2,client backend,IO,DataFilePrefetch,81,7.1
+e2_sync_c2,client backend,CPU,CPU,71,6.2
+e2_sync_c2,client backend,CPU,CPU,55,4.8
+e2_sync_c2,client backend,CPU,CPU,55,5.0
+e2_sync_c2,background writer,CPU,CPU,1,0.1
+e2_sync_c2,client backend,IO,AioIoCompletion,1,0.1
+e2_sync_c4,client backend,IO,DataFileRead,1017,36.9
+e2_sync_c4,client backend,IO,DataFileRead,1007,36.7
+e2_sync_c4,client backend,IO,DataFileRead,960,36.5
+e2_sync_c4,checkpointer,Activity,CheckpointerMain,360,13.1
+e2_sync_c4,logical replication launcher,Activity,LogicalLauncherMain,360,13.1
+e2_sync_c4,walwriter,Activity,WalWriterMain,360,13.1
+e2_sync_c4,background writer,Activity,BgwriterMain,359,13.0
+e2_sync_c4,checkpointer,Activity,CheckpointerMain,358,13.1
+e2_sync_c4,logical replication launcher,Activity,LogicalLauncherMain,358,13.1
+e2_sync_c4,walwriter,Activity,WalWriterMain,358,13.1
+e2_sync_c4,background writer,Activity,BgwriterMain,356,13.0
+e2_sync_c4,checkpointer,Activity,CheckpointerMain,344,13.1
+e2_sync_c4,logical replication launcher,Activity,LogicalLauncherMain,344,13.1
+e2_sync_c4,walwriter,Activity,WalWriterMain,344,13.1
+e2_sync_c4,background writer,Activity,BgwriterMain,342,13.0
+e2_sync_c4,client backend,IO,DataFilePrefetch,180,6.5
+e2_sync_c4,client backend,IO,DataFilePrefetch,180,6.6
+e2_sync_c4,client backend,IO,DataFilePrefetch,164,6.2
+e2_sync_c4,client backend,CPU,CPU,130,4.9
+e2_sync_c4,client backend,CPU,CPU,119,4.3
+e2_sync_c4,client backend,CPU,CPU,118,4.3
+e2_sync_c4,client backend,IO,AioIoCompletion,3,0.1
+e2_sync_c4,background writer,CPU,CPU,2,0.1
+e2_sync_c4,background writer,CPU,CPU,2,0.1
+e2_sync_c4,background writer,CPU,CPU,1,0.0
+e2_sync_c4,client backend,LWLock,BufferMapping,1,0.0
+e2_sync_c4,client backend,Timeout,SpinDelay,1,0.0
+e2_sync_c8,client backend,IO,DataFileRead,4197,57.3
+e2_sync_c8,client backend,IO,DataFileRead,4110,57.3
+e2_sync_c8,client backend,IO,DataFileRead,3988,57.2
+e2_sync_c8,checkpointer,Activity,CheckpointerMain,632,8.6
+e2_sync_c8,logical replication launcher,Activity,LogicalLauncherMain,632,8.6
+e2_sync_c8,walwriter,Activity,WalWriterMain,632,8.6
+e2_sync_c8,background writer,Activity,BgwriterMain,629,8.6
+e2_sync_c8,checkpointer,Activity,CheckpointerMain,618,8.6
+e2_sync_c8,logical replication launcher,Activity,LogicalLauncherMain,618,8.6
+e2_sync_c8,walwriter,Activity,WalWriterMain,618,8.6
+e2_sync_c8,background writer,Activity,BgwriterMain,615,8.6
+e2_sync_c8,checkpointer,Activity,CheckpointerMain,602,8.6
+e2_sync_c8,logical replication launcher,Activity,LogicalLauncherMain,602,8.6
+e2_sync_c8,walwriter,Activity,WalWriterMain,602,8.6
+e2_sync_c8,background writer,Activity,BgwriterMain,600,8.6
+e2_sync_c8,client backend,IO,DataFilePrefetch,335,4.6
+e2_sync_c8,client backend,IO,DataFilePrefetch,320,4.5
+e2_sync_c8,client backend,IO,DataFilePrefetch,313,4.5
+e2_sync_c8,client backend,CPU,CPU,266,3.6
+e2_sync_c8,client backend,CPU,CPU,256,3.7
+e2_sync_c8,client backend,CPU,CPU,255,3.6
+e2_sync_c8,client backend,IO,AioIoCompletion,9,0.1
+e2_sync_c8,client backend,IO,AioIoCompletion,8,0.1
+e2_sync_c8,client backend,IO,AioIoCompletion,5,0.1
+e2_sync_c8,background writer,CPU,CPU,3,0.0
+e2_sync_c8,background writer,CPU,CPU,3,0.0
+e2_sync_c8,background writer,CPU,CPU,2,0.0
+e2_sync_c8,client backend,IPC,BufferIo,1,0.0
+e2_sync_c8,client backend,IPC,BufferIo,1,0.0
+e2_sync_c8,client backend,LWLock,BufferMapping,1,0.0
+e2_sync_c8,client backend,Timeout,SpinDelay,1,0.0
+e2_uring_c1,checkpointer,Activity,CheckpointerMain,161,20.8
+e2_uring_c1,logical replication launcher,Activity,LogicalLauncherMain,161,20.8
+e2_uring_c1,walwriter,Activity,WalWriterMain,161,20.8
+e2_uring_c1,background writer,Activity,BgwriterMain,160,20.7
+e2_uring_c1,background writer,Activity,BgwriterMain,159,20.8
+e2_uring_c1,checkpointer,Activity,CheckpointerMain,159,20.8
+e2_uring_c1,logical replication launcher,Activity,LogicalLauncherMain,159,20.8
+e2_uring_c1,walwriter,Activity,WalWriterMain,159,20.8
+e2_uring_c1,background writer,Activity,BgwriterMain,158,20.8
+e2_uring_c1,checkpointer,Activity,CheckpointerMain,158,20.8
+e2_uring_c1,logical replication launcher,Activity,LogicalLauncherMain,158,20.8
+e2_uring_c1,walwriter,Activity,WalWriterMain,158,20.8
+e2_uring_c1,client backend,IO,AioIoUringExecution,92,11.9
+e2_uring_c1,client backend,IO,AioIoUringExecution,79,10.3
+e2_uring_c1,client backend,IO,AioIoUringExecution,77,10.1
+e2_uring_c1,client backend,CPU,CPU,34,4.5
+e2_uring_c1,client backend,CPU,CPU,33,4.3
+e2_uring_c1,client backend,CPU,CPU,26,3.4
+e2_uring_c1,client backend,IO,AioIoUringSubmit,17,2.2
+e2_uring_c1,client backend,IO,AioIoUringSubmit,16,2.1
+e2_uring_c1,client backend,IO,AioIoUringSubmit,11,1.4
+e2_uring_c1,background writer,CPU,CPU,1,0.1
+e2_uring_c1,client backend,IO,DataFileRead,1,0.1
+e2_uring_c1,client backend,IO,DataFileRead,1,0.1
+e2_uring_c1,client backend,IO,DataFileRead,1,0.1
+e2_uring_c16,client backend,IO,AioIoUringExecution,18214,69.7
+e2_uring_c16,client backend,IO,AioIoUringExecution,17719,69.8
+e2_uring_c16,client backend,IO,AioIoUringExecution,17690,70.5
+e2_uring_c16,client backend,CPU,CPU,1369,5.2
+e2_uring_c16,checkpointer,Activity,CheckpointerMain,1335,5.1
+e2_uring_c16,logical replication launcher,Activity,LogicalLauncherMain,1335,5.1
+e2_uring_c16,walwriter,Activity,WalWriterMain,1333,5.1
+e2_uring_c16,client backend,CPU,CPU,1329,5.2
+e2_uring_c16,background writer,Activity,BgwriterMain,1326,5.1
+e2_uring_c16,checkpointer,Activity,CheckpointerMain,1300,5.1
+e2_uring_c16,logical replication launcher,Activity,LogicalLauncherMain,1300,5.1
+e2_uring_c16,walwriter,Activity,WalWriterMain,1298,5.1
+e2_uring_c16,background writer,Activity,BgwriterMain,1293,5.1
+e2_uring_c16,checkpointer,Activity,CheckpointerMain,1283,5.1
+e2_uring_c16,logical replication launcher,Activity,LogicalLauncherMain,1283,5.1
+e2_uring_c16,walwriter,Activity,WalWriterMain,1282,5.1
+e2_uring_c16,background writer,Activity,BgwriterMain,1276,5.1
+e2_uring_c16,client backend,CPU,CPU,1181,4.7
+e2_uring_c16,client backend,IO,AioIoUringSubmit,639,2.4
+e2_uring_c16,client backend,IO,AioIoUringSubmit,627,2.5
+e2_uring_c16,client backend,IO,AioIoUringSubmit,548,2.2
+e2_uring_c16,client backend,LWLock,AioUringCompletion,422,1.7
+e2_uring_c16,client backend,LWLock,AioUringCompletion,402,1.5
+e2_uring_c16,client backend,LWLock,AioUringCompletion,393,1.5
+e2_uring_c16,client backend,LWLock,BufferMapping,89,0.3
+e2_uring_c16,client backend,LWLock,BufferMapping,66,0.3
+e2_uring_c16,client backend,Timeout,SpinDelay,64,0.2
+e2_uring_c16,client backend,LWLock,BufferMapping,60,0.2
+e2_uring_c16,client backend,Timeout,SpinDelay,45,0.2
+e2_uring_c16,client backend,Timeout,SpinDelay,40,0.2
+e2_uring_c16,background writer,CPU,CPU,9,0.0
+e2_uring_c16,client backend,IO,DataFileRead,9,0.0
+e2_uring_c16,background writer,CPU,CPU,7,0.0
+e2_uring_c16,background writer,CPU,CPU,7,0.0
+e2_uring_c16,client backend,IO,DataFileRead,5,0.0
+e2_uring_c16,client backend,IO,DataFileRead,4,0.0
+e2_uring_c16,client backend,IPC,BufferIo,4,0.0
+e2_uring_c16,client backend,IO,AioIoCompletion,3,0.0
+e2_uring_c16,client backend,IPC,BufferIo,2,0.0
+e2_uring_c16,client backend,IO,AioIoCompletion,1,0.0
+e2_uring_c16,client backend,IPC,BufferIo,1,0.0
+e2_uring_c16,walwriter,CPU,CPU,1,0.0
+e2_uring_c16,walwriter,CPU,CPU,1,0.0
+e2_uring_c16,walwriter,CPU,CPU,1,0.0
+e2_uring_c16,walwriter,IO,WalSync,1,0.0
+e2_uring_c16,walwriter,IO,WalSync,1,0.0
+e2_uring_c2,client backend,IO,AioIoUringExecution,245,20.9
+e2_uring_c2,client backend,IO,AioIoUringExecution,241,20.9
+e2_uring_c2,client backend,IO,AioIoUringExecution,240,20.3
+e2_uring_c2,background writer,Activity,BgwriterMain,208,17.6
+e2_uring_c2,checkpointer,Activity,CheckpointerMain,208,17.6
+e2_uring_c2,logical replication launcher,Activity,LogicalLauncherMain,208,17.6
+e2_uring_c2,walwriter,Activity,WalWriterMain,208,17.6
+e2_uring_c2,checkpointer,Activity,CheckpointerMain,205,17.5
+e2_uring_c2,logical replication launcher,Activity,LogicalLauncherMain,205,17.5
+e2_uring_c2,walwriter,Activity,WalWriterMain,205,17.5
+e2_uring_c2,background writer,Activity,BgwriterMain,204,17.4
+e2_uring_c2,background writer,Activity,BgwriterMain,203,17.6
+e2_uring_c2,checkpointer,Activity,CheckpointerMain,203,17.6
+e2_uring_c2,logical replication launcher,Activity,LogicalLauncherMain,203,17.6
+e2_uring_c2,walwriter,Activity,WalWriterMain,203,17.6
+e2_uring_c2,client backend,CPU,CPU,77,6.5
+e2_uring_c2,client backend,CPU,CPU,71,6.1
+e2_uring_c2,client backend,CPU,CPU,69,6.0
+e2_uring_c2,client backend,IO,AioIoUringSubmit,33,2.8
+e2_uring_c2,client backend,IO,AioIoUringSubmit,33,2.8
+e2_uring_c2,client backend,IO,AioIoUringSubmit,31,2.7
+e2_uring_c2,background writer,CPU,CPU,1,0.1
+e2_uring_c2,client backend,IO,AioIoCompletion,1,0.1
+e2_uring_c2,client backend,IO,AioIoCompletion,1,0.1
+e2_uring_c2,client backend,IO,DataFileRead,1,0.1
+e2_uring_c2,client backend,IO,DataFileRead,1,0.1
+e2_uring_c2,client backend,LWLock,AioUringCompletion,1,0.1
+e2_uring_c4,client backend,IO,AioIoUringExecution,1085,38.9
+e2_uring_c4,client backend,IO,AioIoUringExecution,1075,38.4
+e2_uring_c4,client backend,IO,AioIoUringExecution,1049,38.5
+e2_uring_c4,checkpointer,Activity,CheckpointerMain,365,13.0
+e2_uring_c4,logical replication launcher,Activity,LogicalLauncherMain,365,13.0
+e2_uring_c4,background writer,Activity,BgwriterMain,364,13.0
+e2_uring_c4,walwriter,Activity,WalWriterMain,364,13.0
+e2_uring_c4,checkpointer,Activity,CheckpointerMain,363,13.0
+e2_uring_c4,logical replication launcher,Activity,LogicalLauncherMain,363,13.0
+e2_uring_c4,walwriter,Activity,WalWriterMain,363,13.0
+e2_uring_c4,background writer,Activity,BgwriterMain,361,13.0
+e2_uring_c4,checkpointer,Activity,CheckpointerMain,356,13.1
+e2_uring_c4,logical replication launcher,Activity,LogicalLauncherMain,356,13.1
+e2_uring_c4,walwriter,Activity,WalWriterMain,356,13.1
+e2_uring_c4,background writer,Activity,BgwriterMain,354,13.0
+e2_uring_c4,client backend,CPU,CPU,169,6.0
+e2_uring_c4,client backend,CPU,CPU,165,6.1
+e2_uring_c4,client backend,CPU,CPU,154,5.5
+e2_uring_c4,client backend,IO,AioIoUringSubmit,94,3.4
+e2_uring_c4,client backend,IO,AioIoUringSubmit,86,3.1
+e2_uring_c4,client backend,IO,AioIoUringSubmit,81,3.0
+e2_uring_c4,client backend,LWLock,AioUringCompletion,4,0.1
+e2_uring_c4,background writer,CPU,CPU,2,0.1
+e2_uring_c4,background writer,CPU,CPU,2,0.1
+e2_uring_c4,client backend,IO,AioIoCompletion,2,0.1
+e2_uring_c4,client backend,IO,DataFileRead,2,0.1
+e2_uring_c4,client backend,Timeout,SpinDelay,2,0.1
+e2_uring_c4,background writer,CPU,CPU,1,0.0
+e2_uring_c4,client backend,IO,AioIoCompletion,1,0.0
+e2_uring_c4,client backend,IO,DataFileRead,1,0.0
+e2_uring_c4,client backend,LWLock,AioUringCompletion,1,0.0
+e2_uring_c4,client backend,LWLock,AioUringCompletion,1,0.0
+e2_uring_c4,client backend,Timeout,SpinDelay,1,0.0
+e2_uring_c4,walwriter,CPU,CPU,1,0.0
+e2_uring_c8,client backend,IO,AioIoUringExecution,4557,58.4
+e2_uring_c8,client backend,IO,AioIoUringExecution,4447,59.0
+e2_uring_c8,client backend,IO,AioIoUringExecution,4432,58.3
+e2_uring_c8,checkpointer,Activity,CheckpointerMain,671,8.6
+e2_uring_c8,logical replication launcher,Activity,LogicalLauncherMain,671,8.6
+e2_uring_c8,walwriter,Activity,WalWriterMain,671,8.6
+e2_uring_c8,background writer,Activity,BgwriterMain,668,8.6
+e2_uring_c8,checkpointer,Activity,CheckpointerMain,654,8.6
+e2_uring_c8,logical replication launcher,Activity,LogicalLauncherMain,654,8.6
+e2_uring_c8,walwriter,Activity,WalWriterMain,654,8.6
+e2_uring_c8,background writer,Activity,BgwriterMain,652,8.6
+e2_uring_c8,checkpointer,Activity,CheckpointerMain,649,8.6
+e2_uring_c8,logical replication launcher,Activity,LogicalLauncherMain,649,8.6
+e2_uring_c8,walwriter,Activity,WalWriterMain,649,8.6
+e2_uring_c8,background writer,Activity,BgwriterMain,646,8.6
+e2_uring_c8,client backend,CPU,CPU,379,4.9
+e2_uring_c8,client backend,CPU,CPU,372,4.9
+e2_uring_c8,client backend,CPU,CPU,332,4.4
+e2_uring_c8,client backend,IO,AioIoUringSubmit,159,2.0
+e2_uring_c8,client backend,IO,AioIoUringSubmit,156,2.1
+e2_uring_c8,client backend,IO,AioIoUringSubmit,139,1.8
+e2_uring_c8,client backend,LWLock,AioUringCompletion,19,0.2
+e2_uring_c8,client backend,LWLock,AioUringCompletion,19,0.3
+e2_uring_c8,client backend,LWLock,AioUringCompletion,19,0.3
+e2_uring_c8,client backend,IO,AioIoCompletion,5,0.1
+e2_uring_c8,background writer,CPU,CPU,3,0.0
+e2_uring_c8,background writer,CPU,CPU,3,0.0
+e2_uring_c8,background writer,CPU,CPU,2,0.0
+e2_uring_c8,client backend,IO,DataFileRead,1,0.0
+e2_uring_c8,client backend,IO,DataFileRead,1,0.0
+e2_uring_c8,client backend,IPC,BufferIo,1,0.0
+e2_uring_c8,client backend,LWLock,BufferMapping,1,0.0
+e2_uring_c8,client backend,LWLock,BufferMapping,1,0.0
+e2_uring_c8,client backend,Timeout,SpinDelay,1,0.0
+e2_uring_c8,client backend,Timeout,SpinDelay,1,0.0
+e3_io_uring_eic0,background writer,Activity,BgwriterMain,1309,20.1
+e3_io_uring_eic0,checkpointer,Activity,CheckpointerMain,1309,20.1
+e3_io_uring_eic0,logical replication launcher,Activity,LogicalLauncherMain,1309,20.1
+e3_io_uring_eic0,walwriter,Activity,WalWriterMain,1308,20.1
+e3_io_uring_eic0,background writer,Activity,BgwriterMain,1300,20.1
+e3_io_uring_eic0,checkpointer,Activity,CheckpointerMain,1300,20.1
+e3_io_uring_eic0,logical replication launcher,Activity,LogicalLauncherMain,1300,20.1
+e3_io_uring_eic0,walwriter,Activity,WalWriterMain,1300,20.1
+e3_io_uring_eic0,client backend,IO,DataFileRead,1261,19.4
+e3_io_uring_eic0,client backend,IO,DataFileRead,1244,19.2
+e3_io_uring_eic0,client backend,CPU,CPU,26,0.4
+e3_io_uring_eic0,client backend,CPU,CPU,17,0.3
+e3_io_uring_eic0,walwriter,CPU,CPU,1,0.0
+e3_io_uring_eic1,background writer,Activity,BgwriterMain,1325,20.1
+e3_io_uring_eic1,checkpointer,Activity,CheckpointerMain,1325,20.1
+e3_io_uring_eic1,logical replication launcher,Activity,LogicalLauncherMain,1325,20.1
+e3_io_uring_eic1,walwriter,Activity,WalWriterMain,1324,20.1
+e3_io_uring_eic1,background writer,Activity,BgwriterMain,1295,20.1
+e3_io_uring_eic1,checkpointer,Activity,CheckpointerMain,1295,20.1
+e3_io_uring_eic1,logical replication launcher,Activity,LogicalLauncherMain,1295,20.1
+e3_io_uring_eic1,walwriter,Activity,WalWriterMain,1294,20.1
+e3_io_uring_eic1,client backend,IO,AioIoUringExecution,1189,18.0
+e3_io_uring_eic1,client backend,IO,AioIoUringExecution,1185,18.4
+e3_io_uring_eic1,client backend,IO,AioIoUringSubmit,70,1.1
+e3_io_uring_eic1,client backend,IO,AioIoUringSubmit,55,0.9
+e3_io_uring_eic1,client backend,CPU,CPU,35,0.5
+e3_io_uring_eic1,client backend,CPU,CPU,24,0.4
+e3_io_uring_eic1,client backend,IO,DataFileRead,1,0.0
+e3_io_uring_eic1,walwriter,CPU,CPU,1,0.0
+e3_io_uring_eic1,walwriter,CPU,CPU,1,0.0
+e3_io_uring_eic128,checkpointer,Activity,CheckpointerMain,115,21.1
+e3_io_uring_eic128,logical replication launcher,Activity,LogicalLauncherMain,115,21.1
+e3_io_uring_eic128,walwriter,Activity,WalWriterMain,115,21.1
+e3_io_uring_eic128,background writer,Activity,BgwriterMain,114,21.0
+e3_io_uring_eic128,background writer,Activity,BgwriterMain,113,21.2
+e3_io_uring_eic128,checkpointer,Activity,CheckpointerMain,113,21.2
+e3_io_uring_eic128,logical replication launcher,Activity,LogicalLauncherMain,113,21.2
+e3_io_uring_eic128,walwriter,Activity,WalWriterMain,113,21.2
+e3_io_uring_eic128,client backend,CPU,CPU,44,8.1
+e3_io_uring_eic128,client backend,CPU,CPU,39,7.3
+e3_io_uring_eic128,client backend,IO,AioIoUringExecution,28,5.2
+e3_io_uring_eic128,client backend,IO,AioIoUringSubmit,22,4.0
+e3_io_uring_eic128,client backend,IO,AioIoUringExecution,18,3.3
+e3_io_uring_eic128,client backend,IO,AioIoUringSubmit,15,2.8
+e3_io_uring_eic128,background writer,CPU,CPU,1,0.2
+e3_io_uring_eic16,background writer,Activity,BgwriterMain,152,20.9
+e3_io_uring_eic16,checkpointer,Activity,CheckpointerMain,152,20.9
+e3_io_uring_eic16,logical replication launcher,Activity,LogicalLauncherMain,152,20.9
+e3_io_uring_eic16,walwriter,Activity,WalWriterMain,152,20.9
+e3_io_uring_eic16,background writer,Activity,BgwriterMain,149,20.9
+e3_io_uring_eic16,checkpointer,Activity,CheckpointerMain,149,20.9
+e3_io_uring_eic16,logical replication launcher,Activity,LogicalLauncherMain,149,20.9
+e3_io_uring_eic16,walwriter,Activity,WalWriterMain,149,20.9
+e3_io_uring_eic16,client backend,IO,AioIoUringExecution,84,11.8
+e3_io_uring_eic16,client backend,IO,AioIoUringExecution,78,10.7
+e3_io_uring_eic16,client backend,CPU,CPU,25,3.4
+e3_io_uring_eic16,client backend,CPU,CPU,19,2.7
+e3_io_uring_eic16,client backend,IO,AioIoUringSubmit,17,2.3
+e3_io_uring_eic16,client backend,IO,AioIoUringSubmit,14,2.0
+e3_io_uring_eic16,client backend,IO,DataFileRead,1,0.1
+e3_io_uring_eic4,background writer,Activity,BgwriterMain,378,20.3
+e3_io_uring_eic4,checkpointer,Activity,CheckpointerMain,378,20.3
+e3_io_uring_eic4,logical replication launcher,Activity,LogicalLauncherMain,378,20.3
+e3_io_uring_eic4,walwriter,Activity,WalWriterMain,378,20.3
+e3_io_uring_eic4,background writer,Activity,BgwriterMain,372,20.3
+e3_io_uring_eic4,checkpointer,Activity,CheckpointerMain,372,20.3
+e3_io_uring_eic4,logical replication launcher,Activity,LogicalLauncherMain,372,20.3
+e3_io_uring_eic4,walwriter,Activity,WalWriterMain,372,20.3
+e3_io_uring_eic4,client backend,IO,AioIoUringExecution,288,15.5
+e3_io_uring_eic4,client backend,IO,AioIoUringExecution,272,14.9
+e3_io_uring_eic4,client backend,IO,AioIoUringSubmit,38,2.1
+e3_io_uring_eic4,client backend,IO,AioIoUringSubmit,36,1.9
+e3_io_uring_eic4,client backend,CPU,CPU,31,1.7
+e3_io_uring_eic4,client backend,CPU,CPU,23,1.2
+e3_io_uring_eic4,client backend,IO,DataFileRead,1,0.1
+e3_io_uring_eic64,background writer,Activity,BgwriterMain,114,21.2
+e3_io_uring_eic64,checkpointer,Activity,CheckpointerMain,114,21.2
+e3_io_uring_eic64,logical replication launcher,Activity,LogicalLauncherMain,114,21.2
+e3_io_uring_eic64,walwriter,Activity,WalWriterMain,114,21.2
+e3_io_uring_eic64,background writer,Activity,BgwriterMain,112,21.2
+e3_io_uring_eic64,checkpointer,Activity,CheckpointerMain,112,21.2
+e3_io_uring_eic64,logical replication launcher,Activity,LogicalLauncherMain,112,21.2
+e3_io_uring_eic64,walwriter,Activity,WalWriterMain,112,21.2
+e3_io_uring_eic64,client backend,CPU,CPU,40,7.6
+e3_io_uring_eic64,client backend,CPU,CPU,33,6.1
+e3_io_uring_eic64,client backend,IO,AioIoUringExecution,27,5.0
+e3_io_uring_eic64,client backend,IO,AioIoUringExecution,23,4.3
+e3_io_uring_eic64,client backend,IO,AioIoUringSubmit,23,4.3
+e3_io_uring_eic64,client backend,IO,AioIoUringSubmit,18,3.4
+e3_sync_cl1,background writer,Activity,BgwriterMain,6251,20.0
+e3_sync_cl1,checkpointer,Activity,CheckpointerMain,6251,20.0
+e3_sync_cl1,logical replication launcher,Activity,LogicalLauncherMain,6251,20.0
+e3_sync_cl1,walwriter,Activity,WalWriterMain,6251,20.0
+e3_sync_cl1,background writer,Activity,BgwriterMain,6177,20.0
+e3_sync_cl1,checkpointer,Activity,CheckpointerMain,6177,20.0
+e3_sync_cl1,logical replication launcher,Activity,LogicalLauncherMain,6177,20.0
+e3_sync_cl1,walwriter,Activity,WalWriterMain,6177,20.0
+e3_sync_cl1,client backend,IO,DataFileRead,5091,16.3
+e3_sync_cl1,client backend,IO,DataFileRead,4986,16.2
+e3_sync_cl1,client backend,CPU,CPU,1161,3.8
+e3_sync_cl1,client backend,CPU,CPU,1129,3.6
+e3_sync_cl16,background writer,Activity,BgwriterMain,6207,20.0
+e3_sync_cl16,checkpointer,Activity,CheckpointerMain,6207,20.0
+e3_sync_cl16,logical replication launcher,Activity,LogicalLauncherMain,6207,20.0
+e3_sync_cl16,walwriter,Activity,WalWriterMain,6207,20.0
+e3_sync_cl16,background writer,Activity,BgwriterMain,5940,20.0
+e3_sync_cl16,checkpointer,Activity,CheckpointerMain,5940,20.0
+e3_sync_cl16,logical replication launcher,Activity,LogicalLauncherMain,5940,20.0
+e3_sync_cl16,walwriter,Activity,WalWriterMain,5939,20.0
+e3_sync_cl16,client backend,IO,DataFileRead,5297,17.1
+e3_sync_cl16,client backend,IO,DataFileRead,4991,16.8
+e3_sync_cl16,client backend,CPU,CPU,919,3.1
+e3_sync_cl16,client backend,CPU,CPU,880,2.8
+e3_sync_cl16,walwriter,CPU,CPU,1,0.0
+e3_sync_cl32,background writer,Activity,BgwriterMain,4683,20.0
+e3_sync_cl32,checkpointer,Activity,CheckpointerMain,4683,20.0
+e3_sync_cl32,logical replication launcher,Activity,LogicalLauncherMain,4683,20.0
+e3_sync_cl32,walwriter,Activity,WalWriterMain,4682,20.0
+e3_sync_cl32,background writer,Activity,BgwriterMain,4654,20.0
+e3_sync_cl32,checkpointer,Activity,CheckpointerMain,4654,20.0
+e3_sync_cl32,logical replication launcher,Activity,LogicalLauncherMain,4654,20.0
+e3_sync_cl32,walwriter,Activity,WalWriterMain,4653,20.0
+e3_sync_cl32,client backend,IO,DataFileRead,3754,16.1
+e3_sync_cl32,client backend,IO,DataFileRead,3715,16.0
+e3_sync_cl32,client backend,CPU,CPU,908,3.9
+e3_sync_cl32,client backend,CPU,CPU,899,3.8
+e3_sync_cl32,walwriter,CPU,CPU,1,0.0
+e3_sync_cl32,walwriter,CPU,CPU,1,0.0
+e3_sync_cl4,checkpointer,Activity,CheckpointerMain,6252,20.0
+e3_sync_cl4,logical replication launcher,Activity,LogicalLauncherMain,6252,20.0
+e3_sync_cl4,background writer,Activity,BgwriterMain,6251,20.0
+e3_sync_cl4,walwriter,Activity,WalWriterMain,6251,20.0
+e3_sync_cl4,background writer,Activity,BgwriterMain,6128,20.0
+e3_sync_cl4,checkpointer,Activity,CheckpointerMain,6128,20.0
+e3_sync_cl4,logical replication launcher,Activity,LogicalLauncherMain,6128,20.0
+e3_sync_cl4,walwriter,Activity,WalWriterMain,6127,20.0
+e3_sync_cl4,client backend,IO,DataFileRead,5201,16.7
+e3_sync_cl4,client backend,IO,DataFileRead,5111,16.7
+e3_sync_cl4,client backend,CPU,CPU,1021,3.3
+e3_sync_cl4,client backend,CPU,CPU,987,3.2
+e3_sync_cl4,background writer,CPU,CPU,1,0.0
+e3_sync_cl4,walwriter,CPU,CPU,1,0.0
+e3_sync_cl4,walwriter,IO,WalWrite,1,0.0
+e3_sync_eic0,background writer,Activity,BgwriterMain,1306,20.1
+e3_sync_eic0,checkpointer,Activity,CheckpointerMain,1306,20.1
+e3_sync_eic0,logical replication launcher,Activity,LogicalLauncherMain,1306,20.1
+e3_sync_eic0,walwriter,Activity,WalWriterMain,1305,20.1
+e3_sync_eic0,background writer,Activity,BgwriterMain,1292,20.1
+e3_sync_eic0,checkpointer,Activity,CheckpointerMain,1292,20.1
+e3_sync_eic0,logical replication launcher,Activity,LogicalLauncherMain,1292,20.1
+e3_sync_eic0,walwriter,Activity,WalWriterMain,1291,20.1
+e3_sync_eic0,client backend,IO,DataFileRead,1245,19.2
+e3_sync_eic0,client backend,IO,DataFileRead,1233,19.2
+e3_sync_eic0,client backend,CPU,CPU,30,0.5
+e3_sync_eic0,client backend,CPU,CPU,29,0.5
+e3_sync_eic0,walwriter,CPU,CPU,1,0.0
+e3_sync_eic0,walwriter,CPU,CPU,1,0.0
+e3_sync_eic1,background writer,Activity,BgwriterMain,1296,20.1
+e3_sync_eic1,checkpointer,Activity,CheckpointerMain,1296,20.1
+e3_sync_eic1,logical replication launcher,Activity,LogicalLauncherMain,1296,20.1
+e3_sync_eic1,walwriter,Activity,WalWriterMain,1296,20.1
+e3_sync_eic1,background writer,Activity,BgwriterMain,1290,20.1
+e3_sync_eic1,checkpointer,Activity,CheckpointerMain,1290,20.1
+e3_sync_eic1,logical replication launcher,Activity,LogicalLauncherMain,1290,20.1
+e3_sync_eic1,walwriter,Activity,WalWriterMain,1289,20.1
+e3_sync_eic1,client backend,IO,DataFileRead,1235,19.2
+e3_sync_eic1,client backend,IO,DataFileRead,1235,19.2
+e3_sync_eic1,client backend,CPU,CPU,29,0.4
+e3_sync_eic1,client backend,CPU,CPU,23,0.4
+e3_sync_eic1,client backend,IO,DataFilePrefetch,2,0.0
+e3_sync_eic1,walwriter,CPU,CPU,1,0.0
+e3_sync_eic128,background writer,Activity,BgwriterMain,132,21.0
+e3_sync_eic128,checkpointer,Activity,CheckpointerMain,132,21.0
+e3_sync_eic128,logical replication launcher,Activity,LogicalLauncherMain,132,21.0
+e3_sync_eic128,walwriter,Activity,WalWriterMain,132,21.0
+e3_sync_eic128,background writer,Activity,BgwriterMain,129,21.0
+e3_sync_eic128,checkpointer,Activity,CheckpointerMain,129,21.0
+e3_sync_eic128,logical replication launcher,Activity,LogicalLauncherMain,129,21.0
+e3_sync_eic128,walwriter,Activity,WalWriterMain,129,21.0
+e3_sync_eic128,client backend,IO,DataFileRead,51,8.1
+e3_sync_eic128,client backend,IO,DataFileRead,42,6.8
+e3_sync_eic128,client backend,IO,DataFilePrefetch,34,5.4
+e3_sync_eic128,client backend,IO,DataFilePrefetch,33,5.4
+e3_sync_eic128,client backend,CPU,CPU,23,3.7
+e3_sync_eic128,client backend,CPU,CPU,17,2.7
+e3_sync_eic16,background writer,Activity,BgwriterMain,147,20.9
+e3_sync_eic16,checkpointer,Activity,CheckpointerMain,147,20.9
+e3_sync_eic16,logical replication launcher,Activity,LogicalLauncherMain,147,20.9
+e3_sync_eic16,walwriter,Activity,WalWriterMain,147,20.9
+e3_sync_eic16,background writer,Activity,BgwriterMain,144,20.9
+e3_sync_eic16,checkpointer,Activity,CheckpointerMain,144,20.9
+e3_sync_eic16,logical replication launcher,Activity,LogicalLauncherMain,144,20.9
+e3_sync_eic16,walwriter,Activity,WalWriterMain,144,20.9
+e3_sync_eic16,client backend,IO,DataFileRead,53,7.7
+e3_sync_eic16,client backend,IO,DataFileRead,52,7.4
+e3_sync_eic16,client backend,IO,DataFilePrefetch,39,5.7
+e3_sync_eic16,client backend,IO,DataFilePrefetch,35,5.0
+e3_sync_eic16,client backend,CPU,CPU,28,4.0
+e3_sync_eic16,client backend,CPU,CPU,22,3.2
+e3_sync_eic4,background writer,Activity,BgwriterMain,347,20.4
+e3_sync_eic4,checkpointer,Activity,CheckpointerMain,347,20.4
+e3_sync_eic4,logical replication launcher,Activity,LogicalLauncherMain,347,20.4
+e3_sync_eic4,walwriter,Activity,WalWriterMain,347,20.4
+e3_sync_eic4,background writer,Activity,BgwriterMain,344,20.4
+e3_sync_eic4,checkpointer,Activity,CheckpointerMain,344,20.4
+e3_sync_eic4,logical replication launcher,Activity,LogicalLauncherMain,344,20.4
+e3_sync_eic4,walwriter,Activity,WalWriterMain,344,20.4
+e3_sync_eic4,client backend,IO,DataFileRead,251,14.9
+e3_sync_eic4,client backend,IO,DataFileRead,250,14.7
+e3_sync_eic4,client backend,IO,DataFilePrefetch,41,2.4
+e3_sync_eic4,client backend,IO,DataFilePrefetch,37,2.2
+e3_sync_eic4,client backend,CPU,CPU,25,1.5
+e3_sync_eic4,client backend,CPU,CPU,25,1.5
+e3_sync_eic64,checkpointer,Activity,CheckpointerMain,134,20.9
+e3_sync_eic64,logical replication launcher,Activity,LogicalLauncherMain,134,20.9
+e3_sync_eic64,walwriter,Activity,WalWriterMain,134,20.9
+e3_sync_eic64,background writer,Activity,BgwriterMain,133,20.8
+e3_sync_eic64,checkpointer,Activity,CheckpointerMain,131,21.0
+e3_sync_eic64,logical replication launcher,Activity,LogicalLauncherMain,131,21.0
+e3_sync_eic64,walwriter,Activity,WalWriterMain,131,21.0
+e3_sync_eic64,background writer,Activity,BgwriterMain,130,20.8
+e3_sync_eic64,client backend,IO,DataFileRead,46,7.4
+e3_sync_eic64,client backend,IO,DataFileRead,44,6.9
+e3_sync_eic64,client backend,IO,DataFilePrefetch,33,5.2
+e3_sync_eic64,client backend,IO,DataFilePrefetch,30,4.8
+e3_sync_eic64,client backend,CPU,CPU,27,4.2
+e3_sync_eic64,client backend,CPU,CPU,25,4.0
+e3_sync_eic64,background writer,CPU,CPU,1,0.2
+e3_sync_eic64,background writer,CPU,CPU,1,0.2
+e3_worker_cl1,io worker,IO,DataFileRead,32025,40.0
+e3_worker_cl1,io worker,IO,DataFileRead,31832,39.7
+e3_worker_cl1,io worker,Activity,IoWorkerMain,15589,19.4
+e3_worker_cl1,io worker,Activity,IoWorkerMain,15589,19.5
+e3_worker_cl1,background writer,Activity,BgwriterMain,6333,7.9
+e3_worker_cl1,checkpointer,Activity,CheckpointerMain,6333,7.9
+e3_worker_cl1,logical replication launcher,Activity,LogicalLauncherMain,6333,7.9
+e3_worker_cl1,walwriter,Activity,WalWriterMain,6332,7.9
+e3_worker_cl1,background writer,Activity,BgwriterMain,6281,7.8
+e3_worker_cl1,checkpointer,Activity,CheckpointerMain,6281,7.8
+e3_worker_cl1,logical replication launcher,Activity,LogicalLauncherMain,6281,7.8
+e3_worker_cl1,walwriter,Activity,WalWriterMain,6281,7.8
+e3_worker_cl1,client backend,IO,AioIoCompletion,3680,4.6
+e3_worker_cl1,client backend,IO,AioIoCompletion,3624,4.5
+e3_worker_cl1,client backend,CPU,CPU,1849,2.3
+e3_worker_cl1,client backend,CPU,CPU,1757,2.2
+e3_worker_cl1,io worker,CPU,CPU,1001,1.2
+e3_worker_cl1,io worker,CPU,CPU,938,1.2
+e3_worker_cl1,client backend,IO,DataFileRead,829,1.0
+e3_worker_cl1,client backend,IO,DataFileRead,811,1.0
+e3_worker_cl1,io worker,LWLock,AioWorkerSubmissionQueue,68,0.1
+e3_worker_cl1,io worker,LWLock,AioWorkerSubmissionQueue,67,0.1
+e3_worker_cl1,io worker,Timeout,SpinDelay,45,0.1
+e3_worker_cl1,io worker,Timeout,SpinDelay,29,0.0
+e3_worker_cl1,client backend,Timeout,SpinDelay,3,0.0
+e3_worker_cl1,client backend,Timeout,SpinDelay,1,0.0
+e3_worker_cl1,walwriter,CPU,CPU,1,0.0
+e3_worker_cl16,io worker,IO,DataFileRead,27531,60.2
+e3_worker_cl16,io worker,IO,DataFileRead,25267,60.2
+e3_worker_cl16,background writer,Activity,BgwriterMain,3546,7.8
+e3_worker_cl16,checkpointer,Activity,CheckpointerMain,3546,7.8
+e3_worker_cl16,logical replication launcher,Activity,LogicalLauncherMain,3546,7.8
+e3_worker_cl16,walwriter,Activity,WalWriterMain,3545,7.8
+e3_worker_cl16,background writer,Activity,BgwriterMain,3258,7.8
+e3_worker_cl16,checkpointer,Activity,CheckpointerMain,3258,7.8
+e3_worker_cl16,logical replication launcher,Activity,LogicalLauncherMain,3258,7.8
+e3_worker_cl16,walwriter,Activity,WalWriterMain,3257,7.8
+e3_worker_cl16,client backend,IO,AioIoCompletion,2751,6.0
+e3_worker_cl16,client backend,IO,AioIoCompletion,2406,5.7
+e3_worker_cl16,client backend,CPU,CPU,820,2.0
+e3_worker_cl16,client backend,CPU,CPU,762,1.7
+e3_worker_cl16,io worker,CPU,CPU,440,1.0
+e3_worker_cl16,io worker,CPU,CPU,400,1.0
+e3_worker_cl16,io worker,Activity,IoWorkerMain,61,0.1
+e3_worker_cl16,io worker,Activity,IoWorkerMain,61,0.1
+e3_worker_cl16,client backend,IO,DataFileRead,3,0.0
+e3_worker_cl16,client backend,IO,DataFileRead,2,0.0
+e3_worker_cl16,walwriter,CPU,CPU,1,0.0
+e3_worker_cl16,walwriter,CPU,CPU,1,0.0
+e3_worker_cl32,io worker,IO,DataFileRead,26057,60.1
+e3_worker_cl32,io worker,IO,DataFileRead,24831,60.1
+e3_worker_cl32,background writer,Activity,BgwriterMain,3364,7.8
+e3_worker_cl32,checkpointer,Activity,CheckpointerMain,3364,7.8
+e3_worker_cl32,logical replication launcher,Activity,LogicalLauncherMain,3364,7.8
+e3_worker_cl32,walwriter,Activity,WalWriterMain,3363,7.8
+e3_worker_cl32,background writer,Activity,BgwriterMain,3207,7.8
+e3_worker_cl32,checkpointer,Activity,CheckpointerMain,3207,7.8
+e3_worker_cl32,logical replication launcher,Activity,LogicalLauncherMain,3207,7.8
+e3_worker_cl32,walwriter,Activity,WalWriterMain,3206,7.8
+e3_worker_cl32,client backend,IO,AioIoCompletion,2488,5.7
+e3_worker_cl32,client backend,IO,AioIoCompletion,2366,5.7
+e3_worker_cl32,client backend,CPU,CPU,843,1.9
+e3_worker_cl32,client backend,CPU,CPU,809,2.0
+e3_worker_cl32,io worker,CPU,CPU,441,1.0
+e3_worker_cl32,io worker,CPU,CPU,421,1.0
+e3_worker_cl32,io worker,Activity,IoWorkerMain,78,0.2
+e3_worker_cl32,io worker,Activity,IoWorkerMain,68,0.2
+e3_worker_cl32,client backend,IO,DataFileRead,2,0.0
+e3_worker_cl32,client backend,IO,DataFileRead,2,0.0
+e3_worker_cl32,walwriter,CPU,CPU,1,0.0
+e3_worker_cl32,walwriter,CPU,CPU,1,0.0
+e3_worker_cl4,io worker,IO,DataFileRead,36081,60.2
+e3_worker_cl4,io worker,IO,DataFileRead,35562,60.2
+e3_worker_cl4,checkpointer,Activity,CheckpointerMain,4633,7.7
+e3_worker_cl4,logical replication launcher,Activity,LogicalLauncherMain,4633,7.7
+e3_worker_cl4,background writer,Activity,BgwriterMain,4632,7.7
+e3_worker_cl4,walwriter,Activity,WalWriterMain,4632,7.7
+e3_worker_cl4,checkpointer,Activity,CheckpointerMain,4558,7.7
+e3_worker_cl4,logical replication launcher,Activity,LogicalLauncherMain,4558,7.7
+e3_worker_cl4,walwriter,Activity,WalWriterMain,4557,7.7
+e3_worker_cl4,background writer,Activity,BgwriterMain,4556,7.7
+e3_worker_cl4,client backend,IO,AioIoCompletion,3648,6.1
+e3_worker_cl4,client backend,IO,AioIoCompletion,3546,6.0
+e3_worker_cl4,client backend,CPU,CPU,945,1.6
+e3_worker_cl4,client backend,CPU,CPU,919,1.5
+e3_worker_cl4,io worker,CPU,CPU,549,0.9
+e3_worker_cl4,io worker,CPU,CPU,543,0.9
+e3_worker_cl4,io worker,Activity,IoWorkerMain,175,0.3
+e3_worker_cl4,io worker,Activity,IoWorkerMain,174,0.3
+e3_worker_cl4,client backend,IO,DataFileRead,37,0.1
+e3_worker_cl4,client backend,IO,DataFileRead,35,0.1
+e3_worker_cl4,background writer,CPU,CPU,2,0.0
+e3_worker_cl4,background writer,CPU,CPU,1,0.0
+e3_worker_cl4,walwriter,CPU,CPU,1,0.0
+e3_worker_cl4,walwriter,CPU,CPU,1,0.0
+e3_worker_eic0,io worker,Activity,IoWorkerMain,2588,28.7
+e3_worker_eic0,io worker,Activity,IoWorkerMain,2576,28.7
+e3_worker_eic0,background writer,Activity,BgwriterMain,1294,14.3
+e3_worker_eic0,checkpointer,Activity,CheckpointerMain,1294,14.3
+e3_worker_eic0,logical replication launcher,Activity,LogicalLauncherMain,1294,14.3
+e3_worker_eic0,walwriter,Activity,WalWriterMain,1293,14.3
+e3_worker_eic0,background writer,Activity,BgwriterMain,1288,14.3
+e3_worker_eic0,checkpointer,Activity,CheckpointerMain,1288,14.3
+e3_worker_eic0,logical replication launcher,Activity,LogicalLauncherMain,1288,14.3
+e3_worker_eic0,walwriter,Activity,WalWriterMain,1287,14.3
+e3_worker_eic0,client backend,IO,DataFileRead,1248,13.8
+e3_worker_eic0,client backend,IO,DataFileRead,1240,13.8
+e3_worker_eic0,client backend,CPU,CPU,17,0.2
+e3_worker_eic0,client backend,CPU,CPU,16,0.2
+e3_worker_eic0,walwriter,CPU,CPU,1,0.0
+e3_worker_eic0,walwriter,IO,WalSync,1,0.0
+e3_worker_eic1,io worker,Activity,IoWorkerMain,1573,16.0
+e3_worker_eic1,io worker,Activity,IoWorkerMain,1548,15.6
+e3_worker_eic1,checkpointer,Activity,CheckpointerMain,1421,14.3
+e3_worker_eic1,logical replication launcher,Activity,LogicalLauncherMain,1421,14.3
+e3_worker_eic1,background writer,Activity,BgwriterMain,1420,14.3
+e3_worker_eic1,walwriter,Activity,WalWriterMain,1420,14.3
+e3_worker_eic1,background writer,Activity,BgwriterMain,1412,14.3
+e3_worker_eic1,checkpointer,Activity,CheckpointerMain,1412,14.3
+e3_worker_eic1,logical replication launcher,Activity,LogicalLauncherMain,1412,14.3
+e3_worker_eic1,walwriter,Activity,WalWriterMain,1410,14.3
+e3_worker_eic1,client backend,IO,AioIoCompletion,1343,13.5
+e3_worker_eic1,client backend,IO,AioIoCompletion,1329,13.5
+e3_worker_eic1,io worker,IO,DataFileRead,1262,12.7
+e3_worker_eic1,io worker,IO,DataFileRead,1211,12.3
+e3_worker_eic1,client backend,CPU,CPU,52,0.5
+e3_worker_eic1,client backend,CPU,CPU,48,0.5
+e3_worker_eic1,io worker,CPU,CPU,40,0.4
+e3_worker_eic1,io worker,CPU,CPU,32,0.3
+e3_worker_eic1,walwriter,CPU,CPU,2,0.0
+e3_worker_eic1,background writer,CPU,CPU,1,0.0
+e3_worker_eic1,client backend,IO,DataFileRead,1,0.0
+e3_worker_eic1,walwriter,CPU,CPU,1,0.0
+e3_worker_eic128,io worker,IO,DataFileRead,1350,53.1
+e3_worker_eic128,io worker,IO,DataFileRead,1347,53.3
+e3_worker_eic128,checkpointer,Activity,CheckpointerMain,225,8.9
+e3_worker_eic128,logical replication launcher,Activity,LogicalLauncherMain,225,8.9
+e3_worker_eic128,walwriter,Activity,WalWriterMain,225,8.9
+e3_worker_eic128,background writer,Activity,BgwriterMain,224,8.8
+e3_worker_eic128,background writer,Activity,BgwriterMain,224,8.9
+e3_worker_eic128,checkpointer,Activity,CheckpointerMain,224,8.9
+e3_worker_eic128,logical replication launcher,Activity,LogicalLauncherMain,224,8.9
+e3_worker_eic128,walwriter,Activity,WalWriterMain,224,8.9
+e3_worker_eic128,client backend,IO,AioIoCompletion,170,6.7
+e3_worker_eic128,client backend,IO,AioIoCompletion,158,6.3
+e3_worker_eic128,io worker,Activity,IoWorkerMain,74,2.9
+e3_worker_eic128,io worker,Activity,IoWorkerMain,74,2.9
+e3_worker_eic128,client backend,CPU,CPU,28,1.1
+e3_worker_eic128,io worker,CPU,CPU,23,0.9
+e3_worker_eic128,client backend,CPU,CPU,19,0.7
+e3_worker_eic128,io worker,CPU,CPU,17,0.7
+e3_worker_eic128,client backend,IO,DataFileRead,6,0.2
+e3_worker_eic128,client backend,IO,DataFileRead,4,0.2
+e3_worker_eic128,background writer,CPU,CPU,1,0.0
+e3_worker_eic16,io worker,IO,DataFileRead,1370,53.1
+e3_worker_eic16,io worker,IO,DataFileRead,1369,52.5
+e3_worker_eic16,background writer,Activity,BgwriterMain,230,8.8
+e3_worker_eic16,checkpointer,Activity,CheckpointerMain,230,8.8
+e3_worker_eic16,logical replication launcher,Activity,LogicalLauncherMain,230,8.8
+e3_worker_eic16,walwriter,Activity,WalWriterMain,230,8.8
+e3_worker_eic16,background writer,Activity,BgwriterMain,228,8.8
+e3_worker_eic16,checkpointer,Activity,CheckpointerMain,228,8.8
+e3_worker_eic16,logical replication launcher,Activity,LogicalLauncherMain,228,8.8
+e3_worker_eic16,walwriter,Activity,WalWriterMain,228,8.8
+e3_worker_eic16,client backend,IO,AioIoCompletion,178,6.9
+e3_worker_eic16,client backend,IO,AioIoCompletion,172,6.6
+e3_worker_eic16,io worker,Activity,IoWorkerMain,78,3.0
+e3_worker_eic16,io worker,Activity,IoWorkerMain,75,2.9
+e3_worker_eic16,io worker,CPU,CPU,39,1.5
+e3_worker_eic16,io worker,CPU,CPU,25,1.0
+e3_worker_eic16,client backend,CPU,CPU,22,0.8
+e3_worker_eic16,client backend,CPU,CPU,17,0.7
+e3_worker_eic16,client backend,IO,DataFileRead,6,0.2
+e3_worker_eic16,client backend,IO,DataFileRead,2,0.1
+e3_worker_eic4,io worker,IO,DataFileRead,1209,30.5
+e3_worker_eic4,io worker,IO,DataFileRead,1207,32.2
+e3_worker_eic4,background writer,Activity,BgwriterMain,531,13.4
+e3_worker_eic4,checkpointer,Activity,CheckpointerMain,531,13.4
+e3_worker_eic4,logical replication launcher,Activity,LogicalLauncherMain,531,13.4
+e3_worker_eic4,walwriter,Activity,WalWriterMain,531,13.4
+e3_worker_eic4,background writer,Activity,BgwriterMain,483,12.9
+e3_worker_eic4,checkpointer,Activity,CheckpointerMain,483,12.9
+e3_worker_eic4,logical replication launcher,Activity,LogicalLauncherMain,483,12.9
+e3_worker_eic4,walwriter,Activity,WalWriterMain,483,12.9
+e3_worker_eic4,client backend,IO,AioIoCompletion,463,11.7
+e3_worker_eic4,client backend,IO,AioIoCompletion,413,11.0
+e3_worker_eic4,io worker,Activity,IoWorkerMain,116,3.1
+e3_worker_eic4,io worker,Activity,IoWorkerMain,100,2.5
+e3_worker_eic4,client backend,CPU,CPU,38,1.0
+e3_worker_eic4,io worker,CPU,CPU,38,1.0
+e3_worker_eic4,client backend,CPU,CPU,36,0.9
+e3_worker_eic4,io worker,CPU,CPU,27,0.7
+e3_worker_eic4,client backend,IO,DataFileRead,2,0.1
+e3_worker_eic4,client backend,IO,DataFileRead,2,0.1
+e3_worker_eic64,io worker,IO,DataFileRead,1365,53.3
+e3_worker_eic64,io worker,IO,DataFileRead,1360,53.7
+e3_worker_eic64,checkpointer,Activity,CheckpointerMain,226,8.8
+e3_worker_eic64,logical replication launcher,Activity,LogicalLauncherMain,226,8.8
+e3_worker_eic64,walwriter,Activity,WalWriterMain,226,8.8
+e3_worker_eic64,background writer,Activity,BgwriterMain,225,8.8
+e3_worker_eic64,checkpointer,Activity,CheckpointerMain,224,8.8
+e3_worker_eic64,logical replication launcher,Activity,LogicalLauncherMain,224,8.8
+e3_worker_eic64,walwriter,Activity,WalWriterMain,224,8.8
+e3_worker_eic64,background writer,Activity,BgwriterMain,223,8.8
+e3_worker_eic64,client backend,IO,AioIoCompletion,164,6.5
+e3_worker_eic64,client backend,IO,AioIoCompletion,161,6.3
+e3_worker_eic64,io worker,Activity,IoWorkerMain,74,2.9
+e3_worker_eic64,io worker,Activity,IoWorkerMain,66,2.6
+e3_worker_eic64,client backend,CPU,CPU,27,1.1
+e3_worker_eic64,client backend,CPU,CPU,25,1.0
+e3_worker_eic64,io worker,CPU,CPU,21,0.8
+e3_worker_eic64,io worker,CPU,CPU,17,0.7
+e3_worker_eic64,client backend,IO,DataFileRead,7,0.3
+e3_worker_eic64,client backend,IO,DataFileRead,5,0.2
+e3_worker_eic64,background writer,CPU,CPU,1,0.0
+e3_worker_eic64,background writer,CPU,CPU,1,0.0
+smoke2,io worker,IO,DataFileRead,1299,52.4
+smoke2,background writer,Activity,BgwriterMain,220,8.9
+smoke2,checkpointer,Activity,CheckpointerMain,220,8.9
+smoke2,logical replication launcher,Activity,LogicalLauncherMain,220,8.9
+smoke2,walwriter,Activity,WalWriterMain,220,8.9
+smoke2,client backend,IO,AioIoCompletion,161,6.5
+smoke2,io worker,Activity,IoWorkerMain,83,3.3
+smoke2,io worker,CPU,CPU,30,1.2
+smoke2,client backend,CPU,CPU,27,1.1
+smoke2,client backend,IO,DataFileRead,1,0.0
+tag,backend_type,wait_event_type,wait_event,samples,pct

@@ -1,0 +1,24 @@
+                                              QUERY PLAN                                               
+-------------------------------------------------------------------------------------------------------
+ Aggregate (actual time=1081.265..1081.267 rows=1.00 loops=1)
+   Buffers: shared hit=2 read=59507
+   I/O Timings: shared read=597.585
+   ->  Bitmap Heap Scan on bench (actual time=23.660..1068.764 rows=59826.00 loops=1)
+         Recheck Cond: ((sel_key >= 5000) AND (sel_key < 6000))
+         Heap Blocks: exact=59456
+         Prefetch: avg=16.24 max=20 capacity=272
+         I/O: count=58623 waits=58623 size=1.01 in-progress=16.00
+         Buffers: shared hit=2 read=59507
+         I/O Timings: shared read=597.585
+         ->  Bitmap Index Scan on bench_sel_key_idx (actual time=11.851..11.851 rows=59826.00 loops=1)
+               Index Cond: ((sel_key >= 5000) AND (sel_key < 6000))
+               Index Searches: 1
+               Buffers: shared hit=2 read=51
+               I/O Timings: shared read=1.458
+ Planning:
+   Buffers: shared hit=60 read=26
+   I/O Timings: shared read=6.783
+ Planning Time: 7.970 ms
+ Execution Time: 1081.579 ms
+(20 rows)
+

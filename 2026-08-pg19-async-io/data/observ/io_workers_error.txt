@@ -1,0 +1,7 @@
+Job for postgresql@19-main.service failed because the service did not take the steps required by its unit configuration.
+See "systemctl status postgresql@19-main.service" and "journalctl -xeu postgresql@19-main.service" for details.
+2026-08-11 11:33:48.419 MSK [265232] LOG:  database system is shut down
+2026-08-11 08:33:48.550 GMT [269984] LOG:  unrecognized configuration parameter "io_workers" in file "/etc/postgresql/19/main/conf.d/99-aio-test.conf" line 1
+2026-08-11 08:33:48.550 GMT [269984] FATAL:  configuration file "/etc/postgresql/19/main/conf.d/99-aio-test.conf" contains errors
+pg_ctl: could not start server
+Examine the log output.
