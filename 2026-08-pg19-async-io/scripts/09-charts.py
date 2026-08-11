@@ -87,15 +87,18 @@ def finish(fig, ax, t, title, subtitle, name):
 
 
 # ---------------------------------------------------------------- chart 1
-# RESULTS.md section 4: bitmap heap scan, sessions 1..16, median of the
-# slowest session per iteration, effective_io_concurrency = 16 everywhere.
+# RESULTS.md section 4: bitmap heap scan, sessions 1..16,
+# effective_io_concurrency = 16 everywhere. Per iteration the slowest session is
+# taken (that is the wall-clock of the whole batch), then the median of three
+# iterations. Session 2 published the maximum here while labelling it a median;
+# corrected in session 3 against data/results.csv (exp = 2).
 SESSIONS = [1, 2, 4, 8, 16]
 POOL = [
-    ("fixed3", "worker, фиксированный пул 3 (конфигурация 18)", [4236, 8250, 16233, 17169, 19196]),
-    ("worker", "worker, адаптивный пул 2–8 (дефолт 19)", [2102, 3928, 7452, 9871, 13582]),
-    ("fixed8", "worker, фиксированный пул 8", [1974, 3804, 7360, 10480, 13967]),
-    ("io_uring", "io_uring", [1351, 1814, 3396, 6448, 13099]),
-    ("sync", "sync (fadvise-префетч)", [1348, 1748, 3337, 6060, 11662]),
+    ("fixed3", "worker, фиксированный пул 3 (конфигурация 18)", [4201, 8233, 15963, 17079, 19161]),
+    ("worker", "worker, адаптивный пул 2–8 (дефолт 19)", [2025, 3857, 7301, 9574, 13359]),
+    ("fixed8", "worker, фиксированный пул 8", [1942, 3645, 7227, 9881, 13885]),
+    ("io_uring", "io_uring", [1342, 1803, 3379, 6277, 12723]),
+    ("sync", "sync (fadvise-префетч)", [1282, 1741, 3320, 5920, 11250]),
 ]
 
 
@@ -159,7 +162,9 @@ def chart_eic(mode):
     ax.axvline(3, color=t["axis"], linewidth=1, zorder=1)
     ax.text(3, 18.5, " дефолт 18/19", color=t["muted"], fontsize=10, va="top")
 
-    ax.annotate("при 0 и 1 все три метода неразличимы:\nасинхронный I/O выключен",
+    ax.annotate("при 0 и 1 выигрыша нет ни у одного метода;\n"
+                "worker при 1 даже медленнее, чем при 0 —\n"
+                "накладные расходы без отдачи",
                 xy=(3.35, 8.5), color=t["secondary"], fontsize=10,
                 ha="left", va="center")
     ax.annotate("io_uring", xy=(5, 0.863), xytext=(8, -2), textcoords="offset points",
