@@ -282,8 +282,8 @@ phase3_integration:
 # Phase 4: Completion
 # ============================================================================
 phase4_completion:
-  material_file: ""
-  status: "pending"
+  material_file: "/home/lesovsky/Git/github.com/lesovsky/articles/2026-08-pg19-async-io/pg19-async-io.md"
+  status: "created"
   structure_approved: "2026-08-11 — пользователь утвердил структуру из 11 разделов (Phase 3b)"
   structure_changes_vs_roadmap:
     - "bitmap-цифры пересобираются из новой серии (эксперимент 5), а не смешиваются между экспериментами 1 и 3"
