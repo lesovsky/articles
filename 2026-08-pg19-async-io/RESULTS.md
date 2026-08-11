@@ -472,3 +472,43 @@ is controlled by effective_io_concurrency»). Формулировка «пре�
 Побочно: в той же секции значится переименование типа wait event
 `BUFFERPIN` → `BUFFER` — к AIO отношения не имеет, но уместно в абзаце про
 переучивание мониторинга.
+
+## 15. `pg_stat_io` по трём методам
+
+Пробел прослеживаемости, найденный проверкой существа: врезка в начале файла
+обещала §1–§3 как источник для `pg_stat_io`, но самих чисел в тексте не было —
+только выгрузки в `data/observ/statio_*.txt`. Восполняю.
+
+Bitmap heap scan, дельта `pg_stat_io` за прогон, строка
+`client backend / relation / normal`:
+
+| `io_method` | reads | read_bytes | read_ms | hits |
+|---|---|---|---|---|
+| `sync` | 58 753 | 488 128 512 | 614.6 | 1 582 |
+| `worker` | 58 753 | 488 128 512 | 1 692.7 | 2 509 |
+| `io_uring` | 58 753 | 488 128 512 | 840.7 | 861 |
+
+Содержательный вывод, важный для раздела статьи про наблюдаемость: **число
+операций и объём одинаковы при всех трёх методах, и все они по-прежнему
+числятся за `client backend`.** Различается только `read_ms`. То есть при
+переходе на `worker` слепнет `pg_stat_activity` (чтение уезжает в процессы
+`io worker`), а `pg_stat_io` продолжает приписывать чтения тому бэкенду,
+который их заказал.
+
+## 16. Версионные атрибуции (проверены fact-check, раунд 2)
+
+Четыре утверждения раздела «Что появилось в 17-й, 18-й и 19-й» не выводятся
+из измерений и держатся только на источниках. Фиксирую их здесь, чтобы они
+были прослеживаемы наравне с числами:
+
+| Утверждение | Источник |
+|---|---|
+| `io_combine_limit` появился в 17-й, дефолт 128 kB | [docs/17 runtime-config-resource](https://www.postgresql.org/docs/17/runtime-config-resource.html): «The default is 128kB»; [release notes 17](https://www.postgresql.org/docs/17/release-17.html): «Allow the grouping of file system reads with the new system variable io_combine_limit» |
+| `io_max_combine_limit` — только в 18-й | на странице docs/17 отсутствует; release notes 18: «with server variables io_combine_limit and io_max_combine_limit added to control it» |
+| Read stream в 17-й обслуживал последовательное чтение; на bitmap heap scan и вакуум распространён в 18-й | release notes 17: «including for sequential reads using streaming I/O»; `heapam.c` в `REL_17_STABLE` создаёт поток с `READ_STREAM_SEQUENTIAL`; bitmap — коммит `2b73a8cd33b7`, вакуум — коммит `9256822608f3` от 2025-02-14, оба в цикле 18-й |
+| Дефолт `effective_io_concurrency` поднят с 1 до 16 в 18-й | release notes 18, пункт авторства Melanie Plageman |
+
+Отдельно проверено, что утверждение «до 18-й PostgreSQL читал с диска
+синхронно» корректно и при наличии read stream в 17-й: в `read_stream.c`
+17-й стоит авторская оговорка «If we had real asynchronous I/O we might need
+a slightly different definition».
