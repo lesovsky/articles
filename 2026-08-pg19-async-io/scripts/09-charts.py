@@ -181,7 +181,7 @@ def chart_eic(mode):
            "Без глубины очереди асинхронный I/O не даёт ничего",
            "Bitmap heap scan 33 GB, развёртка effective_io_concurrency, "
            "минимум из 2 итераций",
-           f"eic-sweep-{mode}.png")
+           f"effective_io_concurrency-sweep-{mode}.png")
 
 
 if __name__ == "__main__":
