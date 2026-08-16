@@ -1,6 +1,6 @@
 ---
 created: 2026-08-11
-status: draft
+status: approved
 type: article
 target_reader: DBA, работающие с PostgreSQL; асинхронный I/O для них новая тема
 ---
