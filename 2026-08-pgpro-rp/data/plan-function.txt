@@ -1,0 +1,20 @@
+== Функция выбора плана: по application_name и времени суток ==
+
+  зарегистрирована: rp_select
+
+== БЕЗ invalidate_cache: функция не вызывается, действует план роли ==
+  application_name=etl -> вес 1
+  application_name=bi -> вес 1
+  application_name=app -> вес 1
+
+== ПОСЛЕ invalidate_cache: функция вызывается на каждый вход ==
+  application_name=etl -> вес 1
+  application_name=bi -> вес 1
+  application_name=app -> вес 8
+  application_name=etl -> вес 1
+  application_name=app -> вес 8
+
+== Снимаем функцию ==
+
+  application_name=etl -> вес 4 (снова план роли)
+== Готово ==

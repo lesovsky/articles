@@ -1,0 +1,33 @@
+== usage_tracking_interval = 0 ==
+  short run1: вес1 2816ms  вес8 2848ms
+  short run2: вес1 2742ms  вес8 2623ms
+  short run3: вес1 2719ms  вес8 2878ms
+  long run1: вес1 11837ms  вес8 12030ms
+  long run2: вес1 12314ms  вес8 13377ms
+  long run3: вес1 12532ms  вес8 12958ms
+  строк в pgpro_rp_stat_sleep_view: 0
+== usage_tracking_interval = 1s ==
+  short run1: вес1 6583ms  вес8 2638ms
+  short run2: вес1 6458ms  вес8 2684ms
+  short run3: вес1 6394ms  вес8 2473ms
+  long run1: вес1 102613ms  вес8 11113ms
+  long run2: вес1 101867ms  вес8 10398ms
+  long run3: вес1 121049ms  вес8 10365ms
+  строк в pgpro_rp_stat_sleep_view: 0
+== usage_tracking_interval = 5s ==
+  short run1: вес1 2609ms  вес8 2767ms
+  short run2: вес1 2679ms  вес8 2641ms
+  short run3: вес1 2786ms  вес8 2610ms
+  long run1: вес1 89774ms  вес8 12065ms
+  long run2: вес1 79748ms  вес8 11285ms
+  long run3: вес1 12896ms  вес8 12728ms
+  строк в pgpro_rp_stat_sleep_view: 0
+== usage_tracking_interval = 60s ==
+  short run1: вес1 2449ms  вес8 2257ms
+  short run2: вес1 2343ms  вес8 2515ms
+  short run3: вес1 2712ms  вес8 2733ms
+  long run1: вес1 13145ms  вес8 12009ms
+  long run2: вес1 11833ms  вес8 12099ms
+  long run3: вес1 11407ms  вес8 12960ms
+  строк в pgpro_rp_stat_sleep_view: 0
+== Готово: /home/pgpro/rp/scripts/../data/interval.csv ==

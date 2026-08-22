@@ -1,0 +1,12 @@
+== калибровка длительности на свободной машине ==
+  запрос в одиночку: 35161 ms
+== usage_tracking_interval = 1s ==
+  прогон1: вес1 150609 ms, вес8 47342 ms
+  прогон2: вес1 609564 ms, вес8 45825 ms
+== usage_tracking_interval = 5s ==
+  прогон1: вес1 189656 ms, вес8 50350 ms
+  прогон2: вес1 155833 ms, вес8 49054 ms
+== usage_tracking_interval = 60s ==
+  прогон1: вес1 57648 ms, вес8 57248 ms
+  прогон2: вес1 58263 ms, вес8 58596 ms
+== Готово: /home/pgpro/rp/scripts/../data/interval-ratio.csv ==

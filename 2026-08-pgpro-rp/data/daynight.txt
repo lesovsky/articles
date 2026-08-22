@@ -1,0 +1,55 @@
+== Создаём группы ==
+ pgpro_rp_create_group 
+-----------------------
+                     3
+(1 row)
+ERROR:  group "night" already exists
+CONTEXT:  PL/pgSQL function pgpro_rp_create_group(text) line 15 at RAISE
+ pgpro_rp_create_group_role_plan 
+---------------------------------
+ 
+(1 row)
+ pgpro_rp_create_group_role_plan 
+---------------------------------
+ 
+(1 row)
+ pgpro_rp_create_group_role_plan 
+---------------------------------
+ 
+(1 row)
+ pgpro_rp_create_group_role_plan 
+---------------------------------
+ 
+(1 row)
+ group_name |  rolname  | plan_name  
+------------+-----------+------------
+ day        | analyst   | plan_1_1_1
+ day        | app       | plan_8_8_8
+ default    | analyst   | plan_4_4_4
+ default    | app       | plan_4_4_4
+ default    | test_high | plan_8_8_8
+ default    | test_low  | plan_1_1_1
+ night      | analyst   | plan_8_8_8
+ night      | app       | plan_1_1_1
+(8 rows)
+
+
+== ВНИМАНИЕ: pgpro_rp_set_active_group — это ПРОЦЕДУРА, не функция ==
+-- через SELECT (документация F.56.4.3 описывает её как returns void):
+ERROR:  pgpro_rp_set_active_group(unknown) is a procedure
+LINE 1: select pgpro_rp_set_active_group('day')
+-- через CALL (как в примере F.56.2.2):
+CALL
+
+== Дневной режим: какой вес получает analyst ==
+1
+
+== Переключаем на night при живом сеансе analyst ==
+   (в момент t+2s активной стала группа night)
+   открытый сеанс: 1
+   открытый сеанс: 1
+
+== Новый сеанс analyst после переключения ==
+8
+== Активная группа сейчас: night ==
+== Готово, вернули дневную группу ==

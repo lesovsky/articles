@@ -1,0 +1,17 @@
+part,run,session,phase,duration_ms
+A,1,test_low,single,102049
+A,1,test_high,single,10953
+A,2,test_low,single,123598
+A,2,test_high,single,10933
+B,1,victim,single,13329
+B,1,control,single,12377
+B,2,victim,single,13069
+B,2,control,single,12279
+C,1,victim,query1,13800
+C,1,victim,query2,111800
+C,1,control,query1,13900
+C,1,control,query2,10700
+C,2,victim,query1,12800
+C,2,victim,query2,143300
+C,2,control,query1,12900
+C,2,control,query2,10800

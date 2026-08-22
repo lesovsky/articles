@@ -1,0 +1,11 @@
+profile,role,weight,run,duration_ms
+scan,test_high,8,solo,15482
+compute,test_high,8,solo,35830
+scan,test_low,1,1,130780
+scan,test_high,8,1,26832
+scan,test_low,1,2,126877
+scan,test_high,8,2,25271
+compute,test_low,1,1,152713
+compute,test_high,8,1,48133
+compute,test_low,1,2,153033
+compute,test_high,8,2,48152

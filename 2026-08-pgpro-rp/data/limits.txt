@@ -1,0 +1,44 @@
+== 1. Параллельные воркеры ==
+  pid  |  backend_type   | usename  | leader_pid |    plan    |   time_slept    
+-------+-----------------+----------+------------+------------+-----------------
+ 34972 | client backend  | test_low |            | plan_1_1_1 | 4060
+ 34973 | parallel worker | test_low |      34972 | plan_1_1_1 | (не тормозится)
+ 34974 | parallel worker | test_low |      34972 | plan_1_1_1 | (не тормозится)
+(3 rows)
+
+  время параллельного запроса под конкуренцией: 10997 ms
+
+== сравнение: тот же запрос без параллелизма и с ним, вес 1 против веса 8 ==
+  workers=0 : вес1 120140 ms, вес8 10959 ms
+  workers=2 : вес1 9014 ms, вес8 6739 ms
+
+== 1b. Величина эффекта зависит от состава нагрузки ==
+-- один сеанс весом 1 против четырёх сеансов весом 8 (см. выше, workers=0)
+-- теперь поровну: 4 сеанса весом 1 против 4 сеансов весом 8, без фоновой нагрузки
+  вес 1: 16842 17500 16827 16771 ms
+  вес 8: 10259 10162 10149 9889 ms
+
+== 2. Обход через SET ==
+  назначенный вес: 1
+  после SET: 8
+  context параметра: user
+  пробуем закрыть правами:
+    REVOKE
+    записей в pg_parameter_acl: 0
+    после revoke SET всё равно даёт: 8
+
+== 3. RESET, RESET ALL, DISCARD ALL ==
+  RESET session_cpu_weight -> 4
+  RESET ALL                -> 1
+  DISCARD ALL              -> 1
+
+== 4. Допустимые значения весов ==
+  SET ...=3: ERROR:  Incorrect value of session_cpu_weight. Must be 1, 2, 4 or 8.
+  create_plan(3,3,3): ERROR:  unsupported value "3" for key "session_cpu_weight"
+
+== 5. Что попадает в журнал сервера ==
+  2026-08-21 22:41:49.774 MSK 32993 @ from  [vxid:323/0 txid:0] []LOG:  priority worker has started
+  2026-08-21 23:01:56.936 MSK 32993 @ from  [vxid:323/0 txid:0] []LOG:  terminating priority worker because usage_tracking_interval is 0s
+  2026-08-21 23:02:36.153 MSK 33929 @ from  [vxid:324/0 txid:0] []LOG:  priority worker has started
+  (записей о самом факте троттлинга в журнале нет даже при log_min_messages=debug1)
+== Готово ==
