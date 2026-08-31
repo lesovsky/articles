@@ -1,0 +1,19 @@
+name=sigstop-leader-r2
+type=sigstop
+target=leader
+target_ip=10.128.31.145
+leader_before=10.128.31.145
+pre_s=15
+post_s=60
+started_at=2026-08-28T05:33:11.296566921Z
+state_before=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT sigstop 10.128.31.145 do 1787895209.104761548
+INJECT sigstop 10.128.31.145 undo 1787895269.898903656
+state_after=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+finished_at=2026-08-28T05:34:59.383747572Z
+leader_after=10.128.30.128
+кластер здоров через 0s: 1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true

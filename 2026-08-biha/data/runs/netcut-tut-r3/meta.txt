@@ -1,0 +1,20 @@
+name=netcut-tut-r3
+type=netcut
+target=leader
+target_ip=10.128.30.128
+leader_before=10.128.30.128
+pre_s=15
+post_s=60
+conn_extra=tcp_user_timeout=5000
+started_at=2026-08-28T09:41:17.799584019Z
+state_before=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT netcut 10.128.30.128 do 1787910095.251923093
+INJECT netcut 10.128.30.128 undo 1787910156.182828521
+state_after=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+finished_at=2026-08-28T09:43:06.002217155Z
+leader_after=10.128.31.145
+кластер здоров через 0s: 1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true

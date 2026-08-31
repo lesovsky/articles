@@ -1,0 +1,19 @@
+name=reboot-leader-r1
+type=reboot
+target=leader
+target_ip=10.128.31.13
+leader_before=10.128.31.13
+pre_s=15
+post_s=60
+started_at=2026-08-28T05:16:58.370596978Z
+state_before=1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT reboot 10.128.31.13 do 1787894236.292029853
+INJECT reboot 10.128.31.13 undo 1787894313.065331645
+state_after=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+finished_at=2026-08-28T05:18:46.537718312Z
+leader_after=10.128.31.145
+кластер здоров через 0s: 1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true

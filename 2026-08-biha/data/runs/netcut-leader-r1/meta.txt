@@ -1,0 +1,19 @@
+name=netcut-leader-r1
+type=netcut
+target=leader
+target_ip=10.128.30.128
+leader_before=10.128.30.128
+pre_s=15
+post_s=60
+started_at=2026-08-28T05:23:27.761155790Z
+state_before=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT netcut 10.128.30.128 do 1787894625.836438304
+INJECT netcut 10.128.30.128 undo 1787894686.582159022
+state_after=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+finished_at=2026-08-28T05:25:38.868485091Z
+leader_after=10.128.31.145
+кластер здоров через 0s: 1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true

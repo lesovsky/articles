@@ -1,0 +1,252 @@
+2026-08-28 05:29:21.543 UTC [21741] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=39104
+2026-08-28 05:29:21.552 UTC [21741] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:21.552 UTC [21741] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:21.555 UTC [21741] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=39104
+2026-08-28 05:29:23.574 UTC [21742] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=39120
+2026-08-28 05:29:23.583 UTC [21742] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:23.583 UTC [21742] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:23.587 UTC [21742] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=39120
+2026-08-28 05:29:25.606 UTC [21743] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=39126
+2026-08-28 05:29:25.616 UTC [21743] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:25.616 UTC [21743] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:25.620 UTC [21743] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=39126
+2026-08-28 05:29:27.639 UTC [21744] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=39140
+2026-08-28 05:29:27.649 UTC [21744] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:27.649 UTC [21744] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:27.654 UTC [21744] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.015 user=bihatest database=biha_db host=10.128.30.212 port=39140
+2026-08-28 05:29:29.672 UTC [21746] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=39144
+2026-08-28 05:29:29.681 UTC [21746] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:29.681 UTC [21746] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:29.685 UTC [21746] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=39144
+2026-08-28 05:29:31.703 UTC [21747] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=45006
+2026-08-28 05:29:31.713 UTC [21747] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:31.713 UTC [21747] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:31.716 UTC [21747] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=45006
+2026-08-28 05:29:33.736 UTC [21748] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=45008
+2026-08-28 05:29:33.744 UTC [21748] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:33.744 UTC [21748] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:33.749 UTC [21748] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=45008
+2026-08-28 05:29:35.767 UTC [21749] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=45018
+2026-08-28 05:29:35.776 UTC [21749] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:35.776 UTC [21749] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:35.780 UTC [21749] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.012 user=bihatest database=biha_db host=10.128.30.212 port=45018
+2026-08-28 05:29:37.798 UTC [21750] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=45024
+2026-08-28 05:29:37.808 UTC [21750] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:37.808 UTC [21750] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:37.812 UTC [21750] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=45024
+2026-08-28 05:29:39.831 UTC [21752] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38844
+2026-08-28 05:29:39.840 UTC [21752] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:39.840 UTC [21752] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:39.844 UTC [21752] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.014 user=bihatest database=biha_db host=10.128.30.212 port=38844
+2026-08-28 05:29:41.863 UTC [21753] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38856
+2026-08-28 05:29:41.871 UTC [21753] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:41.871 UTC [21753] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:41.876 UTC [21753] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38856
+2026-08-28 05:29:43.894 UTC [21754] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38860
+2026-08-28 05:29:43.903 UTC [21754] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:43.903 UTC [21754] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:43.907 UTC [21754] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38860
+2026-08-28 05:29:45.926 UTC [21755] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38876
+2026-08-28 05:29:45.934 UTC [21755] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:45.934 UTC [21755] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:45.938 UTC [21755] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38876
+2026-08-28 05:29:47.957 UTC [21756] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38884
+2026-08-28 05:29:47.965 UTC [21756] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:47.965 UTC [21756] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:47.970 UTC [21756] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38884
+2026-08-28 05:29:49.989 UTC [21758] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38548
+2026-08-28 05:29:49.998 UTC [21758] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:49.998 UTC [21758] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:50.002 UTC [21758] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38548
+2026-08-28 05:29:50.239 UTC [21759] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38562
+2026-08-28 05:29:50.248 UTC [21759] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:50.248 UTC [21759] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:50.251 UTC [21759] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.012 user=bihatest database=biha_db host=10.128.30.212 port=38562
+2026-08-28 05:29:50.488 UTC [21760] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38568
+2026-08-28 05:29:50.497 UTC [21760] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:50.497 UTC [21760] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:50.501 UTC [21760] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.012 user=bihatest database=biha_db host=10.128.30.212 port=38568
+2026-08-28 05:29:50.739 UTC [21761] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38578
+2026-08-28 05:29:50.748 UTC [21761] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:50.748 UTC [21761] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:50.752 UTC [21761] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38578
+2026-08-28 05:29:50.989 UTC [21762] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38594
+2026-08-28 05:29:50.997 UTC [21762] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:50.997 UTC [21762] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:51.002 UTC [21762] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38594
+2026-08-28 05:29:51.240 UTC [21763] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38602
+2026-08-28 05:29:51.249 UTC [21763] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:51.249 UTC [21763] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:51.253 UTC [21763] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38602
+2026-08-28 05:29:51.490 UTC [21764] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38614
+2026-08-28 05:29:51.499 UTC [21764] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:51.499 UTC [21764] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:51.504 UTC [21764] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.014 user=bihatest database=biha_db host=10.128.30.212 port=38614
+2026-08-28 05:29:51.742 UTC [21765] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38622
+2026-08-28 05:29:51.750 UTC [21765] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:51.750 UTC [21765] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:51.755 UTC [21765] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38622
+2026-08-28 05:29:51.993 UTC [21766] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38626
+2026-08-28 05:29:52.003 UTC [21766] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:52.003 UTC [21766] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:52.009 UTC [21766] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.016 user=bihatest database=biha_db host=10.128.30.212 port=38626
+2026-08-28 05:29:52.241 UTC [21767] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38642
+2026-08-28 05:29:52.249 UTC [21767] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:52.249 UTC [21767] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:52.254 UTC [21767] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38642
+2026-08-28 05:29:52.492 UTC [21768] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38656
+2026-08-28 05:29:52.501 UTC [21768] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:52.501 UTC [21768] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:52.506 UTC [21768] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38656
+2026-08-28 05:29:52.744 UTC [21769] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38672
+2026-08-28 05:29:52.753 UTC [21769] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:52.753 UTC [21769] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:52.756 UTC [21283] WARNING:  [BiHA BCP 2 -> 3 ACTIVE] broken connection on socket 10
+2026-08-28 05:29:52.757 UTC [21769] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38672
+2026-08-28 05:29:52.852 UTC [21283] LOG:  [BiHA BCP 2 <- -1 IDLE] accepted connection from '10.128.31.13', socket 10
+2026-08-28 05:29:52.919 UTC [21770] [unknown]@[unknown] LOG:  connection received: host=10.128.31.13 port=54026
+2026-08-28 05:29:52.932 UTC [21770] biha_replication_user@biha_db LOG:  connection authenticated: identity="biha_replication_user" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.biha.conf:7)
+2026-08-28 05:29:52.932 UTC [21770] biha_replication_user@biha_db LOG:  connection authorized: user=biha_replication_user database=biha_db application_name=biha_node_3
+2026-08-28 05:29:52.991 UTC [21771] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38688
+2026-08-28 05:29:53.001 UTC [21771] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:53.001 UTC [21771] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:53.006 UTC [21771] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.015 user=bihatest database=biha_db host=10.128.30.212 port=38688
+2026-08-28 05:29:53.241 UTC [21772] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38704
+2026-08-28 05:29:53.250 UTC [21772] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:53.250 UTC [21772] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:53.254 UTC [21772] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.012 user=bihatest database=biha_db host=10.128.30.212 port=38704
+2026-08-28 05:29:53.491 UTC [21773] [unknown]@[unknown] LOG:  connection received: host=10.128.30.212 port=38712
+2026-08-28 05:29:53.501 UTC [21773] bihatest@biha_db LOG:  connection authenticated: identity="bihatest" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.conf:129)
+2026-08-28 05:29:53.501 UTC [21773] bihatest@biha_db LOG:  connection authorized: user=bihatest database=biha_db
+2026-08-28 05:29:53.505 UTC [21773] bihatest@biha_db LOG:  disconnection: session time: 0:00:00.013 user=bihatest database=biha_db host=10.128.30.212 port=38712
+2026-08-28 05:29:53.552 UTC [21770] biha_replication_user@biha_db LOG:  disconnection: session time: 0:00:00.632 user=biha_replication_user database=biha_db host=10.128.31.13 port=54026
+2026-08-28 05:29:53.587 UTC [21774] [unknown]@[unknown] LOG:  connection received: host=10.128.31.13 port=54040
+2026-08-28 05:29:53.598 UTC [21774] biha_replication_user@biha_db LOG:  connection authenticated: identity="biha_replication_user" method=scram-sha-256 (/var/lib/pgpro/ent-18/data/pg_hba.biha.conf:7)
+2026-08-28 05:29:53.598 UTC [21774] biha_replication_user@biha_db LOG:  connection authorized: user=biha_replication_user database=biha_db application_name=biha_node_3
+2026-08-28 05:29:53.751 UTC [1684] bihatest@biha_db FATAL:  the database system is in recovery mode
+2026-08-28 05:29:54.002 UTC [1685] bihatest@biha_db FATAL:  the database system is in recovery mode
+2026-08-28 05:29:54.255 UTC [1686] bihatest@biha_db FATAL:  the database system is in recovery mode
+2026-08-28 05:29:54.502 UTC [1687] bihatest@biha_db FATAL:  the database system is in recovery mode
+pg_rewind: extracting BiHA node info from pg_biha/biha.state
+pg_rewind: clearing BiHA NODE_ERROR info from pg_biha/biha.state
+pg_rewind: extracting BiHA configuration from pg_biha/biha.conf
+pg_rewind: setting source server connection as primary_conninfo in pg_biha/biha.conf
+pg_rewind: Done!
+2026-08-28 05:29:54.555 UTC [1664] LOG:  [BiHA] rewind was successful
+2026-08-28 05:29:54.556 UTC [1664] LOG:  [BiHA] save BiHA state
+2026-08-28 05:29:54.556 UTC [1664] LOG:  [BiHA PGC] requested Postgres restart for rewind
+2026-08-28 05:29:54.556 UTC [542] LOG:  received fast restart request
+2026-08-28 05:29:54.556 UTC [1664] FATAL:  terminating background worker "BiHA worker" due to administrator command
+2026-08-28 05:29:54.558 UTC [542] LOG:  background worker "BiHA worker" (PID 1664) exited with exit code 1
+2026-08-28 05:29:54.559 UTC [1688] LOG:  shutting down
+2026-08-28 05:29:54.587 UTC [542] LOG:  all server processes terminated; reinitializing
+2026-08-28 05:29:54.634 UTC [542] LOG:  Start CFS version 0.55 supported compression algorithms pglz,zlib,lz4,zstd GC enabled
+2026-08-28 05:29:54.643 UTC [1692] LOG:  [BiHA] BiHA worker started
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] load BiHA config: ./pg_biha/biha.conf
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] extra_params=name=biha_node_1, priority=-1, max_replicas=2147483647, pref=L, nquorum=2, minnodes=2, can_vote=1
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] extra_params=name=biha_node_2, priority=-1, max_replicas=2147483647, pref=L, nquorum=2, minnodes=2, can_vote=1
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] extra_params=name=biha_node_3, priority=-1, max_replicas=2147483647, pref=L, nquorum=2, minnodes=2, can_vote=1
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] extra_params=name=biha_node_111, priority=-1, max_replicas=2147483647, pref=L, nquorum=2, minnodes=2, can_vote=1
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] extra_params=name=biha_node_1111, priority=-1, max_replicas=2147483647, pref=L, nquorum=1, minnodes=1, can_vote=1
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] BiHA config:
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC] node 1111: name='biha_node_1111', lvl=3, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='0', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC]     \_ node 111: name='biha_node_111', lvl=2, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='0', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC]         \_ node 1: name='biha_node_1', host='10.128.31.145', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='0', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC]         \_ node 2: name='biha_node_2', host='10.128.30.128', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='0', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BC]         \_ node 3: name='biha_node_3', host='10.128.31.13', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='11', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3] BCP Transport init
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3] BiHA server started on (10.128.31.13:5433), socket 8
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] waiting connection from node 1 (10.128.31.145)
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3 -> 1 INIT] connecting to (10.128.31.145:5433)
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] waiting connection from node 2 (10.128.30.128)
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA BCP 3 -> 2 INIT] connecting to (10.128.30.128:5433)
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA NC 1 3 ] requesting slots for 5
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA NC 1 3 CSTATE_FORMING] state switched
+2026-08-28 05:29:54.644 UTC [1692] LOG:  [BiHA PGC] requested Postgres in recovery
+2026-08-28 05:29:54.674 UTC [1692] LOG:  [BiHA] biha allows startup to start
+2026-08-28 05:29:54.676 UTC [1693] LOG:  database system was shut down in recovery at 2026-08-28 05:29:54 UTC
+2026-08-28 05:29:54.687 UTC [1693] LOG:  starting backup recovery with redo LSN 0/69738F8, checkpoint LSN 0/6975728, on timeline ID 19
+2026-08-28 05:29:54.687 UTC [1693] LOG:  entering standby mode
+2026-08-28 05:29:54.719 UTC [1693] LOG:  completed backup recovery with redo LSN 0/69738F8 and end LSN 0/69738F8
+2026-08-28 05:29:54.719 UTC [1693] LOG:  consistent recovery state reached at 0/69738F8
+2026-08-28 05:29:54.719 UTC [1693] LOG:  redo starts at 0/69738F8
+2026-08-28 05:29:54.719 UTC [542] LOG:  database system is ready to accept read-only connections
+2026-08-28 05:29:54.727 UTC [542] LOG:  PM_HOT_STANDBY: calling ConsistencyReached_hook
+2026-08-28 05:29:54.739 UTC [1692] LOG:  [BiHA PGC] BiHA established connection to system catalogs
+2026-08-28 05:29:54.739 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:29:54.739 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:29:54.748 UTC [1697] LOG:  [BiHA PGC] BiHA pgc worker started
+2026-08-28 05:29:54.777 UTC [1693] LOG:  invalid record length at 0/6A652B0: expected at least 28, got 0
+2026-08-28 05:29:54.777 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:29:54.777 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:29:55.274 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:29:59.746 UTC [1692] LOG:  [BiHA NC 1 3 CSTATE_FORMING] CState: starting as follower
+2026-08-28 05:29:59.746 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] state switched
+2026-08-28 05:29:59.780 UTC [1692] LOG:  [BiHA PGC] replication source has been set to node 2: host='10.128.30.128' port=5432
+2026-08-28 05:30:00.277 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 20, begin = 0/06A58E28, end = 0/00000000
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 19, begin = 0/069738C0, end = 0/06A58E28
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 18, begin = 0/068A2700, end = 0/069738C0
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 20, begin = 0/06A58E28, end = 0/00000000
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 19, begin = 0/069738C0, end = 0/06A58E28
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 18, begin = 0/068A2700, end = 0/069738C0
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA PGC] Can start replication from node-2
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:30:00.735 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:30:00.735 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:30:00.752 UTC [1725] LOG:  fetching timeline history file for timeline 20 from primary server
+2026-08-28 05:30:00.752 UTC [1725] LOG:  started streaming WAL from primary at 0/6000000 on timeline 20
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-2 is offline
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA NC REPL 1 3 replicating source 2] current source no longer suitable for replication
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was lost (1)
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:31:29.794 UTC [1692] LOG:  [BiHA PGC] replication stopped
+2026-08-28 05:31:29.794 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:31:29.797 UTC [1693] LOG:  WAL receiver process shutdown requested
+2026-08-28 05:31:29.798 UTC [1725] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 05:31:29.799 UTC [1693] LOG:  record with incorrect prev-link 102000/36A37BB0 at 0/6B92780
+2026-08-28 05:31:29.799 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:31:29.799 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:31:29.800 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:31:30.701 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 05:31:30.701 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 05:31:30.701 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:31:30.795 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4186 Planning time 1787895094.981; now 1787895090.795
+2026-08-28 05:31:34.358 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 1 with requested term 18 (our term 17) and LSN 0/6B92780 (our LSN 0/6B92780)
+2026-08-28 05:31:34.358 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 05:31:34.798 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:31:39.359 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3377 Planning time 1787895102.736; now 1787895099.359
+2026-08-28 05:31:39.795 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:31:39.796 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was found (0)
+2026-08-28 05:31:39.796 UTC [1692] LOG:  [BiHA PGC] replication source has been set to node 1: host='10.128.31.145' port=5432
+2026-08-28 05:31:39.796 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:31:39.801 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 20, begin = 0/06A58E28, end = 0/00000000
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 19, begin = 0/069738C0, end = 0/06A58E28
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 18, begin = 0/068A2700, end = 0/069738C0
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 20, begin = 0/06A58E28, end = 0/00000000
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 19, begin = 0/069738C0, end = 0/06A58E28
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA PGC] Can start replication from node-1
+2026-08-28 05:31:40.795 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:31:40.796 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:31:40.796 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:31:40.796 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:31:40.815 UTC [1898] LOG:  fetching timeline history file for timeline 20 from primary server
+2026-08-28 05:31:40.816 UTC [1898] LOG:  fetching timeline history file for timeline 21 from primary server
+2026-08-28 05:31:40.829 UTC [1898] LOG:  started streaming WAL from primary at 0/6000000 on timeline 20
+2026-08-28 05:31:40.842 UTC [1898] LOG:  replication terminated by primary server
+2026-08-28 05:31:40.842 UTC [1898] DETAIL:  End of WAL reached on timeline 20 at 0/6B92780.
+2026-08-28 05:31:40.842 UTC [1898] LOG:  fetching timeline history file for timeline 20 from primary server
+2026-08-28 05:31:40.842 UTC [1898] LOG:  fetching timeline history file for timeline 21 from primary server
+2026-08-28 05:31:40.842 UTC [1693] LOG:  new target timeline is 21
+2026-08-28 05:31:40.843 UTC [1898] LOG:  fetching timeline history file for timeline 21 from primary server
+2026-08-28 05:31:40.843 UTC [1898] LOG:  restarted WAL streaming at 0/6000000 on timeline 21
+2026-08-28 05:32:21.143 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 61
+2026-08-28 05:32:21.145 UTC [1692] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 61
+2026-08-28 05:32:21.253 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 05:32:27.817 UTC [1692] WARNING:  [BiHA BCP 3 <- 2 ACTIVE] broken connection on socket 11
+2026-08-28 05:32:27.907 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 05:32:29.273 UTC [1692] WARNING:  [BiHA BCP 3 <- 2 ACTIVE] broken connection on socket 11
+2026-08-28 05:32:29.349 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11

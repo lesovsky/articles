@@ -1,0 +1,20 @@
+name=reboot-tut-r1
+type=reboot
+target=leader
+target_ip=10.128.30.128
+leader_before=10.128.30.128
+pre_s=15
+post_s=60
+conn_extra=tcp_user_timeout=5000
+started_at=2026-08-28T09:49:58.139159825Z
+state_before=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT reboot 10.128.30.128 do 1787910615.605164341
+INJECT reboot 10.128.30.128 undo 1787910694.557874649
+state_after=1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true
+finished_at=2026-08-28T09:51:46.355111162Z
+leader_after=10.128.31.13
+кластер здоров через 0s: 1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true

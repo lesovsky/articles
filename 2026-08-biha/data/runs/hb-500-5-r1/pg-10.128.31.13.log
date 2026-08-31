@@ -1,0 +1,145 @@
+2026-08-28 10:31:41.345 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:43.328 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:45.349 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:47.360 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:49.348 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:51.352 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:53.343 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:55.354 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:57.352 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:31:59.354 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:01.350 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:03.370 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:05.341 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:07.348 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:09.408 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:11.348 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:13.359 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:15.354 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:17.350 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:19.409 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:21.347 UTC [8402] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:32:22.703 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 10:32:29.350 UTC [8402] WARNING:  [BiHA BCP 3 <- 1 ACTIVE] broken connection on socket 14
+2026-08-28 10:32:29.471 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 10:32:34.606 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] node-1 is offline
+2026-08-28 10:32:35.736 UTC [8402] WARNING:  [BiHA BCP 3 <- 1 ACTIVE] broken connection on socket 14
+2026-08-28 10:32:35.834 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC] BiHA config:
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC] node 1111: name='biha_node_1111', lvl=3, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]     \_ node 111: name='biha_node_111', lvl=2, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 1: name='biha_node_1', host='10.128.31.145', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 2: name='biha_node_2', host='10.128.30.128', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 3: name='biha_node_3', host='10.128.31.13', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC] BiHA config:
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC] node 1111: name='biha_node_1111', lvl=3, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='17', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]     \_ node 111: name='biha_node_111', lvl=2, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='17', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 1: name='biha_node_1', host='10.128.31.145', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='17', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 2: name='biha_node_2', host='10.128.30.128', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.379 UTC [8402] LOG:  [BiHA BC]         \_ node 3: name='biha_node_3', host='10.128.31.13', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='17', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.419 UTC [8402] LOG:  [BiHA BC] save BiHA config
+2026-08-28 10:33:11.419 UTC [8314] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 10:33:11.419 UTC [8402] LOG:  [BiHA BC] BiHA config:
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC] node 1111: name='biha_node_1111', lvl=3, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]     \_ node 111: name='biha_node_111', lvl=2, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 1: name='biha_node_1', host='10.128.31.145', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 2: name='biha_node_2', host='10.128.30.128', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 3: name='biha_node_3', host='10.128.31.13', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC] BiHA config:
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC] node 1111: name='biha_node_1111', lvl=3, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]     \_ node 111: name='biha_node_111', lvl=2, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 1: name='biha_node_1', host='10.128.31.145', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 2: name='biha_node_2', host='10.128.30.128', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='19', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC]         \_ node 3: name='biha_node_3', host='10.128.31.13', biha_port=5433, pg_port=5432, mode=0, lvl=1, priority=-1, max_replicas=2147483647, preferred_roles='L', config_version='18', can_be_leader='1', can_vote='1', sync_count='-1', sync_min='-2'
+2026-08-28 10:33:11.420 UTC [8402] LOG:  [BiHA BC] save BiHA config
+2026-08-28 10:33:11.420 UTC [8314] LOG:  parameter "biha.heartbeat_send_period" changed to "500"
+2026-08-28 10:33:11.424 UTC [8403] LOG:  WAL receiver process shutdown requested
+2026-08-28 10:33:11.424 UTC [8942] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 10:33:11.450 UTC [9262] LOG:  fetching timeline history file for timeline 47 from primary server
+2026-08-28 10:33:11.451 UTC [9262] LOG:  started streaming WAL from primary at 0/C000000 on timeline 47
+2026-08-28 10:33:39.769 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 ACTIVE] broken connection on socket 11
+2026-08-28 10:33:39.776 UTC [9262] FATAL:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2026-08-28 10:33:39.777 UTC [8403] LOG:  invalid record length at 0/C94BD40: expected at least 28, got 0
+2026-08-28 10:33:39.781 UTC [9334] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "10.128.30.128", port 5432 failed: Connection refused
+		Is the server running on that host and accepting TCP/IP connections?
+2026-08-28 10:33:39.781 UTC [8403] LOG:  waiting for WAL to become available at 0/C002000
+2026-08-28 10:33:40.078 UTC [9343] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "10.128.30.128", port 5432 failed: Connection refused
+		Is the server running on that host and accepting TCP/IP connections?
+2026-08-28 10:33:40.078 UTC [8403] LOG:  waiting for WAL to become available at 0/C002000
+2026-08-28 10:33:41.369 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:41.649 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 10:33:41.650 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] node-2 is offline
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA NC REPL 1 3 replicating source 2] current source no longer suitable for replication
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was lost (1)
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA BC] save BiHA config
+2026-08-28 10:33:42.149 UTC [8402] LOG:  [BiHA PGC] replication stopped
+2026-08-28 10:33:42.149 UTC [8314] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 10:33:42.152 UTC [8403] LOG:  waiting for WAL to become available at 0/C002000
+2026-08-28 10:33:42.154 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 10:33:42.370 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3268 Planning time 1787913225.638; now 1787913222.370
+2026-08-28 10:33:43.370 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:44.446 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 1 with requested term 45 (our term 44) and LSN 0/C94BD40 (our LSN 0/C94BD40)
+2026-08-28 10:33:44.446 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 10:33:45.371 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:47.155 UTC [8403] LOG:  waiting for WAL to become available at 0/C002000
+2026-08-28 10:33:47.372 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:49.373 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:49.446 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 2658 Planning time 1787913232.104; now 1787913229.446
+2026-08-28 10:33:49.873 UTC [8402] LOG:  [BiHA] save BiHA state
+2026-08-28 10:33:49.873 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was found (0)
+2026-08-28 10:33:49.873 UTC [8402] LOG:  [BiHA PGC] replication source has been set to node 1: host='10.128.31.145' port=5432
+2026-08-28 10:33:49.873 UTC [8402] LOG:  [BiHA] save BiHA state
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] my_history: TLI = 47, begin = 0/0C64E950, end = 0/00000000
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] my_history: TLI = 46, begin = 0/0C32E0E8, end = 0/0C64E950
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] my_history: TLI = 45, begin = 0/0C0492E8, end = 0/0C32E0E8
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] source_history: TLI = 47, begin = 0/0C64E950, end = 0/00000000
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] source_history: TLI = 46, begin = 0/0C32E0E8, end = 0/0C64E950
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA PGC] Can start replication from node-1
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA] save BiHA state
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA] save BiHA state
+2026-08-28 10:33:50.374 UTC [8402] LOG:  [BiHA BC] save BiHA config
+2026-08-28 10:33:50.374 UTC [8314] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 10:33:50.391 UTC [9609] LOG:  fetching timeline history file for timeline 47 from primary server
+2026-08-28 10:33:50.391 UTC [9609] LOG:  fetching timeline history file for timeline 48 from primary server
+2026-08-28 10:33:50.412 UTC [9609] LOG:  started streaming WAL from primary at 0/C000000 on timeline 47
+2026-08-28 10:33:50.424 UTC [9609] LOG:  replication terminated by primary server
+2026-08-28 10:33:50.424 UTC [9609] DETAIL:  End of WAL reached on timeline 47 at 0/C94BD40.
+2026-08-28 10:33:50.425 UTC [9609] LOG:  fetching timeline history file for timeline 47 from primary server
+2026-08-28 10:33:50.425 UTC [9609] LOG:  fetching timeline history file for timeline 48 from primary server
+2026-08-28 10:33:50.425 UTC [8403] LOG:  new target timeline is 48
+2026-08-28 10:33:50.425 UTC [9609] LOG:  fetching timeline history file for timeline 48 from primary server
+2026-08-28 10:33:50.426 UTC [9609] LOG:  restarted WAL streaming at 0/C000000 on timeline 48
+2026-08-28 10:33:51.376 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:53.378 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:55.379 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:57.380 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:33:59.383 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:01.384 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:03.384 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:05.386 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:07.388 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:09.389 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:11.391 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:13.392 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:15.392 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:17.395 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:19.398 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:21.397 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:23.399 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:25.400 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:27.403 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:29.403 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:31.403 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:33.405 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:35.405 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:37.408 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:39.408 UTC [8402] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 10:34:40.748 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 10:34:43.921 UTC [8402] WARNING:  [BiHA BCP 3 <- 2 ACTIVE] broken connection on socket 11
+2026-08-28 10:34:44.008 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 10:34:46.693 UTC [8402] LOG:  [BiHA NC 1 3 FOLLOWER] node-2 is offline
+2026-08-28 10:34:49.039 UTC [8402] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11

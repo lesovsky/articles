@@ -1,0 +1,26 @@
+# Проверки, снятые со стенда 2026-08-29 по замечаниям фактчекера
+
+## Дословные тексты ошибок (нижние границы параметров)
+psql:<stdin>:1: ERROR:  [BiHA] biha.set_heartbeat_send_period() failed: heartbeat_send_period must be at least 500 ms, but passed value is 300 ms
+psql:<stdin>:1: ERROR:  [BiHA] biha.set_heartbeat_max_lost() failed: heartbeat_max_lost must be at least 3, but passed value is 2
+
+## Версия расширения
+biha|1.8
+plpgsql|1.0.1
+
+## Полный вывод biha.status_v (7 колонок)
+ id | leader_id | term | online |   state   | last_known_state |  since_last_hb  
+----+-----------+------+--------+-----------+------------------+-----------------
+  1 |         1 |   69 | t      | LEADER_RW | LEADER_RW        | 00:00:00.997431
+  2 |         1 |   69 | t      | FOLLOWER  | FOLLOWER         | 00:00:00.997431
+  4 |         1 |   69 | t      | REFEREE   | REFEREE          | 00:00:00.997431
+(3 rows)
+
+
+## Режим остановки при systemctl stop (проверка утверждения «штатный путь, fast»)
+KillMode=mixed
+KillSignal=SIGINT
+TimeoutStopSec=1h
+
+SIGINT постмастеру PostgreSQL означает fast shutdown, поэтому описание
+«systemctl stop (штатный путь, fast)» корректно.

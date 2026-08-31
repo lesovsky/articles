@@ -1,0 +1,176 @@
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-1 is offline
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA NC REPL 1 3 replicating source 1] current source no longer suitable for replication
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was lost (1)
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:13:08.108 UTC [16901] LOG:  [BiHA PGC] replication stopped
+2026-08-28 05:13:08.108 UTC [16896] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:13:08.110 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:13:08.111 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:13:08.111 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:08.111 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:13:08.600 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:13:09.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 05:13:09.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 05:13:09.108 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4698 Planning time 1787893993.806; now 1787893989.108
+2026-08-28 05:13:10.602 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:12.604 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:13.113 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:13:13.501 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 2 with requested term 10 (our term 9) and LSN 0/51A3FD8 (our LSN 0/51A3FD8)
+2026-08-28 05:13:13.501 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 05:13:14.605 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:16.607 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:18.113 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:13:18.501 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4400 Planning time 1787894002.901; now 1787893998.501
+2026-08-28 05:13:18.501 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:19.112 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:13:19.113 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was found (0)
+2026-08-28 05:13:19.113 UTC [16901] LOG:  [BiHA PGC] replication source has been set to node 2: host='10.128.30.128' port=5432
+2026-08-28 05:13:19.113 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA PGC] my_history: TLI = 12, begin = 0/04CC39B0, end = 0/00000000
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA PGC] my_history: TLI = 11, begin = 0/048C6AB8, end = 0/04CC39B0
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA PGC] source_history: TLI = 12, begin = 0/04CC39B0, end = 0/00000000
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA PGC] source_history: TLI = 11, begin = 0/048C6AB8, end = 0/04CC39B0
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA PGC] Can start replication from node-2
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:13:20.113 UTC [16901] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:13:20.113 UTC [16896] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:13:20.118 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:20.130 UTC [17687] LOG:  fetching timeline history file for timeline 12 from primary server
+2026-08-28 05:13:20.131 UTC [17687] LOG:  fetching timeline history file for timeline 13 from primary server
+2026-08-28 05:13:20.143 UTC [17687] LOG:  started streaming WAL from primary at 0/5000000 on timeline 12
+2026-08-28 05:13:20.145 UTC [17687] LOG:  replication terminated by primary server
+2026-08-28 05:13:20.145 UTC [17687] DETAIL:  End of WAL reached on timeline 12 at 0/51A3FD8.
+2026-08-28 05:13:20.146 UTC [17687] LOG:  fetching timeline history file for timeline 12 from primary server
+2026-08-28 05:13:20.146 UTC [17687] LOG:  fetching timeline history file for timeline 13 from primary server
+2026-08-28 05:13:20.146 UTC [16902] LOG:  new target timeline is 13
+2026-08-28 05:13:20.146 UTC [17687] LOG:  fetching timeline history file for timeline 13 from primary server
+2026-08-28 05:13:20.146 UTC [17687] LOG:  restarted WAL streaming at 0/5000000 on timeline 13
+2026-08-28 05:13:22.122 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:24.122 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:26.128 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:28.126 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:30.125 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:32.126 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:34.125 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:36.126 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:38.127 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:40.131 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:42.129 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:44.130 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:46.131 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:48.133 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:50.136 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:52.133 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:54.135 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:56.132 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:58.136 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:13:59.711 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 05:14:06.143 UTC [16901] WARNING:  [BiHA BCP 3 -> 1 ACTIVE] broken connection on socket 54
+2026-08-28 05:14:06.236 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 05:14:07.738 UTC [16901] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 14
+2026-08-28 05:14:07.820 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 05:15:07.589 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 ACTIVE] broken connection on socket 11
+2026-08-28 05:15:07.594 UTC [17687] FATAL:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2026-08-28 05:15:07.594 UTC [16902] LOG:  invalid record length at 0/56BCAE0: expected at least 28, got 0
+2026-08-28 05:15:07.600 UTC [18052] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "10.128.30.128", port 5432 failed: Connection refused
+		Is the server running on that host and accepting TCP/IP connections?
+2026-08-28 05:15:07.600 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:15:07.890 UTC [18060] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "10.128.30.128", port 5432 failed: Connection refused
+		Is the server running on that host and accepting TCP/IP connections?
+2026-08-28 05:15:07.890 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:15:09.834 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:11.834 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:12.892 UTC [18193] FATAL:  streaming replication receiver "walreceiver" could not connect to the primary server: connection to server at "10.128.30.128", port 5432 failed: Connection refused
+		Is the server running on that host and accepting TCP/IP connections?
+2026-08-28 05:15:12.892 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:15:13.834 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:15.834 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] node-2 is offline
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC REPL 1 3 replicating source 2] current source no longer suitable for replication
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was lost (1)
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:15:17.636 UTC [16901] LOG:  [BiHA PGC] replication stopped
+2026-08-28 05:15:17.636 UTC [16896] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:15:17.640 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:15:17.642 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:15:17.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:17.642 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:15:17.835 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3732 Planning time 1787894121.567; now 1787894117.835
+2026-08-28 05:15:19.836 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:21.568 UTC [16901] LOG:  [BiHA NC 1 3 FOLLOWER] switching to CANDIDATE with LSN 0/56BCAE0 and term 11
+2026-08-28 05:15:21.568 UTC [16901] LOG:  [BiHA NC 1 3 CANDIDATE] state switched
+2026-08-28 05:15:21.568 UTC [16901] LOG:  [BiHA NC 1 3 CANDIDATE] received VOTE REPLY from node 1, term 11: vote granted 'yes'
+2026-08-28 05:15:21.568 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:22.644 UTC [16902] LOG:  waiting for WAL to become available at 0/5002000
+2026-08-28 05:15:23.838 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:25.839 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA NC 1 3 FRONT_FOLLOWER] state switched
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA] save BiHA state
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA NC 2 111 ] requesting slots for 5
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA NC 2 111 CSTATE_FORMING] state switched
+2026-08-28 05:15:26.569 UTC [16901] LOG:  [BiHA PGC] requested Postgres in recovery
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 2 111 CSTATE_FORMING] CState: starting as front follower
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 2 111 FRONT_FOLLOWER] state switched
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 3 1111 ] requesting slots for 5
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 3 1111 CSTATE_FORMING] state switched
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA PGC] requested Postgres in recovery
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 3 1111 CSTATE_FORMING] CState: starting as front follower
+2026-08-28 05:15:26.570 UTC [16901] LOG:  [BiHA NC 3 1111 FRONT_FOLLOWER] state switched
+2026-08-28 05:15:26.646 UTC [16901] LOG:  [BiHA NC 3 1111 LEADER_RO] state switched
+2026-08-28 05:15:26.841 UTC [16901] LOG:  [BiHA NC 2 111 LEADER_RO] state switched
+2026-08-28 05:15:26.841 UTC [16901] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:15:27.573 UTC [16901] LOG:  [BiHA NC 1 3 LEADER_RO] state switched
+2026-08-28 05:15:27.573 UTC [16901] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:15:27.642 UTC [16901] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:15:27.642 UTC [16901] LOG:  [BiHA PGC] Postgres promotion has been triggered, replay_lsn: 0/56BCAE0
+2026-08-28 05:15:27.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:27.642 UTC [16902] LOG:  received promote request
+2026-08-28 05:15:27.642 UTC [16902] LOG:  redo done at 0/56BCAB8 system usage: CPU: user: 1.23 s, system: 0.69 s, elapsed: 225.68 s
+2026-08-28 05:15:27.642 UTC [16902] LOG:  last completed transaction was at log time 2026-08-28 08:15:07.556539+03
+2026-08-28 05:15:27.659 UTC [16902] LOG:  selected new timeline ID: 14
+2026-08-28 05:15:27.660 UTC [18587] biha_replication_user@[unknown] LOG:  [BiHA] BiHA walsender count increased: 1 (max 2147483647)
+2026-08-28 05:15:27.730 UTC [16902] LOG:  archive recovery complete
+2026-08-28 05:15:27.744 UTC [16903] LOG:  checkpoint starting: force
+2026-08-28 05:15:27.748 UTC [16896] LOG:  PM_RUN: calling ConsistencyReached_hook
+2026-08-28 05:15:27.748 UTC [16896] LOG:  database system is ready to accept connections
+2026-08-28 05:15:27.757 UTC [18593] LOG:  starting background freezer (worker: enabled, backends: enabled)
+2026-08-28 05:15:27.839 UTC [16901] LOG:  [BiHA PGC] Postgres is promoted, replay_lsn: 0/56BF4A8
+2026-08-28 05:15:28.571 UTC [16901] LOG:  [BiHA NC 1 3 LEADER_RW] state switched
+2026-08-28 05:15:28.572 UTC [16901] LOG:  [BiHA NC 2 111 LEADER_RW] state switched
+2026-08-28 05:15:28.572 UTC [16901] LOG:  [BiHA NC 3 1111 LEADER_RW] state switched
+2026-08-28 05:15:29.574 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:31.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:33.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:35.422 UTC [16903] LOG:  checkpoint complete: wrote 75 buffers (0.1%), wrote 51 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=7.548 s, sync=0.026 s, total=7.678 s; sync files=16, longest=0.012 s, average=0.002 s; distance=10212 kB, estimate=10212 kB; lsn=0/5732BC0, redo lsn=0/56BCB18
+2026-08-28 05:15:35.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:37.642 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:39.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:41.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:43.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:45.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:47.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:49.643 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:51.644 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:53.644 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:55.644 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:57.594 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:15:59.595 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:16:01.595 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:16:03.596 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:16:05.644 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:16:07.645 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 05:16:08.504 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 05:16:14.659 UTC [16901] WARNING:  [BiHA BCP 3 <- 2 ACTIVE] broken connection on socket 11
+2026-08-28 05:16:14.750 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 05:16:15.878 UTC [16901] WARNING:  [BiHA BCP 3 -> 2 ACTIVE] broken connection on socket 14
+2026-08-28 05:16:15.878 UTC [16901] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 11
+2026-08-28 05:16:15.977 UTC [16901] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 05:16:21.663 UTC [18821] biha_replication_user@[unknown] LOG:  [BiHA] BiHA walsender count increased: 2 (max 2147483647)

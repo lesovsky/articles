@@ -1,0 +1,20 @@
+name=kill9-tut-r3
+type=kill9
+target=leader
+target_ip=10.128.31.13
+leader_before=10.128.31.13
+pre_s=15
+post_s=60
+conn_extra=tcp_user_timeout=5000
+started_at=2026-08-28T10:00:49.300535757Z
+state_before=1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT kill9 10.128.31.13 do 1787911266.803878574
+INJECT kill9 10.128.31.13 undo 1787911327.605388344
+state_after=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+finished_at=2026-08-28T10:02:37.634203681Z
+leader_after=10.128.31.145
+кластер здоров через 0s: 1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true

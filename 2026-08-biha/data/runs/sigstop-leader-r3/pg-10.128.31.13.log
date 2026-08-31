@@ -1,0 +1,119 @@
+2026-08-28 05:33:38.775 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 05:33:38.775 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-1 is offline
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA NC REPL 1 3 replicating source 1] current source no longer suitable for replication
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was lost (1)
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:33:39.397 UTC [1692] LOG:  [BiHA PGC] replication stopped
+2026-08-28 05:33:39.397 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:33:39.399 UTC [1693] LOG:  WAL receiver process shutdown requested
+2026-08-28 05:33:39.400 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:33:39.401 UTC [1898] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 05:33:39.401 UTC [1693] LOG:  invalid record length at 0/6E67788: expected at least 28, got 0
+2026-08-28 05:33:39.401 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:33:39.401 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:33:39.776 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:33:40.398 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3360 Planning time 1787895223.758; now 1787895220.398
+2026-08-28 05:33:42.855 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 2 with requested term 19 (our term 18) and LSN 0/6E67788 (our LSN 0/6E67788)
+2026-08-28 05:33:42.855 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 05:33:44.405 UTC [1693] LOG:  waiting for WAL to become available at 0/6002000
+2026-08-28 05:33:47.855 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3138 Planning time 1787895230.993; now 1787895227.855
+2026-08-28 05:33:48.402 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:33:48.403 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was found (0)
+2026-08-28 05:33:48.403 UTC [1692] LOG:  [BiHA PGC] replication source has been set to node 2: host='10.128.30.128' port=5432
+2026-08-28 05:33:48.403 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 21, begin = 0/06B92780, end = 0/00000000
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 20, begin = 0/06A58E28, end = 0/06B92780
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] my_history: TLI = 19, begin = 0/069738C0, end = 0/06A58E28
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 21, begin = 0/06B92780, end = 0/00000000
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] source_history: TLI = 20, begin = 0/06A58E28, end = 0/06B92780
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA PGC] Can start replication from node-2
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:33:49.403 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:33:49.403 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:33:49.408 UTC [1693] LOG:  WAL receiver process shutdown requested
+2026-08-28 05:33:49.410 UTC [2136] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 05:33:49.432 UTC [2137] LOG:  fetching timeline history file for timeline 21 from primary server
+2026-08-28 05:33:49.432 UTC [2137] LOG:  started streaming WAL from primary at 0/6000000 on timeline 21
+2026-08-28 05:33:49.539 UTC [2137] LOG:  replication terminated by primary server
+2026-08-28 05:33:49.539 UTC [2137] DETAIL:  End of WAL reached on timeline 21 at 0/6E67788.
+2026-08-28 05:33:49.539 UTC [2137] LOG:  fetching timeline history file for timeline 21 from primary server
+2026-08-28 05:33:49.540 UTC [2137] LOG:  fetching timeline history file for timeline 22 from primary server
+2026-08-28 05:33:49.551 UTC [1693] LOG:  new target timeline is 22
+2026-08-28 05:33:49.551 UTC [2137] LOG:  fetching timeline history file for timeline 22 from primary server
+2026-08-28 05:33:49.552 UTC [2137] LOG:  restarted WAL streaming at 0/6000000 on timeline 22
+2026-08-28 05:34:29.909 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 05:34:29.919 UTC [1692] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 14
+2026-08-28 05:34:30.004 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 9
+2026-08-28 05:34:36.446 UTC [1692] WARNING:  [BiHA BCP 3 <- 1 ACTIVE] broken connection on socket 9
+2026-08-28 05:34:36.533 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 9
+2026-08-28 05:34:38.154 UTC [1692] WARNING:  [BiHA BCP 3 -> 1 ACTIVE] broken connection on socket 14
+2026-08-28 05:34:38.242 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 9
+2026-08-28 05:34:54.469 UTC [1694] LOG:  restartpoint starting: time
+2026-08-28 05:35:08.579 UTC [1694] LOG:  restartpoint complete: wrote 138 buffers (0.2%), wrote 31 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=13.912 s, sync=0.017 s, total=14.110 s; sync files=18, longest=0.005 s, average=0.001 s; distance=5071 kB, estimate=5071 kB; lsn=0/6E69768, redo lsn=0/6E67808
+2026-08-28 05:35:08.579 UTC [1694] LOG:  recovery restart point at 0/6E67808
+2026-08-28 05:35:08.579 UTC [1694] DETAIL:  Last completed transaction was at log time 2026-08-28 08:34:56.390626+03.
+2026-08-28 05:35:47.272 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 05:35:47.272 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 05:35:47.832 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] node-2 is offline
+2026-08-28 05:35:47.832 UTC [1692] LOG:  [BiHA NC REPL 1 3 replicating source 2] current source no longer suitable for replication
+2026-08-28 05:35:47.832 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was lost (1)
+2026-08-28 05:35:47.832 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:35:47.832 UTC [1692] LOG:  [BiHA BC] save BiHA config
+2026-08-28 05:35:47.833 UTC [1692] LOG:  [BiHA PGC] replication stopped
+2026-08-28 05:35:47.833 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 05:35:47.835 UTC [1693] LOG:  WAL receiver process shutdown requested
+2026-08-28 05:35:47.836 UTC [2137] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 05:35:47.836 UTC [1693] LOG:  invalid record length at 0/7127F50: expected at least 28, got 0
+2026-08-28 05:35:47.836 UTC [1693] LOG:  waiting for WAL to become available at 0/7002000
+2026-08-28 05:35:47.836 UTC [1693] LOG:  waiting for WAL to become available at 0/7002000
+2026-08-28 05:35:47.839 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 05:35:48.274 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 3449 Planning time 1787895351.723; now 1787895348.274
+2026-08-28 05:35:51.723 UTC [1692] LOG:  [BiHA NC 1 3 FOLLOWER] switching to CANDIDATE with LSN 0/7127F50 and term 20
+2026-08-28 05:35:51.723 UTC [1692] LOG:  [BiHA NC 1 3 CANDIDATE] state switched
+2026-08-28 05:35:51.724 UTC [1692] LOG:  [BiHA NC 1 3 CANDIDATE] received VOTE REPLY from node 1, term 20: vote granted 'yes'
+2026-08-28 05:35:52.839 UTC [1693] LOG:  waiting for WAL to become available at 0/7002000
+2026-08-28 05:35:56.724 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:35:56.724 UTC [1692] LOG:  [BiHA NC 1 3 FRONT_FOLLOWER] state switched
+2026-08-28 05:35:56.724 UTC [1692] LOG:  [BiHA] save BiHA state
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 2 111 ] requesting slots for 5
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 2 111 CSTATE_FORMING] state switched
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA PGC] requested Postgres in recovery
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 2 111 CSTATE_FORMING] CState: starting as front follower
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 2 111 FRONT_FOLLOWER] state switched
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 3 1111 ] requesting slots for 5
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 3 1111 CSTATE_FORMING] state switched
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA PGC] requested Postgres in recovery
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 3 1111 CSTATE_FORMING] CState: starting as front follower
+2026-08-28 05:35:56.725 UTC [1692] LOG:  [BiHA NC 3 1111 FRONT_FOLLOWER] state switched
+2026-08-28 05:35:56.855 UTC [1692] LOG:  [BiHA NC 3 1111 LEADER_RO] state switched
+2026-08-28 05:35:57.295 UTC [1692] LOG:  [BiHA NC 2 111 LEADER_RO] state switched
+2026-08-28 05:35:57.295 UTC [1692] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:35:57.743 UTC [1692] LOG:  [BiHA NC 1 3 LEADER_RO] state switched
+2026-08-28 05:35:57.743 UTC [1692] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:35:57.838 UTC [1692] LOG:  [BiHA PGC] requested Postgres promotion
+2026-08-28 05:35:57.838 UTC [1692] LOG:  [BiHA PGC] Postgres promotion has been triggered, replay_lsn: 0/7127F50
+2026-08-28 05:35:57.838 UTC [1693] LOG:  received promote request
+2026-08-28 05:35:57.839 UTC [1693] LOG:  redo done at 0/7127F28 system usage: CPU: user: 0.98 s, system: 0.64 s, elapsed: 363.11 s
+2026-08-28 05:35:57.839 UTC [1693] LOG:  last completed transaction was at log time 2026-08-28 08:35:37.607258+03
+2026-08-28 05:35:57.849 UTC [1693] LOG:  selected new timeline ID: 23
+2026-08-28 05:35:57.855 UTC [2373] biha_replication_user@[unknown] LOG:  [BiHA] BiHA walsender count increased: 1 (max 2147483647)
+2026-08-28 05:35:57.906 UTC [1693] LOG:  archive recovery complete
+2026-08-28 05:35:57.925 UTC [1694] LOG:  checkpoint starting: force
+2026-08-28 05:35:57.927 UTC [542] LOG:  PM_RUN: calling ConsistencyReached_hook
+2026-08-28 05:35:57.927 UTC [542] LOG:  database system is ready to accept connections
+2026-08-28 05:35:57.937 UTC [2376] LOG:  starting background freezer (worker: enabled, backends: enabled)
+2026-08-28 05:35:58.278 UTC [1692] LOG:  [BiHA PGC] Postgres is promoted, replay_lsn: 0/7127FF8
+2026-08-28 05:35:58.727 UTC [1692] LOG:  [BiHA NC 1 3 LEADER_RW] state switched
+2026-08-28 05:35:58.727 UTC [1692] LOG:  [BiHA NC 2 111 LEADER_RW] state switched
+2026-08-28 05:35:58.727 UTC [1692] LOG:  [BiHA NC 3 1111 LEADER_RW] state switched
+2026-08-28 05:36:04.719 UTC [1694] LOG:  checkpoint complete: wrote 67 buffers (0.1%), wrote 7 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=6.730 s, sync=0.018 s, total=6.795 s; sync files=17, longest=0.006 s, average=0.002 s; distance=2817 kB, estimate=4846 kB; lsn=0/7129AC8, redo lsn=0/7127F88
+2026-08-28 05:36:38.386 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 61
+2026-08-28 05:36:38.389 UTC [1692] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 61
+2026-08-28 05:36:38.502 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 14
+2026-08-28 05:36:44.862 UTC [1692] WARNING:  [BiHA BCP 3 <- 2 ACTIVE] broken connection on socket 14
+2026-08-28 05:36:44.945 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 14
+2026-08-28 05:36:48.232 UTC [1692] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 14
+2026-08-28 05:36:53.868 UTC [2469] biha_replication_user@[unknown] LOG:  [BiHA] BiHA walsender count increased: 2 (max 2147483647)

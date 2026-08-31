@@ -1,0 +1,19 @@
+name=stop-leader-r1
+type=stop
+target=leader
+target_ip=10.128.31.13
+leader_before=10.128.31.13
+pre_s=15
+post_s=60
+started_at=2026-08-28T05:05:59.280808779Z
+state_before=1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT stop 10.128.31.13 do 1787893577.195718589
+INJECT stop 10.128.31.13 undo 1787893638.144466080
+state_after=1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true
+finished_at=2026-08-28T05:07:47.491382515Z
+leader_after=10.128.31.145
+кластер здоров через 0s: 1=LEADER_RW/true 2=FOLLOWER/true 3=FOLLOWER/true

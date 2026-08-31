@@ -1,0 +1,21 @@
+name=hb-2000-10-r2
+type=kill9
+target=leader
+target_ip=10.128.30.128
+leader_before=10.128.30.128
+pre_s=15
+post_s=60
+conn_extra=tcp_user_timeout=5000
+query_timeout=0
+started_at=2026-08-28T10:22:07.935281684Z
+state_before=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+--- biha.config() ---
+1|2|2|2000|10|-2|f
+2|2|2|2000|10|-2|f
+3|2|2|2000|10|-2|f
+INJECT kill9 10.128.30.128 do 1787912545.229752211
+INJECT kill9 10.128.30.128 undo 1787912605.985315636
+state_after=1=FOLLOWER/true 2=CSTATE_FORMING/true 3=LEADER_RW/true
+finished_at=2026-08-28T10:23:56.032459611Z
+leader_after=10.128.31.13
+кластер здоров через 0s: 1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true

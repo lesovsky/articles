@@ -1,0 +1,89 @@
+2026-08-28 09:41:46.038 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4984 Planning time 1787910111.022; now 1787910106.038
+2026-08-28 09:41:48.562 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 1 with requested term 23 (our term 22) and LSN 0/89D1E68 (our LSN 0/89D1E68)
+2026-08-28 09:41:48.562 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 09:41:50.041 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:41:53.563 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4540 Planning time 1787910118.103; now 1787910113.563
+2026-08-28 09:41:54.045 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:41:54.046 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was found (0)
+2026-08-28 09:41:54.046 UTC [4380] LOG:  [BiHA PGC] replication source has been set to node 1: host='10.128.31.145' port=5432
+2026-08-28 09:41:54.046 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:41:55.045 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 25, begin = 0/086D12E0, end = 0/00000000
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 24, begin = 0/083299B8, end = 0/086D12E0
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 23, begin = 0/07127F50, end = 0/083299B8
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] source_history: TLI = 25, begin = 0/086D12E0, end = 0/00000000
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] source_history: TLI = 24, begin = 0/083299B8, end = 0/086D12E0
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA PGC] Can start replication from node-1
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:41:55.046 UTC [4380] LOG:  [BiHA BC] save BiHA config
+2026-08-28 09:41:55.046 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 09:41:55.065 UTC [4835] LOG:  fetching timeline history file for timeline 25 from primary server
+2026-08-28 09:41:55.065 UTC [4835] LOG:  started streaming WAL from primary at 0/8000000 on timeline 25
+2026-08-28 09:41:55.218 UTC [4835] LOG:  replication terminated by primary server
+2026-08-28 09:41:55.218 UTC [4835] DETAIL:  End of WAL reached on timeline 25 at 0/89D1E68.
+2026-08-28 09:41:55.218 UTC [4835] LOG:  fetching timeline history file for timeline 25 from primary server
+2026-08-28 09:41:55.218 UTC [4835] LOG:  fetching timeline history file for timeline 26 from primary server
+2026-08-28 09:41:55.240 UTC [4382] LOG:  new target timeline is 26
+2026-08-28 09:41:55.240 UTC [4835] LOG:  fetching timeline history file for timeline 26 from primary server
+2026-08-28 09:41:55.240 UTC [4835] LOG:  restarted WAL streaming at 0/8000000 on timeline 26
+2026-08-28 09:42:36.437 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 54
+2026-08-28 09:42:38.082 UTC [4380] WARNING:  [BiHA BCP 3 -> 2 ACTIVE] broken connection on socket 11
+2026-08-28 09:42:38.192 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 09:42:40.993 UTC [4380] WARNING:  [BiHA BCP 3 <- -1 ACTIVE] broken connection on socket 11
+2026-08-28 09:42:40.993 UTC [4380] WARNING:  [BiHA BCP 3 -> 2 ACTIVE] broken connection on socket 54
+2026-08-28 09:42:41.128 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.30.128', socket 11
+2026-08-28 09:43:09.121 UTC [4383] LOG:  restartpoint starting: time
+2026-08-28 09:43:26.164 UTC [4383] LOG:  restartpoint complete: wrote 168 buffers (0.3%), wrote 51 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=16.879 s, sync=0.015 s, total=17.043 s; sync files=17, longest=0.014 s, average=0.001 s; distance=7925 kB, estimate=7925 kB; lsn=0/89F1398, redo lsn=0/89D1EE8
+2026-08-28 09:43:26.164 UTC [4383] LOG:  recovery restart point at 0/89D1EE8
+2026-08-28 09:43:26.164 UTC [4383] DETAIL:  Last completed transaction was at log time 2026-08-28 12:43:15.278943+03.
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] node-1 is offline
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA NC REPL 1 3 replicating source 1] current source no longer suitable for replication
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 1) was lost (1)
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA BC] save BiHA config
+2026-08-28 09:43:55.115 UTC [4380] LOG:  [BiHA PGC] replication stopped
+2026-08-28 09:43:55.115 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 09:43:55.119 UTC [4382] LOG:  WAL receiver process shutdown requested
+2026-08-28 09:43:55.120 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Cannot start new election
+2026-08-28 09:43:55.121 UTC [4835] FATAL:  terminating walreceiver process due to administrator command
+2026-08-28 09:43:55.121 UTC [4382] LOG:  invalid record length at 0/8D07018: expected at least 28, got 0
+2026-08-28 09:43:55.121 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:43:55.121 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:43:55.136 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4185 Planning time 1787910239.321; now 1787910235.136
+2026-08-28 09:43:56.116 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] node-1111 is offline
+2026-08-28 09:43:56.116 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] node-111 is offline
+2026-08-28 09:43:59.133 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] received VOTE REQUEST from node 2 with requested term 24 (our term 23) and LSN 0/8D07018 (our LSN 0/8D07018)
+2026-08-28 09:43:59.133 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] voting for this CANDIDATE
+2026-08-28 09:44:00.120 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:44:04.133 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] Timeout 4925 Planning time 1787910249.058; now 1787910244.133
+2026-08-28 09:44:04.136 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:44:04.136 UTC [4380] LOG:  [BiHA NC 1 3 FOLLOWER] leader (id 2) was found (0)
+2026-08-28 09:44:04.136 UTC [4380] LOG:  [BiHA PGC] replication source has been set to node 2: host='10.128.30.128' port=5432
+2026-08-28 09:44:04.136 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:44:05.124 UTC [4382] LOG:  waiting for WAL to become available at 0/8002000
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 26, begin = 0/089D1E68, end = 0/00000000
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 25, begin = 0/086D12E0, end = 0/089D1E68
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] my_history: TLI = 24, begin = 0/083299B8, end = 0/086D12E0
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] source_history: TLI = 26, begin = 0/089D1E68, end = 0/00000000
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] source_history: TLI = 25, begin = 0/086D12E0, end = 0/089D1E68
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA PGC] Can start replication from node-2
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA] save BiHA state
+2026-08-28 09:44:05.138 UTC [4380] LOG:  [BiHA BC] save BiHA config
+2026-08-28 09:44:05.138 UTC [542] LOG:  received SIGHUP, reloading configuration files
+2026-08-28 09:44:05.158 UTC [5073] LOG:  fetching timeline history file for timeline 26 from primary server
+2026-08-28 09:44:05.158 UTC [5073] LOG:  started streaming WAL from primary at 0/8000000 on timeline 26
+2026-08-28 09:44:06.321 UTC [5073] LOG:  replication terminated by primary server
+2026-08-28 09:44:06.321 UTC [5073] DETAIL:  End of WAL reached on timeline 26 at 0/8D07018.
+2026-08-28 09:44:06.321 UTC [5073] LOG:  fetching timeline history file for timeline 26 from primary server
+2026-08-28 09:44:06.322 UTC [5073] LOG:  fetching timeline history file for timeline 27 from primary server
+2026-08-28 09:44:06.350 UTC [4382] LOG:  new target timeline is 27
+2026-08-28 09:44:06.350 UTC [5073] LOG:  fetching timeline history file for timeline 27 from primary server
+2026-08-28 09:44:06.350 UTC [5073] LOG:  restarted WAL streaming at 0/8000000 on timeline 27
+2026-08-28 09:44:46.590 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 09:44:53.185 UTC [4380] WARNING:  [BiHA BCP 3 <- 1 ACTIVE] broken connection on socket 14
+2026-08-28 09:44:53.300 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14
+2026-08-28 09:44:56.033 UTC [4380] WARNING:  [BiHA BCP 3 <- 1 ACTIVE] broken connection on socket 14
+2026-08-28 09:44:56.173 UTC [4380] WARNING:  [BiHA BCP 3 -> 1 CONNECTING] error when connecting: 'Connection refused'
+2026-08-28 09:44:56.175 UTC [4380] LOG:  [BiHA BCP 3 <- -1 IDLE] accepted connection from '10.128.31.145', socket 14

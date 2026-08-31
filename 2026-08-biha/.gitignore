@@ -1,0 +1,28 @@
+# Материалы выкладываются порциями, вместе со статьями серии: результаты не
+# должны опережать текст. Снимать строки отсюда по мере публикации частей.
+
+# Рабочий журнал: содержит ход всей работы и находки всех четырёх статей.
+# В публикацию не идёт вовсе.
+ROADMAP.md
+RESULTS-private-full.md
+README-private-full.md
+biha-rto-interview.yml
+biha-rto-*.json
+
+# Статья 2 — потери транзакций при разделении сети, синхронная репликация
+data/runs/netpart-*
+scripts/analyze-part.py
+
+# Статья 3 — рефери, схема 2+1, цена синхронности
+data/runs/ref-*
+data/runs/refwal-*
+data/runs/noref-*
+data/runs/netsplit-*
+data/syncsweep/
+scripts/run-syncsweep.sh
+scripts/run-latency.sh
+
+# Статья 4 — плановые операции, возврат узла, NODE_ERROR
+data/runs/switchover-*
+data/runs/service-*
+scripts/reset-node.sh

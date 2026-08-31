@@ -1,0 +1,21 @@
+name=sigstop-qto-r2
+type=sigstop
+target=leader
+target_ip=10.128.31.13
+leader_before=10.128.31.13
+pre_s=15
+post_s=60
+conn_extra=tcp_user_timeout=5000
+query_timeout=5
+started_at=2026-08-28T10:14:48.757593264Z
+state_before=1=FOLLOWER/true 2=FOLLOWER/true 3=LEADER_RW/true
+--- biha.config() ---
+1|2|2|1000|10|-2|f
+2|2|2|1000|10|-2|f
+3|2|2|1000|10|-2|f
+INJECT sigstop 10.128.31.13 do 1787912106.025913777
+INJECT sigstop 10.128.31.13 undo 1787912167.869562837
+state_after=1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
+finished_at=2026-08-28T10:16:36.928869967Z
+leader_after=10.128.30.128
+кластер здоров через 0s: 1=FOLLOWER/true 2=LEADER_RW/true 3=FOLLOWER/true
