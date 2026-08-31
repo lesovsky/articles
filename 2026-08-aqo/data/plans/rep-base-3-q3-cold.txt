@@ -1,0 +1,15 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=399.03..399.04 rows=1 width=16) (actual time=0.428..0.429 rows=1.00 loops=1)
+   Buffers: shared hit=40
+   ->  Index Scan using fact_sales_product_idx on fact_sales s  (cost=0.56..397.26 rows=354 width=4) (actual time=0.060..0.423 rows=36.00 loops=1)
+         Index Cond: (product_id = 199360)
+         Index Searches: 1
+         Buffers: shared hit=40
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=111
+ Planning Time: 0.606 ms
+ Execution Time: 0.523 ms
+(11 rows)
+

@@ -1,0 +1,44 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=27837.17..858266.06 rows=1 width=21) (actual time=2672.608..2766.608 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=503438 read=133813
+   I/O Timings: shared read=12.699
+   ->  Gather  (cost=27837.17..858266.03 rows=4 width=45) (actual time=2671.438..2766.597 rows=5.00 loops=1)
+         Workers Planned: 4
+         Workers Launched: 4
+         Buffers: shared hit=503438 read=133813
+         I/O Timings: shared read=12.699
+         ->  Partial GroupAggregate  (cost=26837.17..857265.63 rows=1 width=45) (actual time=2666.244..2666.248 rows=1.00 loops=5)
+               AQO not used, fss=0
+               Buffers: shared hit=503438 read=133813
+               I/O Timings: shared read=12.699
+               ->  Parallel Hash Join  (cost=26837.17..834771.19 rows=4498885 width=13) (actual time=62.781..2444.923 rows=3599108.00 loops=5)
+                     AQO: rows=17995540, error=0%, fss=-5500355995900734329
+                     Hash Cond: (s.customer_id = c.customer_id)
+                     Buffers: shared hit=503438 read=133813
+                     I/O Timings: shared read=12.699
+                     ->  Parallel Seq Scan on fact_sales s  (cost=0.00..768558.96 rows=14999996 width=12) (actual time=29.338..1105.845 rows=12000000.00 loops=5)
+                           AQO: rows=59999984, error=-0%, fss=8093399427875851518
+                           Buffers: shared hit=484746 read=133813
+                           I/O Timings: shared read=12.699
+                     ->  Parallel Hash  (cost=26756.52..26756.52 rows=6452 width=9) (actual time=33.227..33.228 rows=4000.00 loops=5)
+                           Buckets: 32768  Batches: 1  Memory Usage: 1056kB
+                           Buffers: shared hit=18692
+                           ->  Parallel Seq Scan on customers c  (cost=0.00..26756.52 rows=6452 width=9) (actual time=19.090..32.450 rows=4000.00 loops=5)
+                                 AQO: rows=20000, error=0%, fss=7123415191290700122
+                                 Filter: (segment = 'vip'::text)
+                                 Rows Removed by Filter: 396000
+                                 Buffers: shared hit=18692
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=310
+ Planning Time: 1.499 ms
+ Execution Time: 2766.758 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: 4176606909736695326
+ JOINS: 1
+(40 rows)
+

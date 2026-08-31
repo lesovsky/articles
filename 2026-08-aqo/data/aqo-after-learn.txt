@@ -1,0 +1,28 @@
+# состояние aqo после обучения, 2026-08-23T12:14:41+03:00
+-- классы запросов --
+классов: 1
+0 | learn=false | use=false | auto_tuning=false
+-- использование памяти --
+AQO|128|104
+AQO Data HTAB|4992|4952
+AQO Data HTAB sandbox|4992|4952
+AQO deactivated queries|8192|5520
+AQO LRUCache data|128|16
+AQO LRUCache data sandbox|128|16
+AQO LRUCache qtext|128|16
+AQO LRUCache qtext sandbox|128|16
+AQO Queries HTAB|2944|2904
+AQO Queries HTAB sandbox|2944|2904
+AQO Query Texts HTAB|2944|2904
+AQO Query Texts HTAB sandbox|2944|2904
+AQO sandbox|128|104
+AQO Stat HTAB|2944|2904
+AQO Stat HTAB sandbox|2944|2904
+AQOCacheMemCtx|8192|240
+AQOLearnMemoryContext|8192|240
+AQOPredictMemoryContext|8192|240
+AQOStorageMemoryContext|8192|240
+AQOTopMemoryContext|8192|240
+1|10000|31|100000|1048576|104857600
+-- ошибка оценки по классам: с aqo против без --
+-- время выполнения по классам: с aqo против без --

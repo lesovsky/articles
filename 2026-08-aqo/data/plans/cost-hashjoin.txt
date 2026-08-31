@@ -1,0 +1,36 @@
+                                                                            QUERY PLAN                                                                            
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=839324.83..839324.84 rows=1 width=16) (actual time=80004.157..80010.230 rows=1.00 loops=1)
+   Buffers: shared hit=4 read=637247
+   I/O Timings: shared read=6481.901
+   ->  Gather  (cost=839324.40..839324.81 rows=4 width=16) (actual time=79922.312..80010.209 rows=5.00 loops=1)
+         Workers Planned: 4
+         Workers Launched: 4
+         Buffers: shared hit=4 read=637247
+         I/O Timings: shared read=6481.901
+         ->  Partial Aggregate  (cost=838324.40..838324.41 rows=1 width=16) (actual time=79926.573..79926.577 rows=1.00 loops=5)
+               Buffers: shared hit=4 read=637247
+               I/O Timings: shared read=6481.901
+               ->  Parallel Hash Join  (cost=30021.94..837955.96 rows=73688 width=8) (actual time=2361.999..79917.275 rows=59239.60 loops=5)
+                     Hash Cond: (s.customer_id = c.customer_id)
+                     Buffers: shared hit=4 read=637247
+                     I/O Timings: shared read=6481.901
+                     ->  Parallel Seq Scan on fact_sales s  (cost=0.00..768558.96 rows=14999996 width=12) (actual time=3.920..76198.313 rows=12000000.00 loops=5)
+                           Buffers: shared hit=2 read=618557
+                           I/O Timings: shared read=1851.778
+                     ->  Parallel Hash  (cost=29982.32..29982.32 rows=3169 width=4) (actual time=2347.637..2347.638 rows=2001.40 loops=5)
+                           Buckets: 16384  Batches: 1  Memory Usage: 640kB
+                           Buffers: shared hit=2 read=18690
+                           I/O Timings: shared read=4630.124
+                           ->  Parallel Seq Scan on customers c  (cost=0.00..29982.32 rows=3169 width=4) (actual time=110.107..2342.851 rows=2001.40 loops=5)
+                                 Filter: ((city = 'city_090'::text) AND (region = 'region_09'::text) AND (country = 'country_2'::text))
+                                 Rows Removed by Filter: 397999
+                                 Buffers: shared hit=2 read=18690
+                                 I/O Timings: shared read=4630.124
+ Planning:
+   Buffers: shared hit=223 read=77
+   I/O Timings: shared read=161.080
+ Planning Time: 175.929 ms
+ Execution Time: 80010.474 ms
+(32 rows)
+

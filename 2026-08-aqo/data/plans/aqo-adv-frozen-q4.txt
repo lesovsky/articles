@@ -1,0 +1,33 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=995231.22..995231.23 rows=1 width=16) (actual time=3635.121..3746.026 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=503375 read=115184
+   I/O Timings: shared read=23.140
+   ->  Gather  (cost=995230.79..995231.20 rows=4 width=16) (actual time=3633.926..3746.019 rows=5.00 loops=1)
+         Workers Planned: 4
+         Workers Launched: 4
+         Buffers: shared hit=503375 read=115184
+         I/O Timings: shared read=23.140
+         ->  Partial Aggregate  (cost=994230.79..994230.80 rows=1 width=16) (actual time=3629.194..3629.195 rows=1.00 loops=5)
+               AQO not used, fss=0
+               Buffers: shared hit=503375 read=115184
+               I/O Timings: shared read=23.140
+               ->  Parallel Seq Scan on fact_sales s  (cost=0.00..993558.90 rows=134377 width=8) (actual time=3.714..3619.218 rows=107501.80 loops=5)
+                     AQO: rows=537509, error=0%, fss=-8536983902085098216
+                     Filter: ((EXTRACT(hour FROM sale_ts) >= '9'::numeric) AND (EXTRACT(hour FROM sale_ts) <= '11'::numeric) AND (date_trunc('month'::text, sale_ts) = '2025-06-01 00:00:00+03'::timestamp with time zone))
+                     Rows Removed by Filter: 11892498
+                     Buffers: shared hit=503375 read=115184
+                     I/O Timings: shared read=23.140
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=106
+ Planning Time: 0.835 ms
+ Execution Time: 3746.108 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: 1804317982235826452
+ JOINS: 0
+(29 rows)
+

@@ -1,0 +1,62 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=268123.95..268123.96 rows=4 width=60) (actual time=313.905..403.123 rows=4.00 loops=1)
+   Sort Key: (sum(s.amount)) DESC
+   Sort Method: quicksort  Memory: 25kB
+   Buffers: shared hit=346844
+   ->  Finalize GroupAggregate  (cost=268091.96..268123.91 rows=4 width=60) (actual time=313.676..403.092 rows=4.00 loops=1)
+         AQO: rows=4, error=0%, fss=9138129792540146537
+         Group Key: c.segment
+         Buffers: shared hit=346841
+         ->  Gather Merge  (cost=268091.96..268123.74 rows=12 width=60) (actual time=313.607..403.072 rows=16.00 loops=1)
+               Workers Planned: 3
+               Workers Launched: 3
+               Buffers: shared hit=346841
+               ->  Partial GroupAggregate  (cost=267091.92..267122.29 rows=4 width=60) (actual time=308.774..308.975 rows=4.00 loops=4)
+                     AQO: rows=4, error=0%, fss=9138129792540146537
+                     Group Key: c.segment
+                     Buffers: shared hit=346841
+                     ->  Sort  (cost=267091.92..267097.98 rows=2427 width=24) (actual time=308.699..308.772 rows=1881.00 loops=4)
+                           Sort Key: c.segment
+                           Sort Method: quicksort  Memory: 140kB
+                           Buffers: shared hit=346841
+                           Worker 0:  Sort Method: quicksort  Memory: 137kB
+                           Worker 1:  Sort Method: quicksort  Memory: 131kB
+                           Worker 2:  Sort Method: quicksort  Memory: 139kB
+                           ->  Parallel Hash Join  (cost=3371.03..266955.46 rows=2427 width=24) (actual time=5.136..307.916 rows=1881.00 loops=4)
+                                 AQO: rows=7524, error=0%, fss=-4772438676378583482
+                                 Hash Cond: (s.product_id = p.product_id)
+                                 Buffers: shared hit=346817
+                                 ->  Nested Loop  (cost=0.44..263334.06 rows=95548 width=21) (actual time=0.076..293.961 rows=74049.50 loops=4)
+                                       AQO: rows=296198, error=0%, fss=-3998270456601322693
+                                       Buffers: shared hit=344947
+                                       ->  Parallel Seq Scan on customers c  (cost=0.00..28369.42 rows=3228 width=9) (actual time=0.026..33.561 rows=2501.75 loops=4)
+                                             AQO: rows=10007, error=0%, fss=1029631067320990408
+                                             Filter: ((city = 'city_090'::text) AND (region = 'region_09'::text))
+                                             Rows Removed by Filter: 497498
+                                             Buffers: shared hit=18692
+                                       ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..72.49 rows=30 width=20) (actual time=0.006..0.100 rows=29.60 loops=10007)
+                                             AQO: rows=30, error=1%, fss=7782523691446486773
+                                             Index Cond: (customer_id = c.customer_id)
+                                             Index Searches: 10007
+                                             Buffers: shared hit=326255
+                                 ->  Parallel Hash  (cost=3340.59..3340.59 rows=2400 width=11) (actual time=4.680..4.681 rows=1020.00 loops=4)
+                                       Buckets: 4096  Batches: 1  Memory Usage: 288kB
+                                       Buffers: shared hit=1870
+                                       ->  Parallel Seq Scan on products p  (cost=0.00..3340.59 rows=2400 width=11) (actual time=0.027..4.391 rows=1020.00 loops=4)
+                                             AQO: rows=4080, error=0%, fss=-8991673869357191048
+                                             Filter: (category = 'cat_13'::text)
+                                             Rows Removed by Filter: 48980
+                                             Buffers: shared hit=1870
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=387
+ Planning Time: 2.438 ms
+ Execution Time: 403.338 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: -873567969981935012
+ JOINS: 2
+(58 rows)
+

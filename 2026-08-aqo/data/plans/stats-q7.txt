@@ -1,0 +1,21 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=194.28..194.46 rows=75 width=24) (actual time=7.771..7.782 rows=100.00 loops=1)
+   Buffers: shared hit=877
+   ->  Sort  (cost=194.28..194.46 rows=75 width=24) (actual time=7.770..7.775 rows=100.00 loops=1)
+         Sort Key: sale_ts DESC
+         Sort Method: top-N heapsort  Memory: 36kB
+         Buffers: shared hit=877
+         ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..191.94 rows=75 width=24) (actual time=0.076..7.674 rows=379.00 loops=1)
+               Index Cond: (customer_id = 1)
+               Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+               Rows Removed by Filter: 492
+               Index Searches: 1
+               Buffers: shared hit=874
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=139
+ Planning Time: 0.816 ms
+ Execution Time: 7.821 ms
+(17 rows)
+

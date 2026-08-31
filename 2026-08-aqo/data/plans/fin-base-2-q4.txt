@@ -1,0 +1,25 @@
+                                                                                                         QUERY PLAN                                                                                                         
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=994561.21..994561.22 rows=1 width=16) (actual time=3578.415..3646.169 rows=1.00 loops=1)
+   Buffers: shared hit=503415 read=115144
+   I/O Timings: shared read=17.125
+   ->  Gather  (cost=994560.78..994561.19 rows=4 width=16) (actual time=3565.639..3646.158 rows=5.00 loops=1)
+         Workers Planned: 4
+         Workers Launched: 4
+         Buffers: shared hit=503415 read=115144
+         I/O Timings: shared read=17.125
+         ->  Partial Aggregate  (cost=993560.78..993560.79 rows=1 width=16) (actual time=3566.212..3566.213 rows=1.00 loops=5)
+               Buffers: shared hit=503415 read=115144
+               I/O Timings: shared read=17.125
+               ->  Parallel Seq Scan on fact_sales s  (cost=0.00..993558.90 rows=375 width=8) (actual time=10.743..3556.748 rows=107501.80 loops=5)
+                     Filter: ((EXTRACT(hour FROM sale_ts) >= '9'::numeric) AND (EXTRACT(hour FROM sale_ts) <= '11'::numeric) AND (date_trunc('month'::text, sale_ts) = '2025-06-01 00:00:00+03'::timestamp with time zone))
+                     Rows Removed by Filter: 11892498
+                     Buffers: shared hit=503415 read=115144
+                     I/O Timings: shared read=17.125
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=103
+ Planning Time: 0.605 ms
+ Execution Time: 3646.257 ms
+(21 rows)
+

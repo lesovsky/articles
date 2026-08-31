@@ -1,0 +1,35 @@
+# состояние стенда после настройки, 2026-08-22T18:04:37+03:00
+PostgreSQL 18.6 on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+aqo 4.1
+checkpoint_timeout = 1800 s
+effective_cache_size = 1572864 8kB
+jit = off
+maintenance_work_mem = 1048576 kB
+max_parallel_workers_per_gather = 4
+max_wal_size = 8192 MB
+max_worker_processes = 8
+random_page_cost = 1.1
+shared_buffers = 524288 8kB
+shared_preload_libraries = aqo,pg_stat_statements
+track_io_timing = on
+work_mem = 65536 kB
+-- параметры aqo (значения по умолчанию) --
+aqo.advanced = off
+aqo.debug_print = off
+aqo.delta_rows = off
+aqo.dsm_size_max = 100
+aqo.enable = off
+aqo.force_collect_stat = off
+aqo.fs_max_items = 10000
+aqo.fss_max_items = 100000
+aqo.join_threshold = 0
+aqo.learn_statement_timeout = off
+aqo.min_neighbors_for_predicting = 3
+aqo.mode = auto
+aqo.predict_with_few_neighbors = on
+aqo.querytext_max_size = 1000
+aqo.sandbox = off
+aqo.show_details = on
+aqo.show_hash = on
+aqo.statement_timeout = 0
+aqo.wal_rw = on

@@ -1,0 +1,26 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=1405.28..1405.29 rows=1 width=16) (actual time=0.424..0.424 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=40
+   ->  Bitmap Heap Scan on fact_sales s  (cost=7.36..1402.38 rows=580 width=4) (actual time=0.125..0.413 rows=36.00 loops=1)
+         AQO: rows=580, error=94%, fss=-6512367513958460931
+         Recheck Cond: (product_id = 199360)
+         Heap Blocks: exact=36
+         Buffers: shared hit=40
+         ->  Bitmap Index Scan on fact_sales_product_idx  (cost=0.00..7.22 rows=354 width=0) (actual time=0.051..0.051 rows=36.00 loops=1)
+               Index Cond: (product_id = 199360)
+               Index Searches: 1
+               Buffers: shared hit=4
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=114
+ Planning Time: 0.684 ms
+ Execution Time: 0.515 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: 3899468340991963917
+ JOINS: 0
+(22 rows)
+

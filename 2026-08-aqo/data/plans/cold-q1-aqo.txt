@@ -1,0 +1,43 @@
+                                                                                QUERY PLAN                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=266425.02..266425.03 rows=1 width=16) (actual time=488185.919..488272.051 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=82254 read=262693
+   I/O Timings: shared read=1762689.313
+   ->  Gather  (cost=266424.70..266425.01 rows=3 width=16) (actual time=389147.903..488272.022 rows=4.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=82254 read=262693
+         I/O Timings: shared read=1762689.313
+         ->  Partial Aggregate  (cost=265424.70..265424.71 rows=1 width=16) (actual time=441407.870..441407.872 rows=1.00 loops=4)
+               AQO not used, fss=0
+               Buffers: shared hit=82254 read=262693
+               I/O Timings: shared read=1762689.313
+               ->  Nested Loop  (cost=0.44..264946.96 rows=95548 width=8) (actual time=29.357..441366.480 rows=74049.50 loops=4)
+                     AQO: rows=296198, error=0%, fss=-1764607399244455506
+                     Buffers: shared hit=82254 read=262693
+                     I/O Timings: shared read=1762689.313
+                     ->  Parallel Seq Scan on customers c  (cost=0.00..29982.32 rows=3228 width=4) (actual time=9.299..267.349 rows=2501.75 loops=4)
+                           AQO: rows=10007, error=0%, fss=-3344205451150445481
+                           Filter: ((city = 'city_090'::text) AND (region = 'region_09'::text) AND (country = 'country_2'::text))
+                           Rows Removed by Filter: 497498
+                           Buffers: shared hit=2 read=18690
+                           I/O Timings: shared read=56.130
+                     ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..72.49 rows=30 width=12) (actual time=7.400..176.296 rows=29.60 loops=10007)
+                           AQO: rows=30, error=1%, fss=7782523691446486773
+                           Index Cond: (customer_id = c.customer_id)
+                           Index Searches: 10007
+                           Buffers: shared hit=82252 read=244003
+                           I/O Timings: shared read=1762633.183
+ Planning:
+   Buffers: shared hit=223 read=80
+   I/O Timings: shared read=173.629
+ Planning Time: 185.841 ms
+ Execution Time: 488272.277 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: -6756580250532235920
+ JOINS: 1
+(39 rows)
+

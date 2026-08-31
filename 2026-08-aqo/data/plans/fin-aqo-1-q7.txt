@@ -1,0 +1,31 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=694.39..694.64 rows=100 width=24) (actual time=8.930..8.942 rows=100.00 loops=1)
+   Buffers: shared hit=877
+   ->  Sort  (cost=694.39..695.34 rows=379 width=24) (actual time=8.929..8.934 rows=100.00 loops=1)
+         Sort Key: sale_ts DESC
+         Sort Method: top-N heapsort  Memory: 36kB
+         Buffers: shared hit=877
+         ->  Bitmap Heap Scan on fact_sales s  (cost=5.81..679.90 rows=379 width=24) (actual time=0.280..8.816 rows=379.00 loops=1)
+               AQO: rows=379, error=0%, fss=-1417334529518755307
+               Recheck Cond: (customer_id = 1)
+               Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+               Rows Removed by Filter: 492
+               Heap Blocks: exact=871
+               Buffers: shared hit=874
+               ->  Bitmap Index Scan on fact_sales_customer_idx  (cost=0.00..5.72 rows=170 width=0) (actual time=0.130..0.130 rows=871.00 loops=1)
+                     Index Cond: (customer_id = 1)
+                     Index Searches: 1
+                     Buffers: shared hit=3
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=142
+ Planning Time: 0.985 ms
+ Execution Time: 9.018 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: -4960714003802639490
+ JOINS: 0
+(27 rows)
+

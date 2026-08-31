@@ -1,0 +1,10 @@
+  [07:04:17] rpc1.1-base = 505511.305 ms
+  [07:13:49] rpc4-base = 80239.933 ms
+  [07:16:32] rpc4-aqo = 80240.435 ms
+  [07:19:15] hashjoin = 80226.792 ms
+== Итог ==
+variant      ms
+rpc1.1-base  505511.305
+rpc4-base    80239.933
+rpc4-aqo     80240.435
+hashjoin     80226.792

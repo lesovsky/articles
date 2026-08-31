@@ -1,0 +1,10 @@
+query,median_ms,root_est,root_act,root_err,max_err,max_err_node,exec_ms,plan_ms,shape
+q1,1458.385,1,1,1.0,1.6,Hash,2131.1,1.7,Aggregate>Gather>Aggregate>Hash Join>Seq Scan>Hash>Seq Scan
+q2,1899.375,1,1,1.0,1.6,Hash,2773.8,1.6,Aggregate>Gather>Aggregate>Hash Join>Seq Scan>Hash>Seq Scan
+q4,3748.444,1,1,1.0,1.2,Gather,3724.3,0.8,Aggregate>Gather>Aggregate>Seq Scan
+q5,731.923,20,20,1.0,2.4,Hash,725.1,2.9,Aggregate>Gather Merge>Aggregate>Sort>Hash Join>Hash Join>Hash Join>Nested Loop>Seq Scan>Index Scan>Hash>Seq Scan>Hash>Seq Scan>Hash>Seq Scan
+q6,5498.991,200,200,1.0,1.6,Hash,5770.4,1.5,Aggregate>Gather Merge>Sort>Aggregate>Hash Join>Seq Scan>Hash>Seq Scan
+q7,9.242,100,100,1.0,5.1,Bitmap Index Scan,7.9,0.9,Limit>Sort>Bitmap Heap Scan>Bitmap Index Scan
+q8,1603.128,4,4,1.0,2.9,Hash,2226.0,2.1,Sort>Aggregate>Gather Merge>Aggregate>Sort>Hash Join>Hash Join>Seq Scan>Hash>Seq Scan>Hash>Seq Scan
+q3-hot,37.716,1,1,1.0,17.9,Bitmap Index Scan,38.6,0.9,Aggregate>Bitmap Heap Scan>Bitmap Index Scan
+q3-cold,2.208,1,1,1.0,16.1,Bitmap Heap Scan(fact_sales),0.5,0.8,Aggregate>Bitmap Heap Scan>Bitmap Index Scan

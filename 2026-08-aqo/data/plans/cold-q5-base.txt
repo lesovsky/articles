@@ -1,0 +1,72 @@
+                                                                                          QUERY PLAN                                                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=86357.97..86365.34 rows=20 width=33) (actual time=968163.806..968328.254 rows=20.00 loops=1)
+   Group Key: st.region
+   Buffers: shared hit=1973933 read=495522
+   I/O Timings: shared read=3520079.793
+   ->  Gather Merge  (cost=86357.97..86364.72 rows=57 width=25) (actual time=968163.747..968328.069 rows=1884.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=1973933 read=495522
+         I/O Timings: shared read=3520079.793
+         ->  Sort  (cost=85357.93..85357.98 rows=18 width=25) (actual time=883204.103..883204.137 rows=471.00 loops=4)
+               Sort Key: st.region
+               Sort Method: quicksort  Memory: 40kB
+               Buffers: shared hit=1973933 read=495522
+               I/O Timings: shared read=3520079.793
+               Worker 0:  Sort Method: quicksort  Memory: 47kB
+               Worker 1:  Sort Method: quicksort  Memory: 59kB
+               Worker 2:  Sort Method: quicksort  Memory: 40kB
+               ->  Nested Loop  (cost=12.73..85357.56 rows=18 width=25) (actual time=7239.234..883201.033 rows=471.00 loops=4)
+                     Buffers: shared hit=1973909 read=495522
+                     I/O Timings: shared read=3520079.793
+                     ->  Hash Join  (cost=12.46..85352.29 rows=18 width=19) (actual time=7234.978..883192.754 rows=471.00 loops=4)
+                           Hash Cond: (p.supplier_id = sup.supplier_id)
+                           Buffers: shared hit=1968262 read=495514
+                           I/O Timings: shared read=3520062.827
+                           ->  Nested Loop  (cost=0.86..85340.47 rows=85 width=23) (actual time=477.928..883186.348 rows=2498.25 loops=4)
+                                 Buffers: shared hit=1968248 read=495512
+                                 I/O Timings: shared read=3520062.626
+                                 ->  Nested Loop  (cost=0.44..83499.53 rows=4183 width=16) (actual time=1.508..879276.181 rows=97213.50 loops=4)
+                                       Buffers: shared hit=415242 read=493099
+                                       I/O Timings: shared read=3507653.202
+                                       ->  Parallel Seq Scan on customers c  (cost=0.00..28369.42 rows=317 width=4) (actual time=0.366..1513.585 rows=246.25 loops=4)
+                                             Filter: ((segment = 'vip'::text) AND (region = 'region_09'::text))
+                                             Rows Removed by Filter: 499754
+                                             Buffers: shared hit=2 read=18690
+                                             I/O Timings: shared read=341.110
+                                       ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..173.14 rows=77 width=20) (actual time=16.299..3564.333 rows=394.78 loops=985)
+                                             Index Cond: (customer_id = c.customer_id)
+                                             Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+                                             Rows Removed by Filter: 505
+                                             Index Searches: 985
+                                             Buffers: shared hit=415240 read=474409
+                                             I/O Timings: shared read=3507312.092
+                                 ->  Index Scan using products_pkey on products p  (cost=0.42..0.44 rows=1 width=15) (actual time=0.039..0.039 rows=0.03 loops=388854)
+                                       Index Cond: (product_id = s.product_id)
+                                       Filter: (category = 'cat_13'::text)
+                                       Rows Removed by Filter: 1
+                                       Index Searches: 388854
+                                       Buffers: shared hit=1553006 read=2413
+                                       I/O Timings: shared read=12409.424
+                           ->  Hash  (cost=10.25..10.25 rows=108 width=4) (actual time=0.174..0.174 rows=108.00 loops=4)
+                                 Buckets: 1024  Batches: 1  Memory Usage: 12kB
+                                 Buffers: shared hit=14 read=2
+                                 I/O Timings: shared read=0.200
+                                 ->  Seq Scan on suppliers sup  (cost=0.00..10.25 rows=108 width=4) (actual time=0.066..0.154 rows=108.00 loops=4)
+                                       Filter: (country = 'country_2'::text)
+                                       Rows Removed by Filter: 392
+                                       Buffers: shared hit=14 read=2
+                                       I/O Timings: shared read=0.200
+                     ->  Index Scan using stores_pkey on stores st  (cost=0.28..0.29 rows=1 width=14) (actual time=0.015..0.015 rows=1.00 loops=1884)
+                           Index Cond: (store_id = s.store_id)
+                           Index Searches: 1884
+                           Buffers: shared hit=5647 read=8
+                           I/O Timings: shared read=16.966
+ Planning:
+   Buffers: shared hit=338 read=104
+   I/O Timings: shared read=27.915
+ Planning Time: 31.296 ms
+ Execution Time: 968328.445 ms
+(68 rows)
+

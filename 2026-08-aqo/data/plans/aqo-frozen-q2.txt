@@ -1,0 +1,44 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=1000.44..310478.71 rows=1 width=21) (actual time=13766.561..13897.417 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=15147965 read=2926995
+   I/O Timings: shared read=10986.842
+   ->  Gather  (cost=1000.44..310478.68 rows=3 width=45) (actual time=6416.917..13897.380 rows=4.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=15147965 read=2926995
+         I/O Timings: shared read=10986.842
+         ->  Partial GroupAggregate  (cost=0.44..309478.38 rows=1 width=45) (actual time=9167.205..9167.206 rows=1.00 loops=4)
+               AQO not used, fss=0
+               Buffers: shared hit=15147965 read=2926995
+               I/O Timings: shared read=10986.842
+               ->  Nested Loop  (cost=0.44..280453.31 rows=5805013 width=13) (actual time=0.169..8850.811 rows=4498885.00 loops=4)
+                     AQO: rows=17995540, error=0%, fss=-5500355995900734329
+                     Buffers: shared hit=15147965 read=2926995
+                     I/O Timings: shared read=10986.842
+                     ->  Parallel Seq Scan on customers c  (cost=0.00..26756.52 rows=6452 width=9) (actual time=0.095..37.203 rows=5000.00 loops=4)
+                           AQO: rows=20000, error=0%, fss=7123415191290700122
+                           Filter: (segment = 'vip'::text)
+                           Rows Removed by Filter: 495000
+                           Buffers: shared hit=1 read=18691
+                           I/O Timings: shared read=0.869
+                     ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..38.44 rows=88 width=12) (actual time=0.006..1.674 rows=899.78 loops=20000)
+                           AQO: rows=88, error=-922%, fss=7782523691446486773
+                           Index Cond: (customer_id = c.customer_id)
+                           Index Searches: 20000
+                           Buffers: shared hit=15147964 read=2908304
+                           I/O Timings: shared read=10985.973
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=236 read=74
+   I/O Timings: shared read=0.560
+ Planning Time: 2.127 ms
+ Execution Time: 13897.545 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: OFF
+ Query hash: 0
+ JOINS: 1
+(40 rows)
+

@@ -1,0 +1,25 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=682.16..682.35 rows=75 width=24) (actual time=6.704..6.716 rows=100.00 loops=1)
+   Buffers: shared hit=877
+   ->  Sort  (cost=682.16..682.35 rows=75 width=24) (actual time=6.704..6.709 rows=100.00 loops=1)
+         Sort Key: sale_ts DESC
+         Sort Method: top-N heapsort  Memory: 36kB
+         Buffers: shared hit=877
+         ->  Bitmap Heap Scan on fact_sales s  (cost=5.73..679.83 rows=75 width=24) (actual time=0.252..6.599 rows=379.00 loops=1)
+               Recheck Cond: (customer_id = 1)
+               Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+               Rows Removed by Filter: 492
+               Heap Blocks: exact=871
+               Buffers: shared hit=874
+               ->  Bitmap Index Scan on fact_sales_customer_idx  (cost=0.00..5.72 rows=170 width=0) (actual time=0.123..0.124 rows=871.00 loops=1)
+                     Index Cond: (customer_id = 1)
+                     Index Searches: 1
+                     Buffers: shared hit=3
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=139
+ Planning Time: 0.574 ms
+ Execution Time: 6.771 ms
+(21 rows)
+

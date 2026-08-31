@@ -1,0 +1,10 @@
+== 1. Калибровка констант по фактическим данным ==
+# константы серии baseline, 2026-08-22T18:35:00+03:00
+city=city_090 region=region_09 country=country_2 category=cat_13 customer_id=1
+product_hot=325 product_cold=171078
+-- MCV по product_id: сколько значений покрыто --
+mcv_size=800
+-- фактические частоты выбранных product_id --
+hot  325 -> 18277
+cold 171078 -> 108
+== 2. Прогоны ==

@@ -1,0 +1,50 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=272351.04..272351.05 rows=4 width=60) (actual time=299.505..390.134 rows=4.00 loops=1)
+   Sort Key: (sum(s.amount)) DESC
+   Sort Method: quicksort  Memory: 25kB
+   Buffers: shared hit=346844
+   ->  Finalize GroupAggregate  (cost=272325.13..272351.00 rows=4 width=60) (actual time=299.306..390.111 rows=4.00 loops=1)
+         Group Key: c.segment
+         Buffers: shared hit=346841
+         ->  Gather Merge  (cost=272325.13..272350.83 rows=12 width=60) (actual time=299.243..390.092 rows=16.00 loops=1)
+               Workers Planned: 3
+               Workers Launched: 3
+               Buffers: shared hit=346841
+               ->  Partial GroupAggregate  (cost=271325.09..271349.38 rows=4 width=60) (actual time=294.109..294.308 rows=4.00 loops=4)
+                     Group Key: c.segment
+                     Buffers: shared hit=346841
+                     ->  Sort  (cost=271325.09..271329.94 rows=1940 width=24) (actual time=294.038..294.115 rows=1881.00 loops=4)
+                           Sort Key: c.segment
+                           Sort Method: quicksort  Memory: 137kB
+                           Buffers: shared hit=346841
+                           Worker 0:  Sort Method: quicksort  Memory: 135kB
+                           Worker 1:  Sort Method: quicksort  Memory: 138kB
+                           Worker 2:  Sort Method: quicksort  Memory: 138kB
+                           ->  Parallel Hash Join  (cost=3371.03..271219.15 rows=1940 width=24) (actual time=5.277..293.318 rows=1881.00 loops=4)
+                                 Hash Cond: (s.product_id = p.product_id)
+                                 Buffers: shared hit=346817
+                                 ->  Nested Loop  (cost=0.44..267598.98 rows=95081 width=21) (actual time=0.074..279.861 rows=74049.50 loops=4)
+                                       Buffers: shared hit=344947
+                                       ->  Parallel Seq Scan on customers c  (cost=0.00..28369.42 rows=3169 width=9) (actual time=0.026..31.217 rows=2501.75 loops=4)
+                                             Filter: ((city = 'city_090'::text) AND (region = 'region_09'::text))
+                                             Rows Removed by Filter: 497498
+                                             Buffers: shared hit=18692
+                                       ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..73.75 rows=174 width=20) (actual time=0.005..0.096 rows=29.60 loops=10007)
+                                             Index Cond: (customer_id = c.customer_id)
+                                             Index Searches: 10007
+                                             Buffers: shared hit=326255
+                                 ->  Parallel Hash  (cost=3340.59..3340.59 rows=2400 width=11) (actual time=4.854..4.854 rows=1020.00 loops=4)
+                                       Buckets: 4096  Batches: 1  Memory Usage: 288kB
+                                       Buffers: shared hit=1870
+                                       ->  Parallel Seq Scan on products p  (cost=0.00..3340.59 rows=2400 width=11) (actual time=0.025..4.588 rows=1020.00 loops=4)
+                                             Filter: (category = 'cat_13'::text)
+                                             Rows Removed by Filter: 48980
+                                             Buffers: shared hit=1870
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=384
+ Planning Time: 1.986 ms
+ Execution Time: 390.332 ms
+(46 rows)
+

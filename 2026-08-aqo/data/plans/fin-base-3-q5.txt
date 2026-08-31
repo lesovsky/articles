@@ -1,0 +1,63 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=225833.02..225840.39 rows=20 width=33) (actual time=964.556..1061.903 rows=20.00 loops=1)
+   Group Key: st.region
+   Buffers: shared hit=2469455
+   ->  Gather Merge  (cost=225833.02..225839.77 rows=57 width=25) (actual time=964.512..1061.712 rows=1884.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=2469455
+         ->  Sort  (cost=224832.98..224833.03 rows=18 width=25) (actual time=947.279..947.304 rows=471.00 loops=4)
+               Sort Key: st.region
+               Sort Method: quicksort  Memory: 46kB
+               Buffers: shared hit=2469455
+               Worker 0:  Sort Method: quicksort  Memory: 46kB
+               Worker 1:  Sort Method: quicksort  Memory: 46kB
+               Worker 2:  Sort Method: quicksort  Memory: 47kB
+               ->  Nested Loop  (cost=18.03..224832.61 rows=18 width=25) (actual time=8.096..946.683 rows=471.00 loops=4)
+                     Buffers: shared hit=2469431
+                     ->  Hash Join  (cost=17.75..224827.34 rows=18 width=19) (actual time=8.074..945.010 rows=471.00 loops=4)
+                           Hash Cond: (p.supplier_id = sup.supplier_id)
+                           Buffers: shared hit=2463776
+                           ->  Nested Loop  (cost=6.15..224815.52 rows=85 width=23) (actual time=1.222..944.103 rows=2498.25 loops=4)
+                                 Buffers: shared hit=2463760
+                                 ->  Nested Loop  (cost=5.73..222973.46 rows=4183 width=16) (actual time=0.364..649.428 rows=97213.50 loops=4)
+                                       Buffers: shared hit=908341
+                                       ->  Parallel Seq Scan on customers c  (cost=0.00..28369.42 rows=317 width=4) (actual time=0.029..31.026 rows=246.25 loops=4)
+                                             Filter: ((segment = 'vip'::text) AND (region = 'region_09'::text))
+                                             Rows Removed by Filter: 499754
+                                             Buffers: shared hit=18692
+                                       ->  Bitmap Heap Scan on fact_sales s  (cost=5.73..613.12 rows=77 width=20) (actual time=0.138..2.461 rows=394.78 loops=985)
+                                             Recheck Cond: (customer_id = c.customer_id)
+                                             Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+                                             Rows Removed by Filter: 505
+                                             Heap Blocks: exact=210234
+                                             Buffers: shared hit=889649
+                                             ->  Bitmap Index Scan on fact_sales_customer_idx  (cost=0.00..5.71 rows=174 width=0) (actual time=0.062..0.062 rows=900.18 loops=985)
+                                                   Index Cond: (customer_id = c.customer_id)
+                                                   Index Searches: 985
+                                                   Buffers: shared hit=3634
+                                 ->  Index Scan using products_pkey on products p  (cost=0.42..0.44 rows=1 width=15) (actual time=0.003..0.003 rows=0.03 loops=388854)
+                                       Index Cond: (product_id = s.product_id)
+                                       Filter: (category = 'cat_13'::text)
+                                       Rows Removed by Filter: 1
+                                       Index Searches: 388854
+                                       Buffers: shared hit=1555419
+                           ->  Hash  (cost=10.25..10.25 rows=108 width=4) (actual time=0.107..0.108 rows=108.00 loops=4)
+                                 Buckets: 1024  Batches: 1  Memory Usage: 12kB
+                                 Buffers: shared hit=16
+                                 ->  Seq Scan on suppliers sup  (cost=0.00..10.25 rows=108 width=4) (actual time=0.055..0.090 rows=108.00 loops=4)
+                                       Filter: (country = 'country_2'::text)
+                                       Rows Removed by Filter: 392
+                                       Buffers: shared hit=16
+                     ->  Index Scan using stores_pkey on stores st  (cost=0.28..0.29 rows=1 width=14) (actual time=0.003..0.003 rows=1.00 loops=1884)
+                           Index Cond: (store_id = s.store_id)
+                           Index Searches: 1884
+                           Buffers: shared hit=5655
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=442
+ Planning Time: 2.142 ms
+ Execution Time: 1062.177 ms
+(59 rows)
+

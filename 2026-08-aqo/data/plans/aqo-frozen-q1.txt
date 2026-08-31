@@ -1,0 +1,37 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=268297.26..268297.27 rows=1 width=16) (actual time=301.886..394.810 rows=1.00 loops=1)
+   AQO not used, fss=0
+   Buffers: shared hit=344947
+   ->  Gather  (cost=268296.94..268297.25 rows=3 width=16) (actual time=301.790..394.804 rows=4.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=344947
+         ->  Partial Aggregate  (cost=267296.94..267296.95 rows=1 width=16) (actual time=297.553..297.554 rows=1.00 loops=4)
+               AQO not used, fss=0
+               Buffers: shared hit=344947
+               ->  Nested Loop  (cost=0.44..266819.20 rows=95548 width=8) (actual time=0.100..292.095 rows=74049.50 loops=4)
+                     AQO: rows=296198, error=0%, fss=-1764607399244455506
+                     Buffers: shared hit=344947
+                     ->  Parallel Seq Scan on customers c  (cost=0.00..29982.32 rows=3228 width=4) (actual time=0.033..33.368 rows=2501.75 loops=4)
+                           AQO: rows=10007, error=0%, fss=-3344205451150445481
+                           Filter: ((city = 'city_090'::text) AND (region = 'region_09'::text) AND (country = 'country_2'::text))
+                           Rows Removed by Filter: 497498
+                           Buffers: shared hit=18692
+                     ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..72.49 rows=88 width=12) (actual time=0.006..0.100 rows=29.60 loops=10007)
+                           AQO: rows=88, error=66%, fss=7782523691446486773
+                           Index Cond: (customer_id = c.customer_id)
+                           Index Searches: 10007
+                           Buffers: shared hit=326255
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=303
+ Planning Time: 1.750 ms
+ Execution Time: 394.972 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: OFF
+ Query hash: 0
+ JOINS: 1
+(33 rows)
+

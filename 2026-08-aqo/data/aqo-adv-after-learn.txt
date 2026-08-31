@@ -1,0 +1,52 @@
+# состояние aqo после обучения, 2026-08-23T12:21:29+03:00
+-- классы запросов --
+классов: 9
+-7434155318532091814 | learn=true | use=true | auto_tuning=false
+-6756580250532235920 | learn=true | use=true | auto_tuning=false
+-5422954676059353900 | learn=true | use=true | auto_tuning=false
+-4960714003802639490 | learn=true | use=true | auto_tuning=false
+-873567969981935012 | learn=true | use=true | auto_tuning=false
+0 | learn=false | use=false | auto_tuning=false
+1804317982235826452 | learn=true | use=true | auto_tuning=false
+3899468340991963917 | learn=true | use=true | auto_tuning=false
+4176606909736695326 | learn=true | use=true | auto_tuning=false
+-- использование памяти --
+AQO|128|104
+AQO Data HTAB|4992|4952
+AQO Data HTAB sandbox|4992|4952
+AQO deactivated queries|8192|5520
+AQO LRUCache data|128|16
+AQO LRUCache data sandbox|128|16
+AQO LRUCache qtext|128|16
+AQO LRUCache qtext sandbox|128|16
+AQO Queries HTAB|2944|2904
+AQO Queries HTAB sandbox|2944|2904
+AQO Query Texts HTAB|2944|2904
+AQO Query Texts HTAB sandbox|2944|2904
+AQO sandbox|128|104
+AQO Stat HTAB|2944|2904
+AQO Stat HTAB sandbox|2944|2904
+AQOCacheMemCtx|8192|240
+AQOLearnMemoryContext|8192|240
+AQOPredictMemoryContext|8192|240
+AQOStorageMemoryContext|8192|240
+AQOTopMemoryContext|8192|240
+9|10000|34|100000|2097152|104857600
+-- ошибка оценки по классам: с aqo против без --
+1|24632|1804317982235826452|0|10
+2|24632|-7434155318532091814|0|10
+3|24632|4176606909736695326|0|10
+4|24632|-5422954676059353900|0|10
+5|24632|-873567969981935012|0|10
+6|24632|-6756580250532235920|0|10
+7|24632|3899468340991963917|1.543623691194882|20
+8|24632|-4960714003802639490|0|10
+-- время выполнения по классам: с aqo против без --
+1|24632|1804317982235826452|3.862064291|10
+2|24632|-7434155318532091814|4.782865507|10
+3|24632|4176606909736695326|13.078582367|10
+4|24632|-5422954676059353900|1.077379463|10
+5|24632|-873567969981935012|0.553875623|10
+6|24632|-6756580250532235920|0.467825594|10
+7|24632|3899468340991963917|0.000800992|20
+8|24632|-4960714003802639490|0.012215919|10

@@ -1,0 +1,60 @@
+                                                                                                             QUERY PLAN                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=923324.06..923434.49 rows=200 width=35) (actual time=5050.550..5162.016 rows=200.00 loops=1)
+   AQO: rows=200, error=-0%, fss=9156655128570703370
+   Group Key: c.city, c.region
+   Buffers: shared hit=503389 read=133894
+   I/O Timings: shared read=34.725
+   ->  Gather Merge  (cost=923324.06..923424.49 rows=800 width=35) (actual time=5050.541..5161.883 rows=1000.00 loops=1)
+         Workers Planned: 4
+         Workers Launched: 4
+         Buffers: shared hit=503389 read=133894
+         I/O Timings: shared read=34.725
+         ->  Sort  (cost=922323.97..922324.47 rows=200 width=35) (actual time=5017.927..5017.937 rows=200.00 loops=5)
+               Sort Key: c.city, c.region
+               Sort Method: quicksort  Memory: 35kB
+               Buffers: shared hit=503389 read=133894
+               I/O Timings: shared read=34.725
+               Worker 0:  Sort Method: quicksort  Memory: 35kB
+               Worker 1:  Sort Method: quicksort  Memory: 35kB
+               Worker 2:  Sort Method: quicksort  Memory: 35kB
+               Worker 3:  Sort Method: quicksort  Memory: 35kB
+               ->  Partial HashAggregate  (cost=922310.51..922312.51 rows=200 width=35) (actual time=5017.673..5017.698 rows=200.00 loops=5)
+                     AQO: rows=200, error=-0%, fss=9156655128570703370
+                     Group Key: c.city, c.region
+                     Batches: 1  Memory Usage: 48kB
+                     Buffers: shared hit=503357 read=133894
+                     I/O Timings: shared read=34.725
+                     Worker 0:  Batches: 1  Memory Usage: 48kB
+                     Worker 1:  Batches: 1  Memory Usage: 48kB
+                     Worker 2:  Batches: 1  Memory Usage: 48kB
+                     Worker 3:  Batches: 1  Memory Usage: 48kB
+                     ->  Parallel Hash Join  (cost=33208.13..856533.56 rows=6577695 width=27) (actual time=214.236..4119.602 rows=5262155.80 loops=5)
+                           AQO: rows=26310779, error=0%, fss=4627347304732062103
+                           Hash Cond: (s.customer_id = c.customer_id)
+                           Buffers: shared hit=503357 read=133894
+                           I/O Timings: shared read=34.725
+                           ->  Parallel Seq Scan on fact_sales s  (cost=0.00..806058.95 rows=6577695 width=12) (actual time=0.888..1397.616 rows=5262155.80 loops=5)
+                                 AQO: rows=26310779, error=0%, fss=-2386980624529686340
+                                 Filter: (sale_ts >= '2025-01-01 00:00:00+03'::timestamp with time zone)
+                                 Rows Removed by Filter: 6737844
+                                 Buffers: shared hit=484665 read=133894
+                                 I/O Timings: shared read=34.725
+                           ->  Parallel Hash  (cost=25143.61..25143.61 rows=645161 width=23) (actual time=210.875..210.876 rows=400000.00 loops=5)
+                                 Buckets: 2097152  Batches: 1  Memory Usage: 126048kB
+                                 Buffers: shared hit=18692
+                                 ->  Parallel Seq Scan on customers c  (cost=0.00..25143.61 rows=645161 width=23) (actual time=0.039..40.756 rows=400000.00 loops=5)
+                                       AQO: rows=2000000, error=0%, fss=-7417840047886813421
+                                       Buffers: shared hit=18692
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', random_page_cost = '1.1', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=320
+ Planning Time: 2.103 ms
+ Execution Time: 5162.238 ms
+ Using aqo: true
+ AQO mode: FROZEN
+ AQO advanced: ON
+ Query hash: -7434155318532091814
+ JOINS: 1
+(56 rows)
+

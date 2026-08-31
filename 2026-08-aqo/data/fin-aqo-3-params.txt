@@ -1,0 +1,8 @@
+# константы серии fin-aqo-3, 2026-08-24T14:11:31+03:00
+city=city_090 region=region_09 country=country_2 category=cat_13 customer_id=1
+product_hot=383 product_cold=199360
+-- MCV по product_id: сколько значений покрыто --
+mcv_size=800
+-- фактические частоты выбранных product_id --
+hot  383 -> 6323
+cold 199360 -> 36

@@ -1,0 +1,19 @@
+                                                                                                QUERY PLAN                                                                                                 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=1404.10..1404.11 rows=1 width=16) (actual time=0.602..0.603 rows=1.00 loops=1)
+   Buffers: shared hit=40
+   ->  Bitmap Heap Scan on fact_sales s  (cost=7.31..1402.33 rows=354 width=4) (actual time=0.132..0.589 rows=36.00 loops=1)
+         Recheck Cond: (product_id = 199360)
+         Heap Blocks: exact=36
+         Buffers: shared hit=40
+         ->  Bitmap Index Scan on fact_sales_product_idx  (cost=0.00..7.22 rows=354 width=0) (actual time=0.058..0.059 rows=36.00 loops=1)
+               Index Cond: (product_id = 199360)
+               Index Searches: 1
+               Buffers: shared hit=4
+ Settings: temp_buffers = '16MB', effective_io_concurrency = '500', generic_plan_fuzz_factor = '0.9', effective_cache_size = '12GB', work_mem = '64MB', max_parallel_workers_per_gather = '4', jit = 'off'
+ Planning:
+   Buffers: shared hit=111
+ Planning Time: 0.629 ms
+ Execution Time: 0.715 ms
+(15 rows)
+

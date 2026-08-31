@@ -1,0 +1,33 @@
+                                                                                 QUERY PLAN                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=1000.44..287411.06 rows=1 width=21) (actual time=1058502.165..1058658.924 rows=1.00 loops=1)
+   Buffers: shared hit=14807096 read=3267864
+   I/O Timings: shared read=4182446.269
+   ->  Gather  (cost=1000.44..287411.03 rows=3 width=45) (actual time=1052451.362..1058658.885 rows=4.00 loops=1)
+         Workers Planned: 3
+         Workers Launched: 3
+         Buffers: shared hit=14807096 read=3267864
+         I/O Timings: shared read=4182446.269
+         ->  Partial GroupAggregate  (cost=0.44..286410.73 rows=1 width=45) (actual time=1055875.462..1055875.464 rows=1.00 loops=4)
+               Buffers: shared hit=14807096 read=3267864
+               I/O Timings: shared read=4182446.269
+               ->  Nested Loop  (cost=0.44..285456.29 rows=190887 width=13) (actual time=27.390..1055470.622 rows=4498885.00 loops=4)
+                     Buffers: shared hit=14807096 read=3267864
+                     I/O Timings: shared read=4182446.269
+                     ->  Parallel Seq Scan on customers c  (cost=0.00..26756.52 rows=6363 width=9) (actual time=4.996..226.946 rows=5000.00 loops=4)
+                           Filter: (segment = 'vip'::text)
+                           Rows Removed by Filter: 495000
+                           Buffers: shared hit=1 read=18691
+                           I/O Timings: shared read=141.398
+                     ->  Index Scan using fact_sales_customer_idx on fact_sales s  (cost=0.44..38.92 rows=174 width=12) (actual time=0.258..210.939 rows=899.78 loops=20000)
+                           Index Cond: (customer_id = c.customer_id)
+                           Index Searches: 20000
+                           Buffers: shared hit=14807095 read=3249173
+                           I/O Timings: shared read=4182304.871
+ Planning:
+   Buffers: shared hit=239 read=68
+   I/O Timings: shared read=139.326
+ Planning Time: 149.667 ms
+ Execution Time: 1058659.107 ms
+(29 rows)
+

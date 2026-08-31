@@ -1,0 +1,10 @@
+query,median_ms,root_est,root_act,root_err,max_err,max_err_node,exec_ms,plan_ms,shape
+q1,401.980,1,1,1.0,3.0,Index Scan(fact_sales),411.4,1.8,Aggregate>Gather>Aggregate>Nested Loop>Seq Scan>Index Scan
+q2,9345.684,1,1,1.0,10.2,Index Scan(fact_sales),12016.1,1.9,Aggregate>Gather>Aggregate>Nested Loop>Seq Scan>Index Scan
+q4,3764.700,1,1,1.0,1.2,Gather,3772.4,0.9,Aggregate>Gather>Aggregate>Seq Scan
+q5,630.364,20,20,1.0,2.4,Hash,623.4,3.1,Aggregate>Gather Merge>Aggregate>Sort>Hash Join>Hash Join>Hash Join>Nested Loop>Seq Scan>Index Scan>Hash>Seq Scan>Hash>Seq Scan>Hash>Seq Scan
+q6,4259.445,200,200,1.0,1.6,Hash,4747.5,2.0,Aggregate>Gather Merge>Sort>Aggregate>Hash Join>Seq Scan>Hash>Seq Scan
+q7,9.619,100,100,1.0,3.8,Sort,5.9,0.9,Limit>Sort>Index Scan
+q8,390.375,4,4,1.0,3.0,Index Scan(fact_sales),412.1,2.5,Sort>Aggregate>Gather Merge>Aggregate>Sort>Hash Join>Nested Loop>Seq Scan>Index Scan>Hash>Seq Scan
+q3-hot,33.582,1,1,1.0,10.9,Index Scan(fact_sales),31.7,1.0,Aggregate>Index Scan
+q3-cold,1.938,1,1,1.0,16.1,Index Scan(fact_sales),0.5,0.8,Aggregate>Index Scan
