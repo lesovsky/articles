@@ -1,6 +1,7 @@
 ---
 created: 2026-08-11
 status: approved
+published: https://habr.com/ru/articles/1071134/
 type: article
 target_reader: DBA, работающие с PostgreSQL; асинхронный I/O для них новая тема
 ---

@@ -1,6 +1,7 @@
 ---
 created: 2026-08-20
 status: approved
+published: https://habr.com/ru/articles/1072388/
 type: article
 target_reader: DBA и администраторы PostgreSQL, знакомые с VACUUM, pg_repack и проблемой раздувания таблиц
 source: Confluence 380674100
