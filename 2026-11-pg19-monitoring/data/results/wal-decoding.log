@@ -1,0 +1,100 @@
+CREATE TABLE
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+INSERT 0 1
+CHECKPOINT
+UPDATE 1
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+INSERT 0 1
+             phase             | wal_records | wal_fpi | wal_bytes | wal_fpi_bytes 
+-------------------------------+-------------+---------+-----------+---------------
+ first update after checkpoint |           3 |       1 |      4641 |          4508
+(1 строка)
+
+INSERT 0 1
+UPDATE 1
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+INSERT 0 1
+              phase               | wal_records | wal_fpi | wal_bytes | wal_fpi_bytes 
+----------------------------------+-------------+---------+-----------+---------------
+ second update without checkpoint |           4 |       0 |       370 |             0
+(1 строка)
+
+ wal_fpi_bytes | wal_bytes |         stats_reset          
+---------------+-----------+------------------------------
+      51169944 | 153633735 | 2026-11-22 16:51:13.12722+05
+(1 строка)
+
+        phase        | wal_level | effective_wal_level 
+---------------------+-----------+---------------------
+ before logical slot | replica   | replica
+(1 строка)
+
+ pg_drop_replication_slot 
+--------------------------
+(0 строк)
+
+ pg_create_logical_replication_slot 
+------------------------------------
+ (lab_decode,A4/29CD2F98)
+(1 строка)
+
+       phase        | wal_level | effective_wal_level 
+--------------------+-----------+---------------------
+ after logical slot | replica   | logical
+(1 строка)
+
+SET
+UPDATE 20000
+ decoded_changes 
+-----------------
+           20002
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+ slot_name  | spill_txns | spill_count | spill_bytes | stream_txns | mem_exceeded_count | total_txns | total_bytes 
+------------+------------+-------------+-------------+-------------+--------------------+------------+-------------
+ lab_decode |          1 |          11 |    10880000 |           0 |                 10 |          1 |    10880000
+(1 строка)
+
+ pg_drop_replication_slot 
+--------------------------
+ 
+(1 строка)
+
+CHECKPOINT
+             phase              | wal_level | effective_wal_level 
+--------------------------------+-----------+---------------------
+ after slot drop and checkpoint | replica   | replica
+(1 строка)
+

@@ -1,0 +1,120 @@
+--- 2026-11-pg19-monitoring/data/inventory/pg17/wait-events.csv	2026-11-22 16:28:30.381520663 +0500
++++ 2026-11-pg19-monitoring/data/inventory/pg19/wait-events.csv	2026-11-22 16:52:38.049852857 +0500
+@@ -4,18 +4,23 @@
+ Activity,BgwriterHibernate,"Waiting in background writer process, hibernating"
+ Activity,BgwriterMain,Waiting in main loop of background writer process
+ Activity,CheckpointerMain,Waiting in main loop of checkpointer process
++Activity,CheckpointerShutdown,Waiting for checkpointer process to be terminated
++Activity,IoWorkerMain,Waiting in main loop of IO Worker process
+ Activity,LogicalApplyMain,Waiting in main loop of logical replication apply process
+ Activity,LogicalLauncherMain,Waiting in main loop of logical replication launcher process
+ Activity,LogicalParallelApplyMain,Waiting in main loop of logical replication parallel apply process
+ Activity,RecoveryWalStream,"Waiting in main loop of startup process for WAL to arrive, during streaming recovery"
+-Activity,ReplicationSlotsyncMain,Waiting in main loop of slot sync worker
++Activity,ReplicationSlotsyncMain,Waiting in main loop of slot synchronization
+ Activity,ReplicationSlotsyncShutdown,Waiting for slot sync worker to shut down
+ Activity,SysloggerMain,Waiting in main loop of syslogger process
+ Activity,WalReceiverMain,Waiting in main loop of WAL receiver process
+ Activity,WalSenderMain,Waiting in main loop of WAL sender process
+ Activity,WalSummarizerWal,Waiting in WAL summarizer for more WAL to be generated
+ Activity,WalWriterMain,Waiting in main loop of WAL writer process
+-BufferPin,BufferPin,Waiting to acquire an exclusive pin on a buffer
++Buffer,BufferCleanup,Waiting to acquire an exclusive pin on a buffer. Buffer pin waits can be protracted if another process holds an open cursor that last read data from the buffer in question
++Buffer,BufferExclusive,Waiting to acquire an exclusive lock on a buffer
++Buffer,BufferShared,Waiting to acquire a shared lock on a buffer
++Buffer,BufferShareExclusive,Waiting to acquire a share exclusive lock on a buffer
+ Client,ClientRead,Waiting to read data from the client
+ Client,ClientWrite,Waiting to write data to the client
+ Client,GssOpenServer,Waiting to read data from the client while establishing a GSSAPI session
+@@ -26,6 +31,9 @@
+ Client,WalSenderWaitForWal,Waiting for WAL to be flushed in WAL sender process
+ Client,WalSenderWriteData,Waiting for any activity when processing replies from WAL receiver in WAL sender process
+ Extension,Extension,Waiting in an extension
++IO,AioIoCompletion,Waiting for another process to complete IO
++IO,AioIoUringExecution,Waiting for IO execution via io_uring
++IO,AioIoUringSubmit,Waiting for IO submission via io_uring
+ IO,BasebackupRead,Waiting for base backup to read from a file
+ IO,BasebackupSync,Waiting for data written by a base backup to reach durable storage
+ IO,BasebackupWrite,Waiting for base backup to write to a file
+@@ -37,8 +45,11 @@
+ IO,ControlFileSyncUpdate,Waiting for an update to the pg_control file to reach durable storage
+ IO,ControlFileWrite,Waiting for a write to the pg_control file
+ IO,ControlFileWriteUpdate,Waiting for a write to update the pg_control file
++IO,CopyFileCopy,Waiting for a file copy operation
+ IO,CopyFileRead,Waiting for a read during a file copy operation
+ IO,CopyFileWrite,Waiting for a write during a file copy operation
++IO,CopyFromRead,"Waiting to read data from a pipe, a file or a program during COPY FROM"
++IO,CopyToWrite,"Waiting to write data to a pipe, a file or a program during COPY TO"
+ IO,DataFileExtend,Waiting for a relation data file to be extended
+ IO,DataFileFlush,Waiting for a relation data file to reach durable storage
+ IO,DataFileImmediateSync,Waiting for an immediate synchronization of a relation data file to durable storage
+@@ -151,11 +162,15 @@
+ IPC,RecoveryConflictTablespace,Waiting for recovery conflict resolution for dropping a tablespace
+ IPC,RecoveryEndCommand,Waiting for recovery_end_command to complete
+ IPC,RecoveryPause,Waiting for recovery to be resumed
++IPC,RepackWorkerExport,Waiting for decoding worker to export a new output file
+ IPC,ReplicationOriginDrop,Waiting for a replication origin to become inactive so it can be dropped
+ IPC,ReplicationSlotDrop,Waiting for a replication slot to become inactive so it can be dropped
+ IPC,RestoreCommand,Waiting for restore_command to complete
+ IPC,SafeSnapshot,Waiting to obtain a valid snapshot for a READ ONLY DEFERRABLE transaction
+ IPC,SyncRep,Waiting for confirmation from a remote server during synchronous replication
++IPC,WaitForWalFlush,Waiting for WAL flush to reach a target LSN on a primary or standby
++IPC,WaitForWalReplay,Waiting for WAL replay to reach a target LSN on a standby
++IPC,WaitForWalWrite,Waiting for WAL write to reach a target LSN on a standby
+ IPC,WalReceiverExit,Waiting for the WAL receiver to exit
+ IPC,WalReceiverUpstreamCatchup,Waiting for upstream server WAL flush position to catch up to requested start point
+ IPC,WalReceiverWaitStart,Waiting for startup process to send initial data for streaming replication
+@@ -174,12 +189,14 @@
+ Lock,userlock,Waiting to acquire a user lock
+ Lock,virtualxid,Waiting to acquire a virtual transaction ID lock
+ LWLock,AddinShmemInit,Waiting to manage an extension's space allocation in shared memory
++LWLock,AioUringCompletion,Waiting for another process to complete IO via io_uring
++LWLock,AioWorkerControl,Waiting to update AIO worker information
++LWLock,AioWorkerSubmissionQueue,Waiting to access AIO worker submission queue
+ LWLock,AutoFile,Waiting to update the postgresql.auto.conf file
+ LWLock,Autovacuum,Waiting to read or update the current state of autovacuum workers
+ LWLock,AutovacuumSchedule,Waiting to ensure that a table selected for autovacuum still needs vacuuming
+ LWLock,BackgroundWorker,Waiting to read or update background worker state
+ LWLock,BtreeVacuum,Waiting to read or update vacuum-related information for a B-tree index
+-LWLock,BufferContent,Waiting to access a data page in memory
+ LWLock,BufferMapping,Waiting to associate a data block with a buffer in the buffer pool
+ LWLock,CheckpointerComm,Waiting to manage fsync requests
+ LWLock,CommitTs,Waiting to read or update the last value set for a transaction commit timestamp
+@@ -193,6 +210,7 @@
+ LWLock,InjectionPoint,Waiting to read or update information related to injection points
+ LWLock,LockFastPath,Waiting to read or update a process' fast-path lock information
+ LWLock,LockManager,"Waiting to read or update information about ""heavyweight"" locks"
++LWLock,LogicalDecodingControl,Waiting to read or update logical decoding status information
+ LWLock,LogicalRepLauncherDSA,Waiting to access logical replication launcher's dynamic shared memory allocator
+ LWLock,LogicalRepLauncherHash,Waiting to access logical replication launcher's shared hash table
+ LWLock,LogicalRepWorker,Waiting to read or update the state of logical replication workers
+@@ -203,11 +221,13 @@
+ LWLock,MultiXactOffsetSLRU,Waiting to access the multixact offset SLRU cache
+ LWLock,MultiXactTruncation,Waiting to read or truncate multixact information
+ LWLock,NotifyBuffer,Waiting for I/O on a NOTIFY message SLRU buffer
++LWLock,NotifyChannelHash,Waiting to access the NOTIFY channel hash table
+ LWLock,NotifyQueue,Waiting to read or update NOTIFY messages
+ LWLock,NotifyQueueTail,Waiting to update limit on NOTIFY message storage
+ LWLock,NotifySLRU,Waiting to access the NOTIFY message SLRU cache
+ LWLock,OidGen,Waiting to allocate a new OID
+ LWLock,ParallelAppend,Waiting to choose the next subplan during Parallel Append plan execution
++LWLock,ParallelBtreeScan,Waiting to synchronize workers during Parallel B-tree scan plan execution
+ LWLock,ParallelHashJoin,Waiting to synchronize workers during Parallel Hash Join plan execution
+ LWLock,ParallelQueryDSA,Waiting for parallel query dynamic shared memory allocation
+ LWLock,ParallelVacuumDSA,Waiting for parallel vacuum dynamic shared memory allocation
+@@ -245,6 +265,7 @@
+ LWLock,TablespaceCreate,Waiting to create or drop a tablespace
+ LWLock,TwoPhaseState,Waiting to read or update the state of prepared transactions
+ LWLock,WaitEventCustom,Waiting to read or update custom wait events information
++LWLock,WaitLSN,Waiting to read or update shared Wait-for-LSN state
+ LWLock,WALBufMapping,Waiting to replace a page in WAL buffers
+ LWLock,WALInsert,Waiting to insert WAL data into a memory buffer
+ LWLock,WALSummarizer,Waiting to read or update WAL summarization state
+@@ -256,6 +277,7 @@
+ LWLock,XidGen,Waiting to allocate a new transaction ID
+ Timeout,BaseBackupThrottle,Waiting during base backup when throttling activity
+ Timeout,CheckpointWriteDelay,Waiting between writes while performing a checkpoint
++Timeout,CommitDelay,Waiting for commit delay before WAL flush
+ Timeout,PgSleep,Waiting due to a call to pg_sleep or a sibling function
+ Timeout,RecoveryApplyDelay,Waiting to apply WAL during recovery because of a delay setting
+ Timeout,RecoveryRetrieveRetryInterval,"Waiting during recovery when WAL data is not available from any source (pg_wal, archive or stream)"

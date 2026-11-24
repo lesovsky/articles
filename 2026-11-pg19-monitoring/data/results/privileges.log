@@ -1,0 +1,57 @@
+psql:2026-11-pg19-monitoring/scripts/07-privileges.sql:3: NOTICE:  role "pg19_plain" does not exist, skipping
+psql:2026-11-pg19-monitoring/scripts/07-privileges.sql:3: NOTICE:  role "pg19_monitor_reader" does not exist, skipping
+DROP ROLE
+CREATE ROLE
+CREATE ROLE
+GRANT ROLE
+SET
+ role_name  | rows_visible 
+------------+--------------
+ pg19_plain |           12
+(1 строка)
+
+ role_name  | rows_visible 
+------------+--------------
+ pg19_plain |            0
+(1 строка)
+
+ role_name  | rows_visible 
+------------+--------------
+ pg19_plain |          123
+(1 строка)
+
+psql:2026-11-pg19-monitoring/scripts/07-privileges.sql:12: ERROR:  permission denied for view pg_dsm_registry_allocations
+ role_name  | num_mxids | num_members | members_size | oldest_multixact 
+------------+-----------+-------------+--------------+------------------
+ pg19_plain |           |             |              |                 
+(1 строка)
+
+RESET
+SET
+      role_name      | rows_visible 
+---------------------+--------------
+ pg19_monitor_reader |           12
+(1 строка)
+
+      role_name      | rows_visible 
+---------------------+--------------
+ pg19_monitor_reader |            0
+(1 строка)
+
+      role_name      | rows_visible 
+---------------------+--------------
+ pg19_monitor_reader |          123
+(1 строка)
+
+      role_name      | rows_visible 
+---------------------+--------------
+ pg19_monitor_reader |            0
+(1 строка)
+
+      role_name      | num_mxids | num_members | members_size | oldest_multixact 
+---------------------+-----------+-------------+--------------+------------------
+ pg19_monitor_reader |         1 |           2 |           10 |                1
+(1 строка)
+
+RESET
+DROP ROLE

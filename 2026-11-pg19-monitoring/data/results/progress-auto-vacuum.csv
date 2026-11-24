@@ -1,0 +1,2 @@
+pid,relid,phase,started_by,mode,heap_blks_total,heap_blks_scanned
+1994011,lab.progress_lab,scanning heap,autovacuum,normal,1294,0

@@ -1,0 +1,3320 @@
+schema,function,arguments,result
+pg_catalog,RI_FKey_cascade_del,,trigger
+pg_catalog,RI_FKey_cascade_upd,,trigger
+pg_catalog,RI_FKey_check_ins,,trigger
+pg_catalog,RI_FKey_check_upd,,trigger
+pg_catalog,RI_FKey_noaction_del,,trigger
+pg_catalog,RI_FKey_noaction_upd,,trigger
+pg_catalog,RI_FKey_restrict_del,,trigger
+pg_catalog,RI_FKey_restrict_upd,,trigger
+pg_catalog,RI_FKey_setdefault_del,,trigger
+pg_catalog,RI_FKey_setdefault_upd,,trigger
+pg_catalog,RI_FKey_setnull_del,,trigger
+pg_catalog,RI_FKey_setnull_upd,,trigger
+pg_catalog,abbrev,cidr,text
+pg_catalog,abbrev,inet,text
+pg_catalog,abs,bigint,bigint
+pg_catalog,abs,double precision,double precision
+pg_catalog,abs,integer,integer
+pg_catalog,abs,numeric,numeric
+pg_catalog,abs,real,real
+pg_catalog,abs,smallint,smallint
+pg_catalog,aclcontains,"aclitem[], aclitem",boolean
+pg_catalog,acldefault,"""char"", oid",aclitem[]
+pg_catalog,aclexplode,"acl aclitem[], OUT grantor oid, OUT grantee oid, OUT privilege_type text, OUT is_grantable boolean",SETOF record
+pg_catalog,aclinsert,"aclitem[], aclitem",aclitem[]
+pg_catalog,aclitemeq,"aclitem, aclitem",boolean
+pg_catalog,aclitemin,cstring,aclitem
+pg_catalog,aclitemout,aclitem,cstring
+pg_catalog,aclremove,"aclitem[], aclitem",aclitem[]
+pg_catalog,acos,double precision,double precision
+pg_catalog,acosd,double precision,double precision
+pg_catalog,acosh,double precision,double precision
+pg_catalog,age,timestamp without time zone,interval
+pg_catalog,age,"timestamp without time zone, timestamp without time zone",interval
+pg_catalog,age,timestamp with time zone,interval
+pg_catalog,age,"timestamp with time zone, timestamp with time zone",interval
+pg_catalog,age,xid,integer
+pg_catalog,amvalidate,oid,boolean
+pg_catalog,any_in,cstring,"""any"""
+pg_catalog,any_out,"""any""",cstring
+pg_catalog,any_value,anyelement,anyelement
+pg_catalog,any_value_transfn,"anyelement, anyelement",anyelement
+pg_catalog,anyarray_in,cstring,anyarray
+pg_catalog,anyarray_out,anyarray,cstring
+pg_catalog,anyarray_recv,internal,anyarray
+pg_catalog,anyarray_send,anyarray,bytea
+pg_catalog,anycompatible_in,cstring,anycompatible
+pg_catalog,anycompatible_out,anycompatible,cstring
+pg_catalog,anycompatiblearray_in,cstring,anycompatiblearray
+pg_catalog,anycompatiblearray_out,anycompatiblearray,cstring
+pg_catalog,anycompatiblearray_recv,internal,anycompatiblearray
+pg_catalog,anycompatiblearray_send,anycompatiblearray,bytea
+pg_catalog,anycompatiblemultirange_in,"cstring, oid, integer",anycompatiblemultirange
+pg_catalog,anycompatiblemultirange_out,anycompatiblemultirange,cstring
+pg_catalog,anycompatiblenonarray_in,cstring,anycompatiblenonarray
+pg_catalog,anycompatiblenonarray_out,anycompatiblenonarray,cstring
+pg_catalog,anycompatiblerange_in,"cstring, oid, integer",anycompatiblerange
+pg_catalog,anycompatiblerange_out,anycompatiblerange,cstring
+pg_catalog,anyelement_in,cstring,anyelement
+pg_catalog,anyelement_out,anyelement,cstring
+pg_catalog,anyenum_in,cstring,anyenum
+pg_catalog,anyenum_out,anyenum,cstring
+pg_catalog,anymultirange_in,"cstring, oid, integer",anymultirange
+pg_catalog,anymultirange_out,anymultirange,cstring
+pg_catalog,anynonarray_in,cstring,anynonarray
+pg_catalog,anynonarray_out,anynonarray,cstring
+pg_catalog,anyrange_in,"cstring, oid, integer",anyrange
+pg_catalog,anyrange_out,anyrange,cstring
+pg_catalog,anytextcat,"anynonarray, text",text
+pg_catalog,area,box,double precision
+pg_catalog,area,circle,double precision
+pg_catalog,area,path,double precision
+pg_catalog,areajoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,areasel,"internal, oid, internal, integer",double precision
+pg_catalog,array_agg,anyarray,anyarray
+pg_catalog,array_agg,anynonarray,anyarray
+pg_catalog,array_agg_array_combine,"internal, internal",internal
+pg_catalog,array_agg_array_deserialize,"bytea, internal",internal
+pg_catalog,array_agg_array_finalfn,"internal, anyarray",anyarray
+pg_catalog,array_agg_array_serialize,internal,bytea
+pg_catalog,array_agg_array_transfn,"internal, anyarray",internal
+pg_catalog,array_agg_combine,"internal, internal",internal
+pg_catalog,array_agg_deserialize,"bytea, internal",internal
+pg_catalog,array_agg_finalfn,"internal, anynonarray",anyarray
+pg_catalog,array_agg_serialize,internal,bytea
+pg_catalog,array_agg_transfn,"internal, anynonarray",internal
+pg_catalog,array_append,"anycompatiblearray, anycompatible",anycompatiblearray
+pg_catalog,array_cat,"anycompatiblearray, anycompatiblearray",anycompatiblearray
+pg_catalog,array_dims,anyarray,text
+pg_catalog,array_eq,"anyarray, anyarray",boolean
+pg_catalog,array_fill,"anyelement, integer[]",anyarray
+pg_catalog,array_fill,"anyelement, integer[], integer[]",anyarray
+pg_catalog,array_ge,"anyarray, anyarray",boolean
+pg_catalog,array_gt,"anyarray, anyarray",boolean
+pg_catalog,array_in,"cstring, oid, integer",anyarray
+pg_catalog,array_larger,"anyarray, anyarray",anyarray
+pg_catalog,array_le,"anyarray, anyarray",boolean
+pg_catalog,array_length,"anyarray, integer",integer
+pg_catalog,array_lower,"anyarray, integer",integer
+pg_catalog,array_lt,"anyarray, anyarray",boolean
+pg_catalog,array_ndims,anyarray,integer
+pg_catalog,array_ne,"anyarray, anyarray",boolean
+pg_catalog,array_out,anyarray,cstring
+pg_catalog,array_position,"anycompatiblearray, anycompatible",integer
+pg_catalog,array_position,"anycompatiblearray, anycompatible, integer",integer
+pg_catalog,array_positions,"anycompatiblearray, anycompatible",integer[]
+pg_catalog,array_prepend,"anycompatible, anycompatiblearray",anycompatiblearray
+pg_catalog,array_recv,"internal, oid, integer",anyarray
+pg_catalog,array_remove,"anycompatiblearray, anycompatible",anycompatiblearray
+pg_catalog,array_replace,"anycompatiblearray, anycompatible, anycompatible",anycompatiblearray
+pg_catalog,array_sample,"anyarray, integer",anyarray
+pg_catalog,array_send,anyarray,bytea
+pg_catalog,array_shuffle,anyarray,anyarray
+pg_catalog,array_smaller,"anyarray, anyarray",anyarray
+pg_catalog,array_subscript_handler,internal,internal
+pg_catalog,array_to_json,anyarray,json
+pg_catalog,array_to_json,"anyarray, boolean",json
+pg_catalog,array_to_string,"anyarray, text",text
+pg_catalog,array_to_string,"anyarray, text, text",text
+pg_catalog,array_to_tsvector,text[],tsvector
+pg_catalog,array_typanalyze,internal,boolean
+pg_catalog,array_unnest_support,internal,internal
+pg_catalog,array_upper,"anyarray, integer",integer
+pg_catalog,arraycontained,"anyarray, anyarray",boolean
+pg_catalog,arraycontains,"anyarray, anyarray",boolean
+pg_catalog,arraycontjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,arraycontsel,"internal, oid, internal, integer",double precision
+pg_catalog,arrayoverlap,"anyarray, anyarray",boolean
+pg_catalog,ascii,text,integer
+pg_catalog,asin,double precision,double precision
+pg_catalog,asind,double precision,double precision
+pg_catalog,asinh,double precision,double precision
+pg_catalog,atan,double precision,double precision
+pg_catalog,atan2,"double precision, double precision",double precision
+pg_catalog,atan2d,"double precision, double precision",double precision
+pg_catalog,atand,double precision,double precision
+pg_catalog,atanh,double precision,double precision
+pg_catalog,avg,bigint,numeric
+pg_catalog,avg,double precision,double precision
+pg_catalog,avg,integer,numeric
+pg_catalog,avg,interval,interval
+pg_catalog,avg,numeric,numeric
+pg_catalog,avg,real,double precision
+pg_catalog,avg,smallint,numeric
+pg_catalog,bernoulli,internal,tsm_handler
+pg_catalog,big5_to_euc_tw,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,big5_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,big5_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,binary_upgrade_add_sub_rel_state,"text, oid, ""char"", pg_lsn",void
+pg_catalog,binary_upgrade_create_empty_extension,"text, text, boolean, text, oid[], text[], text[]",void
+pg_catalog,binary_upgrade_logical_slot_has_caught_up,name,boolean
+pg_catalog,binary_upgrade_replorigin_advance,"text, pg_lsn",void
+pg_catalog,binary_upgrade_set_missing_value,"oid, text, text",void
+pg_catalog,binary_upgrade_set_next_array_pg_type_oid,oid,void
+pg_catalog,binary_upgrade_set_next_heap_pg_class_oid,oid,void
+pg_catalog,binary_upgrade_set_next_heap_relfilenode,oid,void
+pg_catalog,binary_upgrade_set_next_index_pg_class_oid,oid,void
+pg_catalog,binary_upgrade_set_next_index_relfilenode,oid,void
+pg_catalog,binary_upgrade_set_next_multirange_array_pg_type_oid,oid,void
+pg_catalog,binary_upgrade_set_next_multirange_pg_type_oid,oid,void
+pg_catalog,binary_upgrade_set_next_pg_authid_oid,oid,void
+pg_catalog,binary_upgrade_set_next_pg_enum_oid,oid,void
+pg_catalog,binary_upgrade_set_next_pg_tablespace_oid,oid,void
+pg_catalog,binary_upgrade_set_next_pg_type_oid,oid,void
+pg_catalog,binary_upgrade_set_next_toast_pg_class_oid,oid,void
+pg_catalog,binary_upgrade_set_next_toast_relfilenode,oid,void
+pg_catalog,binary_upgrade_set_record_init_privs,boolean,void
+pg_catalog,bit,"bigint, integer",bit
+pg_catalog,bit,"bit, integer, boolean",bit
+pg_catalog,bit,"integer, integer",bit
+pg_catalog,bit_and,bigint,bigint
+pg_catalog,bit_and,bit,bit
+pg_catalog,bit_and,integer,integer
+pg_catalog,bit_and,smallint,smallint
+pg_catalog,bit_count,bit,bigint
+pg_catalog,bit_count,bytea,bigint
+pg_catalog,bit_in,"cstring, oid, integer",bit
+pg_catalog,bit_length,bit,integer
+pg_catalog,bit_length,bytea,integer
+pg_catalog,bit_length,text,integer
+pg_catalog,bit_or,bigint,bigint
+pg_catalog,bit_or,bit,bit
+pg_catalog,bit_or,integer,integer
+pg_catalog,bit_or,smallint,smallint
+pg_catalog,bit_out,bit,cstring
+pg_catalog,bit_recv,"internal, oid, integer",bit
+pg_catalog,bit_send,bit,bytea
+pg_catalog,bit_xor,bigint,bigint
+pg_catalog,bit_xor,bit,bit
+pg_catalog,bit_xor,integer,integer
+pg_catalog,bit_xor,smallint,smallint
+pg_catalog,bitand,"bit, bit",bit
+pg_catalog,bitcat,"bit varying, bit varying",bit varying
+pg_catalog,bitcmp,"bit, bit",integer
+pg_catalog,biteq,"bit, bit",boolean
+pg_catalog,bitge,"bit, bit",boolean
+pg_catalog,bitgt,"bit, bit",boolean
+pg_catalog,bitle,"bit, bit",boolean
+pg_catalog,bitlt,"bit, bit",boolean
+pg_catalog,bitne,"bit, bit",boolean
+pg_catalog,bitnot,bit,bit
+pg_catalog,bitor,"bit, bit",bit
+pg_catalog,bitshiftleft,"bit, integer",bit
+pg_catalog,bitshiftright,"bit, integer",bit
+pg_catalog,bittypmodin,cstring[],integer
+pg_catalog,bittypmodout,integer,cstring
+pg_catalog,bitxor,"bit, bit",bit
+pg_catalog,bool,integer,boolean
+pg_catalog,bool,jsonb,boolean
+pg_catalog,bool_accum,"internal, boolean",internal
+pg_catalog,bool_accum_inv,"internal, boolean",internal
+pg_catalog,bool_alltrue,internal,boolean
+pg_catalog,bool_and,boolean,boolean
+pg_catalog,bool_anytrue,internal,boolean
+pg_catalog,bool_or,boolean,boolean
+pg_catalog,booland_statefunc,"boolean, boolean",boolean
+pg_catalog,booleq,"boolean, boolean",boolean
+pg_catalog,boolge,"boolean, boolean",boolean
+pg_catalog,boolgt,"boolean, boolean",boolean
+pg_catalog,boolin,cstring,boolean
+pg_catalog,boolle,"boolean, boolean",boolean
+pg_catalog,boollt,"boolean, boolean",boolean
+pg_catalog,boolne,"boolean, boolean",boolean
+pg_catalog,boolor_statefunc,"boolean, boolean",boolean
+pg_catalog,boolout,boolean,cstring
+pg_catalog,boolrecv,internal,boolean
+pg_catalog,boolsend,boolean,bytea
+pg_catalog,bound_box,"box, box",box
+pg_catalog,box,circle,box
+pg_catalog,box,point,box
+pg_catalog,box,"point, point",box
+pg_catalog,box,polygon,box
+pg_catalog,box_above,"box, box",boolean
+pg_catalog,box_above_eq,"box, box",boolean
+pg_catalog,box_add,"box, point",box
+pg_catalog,box_below,"box, box",boolean
+pg_catalog,box_below_eq,"box, box",boolean
+pg_catalog,box_center,box,point
+pg_catalog,box_contain,"box, box",boolean
+pg_catalog,box_contain_pt,"box, point",boolean
+pg_catalog,box_contained,"box, box",boolean
+pg_catalog,box_distance,"box, box",double precision
+pg_catalog,box_div,"box, point",box
+pg_catalog,box_eq,"box, box",boolean
+pg_catalog,box_ge,"box, box",boolean
+pg_catalog,box_gt,"box, box",boolean
+pg_catalog,box_in,cstring,box
+pg_catalog,box_intersect,"box, box",box
+pg_catalog,box_le,"box, box",boolean
+pg_catalog,box_left,"box, box",boolean
+pg_catalog,box_lt,"box, box",boolean
+pg_catalog,box_mul,"box, point",box
+pg_catalog,box_out,box,cstring
+pg_catalog,box_overabove,"box, box",boolean
+pg_catalog,box_overbelow,"box, box",boolean
+pg_catalog,box_overlap,"box, box",boolean
+pg_catalog,box_overleft,"box, box",boolean
+pg_catalog,box_overright,"box, box",boolean
+pg_catalog,box_recv,internal,box
+pg_catalog,box_right,"box, box",boolean
+pg_catalog,box_same,"box, box",boolean
+pg_catalog,box_send,box,bytea
+pg_catalog,box_sub,"box, point",box
+pg_catalog,bpchar,"""char""",character
+pg_catalog,bpchar,"character, integer, boolean",character
+pg_catalog,bpchar,name,character
+pg_catalog,bpchar_larger,"character, character",character
+pg_catalog,bpchar_pattern_ge,"character, character",boolean
+pg_catalog,bpchar_pattern_gt,"character, character",boolean
+pg_catalog,bpchar_pattern_le,"character, character",boolean
+pg_catalog,bpchar_pattern_lt,"character, character",boolean
+pg_catalog,bpchar_smaller,"character, character",character
+pg_catalog,bpchar_sortsupport,internal,void
+pg_catalog,bpcharcmp,"character, character",integer
+pg_catalog,bpchareq,"character, character",boolean
+pg_catalog,bpcharge,"character, character",boolean
+pg_catalog,bpchargt,"character, character",boolean
+pg_catalog,bpchariclike,"character, text",boolean
+pg_catalog,bpcharicnlike,"character, text",boolean
+pg_catalog,bpcharicregexeq,"character, text",boolean
+pg_catalog,bpcharicregexne,"character, text",boolean
+pg_catalog,bpcharin,"cstring, oid, integer",character
+pg_catalog,bpcharle,"character, character",boolean
+pg_catalog,bpcharlike,"character, text",boolean
+pg_catalog,bpcharlt,"character, character",boolean
+pg_catalog,bpcharne,"character, character",boolean
+pg_catalog,bpcharnlike,"character, text",boolean
+pg_catalog,bpcharout,character,cstring
+pg_catalog,bpcharrecv,"internal, oid, integer",character
+pg_catalog,bpcharregexeq,"character, text",boolean
+pg_catalog,bpcharregexne,"character, text",boolean
+pg_catalog,bpcharsend,character,bytea
+pg_catalog,bpchartypmodin,cstring[],integer
+pg_catalog,bpchartypmodout,integer,cstring
+pg_catalog,brin_bloom_add_value,"internal, internal, internal, internal",boolean
+pg_catalog,brin_bloom_consistent,"internal, internal, internal, integer",boolean
+pg_catalog,brin_bloom_opcinfo,internal,internal
+pg_catalog,brin_bloom_options,internal,void
+pg_catalog,brin_bloom_summary_in,cstring,pg_brin_bloom_summary
+pg_catalog,brin_bloom_summary_out,pg_brin_bloom_summary,cstring
+pg_catalog,brin_bloom_summary_recv,internal,pg_brin_bloom_summary
+pg_catalog,brin_bloom_summary_send,pg_brin_bloom_summary,bytea
+pg_catalog,brin_bloom_union,"internal, internal, internal",boolean
+pg_catalog,brin_desummarize_range,"regclass, bigint",void
+pg_catalog,brin_inclusion_add_value,"internal, internal, internal, internal",boolean
+pg_catalog,brin_inclusion_consistent,"internal, internal, internal",boolean
+pg_catalog,brin_inclusion_opcinfo,internal,internal
+pg_catalog,brin_inclusion_union,"internal, internal, internal",boolean
+pg_catalog,brin_minmax_add_value,"internal, internal, internal, internal",boolean
+pg_catalog,brin_minmax_consistent,"internal, internal, internal",boolean
+pg_catalog,brin_minmax_multi_add_value,"internal, internal, internal, internal",boolean
+pg_catalog,brin_minmax_multi_consistent,"internal, internal, internal, integer",boolean
+pg_catalog,brin_minmax_multi_distance_date,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_float4,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_float8,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_inet,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_int2,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_int4,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_int8,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_interval,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_macaddr,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_macaddr8,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_numeric,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_pg_lsn,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_tid,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_time,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_timestamp,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_timetz,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_distance_uuid,"internal, internal",double precision
+pg_catalog,brin_minmax_multi_opcinfo,internal,internal
+pg_catalog,brin_minmax_multi_options,internal,void
+pg_catalog,brin_minmax_multi_summary_in,cstring,pg_brin_minmax_multi_summary
+pg_catalog,brin_minmax_multi_summary_out,pg_brin_minmax_multi_summary,cstring
+pg_catalog,brin_minmax_multi_summary_recv,internal,pg_brin_minmax_multi_summary
+pg_catalog,brin_minmax_multi_summary_send,pg_brin_minmax_multi_summary,bytea
+pg_catalog,brin_minmax_multi_union,"internal, internal, internal",boolean
+pg_catalog,brin_minmax_opcinfo,internal,internal
+pg_catalog,brin_minmax_union,"internal, internal, internal",boolean
+pg_catalog,brin_summarize_new_values,regclass,integer
+pg_catalog,brin_summarize_range,"regclass, bigint",integer
+pg_catalog,brinhandler,internal,index_am_handler
+pg_catalog,broadcast,inet,inet
+pg_catalog,btarraycmp,"anyarray, anyarray",integer
+pg_catalog,btboolcmp,"boolean, boolean",integer
+pg_catalog,btbpchar_pattern_cmp,"character, character",integer
+pg_catalog,btbpchar_pattern_sortsupport,internal,void
+pg_catalog,btcharcmp,"""char"", ""char""",integer
+pg_catalog,btequalimage,oid,boolean
+pg_catalog,btfloat48cmp,"real, double precision",integer
+pg_catalog,btfloat4cmp,"real, real",integer
+pg_catalog,btfloat4sortsupport,internal,void
+pg_catalog,btfloat84cmp,"double precision, real",integer
+pg_catalog,btfloat8cmp,"double precision, double precision",integer
+pg_catalog,btfloat8sortsupport,internal,void
+pg_catalog,bthandler,internal,index_am_handler
+pg_catalog,btint24cmp,"smallint, integer",integer
+pg_catalog,btint28cmp,"smallint, bigint",integer
+pg_catalog,btint2cmp,"smallint, smallint",integer
+pg_catalog,btint2sortsupport,internal,void
+pg_catalog,btint42cmp,"integer, smallint",integer
+pg_catalog,btint48cmp,"integer, bigint",integer
+pg_catalog,btint4cmp,"integer, integer",integer
+pg_catalog,btint4sortsupport,internal,void
+pg_catalog,btint82cmp,"bigint, smallint",integer
+pg_catalog,btint84cmp,"bigint, integer",integer
+pg_catalog,btint8cmp,"bigint, bigint",integer
+pg_catalog,btint8sortsupport,internal,void
+pg_catalog,btnamecmp,"name, name",integer
+pg_catalog,btnamesortsupport,internal,void
+pg_catalog,btnametextcmp,"name, text",integer
+pg_catalog,btoidcmp,"oid, oid",integer
+pg_catalog,btoidsortsupport,internal,void
+pg_catalog,btoidvectorcmp,"oidvector, oidvector",integer
+pg_catalog,btrecordcmp,"record, record",integer
+pg_catalog,btrecordimagecmp,"record, record",integer
+pg_catalog,btrim,"bytea, bytea",bytea
+pg_catalog,btrim,text,text
+pg_catalog,btrim,"text, text",text
+pg_catalog,bttext_pattern_cmp,"text, text",integer
+pg_catalog,bttext_pattern_sortsupport,internal,void
+pg_catalog,bttextcmp,"text, text",integer
+pg_catalog,bttextnamecmp,"text, name",integer
+pg_catalog,bttextsortsupport,internal,void
+pg_catalog,bttidcmp,"tid, tid",integer
+pg_catalog,btvarstrequalimage,oid,boolean
+pg_catalog,bytea_sortsupport,internal,void
+pg_catalog,bytea_string_agg_finalfn,internal,bytea
+pg_catalog,bytea_string_agg_transfn,"internal, bytea, bytea",internal
+pg_catalog,byteacat,"bytea, bytea",bytea
+pg_catalog,byteacmp,"bytea, bytea",integer
+pg_catalog,byteaeq,"bytea, bytea",boolean
+pg_catalog,byteage,"bytea, bytea",boolean
+pg_catalog,byteagt,"bytea, bytea",boolean
+pg_catalog,byteain,cstring,bytea
+pg_catalog,byteale,"bytea, bytea",boolean
+pg_catalog,bytealike,"bytea, bytea",boolean
+pg_catalog,bytealt,"bytea, bytea",boolean
+pg_catalog,byteane,"bytea, bytea",boolean
+pg_catalog,byteanlike,"bytea, bytea",boolean
+pg_catalog,byteaout,bytea,cstring
+pg_catalog,bytearecv,internal,bytea
+pg_catalog,byteasend,bytea,bytea
+pg_catalog,cardinality,anyarray,integer
+pg_catalog,cash_cmp,"money, money",integer
+pg_catalog,cash_div_cash,"money, money",double precision
+pg_catalog,cash_div_flt4,"money, real",money
+pg_catalog,cash_div_flt8,"money, double precision",money
+pg_catalog,cash_div_int2,"money, smallint",money
+pg_catalog,cash_div_int4,"money, integer",money
+pg_catalog,cash_div_int8,"money, bigint",money
+pg_catalog,cash_eq,"money, money",boolean
+pg_catalog,cash_ge,"money, money",boolean
+pg_catalog,cash_gt,"money, money",boolean
+pg_catalog,cash_in,cstring,money
+pg_catalog,cash_le,"money, money",boolean
+pg_catalog,cash_lt,"money, money",boolean
+pg_catalog,cash_mi,"money, money",money
+pg_catalog,cash_mul_flt4,"money, real",money
+pg_catalog,cash_mul_flt8,"money, double precision",money
+pg_catalog,cash_mul_int2,"money, smallint",money
+pg_catalog,cash_mul_int4,"money, integer",money
+pg_catalog,cash_mul_int8,"money, bigint",money
+pg_catalog,cash_ne,"money, money",boolean
+pg_catalog,cash_out,money,cstring
+pg_catalog,cash_pl,"money, money",money
+pg_catalog,cash_recv,internal,money
+pg_catalog,cash_send,money,bytea
+pg_catalog,cash_words,money,text
+pg_catalog,cashlarger,"money, money",money
+pg_catalog,cashsmaller,"money, money",money
+pg_catalog,cbrt,double precision,double precision
+pg_catalog,ceil,double precision,double precision
+pg_catalog,ceil,numeric,numeric
+pg_catalog,ceiling,double precision,double precision
+pg_catalog,ceiling,numeric,numeric
+pg_catalog,center,box,point
+pg_catalog,center,circle,point
+pg_catalog,char,integer,"""char"""
+pg_catalog,char,text,"""char"""
+pg_catalog,char_length,character,integer
+pg_catalog,char_length,text,integer
+pg_catalog,character_length,character,integer
+pg_catalog,character_length,text,integer
+pg_catalog,chareq,"""char"", ""char""",boolean
+pg_catalog,charge,"""char"", ""char""",boolean
+pg_catalog,chargt,"""char"", ""char""",boolean
+pg_catalog,charin,cstring,"""char"""
+pg_catalog,charle,"""char"", ""char""",boolean
+pg_catalog,charlt,"""char"", ""char""",boolean
+pg_catalog,charne,"""char"", ""char""",boolean
+pg_catalog,charout,"""char""",cstring
+pg_catalog,charrecv,internal,"""char"""
+pg_catalog,charsend,"""char""",bytea
+pg_catalog,chr,integer,text
+pg_catalog,cideq,"cid, cid",boolean
+pg_catalog,cidin,cstring,cid
+pg_catalog,cidout,cid,cstring
+pg_catalog,cidr,inet,cidr
+pg_catalog,cidr_in,cstring,cidr
+pg_catalog,cidr_out,cidr,cstring
+pg_catalog,cidr_recv,internal,cidr
+pg_catalog,cidr_send,cidr,bytea
+pg_catalog,cidrecv,internal,cid
+pg_catalog,cidsend,cid,bytea
+pg_catalog,circle,box,circle
+pg_catalog,circle,"point, double precision",circle
+pg_catalog,circle,polygon,circle
+pg_catalog,circle_above,"circle, circle",boolean
+pg_catalog,circle_add_pt,"circle, point",circle
+pg_catalog,circle_below,"circle, circle",boolean
+pg_catalog,circle_center,circle,point
+pg_catalog,circle_contain,"circle, circle",boolean
+pg_catalog,circle_contain_pt,"circle, point",boolean
+pg_catalog,circle_contained,"circle, circle",boolean
+pg_catalog,circle_distance,"circle, circle",double precision
+pg_catalog,circle_div_pt,"circle, point",circle
+pg_catalog,circle_eq,"circle, circle",boolean
+pg_catalog,circle_ge,"circle, circle",boolean
+pg_catalog,circle_gt,"circle, circle",boolean
+pg_catalog,circle_in,cstring,circle
+pg_catalog,circle_le,"circle, circle",boolean
+pg_catalog,circle_left,"circle, circle",boolean
+pg_catalog,circle_lt,"circle, circle",boolean
+pg_catalog,circle_mul_pt,"circle, point",circle
+pg_catalog,circle_ne,"circle, circle",boolean
+pg_catalog,circle_out,circle,cstring
+pg_catalog,circle_overabove,"circle, circle",boolean
+pg_catalog,circle_overbelow,"circle, circle",boolean
+pg_catalog,circle_overlap,"circle, circle",boolean
+pg_catalog,circle_overleft,"circle, circle",boolean
+pg_catalog,circle_overright,"circle, circle",boolean
+pg_catalog,circle_recv,internal,circle
+pg_catalog,circle_right,"circle, circle",boolean
+pg_catalog,circle_same,"circle, circle",boolean
+pg_catalog,circle_send,circle,bytea
+pg_catalog,circle_sub_pt,"circle, point",circle
+pg_catalog,clock_timestamp,,timestamp with time zone
+pg_catalog,close_ls,"line, lseg",point
+pg_catalog,close_lseg,"lseg, lseg",point
+pg_catalog,close_pb,"point, box",point
+pg_catalog,close_pl,"point, line",point
+pg_catalog,close_ps,"point, lseg",point
+pg_catalog,close_sb,"lseg, box",point
+pg_catalog,col_description,"oid, integer",text
+pg_catalog,concat,"VARIADIC ""any""",text
+pg_catalog,concat_ws,"text, VARIADIC ""any""",text
+pg_catalog,contjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,contsel,"internal, oid, internal, integer",double precision
+pg_catalog,convert,"bytea, name, name",bytea
+pg_catalog,convert_from,"bytea, name",text
+pg_catalog,convert_to,"text, name",bytea
+pg_catalog,corr,"double precision, double precision",double precision
+pg_catalog,cos,double precision,double precision
+pg_catalog,cosd,double precision,double precision
+pg_catalog,cosh,double precision,double precision
+pg_catalog,cot,double precision,double precision
+pg_catalog,cotd,double precision,double precision
+pg_catalog,count,,bigint
+pg_catalog,count,"""any""",bigint
+pg_catalog,covar_pop,"double precision, double precision",double precision
+pg_catalog,covar_samp,"double precision, double precision",double precision
+pg_catalog,cstring_in,cstring,cstring
+pg_catalog,cstring_out,cstring,cstring
+pg_catalog,cstring_recv,internal,cstring
+pg_catalog,cstring_send,cstring,bytea
+pg_catalog,cume_dist,,double precision
+pg_catalog,cume_dist,"VARIADIC ""any"" ORDER BY VARIADIC ""any""",double precision
+pg_catalog,cume_dist_final,"internal, VARIADIC ""any""",double precision
+pg_catalog,current_database,,name
+pg_catalog,current_query,,text
+pg_catalog,current_schema,,name
+pg_catalog,current_schemas,boolean,name[]
+pg_catalog,current_setting,text,text
+pg_catalog,current_setting,"text, boolean",text
+pg_catalog,current_user,,name
+pg_catalog,currtid2,"text, tid",tid
+pg_catalog,currval,regclass,bigint
+pg_catalog,cursor_to_xml,"cursor refcursor, count integer, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,cursor_to_xmlschema,"cursor refcursor, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,database_to_xml,"nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,database_to_xml_and_xmlschema,"nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,database_to_xmlschema,"nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,date,timestamp without time zone,date
+pg_catalog,date,timestamp with time zone,date
+pg_catalog,date_add,"timestamp with time zone, interval",timestamp with time zone
+pg_catalog,date_add,"timestamp with time zone, interval, text",timestamp with time zone
+pg_catalog,date_bin,"interval, timestamp without time zone, timestamp without time zone",timestamp without time zone
+pg_catalog,date_bin,"interval, timestamp with time zone, timestamp with time zone",timestamp with time zone
+pg_catalog,date_cmp,"date, date",integer
+pg_catalog,date_cmp_timestamp,"date, timestamp without time zone",integer
+pg_catalog,date_cmp_timestamptz,"date, timestamp with time zone",integer
+pg_catalog,date_eq,"date, date",boolean
+pg_catalog,date_eq_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_eq_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_ge,"date, date",boolean
+pg_catalog,date_ge_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_ge_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_gt,"date, date",boolean
+pg_catalog,date_gt_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_gt_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_in,cstring,date
+pg_catalog,date_larger,"date, date",date
+pg_catalog,date_le,"date, date",boolean
+pg_catalog,date_le_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_le_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_lt,"date, date",boolean
+pg_catalog,date_lt_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_lt_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_mi,"date, date",integer
+pg_catalog,date_mi_interval,"date, interval",timestamp without time zone
+pg_catalog,date_mii,"date, integer",date
+pg_catalog,date_ne,"date, date",boolean
+pg_catalog,date_ne_timestamp,"date, timestamp without time zone",boolean
+pg_catalog,date_ne_timestamptz,"date, timestamp with time zone",boolean
+pg_catalog,date_out,date,cstring
+pg_catalog,date_part,"text, date",double precision
+pg_catalog,date_part,"text, interval",double precision
+pg_catalog,date_part,"text, timestamp without time zone",double precision
+pg_catalog,date_part,"text, timestamp with time zone",double precision
+pg_catalog,date_part,"text, time without time zone",double precision
+pg_catalog,date_part,"text, time with time zone",double precision
+pg_catalog,date_pl_interval,"date, interval",timestamp without time zone
+pg_catalog,date_pli,"date, integer",date
+pg_catalog,date_recv,internal,date
+pg_catalog,date_send,date,bytea
+pg_catalog,date_smaller,"date, date",date
+pg_catalog,date_sortsupport,internal,void
+pg_catalog,date_subtract,"timestamp with time zone, interval",timestamp with time zone
+pg_catalog,date_subtract,"timestamp with time zone, interval, text",timestamp with time zone
+pg_catalog,date_trunc,"text, interval",interval
+pg_catalog,date_trunc,"text, timestamp without time zone",timestamp without time zone
+pg_catalog,date_trunc,"text, timestamp with time zone",timestamp with time zone
+pg_catalog,date_trunc,"text, timestamp with time zone, text",timestamp with time zone
+pg_catalog,datemultirange,,datemultirange
+pg_catalog,datemultirange,daterange,datemultirange
+pg_catalog,datemultirange,VARIADIC daterange[],datemultirange
+pg_catalog,daterange,"date, date",daterange
+pg_catalog,daterange,"date, date, text",daterange
+pg_catalog,daterange_canonical,daterange,daterange
+pg_catalog,daterange_subdiff,"date, date",double precision
+pg_catalog,datetime_pl,"date, time without time zone",timestamp without time zone
+pg_catalog,datetimetz_pl,"date, time with time zone",timestamp with time zone
+pg_catalog,dcbrt,double precision,double precision
+pg_catalog,decode,"text, text",bytea
+pg_catalog,degrees,double precision,double precision
+pg_catalog,dense_rank,,bigint
+pg_catalog,dense_rank,"VARIADIC ""any"" ORDER BY VARIADIC ""any""",bigint
+pg_catalog,dense_rank_final,"internal, VARIADIC ""any""",bigint
+pg_catalog,dexp,double precision,double precision
+pg_catalog,diagonal,box,lseg
+pg_catalog,diameter,circle,double precision
+pg_catalog,dispell_init,internal,internal
+pg_catalog,dispell_lexize,"internal, internal, internal, internal",internal
+pg_catalog,dist_bp,"box, point",double precision
+pg_catalog,dist_bs,"box, lseg",double precision
+pg_catalog,dist_cpoint,"circle, point",double precision
+pg_catalog,dist_cpoly,"circle, polygon",double precision
+pg_catalog,dist_lp,"line, point",double precision
+pg_catalog,dist_ls,"line, lseg",double precision
+pg_catalog,dist_pathp,"path, point",double precision
+pg_catalog,dist_pb,"point, box",double precision
+pg_catalog,dist_pc,"point, circle",double precision
+pg_catalog,dist_pl,"point, line",double precision
+pg_catalog,dist_polyc,"polygon, circle",double precision
+pg_catalog,dist_polyp,"polygon, point",double precision
+pg_catalog,dist_ppath,"point, path",double precision
+pg_catalog,dist_ppoly,"point, polygon",double precision
+pg_catalog,dist_ps,"point, lseg",double precision
+pg_catalog,dist_sb,"lseg, box",double precision
+pg_catalog,dist_sl,"lseg, line",double precision
+pg_catalog,dist_sp,"lseg, point",double precision
+pg_catalog,div,"numeric, numeric",numeric
+pg_catalog,dlog1,double precision,double precision
+pg_catalog,dlog10,double precision,double precision
+pg_catalog,domain_in,"cstring, oid, integer","""any"""
+pg_catalog,domain_recv,"internal, oid, integer","""any"""
+pg_catalog,dpow,"double precision, double precision",double precision
+pg_catalog,dround,double precision,double precision
+pg_catalog,dsimple_init,internal,internal
+pg_catalog,dsimple_lexize,"internal, internal, internal, internal",internal
+pg_catalog,dsnowball_init,internal,internal
+pg_catalog,dsnowball_lexize,"internal, internal, internal, internal",internal
+pg_catalog,dsqrt,double precision,double precision
+pg_catalog,dsynonym_init,internal,internal
+pg_catalog,dsynonym_lexize,"internal, internal, internal, internal",internal
+pg_catalog,dtrunc,double precision,double precision
+pg_catalog,elem_contained_by_multirange,"anyelement, anymultirange",boolean
+pg_catalog,elem_contained_by_range,"anyelement, anyrange",boolean
+pg_catalog,elem_contained_by_range_support,internal,internal
+pg_catalog,encode,"bytea, text",text
+pg_catalog,enum_cmp,"anyenum, anyenum",integer
+pg_catalog,enum_eq,"anyenum, anyenum",boolean
+pg_catalog,enum_first,anyenum,anyenum
+pg_catalog,enum_ge,"anyenum, anyenum",boolean
+pg_catalog,enum_gt,"anyenum, anyenum",boolean
+pg_catalog,enum_in,"cstring, oid",anyenum
+pg_catalog,enum_larger,"anyenum, anyenum",anyenum
+pg_catalog,enum_last,anyenum,anyenum
+pg_catalog,enum_le,"anyenum, anyenum",boolean
+pg_catalog,enum_lt,"anyenum, anyenum",boolean
+pg_catalog,enum_ne,"anyenum, anyenum",boolean
+pg_catalog,enum_out,anyenum,cstring
+pg_catalog,enum_range,anyenum,anyarray
+pg_catalog,enum_range,"anyenum, anyenum",anyarray
+pg_catalog,enum_recv,"internal, oid",anyenum
+pg_catalog,enum_send,anyenum,bytea
+pg_catalog,enum_smaller,"anyenum, anyenum",anyenum
+pg_catalog,eqjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,eqsel,"internal, oid, internal, integer",double precision
+pg_catalog,erf,double precision,double precision
+pg_catalog,erfc,double precision,double precision
+pg_catalog,euc_cn_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_cn_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_jis_2004_to_shift_jis_2004,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_jis_2004_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_jp_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_jp_to_sjis,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_jp_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_kr_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_kr_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_tw_to_big5,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_tw_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,euc_tw_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,event_trigger_in,cstring,event_trigger
+pg_catalog,event_trigger_out,event_trigger,cstring
+pg_catalog,every,boolean,boolean
+pg_catalog,exp,double precision,double precision
+pg_catalog,exp,numeric,numeric
+pg_catalog,extract,"text, date",numeric
+pg_catalog,extract,"text, interval",numeric
+pg_catalog,extract,"text, timestamp without time zone",numeric
+pg_catalog,extract,"text, timestamp with time zone",numeric
+pg_catalog,extract,"text, time without time zone",numeric
+pg_catalog,extract,"text, time with time zone",numeric
+pg_catalog,factorial,bigint,numeric
+pg_catalog,family,inet,integer
+pg_catalog,fdw_handler_in,cstring,fdw_handler
+pg_catalog,fdw_handler_out,fdw_handler,cstring
+pg_catalog,first_value,anyelement,anyelement
+pg_catalog,float4,bigint,real
+pg_catalog,float4,double precision,real
+pg_catalog,float4,integer,real
+pg_catalog,float4,jsonb,real
+pg_catalog,float4,numeric,real
+pg_catalog,float4,smallint,real
+pg_catalog,float48div,"real, double precision",double precision
+pg_catalog,float48eq,"real, double precision",boolean
+pg_catalog,float48ge,"real, double precision",boolean
+pg_catalog,float48gt,"real, double precision",boolean
+pg_catalog,float48le,"real, double precision",boolean
+pg_catalog,float48lt,"real, double precision",boolean
+pg_catalog,float48mi,"real, double precision",double precision
+pg_catalog,float48mul,"real, double precision",double precision
+pg_catalog,float48ne,"real, double precision",boolean
+pg_catalog,float48pl,"real, double precision",double precision
+pg_catalog,float4_accum,"double precision[], real",double precision[]
+pg_catalog,float4abs,real,real
+pg_catalog,float4div,"real, real",real
+pg_catalog,float4eq,"real, real",boolean
+pg_catalog,float4ge,"real, real",boolean
+pg_catalog,float4gt,"real, real",boolean
+pg_catalog,float4in,cstring,real
+pg_catalog,float4larger,"real, real",real
+pg_catalog,float4le,"real, real",boolean
+pg_catalog,float4lt,"real, real",boolean
+pg_catalog,float4mi,"real, real",real
+pg_catalog,float4mul,"real, real",real
+pg_catalog,float4ne,"real, real",boolean
+pg_catalog,float4out,real,cstring
+pg_catalog,float4pl,"real, real",real
+pg_catalog,float4recv,internal,real
+pg_catalog,float4send,real,bytea
+pg_catalog,float4smaller,"real, real",real
+pg_catalog,float4um,real,real
+pg_catalog,float4up,real,real
+pg_catalog,float8,bigint,double precision
+pg_catalog,float8,integer,double precision
+pg_catalog,float8,jsonb,double precision
+pg_catalog,float8,numeric,double precision
+pg_catalog,float8,real,double precision
+pg_catalog,float8,smallint,double precision
+pg_catalog,float84div,"double precision, real",double precision
+pg_catalog,float84eq,"double precision, real",boolean
+pg_catalog,float84ge,"double precision, real",boolean
+pg_catalog,float84gt,"double precision, real",boolean
+pg_catalog,float84le,"double precision, real",boolean
+pg_catalog,float84lt,"double precision, real",boolean
+pg_catalog,float84mi,"double precision, real",double precision
+pg_catalog,float84mul,"double precision, real",double precision
+pg_catalog,float84ne,"double precision, real",boolean
+pg_catalog,float84pl,"double precision, real",double precision
+pg_catalog,float8_accum,"double precision[], double precision",double precision[]
+pg_catalog,float8_avg,double precision[],double precision
+pg_catalog,float8_combine,"double precision[], double precision[]",double precision[]
+pg_catalog,float8_corr,double precision[],double precision
+pg_catalog,float8_covar_pop,double precision[],double precision
+pg_catalog,float8_covar_samp,double precision[],double precision
+pg_catalog,float8_regr_accum,"double precision[], double precision, double precision",double precision[]
+pg_catalog,float8_regr_avgx,double precision[],double precision
+pg_catalog,float8_regr_avgy,double precision[],double precision
+pg_catalog,float8_regr_combine,"double precision[], double precision[]",double precision[]
+pg_catalog,float8_regr_intercept,double precision[],double precision
+pg_catalog,float8_regr_r2,double precision[],double precision
+pg_catalog,float8_regr_slope,double precision[],double precision
+pg_catalog,float8_regr_sxx,double precision[],double precision
+pg_catalog,float8_regr_sxy,double precision[],double precision
+pg_catalog,float8_regr_syy,double precision[],double precision
+pg_catalog,float8_stddev_pop,double precision[],double precision
+pg_catalog,float8_stddev_samp,double precision[],double precision
+pg_catalog,float8_var_pop,double precision[],double precision
+pg_catalog,float8_var_samp,double precision[],double precision
+pg_catalog,float8abs,double precision,double precision
+pg_catalog,float8div,"double precision, double precision",double precision
+pg_catalog,float8eq,"double precision, double precision",boolean
+pg_catalog,float8ge,"double precision, double precision",boolean
+pg_catalog,float8gt,"double precision, double precision",boolean
+pg_catalog,float8in,cstring,double precision
+pg_catalog,float8larger,"double precision, double precision",double precision
+pg_catalog,float8le,"double precision, double precision",boolean
+pg_catalog,float8lt,"double precision, double precision",boolean
+pg_catalog,float8mi,"double precision, double precision",double precision
+pg_catalog,float8mul,"double precision, double precision",double precision
+pg_catalog,float8ne,"double precision, double precision",boolean
+pg_catalog,float8out,double precision,cstring
+pg_catalog,float8pl,"double precision, double precision",double precision
+pg_catalog,float8recv,internal,double precision
+pg_catalog,float8send,double precision,bytea
+pg_catalog,float8smaller,"double precision, double precision",double precision
+pg_catalog,float8um,double precision,double precision
+pg_catalog,float8up,double precision,double precision
+pg_catalog,floor,double precision,double precision
+pg_catalog,floor,numeric,numeric
+pg_catalog,flt4_mul_cash,"real, money",money
+pg_catalog,flt8_mul_cash,"double precision, money",money
+pg_catalog,fmgr_c_validator,oid,void
+pg_catalog,fmgr_internal_validator,oid,void
+pg_catalog,fmgr_sql_validator,oid,void
+pg_catalog,format,text,text
+pg_catalog,format,"text, VARIADIC ""any""",text
+pg_catalog,format_type,"oid, integer",text
+pg_catalog,gb18030_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,gbk_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,gcd,"bigint, bigint",bigint
+pg_catalog,gcd,"integer, integer",integer
+pg_catalog,gcd,"numeric, numeric",numeric
+pg_catalog,gen_random_uuid,,uuid
+pg_catalog,generate_series,"bigint, bigint",SETOF bigint
+pg_catalog,generate_series,"bigint, bigint, bigint",SETOF bigint
+pg_catalog,generate_series,"integer, integer",SETOF integer
+pg_catalog,generate_series,"integer, integer, integer",SETOF integer
+pg_catalog,generate_series,"numeric, numeric",SETOF numeric
+pg_catalog,generate_series,"numeric, numeric, numeric",SETOF numeric
+pg_catalog,generate_series,"timestamp without time zone, timestamp without time zone, interval",SETOF timestamp without time zone
+pg_catalog,generate_series,"timestamp with time zone, timestamp with time zone, interval",SETOF timestamp with time zone
+pg_catalog,generate_series,"timestamp with time zone, timestamp with time zone, interval, text",SETOF timestamp with time zone
+pg_catalog,generate_series_int4_support,internal,internal
+pg_catalog,generate_series_int8_support,internal,internal
+pg_catalog,generate_subscripts,"anyarray, integer",SETOF integer
+pg_catalog,generate_subscripts,"anyarray, integer, boolean",SETOF integer
+pg_catalog,get_bit,"bit, integer",integer
+pg_catalog,get_bit,"bytea, bigint",integer
+pg_catalog,get_byte,"bytea, integer",integer
+pg_catalog,get_current_ts_config,,regconfig
+pg_catalog,getdatabaseencoding,,name
+pg_catalog,getpgusername,,name
+pg_catalog,gin_clean_pending_list,regclass,bigint
+pg_catalog,gin_cmp_prefix,"text, text, smallint, internal",integer
+pg_catalog,gin_cmp_tslexeme,"text, text",integer
+pg_catalog,gin_compare_jsonb,"text, text",integer
+pg_catalog,gin_consistent_jsonb,"internal, smallint, jsonb, integer, internal, internal, internal, internal",boolean
+pg_catalog,gin_consistent_jsonb_path,"internal, smallint, jsonb, integer, internal, internal, internal, internal",boolean
+pg_catalog,gin_extract_jsonb,"jsonb, internal, internal",internal
+pg_catalog,gin_extract_jsonb_path,"jsonb, internal, internal",internal
+pg_catalog,gin_extract_jsonb_query,"jsonb, internal, smallint, internal, internal, internal, internal",internal
+pg_catalog,gin_extract_jsonb_query_path,"jsonb, internal, smallint, internal, internal, internal, internal",internal
+pg_catalog,gin_extract_tsquery,"tsquery, internal, smallint, internal, internal",internal
+pg_catalog,gin_extract_tsquery,"tsquery, internal, smallint, internal, internal, internal, internal",internal
+pg_catalog,gin_extract_tsquery,"tsvector, internal, smallint, internal, internal, internal, internal",internal
+pg_catalog,gin_extract_tsvector,"tsvector, internal",internal
+pg_catalog,gin_extract_tsvector,"tsvector, internal, internal",internal
+pg_catalog,gin_triconsistent_jsonb,"internal, smallint, jsonb, integer, internal, internal, internal","""char"""
+pg_catalog,gin_triconsistent_jsonb_path,"internal, smallint, jsonb, integer, internal, internal, internal","""char"""
+pg_catalog,gin_tsquery_consistent,"internal, smallint, tsquery, integer, internal, internal",boolean
+pg_catalog,gin_tsquery_consistent,"internal, smallint, tsquery, integer, internal, internal, internal, internal",boolean
+pg_catalog,gin_tsquery_consistent,"internal, smallint, tsvector, integer, internal, internal, internal, internal",boolean
+pg_catalog,gin_tsquery_triconsistent,"internal, smallint, tsvector, integer, internal, internal, internal","""char"""
+pg_catalog,ginarrayconsistent,"internal, smallint, anyarray, integer, internal, internal, internal, internal",boolean
+pg_catalog,ginarrayextract,"anyarray, internal",internal
+pg_catalog,ginarrayextract,"anyarray, internal, internal",internal
+pg_catalog,ginarraytriconsistent,"internal, smallint, anyarray, integer, internal, internal, internal","""char"""
+pg_catalog,ginhandler,internal,index_am_handler
+pg_catalog,ginqueryarrayextract,"anyarray, internal, smallint, internal, internal, internal, internal",internal
+pg_catalog,gist_box_consistent,"internal, box, smallint, oid, internal",boolean
+pg_catalog,gist_box_distance,"internal, box, smallint, oid, internal",double precision
+pg_catalog,gist_box_penalty,"internal, internal, internal",internal
+pg_catalog,gist_box_picksplit,"internal, internal",internal
+pg_catalog,gist_box_same,"box, box, internal",internal
+pg_catalog,gist_box_union,"internal, internal",box
+pg_catalog,gist_circle_compress,internal,internal
+pg_catalog,gist_circle_consistent,"internal, circle, smallint, oid, internal",boolean
+pg_catalog,gist_circle_distance,"internal, circle, smallint, oid, internal",double precision
+pg_catalog,gist_point_compress,internal,internal
+pg_catalog,gist_point_consistent,"internal, point, smallint, oid, internal",boolean
+pg_catalog,gist_point_distance,"internal, point, smallint, oid, internal",double precision
+pg_catalog,gist_point_fetch,internal,internal
+pg_catalog,gist_point_sortsupport,internal,void
+pg_catalog,gist_poly_compress,internal,internal
+pg_catalog,gist_poly_consistent,"internal, polygon, smallint, oid, internal",boolean
+pg_catalog,gist_poly_distance,"internal, polygon, smallint, oid, internal",double precision
+pg_catalog,gisthandler,internal,index_am_handler
+pg_catalog,gtsquery_compress,internal,internal
+pg_catalog,gtsquery_consistent,"internal, internal, integer, oid, internal",boolean
+pg_catalog,gtsquery_consistent,"internal, tsquery, smallint, oid, internal",boolean
+pg_catalog,gtsquery_penalty,"internal, internal, internal",internal
+pg_catalog,gtsquery_picksplit,"internal, internal",internal
+pg_catalog,gtsquery_same,"bigint, bigint, internal",internal
+pg_catalog,gtsquery_union,"internal, internal",bigint
+pg_catalog,gtsvector_compress,internal,internal
+pg_catalog,gtsvector_consistent,"internal, gtsvector, integer, oid, internal",boolean
+pg_catalog,gtsvector_consistent,"internal, tsvector, smallint, oid, internal",boolean
+pg_catalog,gtsvector_decompress,internal,internal
+pg_catalog,gtsvector_options,internal,void
+pg_catalog,gtsvector_penalty,"internal, internal, internal",internal
+pg_catalog,gtsvector_picksplit,"internal, internal",internal
+pg_catalog,gtsvector_same,"gtsvector, gtsvector, internal",internal
+pg_catalog,gtsvector_union,"internal, internal",gtsvector
+pg_catalog,gtsvectorin,cstring,gtsvector
+pg_catalog,gtsvectorout,gtsvector,cstring
+pg_catalog,has_any_column_privilege,"name, oid, text",boolean
+pg_catalog,has_any_column_privilege,"name, text, text",boolean
+pg_catalog,has_any_column_privilege,"oid, oid, text",boolean
+pg_catalog,has_any_column_privilege,"oid, text",boolean
+pg_catalog,has_any_column_privilege,"oid, text, text",boolean
+pg_catalog,has_any_column_privilege,"text, text",boolean
+pg_catalog,has_column_privilege,"name, oid, smallint, text",boolean
+pg_catalog,has_column_privilege,"name, oid, text, text",boolean
+pg_catalog,has_column_privilege,"name, text, smallint, text",boolean
+pg_catalog,has_column_privilege,"name, text, text, text",boolean
+pg_catalog,has_column_privilege,"oid, oid, smallint, text",boolean
+pg_catalog,has_column_privilege,"oid, oid, text, text",boolean
+pg_catalog,has_column_privilege,"oid, smallint, text",boolean
+pg_catalog,has_column_privilege,"oid, text, smallint, text",boolean
+pg_catalog,has_column_privilege,"oid, text, text",boolean
+pg_catalog,has_column_privilege,"oid, text, text, text",boolean
+pg_catalog,has_column_privilege,"text, smallint, text",boolean
+pg_catalog,has_column_privilege,"text, text, text",boolean
+pg_catalog,has_database_privilege,"name, oid, text",boolean
+pg_catalog,has_database_privilege,"name, text, text",boolean
+pg_catalog,has_database_privilege,"oid, oid, text",boolean
+pg_catalog,has_database_privilege,"oid, text",boolean
+pg_catalog,has_database_privilege,"oid, text, text",boolean
+pg_catalog,has_database_privilege,"text, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"name, oid, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"name, text, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"oid, oid, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"oid, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"oid, text, text",boolean
+pg_catalog,has_foreign_data_wrapper_privilege,"text, text",boolean
+pg_catalog,has_function_privilege,"name, oid, text",boolean
+pg_catalog,has_function_privilege,"name, text, text",boolean
+pg_catalog,has_function_privilege,"oid, oid, text",boolean
+pg_catalog,has_function_privilege,"oid, text",boolean
+pg_catalog,has_function_privilege,"oid, text, text",boolean
+pg_catalog,has_function_privilege,"text, text",boolean
+pg_catalog,has_language_privilege,"name, oid, text",boolean
+pg_catalog,has_language_privilege,"name, text, text",boolean
+pg_catalog,has_language_privilege,"oid, oid, text",boolean
+pg_catalog,has_language_privilege,"oid, text",boolean
+pg_catalog,has_language_privilege,"oid, text, text",boolean
+pg_catalog,has_language_privilege,"text, text",boolean
+pg_catalog,has_parameter_privilege,"name, text, text",boolean
+pg_catalog,has_parameter_privilege,"oid, text, text",boolean
+pg_catalog,has_parameter_privilege,"text, text",boolean
+pg_catalog,has_schema_privilege,"name, oid, text",boolean
+pg_catalog,has_schema_privilege,"name, text, text",boolean
+pg_catalog,has_schema_privilege,"oid, oid, text",boolean
+pg_catalog,has_schema_privilege,"oid, text",boolean
+pg_catalog,has_schema_privilege,"oid, text, text",boolean
+pg_catalog,has_schema_privilege,"text, text",boolean
+pg_catalog,has_sequence_privilege,"name, oid, text",boolean
+pg_catalog,has_sequence_privilege,"name, text, text",boolean
+pg_catalog,has_sequence_privilege,"oid, oid, text",boolean
+pg_catalog,has_sequence_privilege,"oid, text",boolean
+pg_catalog,has_sequence_privilege,"oid, text, text",boolean
+pg_catalog,has_sequence_privilege,"text, text",boolean
+pg_catalog,has_server_privilege,"name, oid, text",boolean
+pg_catalog,has_server_privilege,"name, text, text",boolean
+pg_catalog,has_server_privilege,"oid, oid, text",boolean
+pg_catalog,has_server_privilege,"oid, text",boolean
+pg_catalog,has_server_privilege,"oid, text, text",boolean
+pg_catalog,has_server_privilege,"text, text",boolean
+pg_catalog,has_table_privilege,"name, oid, text",boolean
+pg_catalog,has_table_privilege,"name, text, text",boolean
+pg_catalog,has_table_privilege,"oid, oid, text",boolean
+pg_catalog,has_table_privilege,"oid, text",boolean
+pg_catalog,has_table_privilege,"oid, text, text",boolean
+pg_catalog,has_table_privilege,"text, text",boolean
+pg_catalog,has_tablespace_privilege,"name, oid, text",boolean
+pg_catalog,has_tablespace_privilege,"name, text, text",boolean
+pg_catalog,has_tablespace_privilege,"oid, oid, text",boolean
+pg_catalog,has_tablespace_privilege,"oid, text",boolean
+pg_catalog,has_tablespace_privilege,"oid, text, text",boolean
+pg_catalog,has_tablespace_privilege,"text, text",boolean
+pg_catalog,has_type_privilege,"name, oid, text",boolean
+pg_catalog,has_type_privilege,"name, text, text",boolean
+pg_catalog,has_type_privilege,"oid, oid, text",boolean
+pg_catalog,has_type_privilege,"oid, text",boolean
+pg_catalog,has_type_privilege,"oid, text, text",boolean
+pg_catalog,has_type_privilege,"text, text",boolean
+pg_catalog,hash_aclitem,aclitem,integer
+pg_catalog,hash_aclitem_extended,"aclitem, bigint",bigint
+pg_catalog,hash_array,anyarray,integer
+pg_catalog,hash_array_extended,"anyarray, bigint",bigint
+pg_catalog,hash_multirange,anymultirange,integer
+pg_catalog,hash_multirange_extended,"anymultirange, bigint",bigint
+pg_catalog,hash_numeric,numeric,integer
+pg_catalog,hash_numeric_extended,"numeric, bigint",bigint
+pg_catalog,hash_range,anyrange,integer
+pg_catalog,hash_range_extended,"anyrange, bigint",bigint
+pg_catalog,hash_record,record,integer
+pg_catalog,hash_record_extended,"record, bigint",bigint
+pg_catalog,hashbpchar,character,integer
+pg_catalog,hashbpcharextended,"character, bigint",bigint
+pg_catalog,hashchar,"""char""",integer
+pg_catalog,hashcharextended,"""char"", bigint",bigint
+pg_catalog,hashenum,anyenum,integer
+pg_catalog,hashenumextended,"anyenum, bigint",bigint
+pg_catalog,hashfloat4,real,integer
+pg_catalog,hashfloat4extended,"real, bigint",bigint
+pg_catalog,hashfloat8,double precision,integer
+pg_catalog,hashfloat8extended,"double precision, bigint",bigint
+pg_catalog,hashhandler,internal,index_am_handler
+pg_catalog,hashinet,inet,integer
+pg_catalog,hashinetextended,"inet, bigint",bigint
+pg_catalog,hashint2,smallint,integer
+pg_catalog,hashint2extended,"smallint, bigint",bigint
+pg_catalog,hashint4,integer,integer
+pg_catalog,hashint4extended,"integer, bigint",bigint
+pg_catalog,hashint8,bigint,integer
+pg_catalog,hashint8extended,"bigint, bigint",bigint
+pg_catalog,hashmacaddr,macaddr,integer
+pg_catalog,hashmacaddr8,macaddr8,integer
+pg_catalog,hashmacaddr8extended,"macaddr8, bigint",bigint
+pg_catalog,hashmacaddrextended,"macaddr, bigint",bigint
+pg_catalog,hashname,name,integer
+pg_catalog,hashnameextended,"name, bigint",bigint
+pg_catalog,hashoid,oid,integer
+pg_catalog,hashoidextended,"oid, bigint",bigint
+pg_catalog,hashoidvector,oidvector,integer
+pg_catalog,hashoidvectorextended,"oidvector, bigint",bigint
+pg_catalog,hashtext,text,integer
+pg_catalog,hashtextextended,"text, bigint",bigint
+pg_catalog,hashtid,tid,integer
+pg_catalog,hashtidextended,"tid, bigint",bigint
+pg_catalog,hashvarlena,internal,integer
+pg_catalog,hashvarlenaextended,"internal, bigint",bigint
+pg_catalog,heap_tableam_handler,internal,table_am_handler
+pg_catalog,height,box,double precision
+pg_catalog,host,inet,text
+pg_catalog,hostmask,inet,inet
+pg_catalog,iclikejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,iclikesel,"internal, oid, internal, integer",double precision
+pg_catalog,icnlikejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,icnlikesel,"internal, oid, internal, integer",double precision
+pg_catalog,icregexeqjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,icregexeqsel,"internal, oid, internal, integer",double precision
+pg_catalog,icregexnejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,icregexnesel,"internal, oid, internal, integer",double precision
+pg_catalog,icu_unicode_version,,text
+pg_catalog,in_range,"bigint, bigint, bigint, boolean, boolean",boolean
+pg_catalog,in_range,"date, date, interval, boolean, boolean",boolean
+pg_catalog,in_range,"double precision, double precision, double precision, boolean, boolean",boolean
+pg_catalog,in_range,"integer, integer, bigint, boolean, boolean",boolean
+pg_catalog,in_range,"integer, integer, integer, boolean, boolean",boolean
+pg_catalog,in_range,"integer, integer, smallint, boolean, boolean",boolean
+pg_catalog,in_range,"interval, interval, interval, boolean, boolean",boolean
+pg_catalog,in_range,"numeric, numeric, numeric, boolean, boolean",boolean
+pg_catalog,in_range,"real, real, double precision, boolean, boolean",boolean
+pg_catalog,in_range,"smallint, smallint, bigint, boolean, boolean",boolean
+pg_catalog,in_range,"smallint, smallint, integer, boolean, boolean",boolean
+pg_catalog,in_range,"smallint, smallint, smallint, boolean, boolean",boolean
+pg_catalog,in_range,"timestamp without time zone, timestamp without time zone, interval, boolean, boolean",boolean
+pg_catalog,in_range,"timestamp with time zone, timestamp with time zone, interval, boolean, boolean",boolean
+pg_catalog,in_range,"time without time zone, time without time zone, interval, boolean, boolean",boolean
+pg_catalog,in_range,"time with time zone, time with time zone, interval, boolean, boolean",boolean
+pg_catalog,index_am_handler_in,cstring,index_am_handler
+pg_catalog,index_am_handler_out,index_am_handler,cstring
+pg_catalog,inet_client_addr,,inet
+pg_catalog,inet_client_port,,integer
+pg_catalog,inet_gist_compress,internal,internal
+pg_catalog,inet_gist_consistent,"internal, inet, smallint, oid, internal",boolean
+pg_catalog,inet_gist_fetch,internal,internal
+pg_catalog,inet_gist_penalty,"internal, internal, internal",internal
+pg_catalog,inet_gist_picksplit,"internal, internal",internal
+pg_catalog,inet_gist_same,"inet, inet, internal",internal
+pg_catalog,inet_gist_union,"internal, internal",inet
+pg_catalog,inet_in,cstring,inet
+pg_catalog,inet_merge,"inet, inet",cidr
+pg_catalog,inet_out,inet,cstring
+pg_catalog,inet_recv,internal,inet
+pg_catalog,inet_same_family,"inet, inet",boolean
+pg_catalog,inet_send,inet,bytea
+pg_catalog,inet_server_addr,,inet
+pg_catalog,inet_server_port,,integer
+pg_catalog,inet_spg_choose,"internal, internal",void
+pg_catalog,inet_spg_config,"internal, internal",void
+pg_catalog,inet_spg_inner_consistent,"internal, internal",void
+pg_catalog,inet_spg_leaf_consistent,"internal, internal",boolean
+pg_catalog,inet_spg_picksplit,"internal, internal",void
+pg_catalog,inetand,"inet, inet",inet
+pg_catalog,inetmi,"inet, inet",bigint
+pg_catalog,inetmi_int8,"inet, bigint",inet
+pg_catalog,inetnot,inet,inet
+pg_catalog,inetor,"inet, inet",inet
+pg_catalog,inetpl,"inet, bigint",inet
+pg_catalog,initcap,text,text
+pg_catalog,int2,bigint,smallint
+pg_catalog,int2,double precision,smallint
+pg_catalog,int2,integer,smallint
+pg_catalog,int2,jsonb,smallint
+pg_catalog,int2,numeric,smallint
+pg_catalog,int2,real,smallint
+pg_catalog,int24div,"smallint, integer",integer
+pg_catalog,int24eq,"smallint, integer",boolean
+pg_catalog,int24ge,"smallint, integer",boolean
+pg_catalog,int24gt,"smallint, integer",boolean
+pg_catalog,int24le,"smallint, integer",boolean
+pg_catalog,int24lt,"smallint, integer",boolean
+pg_catalog,int24mi,"smallint, integer",integer
+pg_catalog,int24mul,"smallint, integer",integer
+pg_catalog,int24ne,"smallint, integer",boolean
+pg_catalog,int24pl,"smallint, integer",integer
+pg_catalog,int28div,"smallint, bigint",bigint
+pg_catalog,int28eq,"smallint, bigint",boolean
+pg_catalog,int28ge,"smallint, bigint",boolean
+pg_catalog,int28gt,"smallint, bigint",boolean
+pg_catalog,int28le,"smallint, bigint",boolean
+pg_catalog,int28lt,"smallint, bigint",boolean
+pg_catalog,int28mi,"smallint, bigint",bigint
+pg_catalog,int28mul,"smallint, bigint",bigint
+pg_catalog,int28ne,"smallint, bigint",boolean
+pg_catalog,int28pl,"smallint, bigint",bigint
+pg_catalog,int2_accum,"internal, smallint",internal
+pg_catalog,int2_accum_inv,"internal, smallint",internal
+pg_catalog,int2_avg_accum,"bigint[], smallint",bigint[]
+pg_catalog,int2_avg_accum_inv,"bigint[], smallint",bigint[]
+pg_catalog,int2_mul_cash,"smallint, money",money
+pg_catalog,int2_sum,"bigint, smallint",bigint
+pg_catalog,int2abs,smallint,smallint
+pg_catalog,int2and,"smallint, smallint",smallint
+pg_catalog,int2div,"smallint, smallint",smallint
+pg_catalog,int2eq,"smallint, smallint",boolean
+pg_catalog,int2ge,"smallint, smallint",boolean
+pg_catalog,int2gt,"smallint, smallint",boolean
+pg_catalog,int2in,cstring,smallint
+pg_catalog,int2int4_sum,bigint[],bigint
+pg_catalog,int2larger,"smallint, smallint",smallint
+pg_catalog,int2le,"smallint, smallint",boolean
+pg_catalog,int2lt,"smallint, smallint",boolean
+pg_catalog,int2mi,"smallint, smallint",smallint
+pg_catalog,int2mod,"smallint, smallint",smallint
+pg_catalog,int2mul,"smallint, smallint",smallint
+pg_catalog,int2ne,"smallint, smallint",boolean
+pg_catalog,int2not,smallint,smallint
+pg_catalog,int2or,"smallint, smallint",smallint
+pg_catalog,int2out,smallint,cstring
+pg_catalog,int2pl,"smallint, smallint",smallint
+pg_catalog,int2recv,internal,smallint
+pg_catalog,int2send,smallint,bytea
+pg_catalog,int2shl,"smallint, integer",smallint
+pg_catalog,int2shr,"smallint, integer",smallint
+pg_catalog,int2smaller,"smallint, smallint",smallint
+pg_catalog,int2um,smallint,smallint
+pg_catalog,int2up,smallint,smallint
+pg_catalog,int2vectorin,cstring,int2vector
+pg_catalog,int2vectorout,int2vector,cstring
+pg_catalog,int2vectorrecv,internal,int2vector
+pg_catalog,int2vectorsend,int2vector,bytea
+pg_catalog,int2xor,"smallint, smallint",smallint
+pg_catalog,int4,bigint,integer
+pg_catalog,int4,bit,integer
+pg_catalog,int4,boolean,integer
+pg_catalog,int4,"""char""",integer
+pg_catalog,int4,double precision,integer
+pg_catalog,int4,jsonb,integer
+pg_catalog,int4,numeric,integer
+pg_catalog,int4,real,integer
+pg_catalog,int4,smallint,integer
+pg_catalog,int42div,"integer, smallint",integer
+pg_catalog,int42eq,"integer, smallint",boolean
+pg_catalog,int42ge,"integer, smallint",boolean
+pg_catalog,int42gt,"integer, smallint",boolean
+pg_catalog,int42le,"integer, smallint",boolean
+pg_catalog,int42lt,"integer, smallint",boolean
+pg_catalog,int42mi,"integer, smallint",integer
+pg_catalog,int42mul,"integer, smallint",integer
+pg_catalog,int42ne,"integer, smallint",boolean
+pg_catalog,int42pl,"integer, smallint",integer
+pg_catalog,int48div,"integer, bigint",bigint
+pg_catalog,int48eq,"integer, bigint",boolean
+pg_catalog,int48ge,"integer, bigint",boolean
+pg_catalog,int48gt,"integer, bigint",boolean
+pg_catalog,int48le,"integer, bigint",boolean
+pg_catalog,int48lt,"integer, bigint",boolean
+pg_catalog,int48mi,"integer, bigint",bigint
+pg_catalog,int48mul,"integer, bigint",bigint
+pg_catalog,int48ne,"integer, bigint",boolean
+pg_catalog,int48pl,"integer, bigint",bigint
+pg_catalog,int4_accum,"internal, integer",internal
+pg_catalog,int4_accum_inv,"internal, integer",internal
+pg_catalog,int4_avg_accum,"bigint[], integer",bigint[]
+pg_catalog,int4_avg_accum_inv,"bigint[], integer",bigint[]
+pg_catalog,int4_avg_combine,"bigint[], bigint[]",bigint[]
+pg_catalog,int4_mul_cash,"integer, money",money
+pg_catalog,int4_sum,"bigint, integer",bigint
+pg_catalog,int4abs,integer,integer
+pg_catalog,int4and,"integer, integer",integer
+pg_catalog,int4div,"integer, integer",integer
+pg_catalog,int4eq,"integer, integer",boolean
+pg_catalog,int4ge,"integer, integer",boolean
+pg_catalog,int4gt,"integer, integer",boolean
+pg_catalog,int4in,cstring,integer
+pg_catalog,int4inc,integer,integer
+pg_catalog,int4larger,"integer, integer",integer
+pg_catalog,int4le,"integer, integer",boolean
+pg_catalog,int4lt,"integer, integer",boolean
+pg_catalog,int4mi,"integer, integer",integer
+pg_catalog,int4mod,"integer, integer",integer
+pg_catalog,int4mul,"integer, integer",integer
+pg_catalog,int4multirange,,int4multirange
+pg_catalog,int4multirange,int4range,int4multirange
+pg_catalog,int4multirange,VARIADIC int4range[],int4multirange
+pg_catalog,int4ne,"integer, integer",boolean
+pg_catalog,int4not,integer,integer
+pg_catalog,int4or,"integer, integer",integer
+pg_catalog,int4out,integer,cstring
+pg_catalog,int4pl,"integer, integer",integer
+pg_catalog,int4range,"integer, integer",int4range
+pg_catalog,int4range,"integer, integer, text",int4range
+pg_catalog,int4range_canonical,int4range,int4range
+pg_catalog,int4range_subdiff,"integer, integer",double precision
+pg_catalog,int4recv,internal,integer
+pg_catalog,int4send,integer,bytea
+pg_catalog,int4shl,"integer, integer",integer
+pg_catalog,int4shr,"integer, integer",integer
+pg_catalog,int4smaller,"integer, integer",integer
+pg_catalog,int4um,integer,integer
+pg_catalog,int4up,integer,integer
+pg_catalog,int4xor,"integer, integer",integer
+pg_catalog,int8,bit,bigint
+pg_catalog,int8,double precision,bigint
+pg_catalog,int8,integer,bigint
+pg_catalog,int8,jsonb,bigint
+pg_catalog,int8,numeric,bigint
+pg_catalog,int8,oid,bigint
+pg_catalog,int8,real,bigint
+pg_catalog,int8,smallint,bigint
+pg_catalog,int82div,"bigint, smallint",bigint
+pg_catalog,int82eq,"bigint, smallint",boolean
+pg_catalog,int82ge,"bigint, smallint",boolean
+pg_catalog,int82gt,"bigint, smallint",boolean
+pg_catalog,int82le,"bigint, smallint",boolean
+pg_catalog,int82lt,"bigint, smallint",boolean
+pg_catalog,int82mi,"bigint, smallint",bigint
+pg_catalog,int82mul,"bigint, smallint",bigint
+pg_catalog,int82ne,"bigint, smallint",boolean
+pg_catalog,int82pl,"bigint, smallint",bigint
+pg_catalog,int84div,"bigint, integer",bigint
+pg_catalog,int84eq,"bigint, integer",boolean
+pg_catalog,int84ge,"bigint, integer",boolean
+pg_catalog,int84gt,"bigint, integer",boolean
+pg_catalog,int84le,"bigint, integer",boolean
+pg_catalog,int84lt,"bigint, integer",boolean
+pg_catalog,int84mi,"bigint, integer",bigint
+pg_catalog,int84mul,"bigint, integer",bigint
+pg_catalog,int84ne,"bigint, integer",boolean
+pg_catalog,int84pl,"bigint, integer",bigint
+pg_catalog,int8_accum,"internal, bigint",internal
+pg_catalog,int8_accum_inv,"internal, bigint",internal
+pg_catalog,int8_avg,bigint[],numeric
+pg_catalog,int8_avg_accum,"internal, bigint",internal
+pg_catalog,int8_avg_accum_inv,"internal, bigint",internal
+pg_catalog,int8_avg_combine,"internal, internal",internal
+pg_catalog,int8_avg_deserialize,"bytea, internal",internal
+pg_catalog,int8_avg_serialize,internal,bytea
+pg_catalog,int8_mul_cash,"bigint, money",money
+pg_catalog,int8_sum,"numeric, bigint",numeric
+pg_catalog,int8abs,bigint,bigint
+pg_catalog,int8and,"bigint, bigint",bigint
+pg_catalog,int8dec,bigint,bigint
+pg_catalog,int8dec_any,"bigint, ""any""",bigint
+pg_catalog,int8div,"bigint, bigint",bigint
+pg_catalog,int8eq,"bigint, bigint",boolean
+pg_catalog,int8ge,"bigint, bigint",boolean
+pg_catalog,int8gt,"bigint, bigint",boolean
+pg_catalog,int8in,cstring,bigint
+pg_catalog,int8inc,bigint,bigint
+pg_catalog,int8inc_any,"bigint, ""any""",bigint
+pg_catalog,int8inc_float8_float8,"bigint, double precision, double precision",bigint
+pg_catalog,int8inc_support,internal,internal
+pg_catalog,int8larger,"bigint, bigint",bigint
+pg_catalog,int8le,"bigint, bigint",boolean
+pg_catalog,int8lt,"bigint, bigint",boolean
+pg_catalog,int8mi,"bigint, bigint",bigint
+pg_catalog,int8mod,"bigint, bigint",bigint
+pg_catalog,int8mul,"bigint, bigint",bigint
+pg_catalog,int8multirange,,int8multirange
+pg_catalog,int8multirange,int8range,int8multirange
+pg_catalog,int8multirange,VARIADIC int8range[],int8multirange
+pg_catalog,int8ne,"bigint, bigint",boolean
+pg_catalog,int8not,bigint,bigint
+pg_catalog,int8or,"bigint, bigint",bigint
+pg_catalog,int8out,bigint,cstring
+pg_catalog,int8pl,"bigint, bigint",bigint
+pg_catalog,int8pl_inet,"bigint, inet",inet
+pg_catalog,int8range,"bigint, bigint",int8range
+pg_catalog,int8range,"bigint, bigint, text",int8range
+pg_catalog,int8range_canonical,int8range,int8range
+pg_catalog,int8range_subdiff,"bigint, bigint",double precision
+pg_catalog,int8recv,internal,bigint
+pg_catalog,int8send,bigint,bytea
+pg_catalog,int8shl,"bigint, integer",bigint
+pg_catalog,int8shr,"bigint, integer",bigint
+pg_catalog,int8smaller,"bigint, bigint",bigint
+pg_catalog,int8um,bigint,bigint
+pg_catalog,int8up,bigint,bigint
+pg_catalog,int8xor,"bigint, bigint",bigint
+pg_catalog,integer_pl_date,"integer, date",date
+pg_catalog,inter_lb,"line, box",boolean
+pg_catalog,inter_sb,"lseg, box",boolean
+pg_catalog,inter_sl,"lseg, line",boolean
+pg_catalog,internal_in,cstring,internal
+pg_catalog,internal_out,internal,cstring
+pg_catalog,interval,"interval, integer",interval
+pg_catalog,interval,time without time zone,interval
+pg_catalog,interval_avg,internal,interval
+pg_catalog,interval_avg_accum,"internal, interval",internal
+pg_catalog,interval_avg_accum_inv,"internal, interval",internal
+pg_catalog,interval_avg_combine,"internal, internal",internal
+pg_catalog,interval_avg_deserialize,"bytea, internal",internal
+pg_catalog,interval_avg_serialize,internal,bytea
+pg_catalog,interval_cmp,"interval, interval",integer
+pg_catalog,interval_div,"interval, double precision",interval
+pg_catalog,interval_eq,"interval, interval",boolean
+pg_catalog,interval_ge,"interval, interval",boolean
+pg_catalog,interval_gt,"interval, interval",boolean
+pg_catalog,interval_hash,interval,integer
+pg_catalog,interval_hash_extended,"interval, bigint",bigint
+pg_catalog,interval_in,"cstring, oid, integer",interval
+pg_catalog,interval_larger,"interval, interval",interval
+pg_catalog,interval_le,"interval, interval",boolean
+pg_catalog,interval_lt,"interval, interval",boolean
+pg_catalog,interval_mi,"interval, interval",interval
+pg_catalog,interval_mul,"interval, double precision",interval
+pg_catalog,interval_ne,"interval, interval",boolean
+pg_catalog,interval_out,interval,cstring
+pg_catalog,interval_pl,"interval, interval",interval
+pg_catalog,interval_pl_date,"interval, date",timestamp without time zone
+pg_catalog,interval_pl_time,"interval, time without time zone",time without time zone
+pg_catalog,interval_pl_timestamp,"interval, timestamp without time zone",timestamp without time zone
+pg_catalog,interval_pl_timestamptz,"interval, timestamp with time zone",timestamp with time zone
+pg_catalog,interval_pl_timetz,"interval, time with time zone",time with time zone
+pg_catalog,interval_recv,"internal, oid, integer",interval
+pg_catalog,interval_send,interval,bytea
+pg_catalog,interval_smaller,"interval, interval",interval
+pg_catalog,interval_sum,internal,interval
+pg_catalog,interval_support,internal,internal
+pg_catalog,interval_um,interval,interval
+pg_catalog,intervaltypmodin,cstring[],integer
+pg_catalog,intervaltypmodout,integer,cstring
+pg_catalog,is_normalized,"text, text",boolean
+pg_catalog,isclosed,path,boolean
+pg_catalog,isempty,anymultirange,boolean
+pg_catalog,isempty,anyrange,boolean
+pg_catalog,isfinite,date,boolean
+pg_catalog,isfinite,interval,boolean
+pg_catalog,isfinite,timestamp without time zone,boolean
+pg_catalog,isfinite,timestamp with time zone,boolean
+pg_catalog,ishorizontal,line,boolean
+pg_catalog,ishorizontal,lseg,boolean
+pg_catalog,ishorizontal,"point, point",boolean
+pg_catalog,iso8859_1_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,iso8859_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,iso_to_koi8r,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,iso_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,iso_to_win1251,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,iso_to_win866,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,isopen,path,boolean
+pg_catalog,isparallel,"line, line",boolean
+pg_catalog,isparallel,"lseg, lseg",boolean
+pg_catalog,isperp,"line, line",boolean
+pg_catalog,isperp,"lseg, lseg",boolean
+pg_catalog,isvertical,line,boolean
+pg_catalog,isvertical,lseg,boolean
+pg_catalog,isvertical,"point, point",boolean
+pg_catalog,johab_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,json_agg,anyelement,json
+pg_catalog,json_agg_finalfn,internal,json
+pg_catalog,json_agg_strict,anyelement,json
+pg_catalog,json_agg_strict_transfn,"internal, anyelement",internal
+pg_catalog,json_agg_transfn,"internal, anyelement",internal
+pg_catalog,json_array_element,"from_json json, element_index integer",json
+pg_catalog,json_array_element_text,"from_json json, element_index integer",text
+pg_catalog,json_array_elements,"from_json json, OUT value json",SETOF json
+pg_catalog,json_array_elements_text,"from_json json, OUT value text",SETOF text
+pg_catalog,json_array_length,json,integer
+pg_catalog,json_build_array,,json
+pg_catalog,json_build_array,"VARIADIC ""any""",json
+pg_catalog,json_build_object,,json
+pg_catalog,json_build_object,"VARIADIC ""any""",json
+pg_catalog,json_each,"from_json json, OUT key text, OUT value json",SETOF record
+pg_catalog,json_each_text,"from_json json, OUT key text, OUT value text",SETOF record
+pg_catalog,json_extract_path,"from_json json, VARIADIC path_elems text[]",json
+pg_catalog,json_extract_path_text,"from_json json, VARIADIC path_elems text[]",text
+pg_catalog,json_in,cstring,json
+pg_catalog,json_object,text[],json
+pg_catalog,json_object,"text[], text[]",json
+pg_catalog,json_object_agg,"key ""any"", value ""any""",json
+pg_catalog,json_object_agg_finalfn,internal,json
+pg_catalog,json_object_agg_strict,"key ""any"", value ""any""",json
+pg_catalog,json_object_agg_strict_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,json_object_agg_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,json_object_agg_unique,"key ""any"", value ""any""",json
+pg_catalog,json_object_agg_unique_strict,"key ""any"", value ""any""",json
+pg_catalog,json_object_agg_unique_strict_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,json_object_agg_unique_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,json_object_field,"from_json json, field_name text",json
+pg_catalog,json_object_field_text,"from_json json, field_name text",text
+pg_catalog,json_object_keys,json,SETOF text
+pg_catalog,json_out,json,cstring
+pg_catalog,json_populate_record,"base anyelement, from_json json, use_json_as_text boolean",anyelement
+pg_catalog,json_populate_recordset,"base anyelement, from_json json, use_json_as_text boolean",SETOF anyelement
+pg_catalog,json_recv,internal,json
+pg_catalog,json_send,json,bytea
+pg_catalog,json_strip_nulls,json,json
+pg_catalog,json_to_record,json,record
+pg_catalog,json_to_recordset,json,SETOF record
+pg_catalog,json_to_tsvector,"json, jsonb",tsvector
+pg_catalog,json_to_tsvector,"regconfig, json, jsonb",tsvector
+pg_catalog,json_typeof,json,text
+pg_catalog,jsonb_agg,anyelement,jsonb
+pg_catalog,jsonb_agg_finalfn,internal,jsonb
+pg_catalog,jsonb_agg_strict,anyelement,jsonb
+pg_catalog,jsonb_agg_strict_transfn,"internal, anyelement",internal
+pg_catalog,jsonb_agg_transfn,"internal, anyelement",internal
+pg_catalog,jsonb_array_element,"from_json jsonb, element_index integer",jsonb
+pg_catalog,jsonb_array_element_text,"from_json jsonb, element_index integer",text
+pg_catalog,jsonb_array_elements,"from_json jsonb, OUT value jsonb",SETOF jsonb
+pg_catalog,jsonb_array_elements_text,"from_json jsonb, OUT value text",SETOF text
+pg_catalog,jsonb_array_length,jsonb,integer
+pg_catalog,jsonb_build_array,,jsonb
+pg_catalog,jsonb_build_array,"VARIADIC ""any""",jsonb
+pg_catalog,jsonb_build_object,,jsonb
+pg_catalog,jsonb_build_object,"VARIADIC ""any""",jsonb
+pg_catalog,jsonb_cmp,"jsonb, jsonb",integer
+pg_catalog,jsonb_concat,"jsonb, jsonb",jsonb
+pg_catalog,jsonb_contained,"jsonb, jsonb",boolean
+pg_catalog,jsonb_contains,"jsonb, jsonb",boolean
+pg_catalog,jsonb_delete,"from_json jsonb, VARIADIC path_elems text[]",jsonb
+pg_catalog,jsonb_delete,"jsonb, integer",jsonb
+pg_catalog,jsonb_delete,"jsonb, text",jsonb
+pg_catalog,jsonb_delete_path,"jsonb, text[]",jsonb
+pg_catalog,jsonb_each,"from_json jsonb, OUT key text, OUT value jsonb",SETOF record
+pg_catalog,jsonb_each_text,"from_json jsonb, OUT key text, OUT value text",SETOF record
+pg_catalog,jsonb_eq,"jsonb, jsonb",boolean
+pg_catalog,jsonb_exists,"jsonb, text",boolean
+pg_catalog,jsonb_exists_all,"jsonb, text[]",boolean
+pg_catalog,jsonb_exists_any,"jsonb, text[]",boolean
+pg_catalog,jsonb_extract_path,"from_json jsonb, VARIADIC path_elems text[]",jsonb
+pg_catalog,jsonb_extract_path_text,"from_json jsonb, VARIADIC path_elems text[]",text
+pg_catalog,jsonb_ge,"jsonb, jsonb",boolean
+pg_catalog,jsonb_gt,"jsonb, jsonb",boolean
+pg_catalog,jsonb_hash,jsonb,integer
+pg_catalog,jsonb_hash_extended,"jsonb, bigint",bigint
+pg_catalog,jsonb_in,cstring,jsonb
+pg_catalog,jsonb_insert,"jsonb_in jsonb, path text[], replacement jsonb, insert_after boolean",jsonb
+pg_catalog,jsonb_le,"jsonb, jsonb",boolean
+pg_catalog,jsonb_lt,"jsonb, jsonb",boolean
+pg_catalog,jsonb_ne,"jsonb, jsonb",boolean
+pg_catalog,jsonb_object,text[],jsonb
+pg_catalog,jsonb_object,"text[], text[]",jsonb
+pg_catalog,jsonb_object_agg,"key ""any"", value ""any""",jsonb
+pg_catalog,jsonb_object_agg_finalfn,internal,jsonb
+pg_catalog,jsonb_object_agg_strict,"key ""any"", value ""any""",jsonb
+pg_catalog,jsonb_object_agg_strict_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,jsonb_object_agg_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,jsonb_object_agg_unique,"key ""any"", value ""any""",jsonb
+pg_catalog,jsonb_object_agg_unique_strict,"key ""any"", value ""any""",jsonb
+pg_catalog,jsonb_object_agg_unique_strict_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,jsonb_object_agg_unique_transfn,"internal, ""any"", ""any""",internal
+pg_catalog,jsonb_object_field,"from_json jsonb, field_name text",jsonb
+pg_catalog,jsonb_object_field_text,"from_json jsonb, field_name text",text
+pg_catalog,jsonb_object_keys,jsonb,SETOF text
+pg_catalog,jsonb_out,jsonb,cstring
+pg_catalog,jsonb_path_exists,"target jsonb, path jsonpath, vars jsonb, silent boolean",boolean
+pg_catalog,jsonb_path_exists_opr,"jsonb, jsonpath",boolean
+pg_catalog,jsonb_path_exists_tz,"target jsonb, path jsonpath, vars jsonb, silent boolean",boolean
+pg_catalog,jsonb_path_match,"target jsonb, path jsonpath, vars jsonb, silent boolean",boolean
+pg_catalog,jsonb_path_match_opr,"jsonb, jsonpath",boolean
+pg_catalog,jsonb_path_match_tz,"target jsonb, path jsonpath, vars jsonb, silent boolean",boolean
+pg_catalog,jsonb_path_query,"target jsonb, path jsonpath, vars jsonb, silent boolean",SETOF jsonb
+pg_catalog,jsonb_path_query_array,"target jsonb, path jsonpath, vars jsonb, silent boolean",jsonb
+pg_catalog,jsonb_path_query_array_tz,"target jsonb, path jsonpath, vars jsonb, silent boolean",jsonb
+pg_catalog,jsonb_path_query_first,"target jsonb, path jsonpath, vars jsonb, silent boolean",jsonb
+pg_catalog,jsonb_path_query_first_tz,"target jsonb, path jsonpath, vars jsonb, silent boolean",jsonb
+pg_catalog,jsonb_path_query_tz,"target jsonb, path jsonpath, vars jsonb, silent boolean",SETOF jsonb
+pg_catalog,jsonb_populate_record,"anyelement, jsonb",anyelement
+pg_catalog,jsonb_populate_record_valid,"anyelement, jsonb",boolean
+pg_catalog,jsonb_populate_recordset,"anyelement, jsonb",SETOF anyelement
+pg_catalog,jsonb_pretty,jsonb,text
+pg_catalog,jsonb_recv,internal,jsonb
+pg_catalog,jsonb_send,jsonb,bytea
+pg_catalog,jsonb_set,"jsonb_in jsonb, path text[], replacement jsonb, create_if_missing boolean",jsonb
+pg_catalog,jsonb_set_lax,"jsonb_in jsonb, path text[], replacement jsonb, create_if_missing boolean, null_value_treatment text",jsonb
+pg_catalog,jsonb_strip_nulls,jsonb,jsonb
+pg_catalog,jsonb_subscript_handler,internal,internal
+pg_catalog,jsonb_to_record,jsonb,record
+pg_catalog,jsonb_to_recordset,jsonb,SETOF record
+pg_catalog,jsonb_to_tsvector,"jsonb, jsonb",tsvector
+pg_catalog,jsonb_to_tsvector,"regconfig, jsonb, jsonb",tsvector
+pg_catalog,jsonb_typeof,jsonb,text
+pg_catalog,jsonpath_in,cstring,jsonpath
+pg_catalog,jsonpath_out,jsonpath,cstring
+pg_catalog,jsonpath_recv,internal,jsonpath
+pg_catalog,jsonpath_send,jsonpath,bytea
+pg_catalog,justify_days,interval,interval
+pg_catalog,justify_hours,interval,interval
+pg_catalog,justify_interval,interval,interval
+pg_catalog,koi8r_to_iso,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,koi8r_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,koi8r_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,koi8r_to_win1251,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,koi8r_to_win866,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,koi8u_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,lag,"anycompatible, integer, anycompatible",anycompatible
+pg_catalog,lag,anyelement,anyelement
+pg_catalog,lag,"anyelement, integer",anyelement
+pg_catalog,language_handler_in,cstring,language_handler
+pg_catalog,language_handler_out,language_handler,cstring
+pg_catalog,last_value,anyelement,anyelement
+pg_catalog,lastval,,bigint
+pg_catalog,latin1_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,latin2_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,latin2_to_win1250,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,latin3_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,latin4_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,lcm,"bigint, bigint",bigint
+pg_catalog,lcm,"integer, integer",integer
+pg_catalog,lcm,"numeric, numeric",numeric
+pg_catalog,lead,"anycompatible, integer, anycompatible",anycompatible
+pg_catalog,lead,anyelement,anyelement
+pg_catalog,lead,"anyelement, integer",anyelement
+pg_catalog,left,"text, integer",text
+pg_catalog,length,bit,integer
+pg_catalog,length,bytea,integer
+pg_catalog,length,"bytea, name",integer
+pg_catalog,length,character,integer
+pg_catalog,length,lseg,double precision
+pg_catalog,length,path,double precision
+pg_catalog,length,text,integer
+pg_catalog,length,tsvector,integer
+pg_catalog,like,"bytea, bytea",boolean
+pg_catalog,like,"name, text",boolean
+pg_catalog,like,"text, text",boolean
+pg_catalog,like_escape,"bytea, bytea",bytea
+pg_catalog,like_escape,"text, text",text
+pg_catalog,likejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,likesel,"internal, oid, internal, integer",double precision
+pg_catalog,line,"point, point",line
+pg_catalog,line_distance,"line, line",double precision
+pg_catalog,line_eq,"line, line",boolean
+pg_catalog,line_horizontal,line,boolean
+pg_catalog,line_in,cstring,line
+pg_catalog,line_interpt,"line, line",point
+pg_catalog,line_intersect,"line, line",boolean
+pg_catalog,line_out,line,cstring
+pg_catalog,line_parallel,"line, line",boolean
+pg_catalog,line_perp,"line, line",boolean
+pg_catalog,line_recv,internal,line
+pg_catalog,line_send,line,bytea
+pg_catalog,line_vertical,line,boolean
+pg_catalog,ln,double precision,double precision
+pg_catalog,ln,numeric,numeric
+pg_catalog,lo_close,integer,integer
+pg_catalog,lo_creat,integer,oid
+pg_catalog,lo_create,oid,oid
+pg_catalog,lo_export,"oid, text",integer
+pg_catalog,lo_from_bytea,"oid, bytea",oid
+pg_catalog,lo_get,oid,bytea
+pg_catalog,lo_get,"oid, bigint, integer",bytea
+pg_catalog,lo_import,text,oid
+pg_catalog,lo_import,"text, oid",oid
+pg_catalog,lo_lseek,"integer, integer, integer",integer
+pg_catalog,lo_lseek64,"integer, bigint, integer",bigint
+pg_catalog,lo_open,"oid, integer",integer
+pg_catalog,lo_put,"oid, bigint, bytea",void
+pg_catalog,lo_tell,integer,integer
+pg_catalog,lo_tell64,integer,bigint
+pg_catalog,lo_truncate,"integer, integer",integer
+pg_catalog,lo_truncate64,"integer, bigint",integer
+pg_catalog,lo_unlink,oid,integer
+pg_catalog,log,double precision,double precision
+pg_catalog,log,numeric,numeric
+pg_catalog,log,"numeric, numeric",numeric
+pg_catalog,log10,double precision,double precision
+pg_catalog,log10,numeric,numeric
+pg_catalog,loread,"integer, integer",bytea
+pg_catalog,lower,anymultirange,anyelement
+pg_catalog,lower,anyrange,anyelement
+pg_catalog,lower,text,text
+pg_catalog,lower_inc,anymultirange,boolean
+pg_catalog,lower_inc,anyrange,boolean
+pg_catalog,lower_inf,anymultirange,boolean
+pg_catalog,lower_inf,anyrange,boolean
+pg_catalog,lowrite,"integer, bytea",integer
+pg_catalog,lpad,"text, integer",text
+pg_catalog,lpad,"text, integer, text",text
+pg_catalog,lseg,box,lseg
+pg_catalog,lseg,"point, point",lseg
+pg_catalog,lseg_center,lseg,point
+pg_catalog,lseg_distance,"lseg, lseg",double precision
+pg_catalog,lseg_eq,"lseg, lseg",boolean
+pg_catalog,lseg_ge,"lseg, lseg",boolean
+pg_catalog,lseg_gt,"lseg, lseg",boolean
+pg_catalog,lseg_horizontal,lseg,boolean
+pg_catalog,lseg_in,cstring,lseg
+pg_catalog,lseg_interpt,"lseg, lseg",point
+pg_catalog,lseg_intersect,"lseg, lseg",boolean
+pg_catalog,lseg_le,"lseg, lseg",boolean
+pg_catalog,lseg_length,lseg,double precision
+pg_catalog,lseg_lt,"lseg, lseg",boolean
+pg_catalog,lseg_ne,"lseg, lseg",boolean
+pg_catalog,lseg_out,lseg,cstring
+pg_catalog,lseg_parallel,"lseg, lseg",boolean
+pg_catalog,lseg_perp,"lseg, lseg",boolean
+pg_catalog,lseg_recv,internal,lseg
+pg_catalog,lseg_send,lseg,bytea
+pg_catalog,lseg_vertical,lseg,boolean
+pg_catalog,ltrim,"bytea, bytea",bytea
+pg_catalog,ltrim,text,text
+pg_catalog,ltrim,"text, text",text
+pg_catalog,macaddr,macaddr8,macaddr
+pg_catalog,macaddr8,macaddr,macaddr8
+pg_catalog,macaddr8_and,"macaddr8, macaddr8",macaddr8
+pg_catalog,macaddr8_cmp,"macaddr8, macaddr8",integer
+pg_catalog,macaddr8_eq,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_ge,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_gt,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_in,cstring,macaddr8
+pg_catalog,macaddr8_le,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_lt,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_ne,"macaddr8, macaddr8",boolean
+pg_catalog,macaddr8_not,macaddr8,macaddr8
+pg_catalog,macaddr8_or,"macaddr8, macaddr8",macaddr8
+pg_catalog,macaddr8_out,macaddr8,cstring
+pg_catalog,macaddr8_recv,internal,macaddr8
+pg_catalog,macaddr8_send,macaddr8,bytea
+pg_catalog,macaddr8_set7bit,macaddr8,macaddr8
+pg_catalog,macaddr_and,"macaddr, macaddr",macaddr
+pg_catalog,macaddr_cmp,"macaddr, macaddr",integer
+pg_catalog,macaddr_eq,"macaddr, macaddr",boolean
+pg_catalog,macaddr_ge,"macaddr, macaddr",boolean
+pg_catalog,macaddr_gt,"macaddr, macaddr",boolean
+pg_catalog,macaddr_in,cstring,macaddr
+pg_catalog,macaddr_le,"macaddr, macaddr",boolean
+pg_catalog,macaddr_lt,"macaddr, macaddr",boolean
+pg_catalog,macaddr_ne,"macaddr, macaddr",boolean
+pg_catalog,macaddr_not,macaddr,macaddr
+pg_catalog,macaddr_or,"macaddr, macaddr",macaddr
+pg_catalog,macaddr_out,macaddr,cstring
+pg_catalog,macaddr_recv,internal,macaddr
+pg_catalog,macaddr_send,macaddr,bytea
+pg_catalog,macaddr_sortsupport,internal,void
+pg_catalog,make_date,"year integer, month integer, day integer",date
+pg_catalog,make_interval,"years integer, months integer, weeks integer, days integer, hours integer, mins integer, secs double precision",interval
+pg_catalog,make_time,"hour integer, min integer, sec double precision",time without time zone
+pg_catalog,make_timestamp,"year integer, month integer, mday integer, hour integer, min integer, sec double precision",timestamp without time zone
+pg_catalog,make_timestamptz,"year integer, month integer, mday integer, hour integer, min integer, sec double precision",timestamp with time zone
+pg_catalog,make_timestamptz,"year integer, month integer, mday integer, hour integer, min integer, sec double precision, timezone text",timestamp with time zone
+pg_catalog,makeaclitem,"oid, oid, text, boolean",aclitem
+pg_catalog,masklen,inet,integer
+pg_catalog,matchingjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,matchingsel,"internal, oid, internal, integer",double precision
+pg_catalog,max,anyarray,anyarray
+pg_catalog,max,anyenum,anyenum
+pg_catalog,max,bigint,bigint
+pg_catalog,max,character,character
+pg_catalog,max,date,date
+pg_catalog,max,double precision,double precision
+pg_catalog,max,inet,inet
+pg_catalog,max,integer,integer
+pg_catalog,max,interval,interval
+pg_catalog,max,money,money
+pg_catalog,max,numeric,numeric
+pg_catalog,max,oid,oid
+pg_catalog,max,pg_lsn,pg_lsn
+pg_catalog,max,real,real
+pg_catalog,max,smallint,smallint
+pg_catalog,max,text,text
+pg_catalog,max,tid,tid
+pg_catalog,max,timestamp without time zone,timestamp without time zone
+pg_catalog,max,timestamp with time zone,timestamp with time zone
+pg_catalog,max,time without time zone,time without time zone
+pg_catalog,max,time with time zone,time with time zone
+pg_catalog,max,xid8,xid8
+pg_catalog,md5,bytea,text
+pg_catalog,md5,text,text
+pg_catalog,mic_to_big5,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_euc_cn,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_euc_jp,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_euc_kr,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_euc_tw,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_iso,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_koi8r,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_latin1,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_latin2,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_latin3,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_latin4,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_sjis,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_win1250,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_win1251,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,mic_to_win866,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,min,anyarray,anyarray
+pg_catalog,min,anyenum,anyenum
+pg_catalog,min,bigint,bigint
+pg_catalog,min,character,character
+pg_catalog,min,date,date
+pg_catalog,min,double precision,double precision
+pg_catalog,min,inet,inet
+pg_catalog,min,integer,integer
+pg_catalog,min,interval,interval
+pg_catalog,min,money,money
+pg_catalog,min,numeric,numeric
+pg_catalog,min,oid,oid
+pg_catalog,min,pg_lsn,pg_lsn
+pg_catalog,min,real,real
+pg_catalog,min,smallint,smallint
+pg_catalog,min,text,text
+pg_catalog,min,tid,tid
+pg_catalog,min,timestamp without time zone,timestamp without time zone
+pg_catalog,min,timestamp with time zone,timestamp with time zone
+pg_catalog,min,time without time zone,time without time zone
+pg_catalog,min,time with time zone,time with time zone
+pg_catalog,min,xid8,xid8
+pg_catalog,min_scale,numeric,integer
+pg_catalog,mod,"bigint, bigint",bigint
+pg_catalog,mod,"integer, integer",integer
+pg_catalog,mod,"numeric, numeric",numeric
+pg_catalog,mod,"smallint, smallint",smallint
+pg_catalog,mode,ORDER BY anyelement,anyelement
+pg_catalog,mode_final,"internal, anyelement",anyelement
+pg_catalog,money,bigint,money
+pg_catalog,money,integer,money
+pg_catalog,money,numeric,money
+pg_catalog,mul_d_interval,"double precision, interval",interval
+pg_catalog,multirange,anyrange,anymultirange
+pg_catalog,multirange_adjacent_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_adjacent_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_after_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_after_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_agg_finalfn,"internal, anymultirange",anymultirange
+pg_catalog,multirange_agg_transfn,"internal, anymultirange",internal
+pg_catalog,multirange_before_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_before_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_cmp,"anymultirange, anymultirange",integer
+pg_catalog,multirange_contained_by_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_contained_by_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_contains_elem,"anymultirange, anyelement",boolean
+pg_catalog,multirange_contains_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_contains_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_eq,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_ge,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_gist_compress,internal,internal
+pg_catalog,multirange_gist_consistent,"internal, anymultirange, smallint, oid, internal",boolean
+pg_catalog,multirange_gt,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_in,"cstring, oid, integer",anymultirange
+pg_catalog,multirange_intersect,"anymultirange, anymultirange",anymultirange
+pg_catalog,multirange_intersect_agg_transfn,"anymultirange, anymultirange",anymultirange
+pg_catalog,multirange_le,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_lt,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_minus,"anymultirange, anymultirange",anymultirange
+pg_catalog,multirange_ne,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_out,anymultirange,cstring
+pg_catalog,multirange_overlaps_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_overlaps_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_overleft_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_overleft_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_overright_multirange,"anymultirange, anymultirange",boolean
+pg_catalog,multirange_overright_range,"anymultirange, anyrange",boolean
+pg_catalog,multirange_recv,"internal, oid, integer",anymultirange
+pg_catalog,multirange_send,anymultirange,bytea
+pg_catalog,multirange_typanalyze,internal,boolean
+pg_catalog,multirange_union,"anymultirange, anymultirange",anymultirange
+pg_catalog,multirangesel,"internal, oid, internal, integer",double precision
+pg_catalog,mxid_age,xid,integer
+pg_catalog,name,character,name
+pg_catalog,name,character varying,name
+pg_catalog,name,text,name
+pg_catalog,nameconcatoid,"name, oid",name
+pg_catalog,nameeq,"name, name",boolean
+pg_catalog,nameeqtext,"name, text",boolean
+pg_catalog,namege,"name, name",boolean
+pg_catalog,namegetext,"name, text",boolean
+pg_catalog,namegt,"name, name",boolean
+pg_catalog,namegttext,"name, text",boolean
+pg_catalog,nameiclike,"name, text",boolean
+pg_catalog,nameicnlike,"name, text",boolean
+pg_catalog,nameicregexeq,"name, text",boolean
+pg_catalog,nameicregexne,"name, text",boolean
+pg_catalog,namein,cstring,name
+pg_catalog,namele,"name, name",boolean
+pg_catalog,nameletext,"name, text",boolean
+pg_catalog,namelike,"name, text",boolean
+pg_catalog,namelt,"name, name",boolean
+pg_catalog,namelttext,"name, text",boolean
+pg_catalog,namene,"name, name",boolean
+pg_catalog,namenetext,"name, text",boolean
+pg_catalog,namenlike,"name, text",boolean
+pg_catalog,nameout,name,cstring
+pg_catalog,namerecv,internal,name
+pg_catalog,nameregexeq,"name, text",boolean
+pg_catalog,nameregexne,"name, text",boolean
+pg_catalog,namesend,name,bytea
+pg_catalog,neqjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,neqsel,"internal, oid, internal, integer",double precision
+pg_catalog,netmask,inet,inet
+pg_catalog,network,inet,cidr
+pg_catalog,network_cmp,"inet, inet",integer
+pg_catalog,network_eq,"inet, inet",boolean
+pg_catalog,network_ge,"inet, inet",boolean
+pg_catalog,network_gt,"inet, inet",boolean
+pg_catalog,network_larger,"inet, inet",inet
+pg_catalog,network_le,"inet, inet",boolean
+pg_catalog,network_lt,"inet, inet",boolean
+pg_catalog,network_ne,"inet, inet",boolean
+pg_catalog,network_overlap,"inet, inet",boolean
+pg_catalog,network_smaller,"inet, inet",inet
+pg_catalog,network_sortsupport,internal,void
+pg_catalog,network_sub,"inet, inet",boolean
+pg_catalog,network_subeq,"inet, inet",boolean
+pg_catalog,network_subset_support,internal,internal
+pg_catalog,network_sup,"inet, inet",boolean
+pg_catalog,network_supeq,"inet, inet",boolean
+pg_catalog,networkjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,networksel,"internal, oid, internal, integer",double precision
+pg_catalog,nextval,regclass,bigint
+pg_catalog,nlikejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,nlikesel,"internal, oid, internal, integer",double precision
+pg_catalog,normalize,"text, text",text
+pg_catalog,notlike,"bytea, bytea",boolean
+pg_catalog,notlike,"name, text",boolean
+pg_catalog,notlike,"text, text",boolean
+pg_catalog,now,,timestamp with time zone
+pg_catalog,npoints,path,integer
+pg_catalog,npoints,polygon,integer
+pg_catalog,nth_value,"anyelement, integer",anyelement
+pg_catalog,ntile,integer,integer
+pg_catalog,num_nonnulls,"VARIADIC ""any""",integer
+pg_catalog,num_nulls,"VARIADIC ""any""",integer
+pg_catalog,numeric,bigint,numeric
+pg_catalog,numeric,double precision,numeric
+pg_catalog,numeric,integer,numeric
+pg_catalog,numeric,jsonb,numeric
+pg_catalog,numeric,money,numeric
+pg_catalog,numeric,"numeric, integer",numeric
+pg_catalog,numeric,real,numeric
+pg_catalog,numeric,smallint,numeric
+pg_catalog,numeric_abs,numeric,numeric
+pg_catalog,numeric_accum,"internal, numeric",internal
+pg_catalog,numeric_accum_inv,"internal, numeric",internal
+pg_catalog,numeric_add,"numeric, numeric",numeric
+pg_catalog,numeric_avg,internal,numeric
+pg_catalog,numeric_avg_accum,"internal, numeric",internal
+pg_catalog,numeric_avg_combine,"internal, internal",internal
+pg_catalog,numeric_avg_deserialize,"bytea, internal",internal
+pg_catalog,numeric_avg_serialize,internal,bytea
+pg_catalog,numeric_cmp,"numeric, numeric",integer
+pg_catalog,numeric_combine,"internal, internal",internal
+pg_catalog,numeric_deserialize,"bytea, internal",internal
+pg_catalog,numeric_div,"numeric, numeric",numeric
+pg_catalog,numeric_div_trunc,"numeric, numeric",numeric
+pg_catalog,numeric_eq,"numeric, numeric",boolean
+pg_catalog,numeric_exp,numeric,numeric
+pg_catalog,numeric_ge,"numeric, numeric",boolean
+pg_catalog,numeric_gt,"numeric, numeric",boolean
+pg_catalog,numeric_in,"cstring, oid, integer",numeric
+pg_catalog,numeric_inc,numeric,numeric
+pg_catalog,numeric_larger,"numeric, numeric",numeric
+pg_catalog,numeric_le,"numeric, numeric",boolean
+pg_catalog,numeric_ln,numeric,numeric
+pg_catalog,numeric_log,"numeric, numeric",numeric
+pg_catalog,numeric_lt,"numeric, numeric",boolean
+pg_catalog,numeric_mod,"numeric, numeric",numeric
+pg_catalog,numeric_mul,"numeric, numeric",numeric
+pg_catalog,numeric_ne,"numeric, numeric",boolean
+pg_catalog,numeric_out,numeric,cstring
+pg_catalog,numeric_pl_pg_lsn,"numeric, pg_lsn",pg_lsn
+pg_catalog,numeric_poly_avg,internal,numeric
+pg_catalog,numeric_poly_combine,"internal, internal",internal
+pg_catalog,numeric_poly_deserialize,"bytea, internal",internal
+pg_catalog,numeric_poly_serialize,internal,bytea
+pg_catalog,numeric_poly_stddev_pop,internal,numeric
+pg_catalog,numeric_poly_stddev_samp,internal,numeric
+pg_catalog,numeric_poly_sum,internal,numeric
+pg_catalog,numeric_poly_var_pop,internal,numeric
+pg_catalog,numeric_poly_var_samp,internal,numeric
+pg_catalog,numeric_power,"numeric, numeric",numeric
+pg_catalog,numeric_recv,"internal, oid, integer",numeric
+pg_catalog,numeric_send,numeric,bytea
+pg_catalog,numeric_serialize,internal,bytea
+pg_catalog,numeric_smaller,"numeric, numeric",numeric
+pg_catalog,numeric_sortsupport,internal,void
+pg_catalog,numeric_sqrt,numeric,numeric
+pg_catalog,numeric_stddev_pop,internal,numeric
+pg_catalog,numeric_stddev_samp,internal,numeric
+pg_catalog,numeric_sub,"numeric, numeric",numeric
+pg_catalog,numeric_sum,internal,numeric
+pg_catalog,numeric_support,internal,internal
+pg_catalog,numeric_uminus,numeric,numeric
+pg_catalog,numeric_uplus,numeric,numeric
+pg_catalog,numeric_var_pop,internal,numeric
+pg_catalog,numeric_var_samp,internal,numeric
+pg_catalog,numerictypmodin,cstring[],integer
+pg_catalog,numerictypmodout,integer,cstring
+pg_catalog,nummultirange,,nummultirange
+pg_catalog,nummultirange,numrange,nummultirange
+pg_catalog,nummultirange,VARIADIC numrange[],nummultirange
+pg_catalog,numnode,tsquery,integer
+pg_catalog,numrange,"numeric, numeric",numrange
+pg_catalog,numrange,"numeric, numeric, text",numrange
+pg_catalog,numrange_subdiff,"numeric, numeric",double precision
+pg_catalog,obj_description,oid,text
+pg_catalog,obj_description,"oid, name",text
+pg_catalog,octet_length,bit,integer
+pg_catalog,octet_length,bytea,integer
+pg_catalog,octet_length,character,integer
+pg_catalog,octet_length,text,integer
+pg_catalog,oid,bigint,oid
+pg_catalog,oideq,"oid, oid",boolean
+pg_catalog,oidge,"oid, oid",boolean
+pg_catalog,oidgt,"oid, oid",boolean
+pg_catalog,oidin,cstring,oid
+pg_catalog,oidlarger,"oid, oid",oid
+pg_catalog,oidle,"oid, oid",boolean
+pg_catalog,oidlt,"oid, oid",boolean
+pg_catalog,oidne,"oid, oid",boolean
+pg_catalog,oidout,oid,cstring
+pg_catalog,oidrecv,internal,oid
+pg_catalog,oidsend,oid,bytea
+pg_catalog,oidsmaller,"oid, oid",oid
+pg_catalog,oidvectoreq,"oidvector, oidvector",boolean
+pg_catalog,oidvectorge,"oidvector, oidvector",boolean
+pg_catalog,oidvectorgt,"oidvector, oidvector",boolean
+pg_catalog,oidvectorin,cstring,oidvector
+pg_catalog,oidvectorle,"oidvector, oidvector",boolean
+pg_catalog,oidvectorlt,"oidvector, oidvector",boolean
+pg_catalog,oidvectorne,"oidvector, oidvector",boolean
+pg_catalog,oidvectorout,oidvector,cstring
+pg_catalog,oidvectorrecv,internal,oidvector
+pg_catalog,oidvectorsend,oidvector,bytea
+pg_catalog,oidvectortypes,oidvector,text
+pg_catalog,on_pb,"point, box",boolean
+pg_catalog,on_pl,"point, line",boolean
+pg_catalog,on_ppath,"point, path",boolean
+pg_catalog,on_ps,"point, lseg",boolean
+pg_catalog,on_sb,"lseg, box",boolean
+pg_catalog,on_sl,"lseg, line",boolean
+pg_catalog,ordered_set_transition,"internal, ""any""",internal
+pg_catalog,ordered_set_transition_multi,"internal, VARIADIC ""any""",internal
+pg_catalog,overlaps,"timestamp without time zone, interval, timestamp without time zone, interval",boolean
+pg_catalog,overlaps,"timestamp without time zone, interval, timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,overlaps,"timestamp without time zone, timestamp without time zone, timestamp without time zone, interval",boolean
+pg_catalog,overlaps,"timestamp without time zone, timestamp without time zone, timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,overlaps,"timestamp with time zone, interval, timestamp with time zone, interval",boolean
+pg_catalog,overlaps,"timestamp with time zone, interval, timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,overlaps,"timestamp with time zone, timestamp with time zone, timestamp with time zone, interval",boolean
+pg_catalog,overlaps,"timestamp with time zone, timestamp with time zone, timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,overlaps,"time without time zone, interval, time without time zone, interval",boolean
+pg_catalog,overlaps,"time without time zone, interval, time without time zone, time without time zone",boolean
+pg_catalog,overlaps,"time without time zone, time without time zone, time without time zone, interval",boolean
+pg_catalog,overlaps,"time without time zone, time without time zone, time without time zone, time without time zone",boolean
+pg_catalog,overlaps,"time with time zone, time with time zone, time with time zone, time with time zone",boolean
+pg_catalog,overlay,"bit, bit, integer",bit
+pg_catalog,overlay,"bit, bit, integer, integer",bit
+pg_catalog,overlay,"bytea, bytea, integer",bytea
+pg_catalog,overlay,"bytea, bytea, integer, integer",bytea
+pg_catalog,overlay,"text, text, integer",text
+pg_catalog,overlay,"text, text, integer, integer",text
+pg_catalog,parse_ident,"str text, strict boolean",text[]
+pg_catalog,path,polygon,path
+pg_catalog,path_add,"path, path",path
+pg_catalog,path_add_pt,"path, point",path
+pg_catalog,path_contain_pt,"path, point",boolean
+pg_catalog,path_distance,"path, path",double precision
+pg_catalog,path_div_pt,"path, point",path
+pg_catalog,path_in,cstring,path
+pg_catalog,path_inter,"path, path",boolean
+pg_catalog,path_length,path,double precision
+pg_catalog,path_mul_pt,"path, point",path
+pg_catalog,path_n_eq,"path, path",boolean
+pg_catalog,path_n_ge,"path, path",boolean
+pg_catalog,path_n_gt,"path, path",boolean
+pg_catalog,path_n_le,"path, path",boolean
+pg_catalog,path_n_lt,"path, path",boolean
+pg_catalog,path_npoints,path,integer
+pg_catalog,path_out,path,cstring
+pg_catalog,path_recv,internal,path
+pg_catalog,path_send,path,bytea
+pg_catalog,path_sub_pt,"path, point",path
+pg_catalog,pclose,path,path
+pg_catalog,percent_rank,,double precision
+pg_catalog,percent_rank,"VARIADIC ""any"" ORDER BY VARIADIC ""any""",double precision
+pg_catalog,percent_rank_final,"internal, VARIADIC ""any""",double precision
+pg_catalog,percentile_cont,double precision ORDER BY double precision,double precision
+pg_catalog,percentile_cont,double precision[] ORDER BY double precision,double precision[]
+pg_catalog,percentile_cont,double precision ORDER BY interval,interval
+pg_catalog,percentile_cont,double precision[] ORDER BY interval,interval[]
+pg_catalog,percentile_cont_float8_final,"internal, double precision",double precision
+pg_catalog,percentile_cont_float8_multi_final,"internal, double precision[]",double precision[]
+pg_catalog,percentile_cont_interval_final,"internal, double precision",interval
+pg_catalog,percentile_cont_interval_multi_final,"internal, double precision[]",interval[]
+pg_catalog,percentile_disc,double precision ORDER BY anyelement,anyelement
+pg_catalog,percentile_disc,double precision[] ORDER BY anyelement,anyarray
+pg_catalog,percentile_disc_final,"internal, double precision, anyelement",anyelement
+pg_catalog,percentile_disc_multi_final,"internal, double precision[], anyelement",anyarray
+pg_catalog,pg_advisory_lock,bigint,void
+pg_catalog,pg_advisory_lock,"integer, integer",void
+pg_catalog,pg_advisory_lock_shared,bigint,void
+pg_catalog,pg_advisory_lock_shared,"integer, integer",void
+pg_catalog,pg_advisory_unlock,bigint,boolean
+pg_catalog,pg_advisory_unlock,"integer, integer",boolean
+pg_catalog,pg_advisory_unlock_all,,void
+pg_catalog,pg_advisory_unlock_shared,bigint,boolean
+pg_catalog,pg_advisory_unlock_shared,"integer, integer",boolean
+pg_catalog,pg_advisory_xact_lock,bigint,void
+pg_catalog,pg_advisory_xact_lock,"integer, integer",void
+pg_catalog,pg_advisory_xact_lock_shared,bigint,void
+pg_catalog,pg_advisory_xact_lock_shared,"integer, integer",void
+pg_catalog,pg_available_extension_versions,"OUT name name, OUT version text, OUT superuser boolean, OUT trusted boolean, OUT relocatable boolean, OUT schema name, OUT requires name[], OUT comment text",SETOF record
+pg_catalog,pg_available_extensions,"OUT name name, OUT default_version text, OUT comment text",SETOF record
+pg_catalog,pg_available_wal_summaries,"OUT tli bigint, OUT start_lsn pg_lsn, OUT end_lsn pg_lsn",SETOF record
+pg_catalog,pg_backend_pid,,integer
+pg_catalog,pg_backup_start,"label text, fast boolean",pg_lsn
+pg_catalog,pg_backup_stop,"wait_for_archive boolean, OUT lsn pg_lsn, OUT labelfile text, OUT spcmapfile text",record
+pg_catalog,pg_basetype,regtype,regtype
+pg_catalog,pg_blocking_pids,integer,integer[]
+pg_catalog,pg_cancel_backend,integer,boolean
+pg_catalog,pg_char_to_encoding,name,integer
+pg_catalog,pg_client_encoding,,name
+pg_catalog,pg_collation_actual_version,oid,text
+pg_catalog,pg_collation_for,"""any""",text
+pg_catalog,pg_collation_is_visible,oid,boolean
+pg_catalog,pg_column_compression,"""any""",text
+pg_catalog,pg_column_is_updatable,"regclass, smallint, boolean",boolean
+pg_catalog,pg_column_size,"""any""",integer
+pg_catalog,pg_column_toast_chunk_id,"""any""",oid
+pg_catalog,pg_conf_load_time,,timestamp with time zone
+pg_catalog,pg_config,"OUT name text, OUT setting text",SETOF record
+pg_catalog,pg_control_checkpoint,"OUT checkpoint_lsn pg_lsn, OUT redo_lsn pg_lsn, OUT redo_wal_file text, OUT timeline_id integer, OUT prev_timeline_id integer, OUT full_page_writes boolean, OUT next_xid text, OUT next_oid oid, OUT next_multixact_id xid, OUT next_multi_offset xid, OUT oldest_xid xid, OUT oldest_xid_dbid oid, OUT oldest_active_xid xid, OUT oldest_multi_xid xid, OUT oldest_multi_dbid oid, OUT oldest_commit_ts_xid xid, OUT newest_commit_ts_xid xid, OUT checkpoint_time timestamp with time zone",record
+pg_catalog,pg_control_init,"OUT max_data_alignment integer, OUT database_block_size integer, OUT blocks_per_segment integer, OUT wal_block_size integer, OUT bytes_per_wal_segment integer, OUT max_identifier_length integer, OUT max_index_columns integer, OUT max_toast_chunk_size integer, OUT large_object_chunk_size integer, OUT float8_pass_by_value boolean, OUT data_page_checksum_version integer",record
+pg_catalog,pg_control_recovery,"OUT min_recovery_end_lsn pg_lsn, OUT min_recovery_end_timeline integer, OUT backup_start_lsn pg_lsn, OUT backup_end_lsn pg_lsn, OUT end_of_backup_record_required boolean",record
+pg_catalog,pg_control_system,"OUT pg_control_version integer, OUT catalog_version_no integer, OUT system_identifier bigint, OUT pg_control_last_modified timestamp with time zone",record
+pg_catalog,pg_conversion_is_visible,oid,boolean
+pg_catalog,pg_copy_logical_replication_slot,"src_slot_name name, dst_slot_name name, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_copy_logical_replication_slot,"src_slot_name name, dst_slot_name name, temporary boolean, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_copy_logical_replication_slot,"src_slot_name name, dst_slot_name name, temporary boolean, plugin name, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_copy_physical_replication_slot,"src_slot_name name, dst_slot_name name, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_copy_physical_replication_slot,"src_slot_name name, dst_slot_name name, temporary boolean, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_create_logical_replication_slot,"slot_name name, plugin name, temporary boolean, twophase boolean, failover boolean, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_create_physical_replication_slot,"slot_name name, immediately_reserve boolean, temporary boolean, OUT slot_name name, OUT lsn pg_lsn",record
+pg_catalog,pg_create_restore_point,text,pg_lsn
+pg_catalog,pg_current_logfile,,text
+pg_catalog,pg_current_logfile,text,text
+pg_catalog,pg_current_snapshot,,pg_snapshot
+pg_catalog,pg_current_wal_flush_lsn,,pg_lsn
+pg_catalog,pg_current_wal_insert_lsn,,pg_lsn
+pg_catalog,pg_current_wal_lsn,,pg_lsn
+pg_catalog,pg_current_xact_id,,xid8
+pg_catalog,pg_current_xact_id_if_assigned,,xid8
+pg_catalog,pg_cursor,"OUT name text, OUT statement text, OUT is_holdable boolean, OUT is_binary boolean, OUT is_scrollable boolean, OUT creation_time timestamp with time zone",SETOF record
+pg_catalog,pg_database_collation_actual_version,oid,text
+pg_catalog,pg_database_size,name,bigint
+pg_catalog,pg_database_size,oid,bigint
+pg_catalog,pg_ddl_command_in,cstring,pg_ddl_command
+pg_catalog,pg_ddl_command_out,pg_ddl_command,cstring
+pg_catalog,pg_ddl_command_recv,internal,pg_ddl_command
+pg_catalog,pg_ddl_command_send,pg_ddl_command,bytea
+pg_catalog,pg_dependencies_in,cstring,pg_dependencies
+pg_catalog,pg_dependencies_out,pg_dependencies,cstring
+pg_catalog,pg_dependencies_recv,internal,pg_dependencies
+pg_catalog,pg_dependencies_send,pg_dependencies,bytea
+pg_catalog,pg_describe_object,"oid, oid, integer",text
+pg_catalog,pg_drop_replication_slot,name,void
+pg_catalog,pg_encoding_max_length,integer,integer
+pg_catalog,pg_encoding_to_char,integer,name
+pg_catalog,pg_event_trigger_ddl_commands,"OUT classid oid, OUT objid oid, OUT objsubid integer, OUT command_tag text, OUT object_type text, OUT schema_name text, OUT object_identity text, OUT in_extension boolean, OUT command pg_ddl_command",SETOF record
+pg_catalog,pg_event_trigger_dropped_objects,"OUT classid oid, OUT objid oid, OUT objsubid integer, OUT original boolean, OUT normal boolean, OUT is_temporary boolean, OUT object_type text, OUT schema_name text, OUT object_name text, OUT object_identity text, OUT address_names text[], OUT address_args text[]",SETOF record
+pg_catalog,pg_event_trigger_table_rewrite_oid,OUT oid oid,oid
+pg_catalog,pg_event_trigger_table_rewrite_reason,,integer
+pg_catalog,pg_export_snapshot,,text
+pg_catalog,pg_extension_config_dump,"regclass, text",void
+pg_catalog,pg_extension_update_paths,"name name, OUT source text, OUT target text, OUT path text",SETOF record
+pg_catalog,pg_filenode_relation,"oid, oid",regclass
+pg_catalog,pg_function_is_visible,oid,boolean
+pg_catalog,pg_get_backend_memory_contexts,"OUT name text, OUT ident text, OUT parent text, OUT level integer, OUT total_bytes bigint, OUT total_nblocks bigint, OUT free_bytes bigint, OUT free_chunks bigint, OUT used_bytes bigint",SETOF record
+pg_catalog,pg_get_catalog_foreign_keys,"OUT fktable regclass, OUT fkcols text[], OUT pktable regclass, OUT pkcols text[], OUT is_array boolean, OUT is_opt boolean",SETOF record
+pg_catalog,pg_get_constraintdef,oid,text
+pg_catalog,pg_get_constraintdef,"oid, boolean",text
+pg_catalog,pg_get_expr,"pg_node_tree, oid",text
+pg_catalog,pg_get_expr,"pg_node_tree, oid, boolean",text
+pg_catalog,pg_get_function_arg_default,"oid, integer",text
+pg_catalog,pg_get_function_arguments,oid,text
+pg_catalog,pg_get_function_identity_arguments,oid,text
+pg_catalog,pg_get_function_result,oid,text
+pg_catalog,pg_get_function_sqlbody,oid,text
+pg_catalog,pg_get_functiondef,oid,text
+pg_catalog,pg_get_indexdef,oid,text
+pg_catalog,pg_get_indexdef,"oid, integer, boolean",text
+pg_catalog,pg_get_keywords,"OUT word text, OUT catcode ""char"", OUT barelabel boolean, OUT catdesc text, OUT baredesc text",SETOF record
+pg_catalog,pg_get_multixact_members,"multixid xid, OUT xid xid, OUT mode text",SETOF record
+pg_catalog,pg_get_object_address,"type text, object_names text[], object_args text[], OUT classid oid, OUT objid oid, OUT objsubid integer",record
+pg_catalog,pg_get_partition_constraintdef,oid,text
+pg_catalog,pg_get_partkeydef,oid,text
+pg_catalog,pg_get_publication_tables,"VARIADIC pubname text[], OUT pubid oid, OUT relid oid, OUT attrs int2vector, OUT qual pg_node_tree",SETOF record
+pg_catalog,pg_get_replica_identity_index,regclass,regclass
+pg_catalog,pg_get_replication_slots,"OUT slot_name name, OUT plugin name, OUT slot_type text, OUT datoid oid, OUT temporary boolean, OUT active boolean, OUT active_pid integer, OUT xmin xid, OUT catalog_xmin xid, OUT restart_lsn pg_lsn, OUT confirmed_flush_lsn pg_lsn, OUT wal_status text, OUT safe_wal_size bigint, OUT two_phase boolean, OUT inactive_since timestamp with time zone, OUT conflicting boolean, OUT invalidation_reason text, OUT failover boolean, OUT synced boolean",SETOF record
+pg_catalog,pg_get_ruledef,oid,text
+pg_catalog,pg_get_ruledef,"oid, boolean",text
+pg_catalog,pg_get_serial_sequence,"text, text",text
+pg_catalog,pg_get_shmem_allocations,"OUT name text, OUT off bigint, OUT size bigint, OUT allocated_size bigint",SETOF record
+pg_catalog,pg_get_statisticsobjdef,oid,text
+pg_catalog,pg_get_statisticsobjdef_columns,oid,text
+pg_catalog,pg_get_statisticsobjdef_expressions,oid,text[]
+pg_catalog,pg_get_triggerdef,oid,text
+pg_catalog,pg_get_triggerdef,"oid, boolean",text
+pg_catalog,pg_get_userbyid,oid,name
+pg_catalog,pg_get_viewdef,oid,text
+pg_catalog,pg_get_viewdef,"oid, boolean",text
+pg_catalog,pg_get_viewdef,"oid, integer",text
+pg_catalog,pg_get_viewdef,text,text
+pg_catalog,pg_get_viewdef,"text, boolean",text
+pg_catalog,pg_get_wait_events,"OUT type text, OUT name text, OUT description text",SETOF record
+pg_catalog,pg_get_wal_replay_pause_state,,text
+pg_catalog,pg_get_wal_resource_managers,"OUT rm_id integer, OUT rm_name text, OUT rm_builtin boolean",SETOF record
+pg_catalog,pg_get_wal_summarizer_state,"OUT summarized_tli bigint, OUT summarized_lsn pg_lsn, OUT pending_lsn pg_lsn, OUT summarizer_pid integer",record
+pg_catalog,pg_has_role,"name, name, text",boolean
+pg_catalog,pg_has_role,"name, oid, text",boolean
+pg_catalog,pg_has_role,"name, text",boolean
+pg_catalog,pg_has_role,"oid, name, text",boolean
+pg_catalog,pg_has_role,"oid, oid, text",boolean
+pg_catalog,pg_has_role,"oid, text",boolean
+pg_catalog,pg_hba_file_rules,"OUT rule_number integer, OUT file_name text, OUT line_number integer, OUT type text, OUT database text[], OUT user_name text[], OUT address text, OUT netmask text, OUT auth_method text, OUT options text[], OUT error text",SETOF record
+pg_catalog,pg_ident_file_mappings,"OUT map_number integer, OUT file_name text, OUT line_number integer, OUT map_name text, OUT sys_name text, OUT pg_username text, OUT error text",SETOF record
+pg_catalog,pg_identify_object,"classid oid, objid oid, objsubid integer, OUT type text, OUT schema text, OUT name text, OUT identity text",record
+pg_catalog,pg_identify_object_as_address,"classid oid, objid oid, objsubid integer, OUT type text, OUT object_names text[], OUT object_args text[]",record
+pg_catalog,pg_import_system_collations,regnamespace,integer
+pg_catalog,pg_index_column_has_property,"regclass, integer, text",boolean
+pg_catalog,pg_index_has_property,"regclass, text",boolean
+pg_catalog,pg_indexam_has_property,"oid, text",boolean
+pg_catalog,pg_indexam_progress_phasename,"oid, bigint",text
+pg_catalog,pg_indexes_size,regclass,bigint
+pg_catalog,pg_input_error_info,"value text, type_name text, OUT message text, OUT detail text, OUT hint text, OUT sql_error_code text",record
+pg_catalog,pg_input_is_valid,"text, text",boolean
+pg_catalog,pg_is_in_recovery,,boolean
+pg_catalog,pg_is_other_temp_schema,oid,boolean
+pg_catalog,pg_is_wal_replay_paused,,boolean
+pg_catalog,pg_isolation_test_session_is_blocked,"integer, integer[]",boolean
+pg_catalog,pg_jit_available,,boolean
+pg_catalog,pg_last_committed_xact,"OUT xid xid, OUT ""timestamp"" timestamp with time zone, OUT roident oid",record
+pg_catalog,pg_last_wal_receive_lsn,,pg_lsn
+pg_catalog,pg_last_wal_replay_lsn,,pg_lsn
+pg_catalog,pg_last_xact_replay_timestamp,,timestamp with time zone
+pg_catalog,pg_listening_channels,,SETOF text
+pg_catalog,pg_lock_status,"OUT locktype text, OUT database oid, OUT relation oid, OUT page integer, OUT tuple smallint, OUT virtualxid text, OUT transactionid xid, OUT classid oid, OUT objid oid, OUT objsubid smallint, OUT virtualtransaction text, OUT pid integer, OUT mode text, OUT granted boolean, OUT fastpath boolean, OUT waitstart timestamp with time zone",SETOF record
+pg_catalog,pg_log_backend_memory_contexts,integer,boolean
+pg_catalog,pg_log_standby_snapshot,,pg_lsn
+pg_catalog,pg_logical_emit_message,"transactional boolean, prefix text, message bytea, flush boolean",pg_lsn
+pg_catalog,pg_logical_emit_message,"transactional boolean, prefix text, message text, flush boolean",pg_lsn
+pg_catalog,pg_logical_slot_get_binary_changes,"slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[], OUT lsn pg_lsn, OUT xid xid, OUT data bytea",SETOF record
+pg_catalog,pg_logical_slot_get_changes,"slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[], OUT lsn pg_lsn, OUT xid xid, OUT data text",SETOF record
+pg_catalog,pg_logical_slot_peek_binary_changes,"slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[], OUT lsn pg_lsn, OUT xid xid, OUT data bytea",SETOF record
+pg_catalog,pg_logical_slot_peek_changes,"slot_name name, upto_lsn pg_lsn, upto_nchanges integer, VARIADIC options text[], OUT lsn pg_lsn, OUT xid xid, OUT data text",SETOF record
+pg_catalog,pg_ls_archive_statusdir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_dir,text,SETOF text
+pg_catalog,pg_ls_dir,"text, boolean, boolean",SETOF text
+pg_catalog,pg_ls_logdir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_logicalmapdir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_logicalsnapdir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_replslotdir,"slot_name text, OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_tmpdir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_tmpdir,"tablespace oid, OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_ls_waldir,"OUT name text, OUT size bigint, OUT modification timestamp with time zone",SETOF record
+pg_catalog,pg_lsn,numeric,pg_lsn
+pg_catalog,pg_lsn_cmp,"pg_lsn, pg_lsn",integer
+pg_catalog,pg_lsn_eq,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_ge,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_gt,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_hash,pg_lsn,integer
+pg_catalog,pg_lsn_hash_extended,"pg_lsn, bigint",bigint
+pg_catalog,pg_lsn_in,cstring,pg_lsn
+pg_catalog,pg_lsn_larger,"pg_lsn, pg_lsn",pg_lsn
+pg_catalog,pg_lsn_le,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_lt,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_mi,"pg_lsn, pg_lsn",numeric
+pg_catalog,pg_lsn_mii,"pg_lsn, numeric",pg_lsn
+pg_catalog,pg_lsn_ne,"pg_lsn, pg_lsn",boolean
+pg_catalog,pg_lsn_out,pg_lsn,cstring
+pg_catalog,pg_lsn_pli,"pg_lsn, numeric",pg_lsn
+pg_catalog,pg_lsn_recv,internal,pg_lsn
+pg_catalog,pg_lsn_send,pg_lsn,bytea
+pg_catalog,pg_lsn_smaller,"pg_lsn, pg_lsn",pg_lsn
+pg_catalog,pg_mcv_list_in,cstring,pg_mcv_list
+pg_catalog,pg_mcv_list_items,"mcv_list pg_mcv_list, OUT index integer, OUT ""values"" text[], OUT nulls boolean[], OUT frequency double precision, OUT base_frequency double precision",SETOF record
+pg_catalog,pg_mcv_list_out,pg_mcv_list,cstring
+pg_catalog,pg_mcv_list_recv,internal,pg_mcv_list
+pg_catalog,pg_mcv_list_send,pg_mcv_list,bytea
+pg_catalog,pg_my_temp_schema,,oid
+pg_catalog,pg_ndistinct_in,cstring,pg_ndistinct
+pg_catalog,pg_ndistinct_out,pg_ndistinct,cstring
+pg_catalog,pg_ndistinct_recv,internal,pg_ndistinct
+pg_catalog,pg_ndistinct_send,pg_ndistinct,bytea
+pg_catalog,pg_nextoid,"regclass, name, regclass",oid
+pg_catalog,pg_node_tree_in,cstring,pg_node_tree
+pg_catalog,pg_node_tree_out,pg_node_tree,cstring
+pg_catalog,pg_node_tree_recv,internal,pg_node_tree
+pg_catalog,pg_node_tree_send,pg_node_tree,bytea
+pg_catalog,pg_notification_queue_usage,,double precision
+pg_catalog,pg_notify,"text, text",void
+pg_catalog,pg_opclass_is_visible,oid,boolean
+pg_catalog,pg_operator_is_visible,oid,boolean
+pg_catalog,pg_opfamily_is_visible,oid,boolean
+pg_catalog,pg_options_to_table,"options_array text[], OUT option_name text, OUT option_value text",SETOF record
+pg_catalog,pg_partition_ancestors,"partitionid regclass, OUT relid regclass",SETOF regclass
+pg_catalog,pg_partition_root,regclass,regclass
+pg_catalog,pg_partition_tree,"rootrelid regclass, OUT relid regclass, OUT parentrelid regclass, OUT isleaf boolean, OUT level integer",SETOF record
+pg_catalog,pg_postmaster_start_time,,timestamp with time zone
+pg_catalog,pg_prepared_statement,"OUT name text, OUT statement text, OUT prepare_time timestamp with time zone, OUT parameter_types regtype[], OUT result_types regtype[], OUT from_sql boolean, OUT generic_plans bigint, OUT custom_plans bigint",SETOF record
+pg_catalog,pg_prepared_xact,"OUT transaction xid, OUT gid text, OUT prepared timestamp with time zone, OUT ownerid oid, OUT dbid oid",SETOF record
+pg_catalog,pg_promote,"wait boolean, wait_seconds integer",boolean
+pg_catalog,pg_read_binary_file,text,bytea
+pg_catalog,pg_read_binary_file,"text, bigint, bigint",bytea
+pg_catalog,pg_read_binary_file,"text, bigint, bigint, boolean",bytea
+pg_catalog,pg_read_binary_file,"text, boolean",bytea
+pg_catalog,pg_read_file,text,text
+pg_catalog,pg_read_file,"text, bigint, bigint",text
+pg_catalog,pg_read_file,"text, bigint, bigint, boolean",text
+pg_catalog,pg_read_file,"text, boolean",text
+pg_catalog,pg_relation_filenode,regclass,oid
+pg_catalog,pg_relation_filepath,regclass,text
+pg_catalog,pg_relation_is_publishable,regclass,boolean
+pg_catalog,pg_relation_is_updatable,"regclass, boolean",integer
+pg_catalog,pg_relation_size,regclass,bigint
+pg_catalog,pg_relation_size,"regclass, text",bigint
+pg_catalog,pg_reload_conf,,boolean
+pg_catalog,pg_replication_origin_advance,"text, pg_lsn",void
+pg_catalog,pg_replication_origin_create,text,oid
+pg_catalog,pg_replication_origin_drop,text,void
+pg_catalog,pg_replication_origin_oid,text,oid
+pg_catalog,pg_replication_origin_progress,"text, boolean",pg_lsn
+pg_catalog,pg_replication_origin_session_is_setup,,boolean
+pg_catalog,pg_replication_origin_session_progress,boolean,pg_lsn
+pg_catalog,pg_replication_origin_session_reset,,void
+pg_catalog,pg_replication_origin_session_setup,text,void
+pg_catalog,pg_replication_origin_xact_reset,,void
+pg_catalog,pg_replication_origin_xact_setup,"pg_lsn, timestamp with time zone",void
+pg_catalog,pg_replication_slot_advance,"slot_name name, upto_lsn pg_lsn, OUT slot_name name, OUT end_lsn pg_lsn",record
+pg_catalog,pg_rotate_logfile,,boolean
+pg_catalog,pg_safe_snapshot_blocking_pids,integer,integer[]
+pg_catalog,pg_sequence_last_value,regclass,bigint
+pg_catalog,pg_sequence_parameters,"sequence_oid oid, OUT start_value bigint, OUT minimum_value bigint, OUT maximum_value bigint, OUT increment bigint, OUT cycle_option boolean, OUT cache_size bigint, OUT data_type oid",record
+pg_catalog,pg_settings_get_flags,text,text[]
+pg_catalog,pg_show_all_file_settings,"OUT sourcefile text, OUT sourceline integer, OUT seqno integer, OUT name text, OUT setting text, OUT applied boolean, OUT error text",SETOF record
+pg_catalog,pg_show_all_settings,"OUT name text, OUT setting text, OUT unit text, OUT category text, OUT short_desc text, OUT extra_desc text, OUT context text, OUT vartype text, OUT source text, OUT min_val text, OUT max_val text, OUT enumvals text[], OUT boot_val text, OUT reset_val text, OUT sourcefile text, OUT sourceline integer, OUT pending_restart boolean",SETOF record
+pg_catalog,pg_show_replication_origin_status,"OUT local_id oid, OUT external_id text, OUT remote_lsn pg_lsn, OUT local_lsn pg_lsn",SETOF record
+pg_catalog,pg_size_bytes,text,bigint
+pg_catalog,pg_size_pretty,bigint,text
+pg_catalog,pg_size_pretty,numeric,text
+pg_catalog,pg_sleep,double precision,void
+pg_catalog,pg_sleep_for,interval,void
+pg_catalog,pg_sleep_until,timestamp with time zone,void
+pg_catalog,pg_snapshot_in,cstring,pg_snapshot
+pg_catalog,pg_snapshot_out,pg_snapshot,cstring
+pg_catalog,pg_snapshot_recv,internal,pg_snapshot
+pg_catalog,pg_snapshot_send,pg_snapshot,bytea
+pg_catalog,pg_snapshot_xip,pg_snapshot,SETOF xid8
+pg_catalog,pg_snapshot_xmax,pg_snapshot,xid8
+pg_catalog,pg_snapshot_xmin,pg_snapshot,xid8
+pg_catalog,pg_split_walfile_name,"file_name text, OUT segment_number numeric, OUT timeline_id bigint",record
+pg_catalog,pg_stat_clear_snapshot,,void
+pg_catalog,pg_stat_file,"filename text, missing_ok boolean, OUT size bigint, OUT access timestamp with time zone, OUT modification timestamp with time zone, OUT change timestamp with time zone, OUT creation timestamp with time zone, OUT isdir boolean",record
+pg_catalog,pg_stat_file,"filename text, OUT size bigint, OUT access timestamp with time zone, OUT modification timestamp with time zone, OUT change timestamp with time zone, OUT creation timestamp with time zone, OUT isdir boolean",record
+pg_catalog,pg_stat_force_next_flush,,void
+pg_catalog,pg_stat_get_activity,"pid integer, OUT datid oid, OUT pid integer, OUT usesysid oid, OUT application_name text, OUT state text, OUT query text, OUT wait_event_type text, OUT wait_event text, OUT xact_start timestamp with time zone, OUT query_start timestamp with time zone, OUT backend_start timestamp with time zone, OUT state_change timestamp with time zone, OUT client_addr inet, OUT client_hostname text, OUT client_port integer, OUT backend_xid xid, OUT backend_xmin xid, OUT backend_type text, OUT ssl boolean, OUT sslversion text, OUT sslcipher text, OUT sslbits integer, OUT ssl_client_dn text, OUT ssl_client_serial numeric, OUT ssl_issuer_dn text, OUT gss_auth boolean, OUT gss_princ text, OUT gss_enc boolean, OUT gss_delegation boolean, OUT leader_pid integer, OUT query_id bigint",SETOF record
+pg_catalog,pg_stat_get_analyze_count,oid,bigint
+pg_catalog,pg_stat_get_archiver,"OUT archived_count bigint, OUT last_archived_wal text, OUT last_archived_time timestamp with time zone, OUT failed_count bigint, OUT last_failed_wal text, OUT last_failed_time timestamp with time zone, OUT stats_reset timestamp with time zone",record
+pg_catalog,pg_stat_get_autoanalyze_count,oid,bigint
+pg_catalog,pg_stat_get_autovacuum_count,oid,bigint
+pg_catalog,pg_stat_get_backend_activity,integer,text
+pg_catalog,pg_stat_get_backend_activity_start,integer,timestamp with time zone
+pg_catalog,pg_stat_get_backend_client_addr,integer,inet
+pg_catalog,pg_stat_get_backend_client_port,integer,integer
+pg_catalog,pg_stat_get_backend_dbid,integer,oid
+pg_catalog,pg_stat_get_backend_idset,,SETOF integer
+pg_catalog,pg_stat_get_backend_pid,integer,integer
+pg_catalog,pg_stat_get_backend_start,integer,timestamp with time zone
+pg_catalog,pg_stat_get_backend_subxact,"bid integer, OUT subxact_count integer, OUT subxact_overflowed boolean",record
+pg_catalog,pg_stat_get_backend_userid,integer,oid
+pg_catalog,pg_stat_get_backend_wait_event,integer,text
+pg_catalog,pg_stat_get_backend_wait_event_type,integer,text
+pg_catalog,pg_stat_get_backend_xact_start,integer,timestamp with time zone
+pg_catalog,pg_stat_get_bgwriter_buf_written_clean,,bigint
+pg_catalog,pg_stat_get_bgwriter_maxwritten_clean,,bigint
+pg_catalog,pg_stat_get_bgwriter_stat_reset_time,,timestamp with time zone
+pg_catalog,pg_stat_get_blocks_fetched,oid,bigint
+pg_catalog,pg_stat_get_blocks_hit,oid,bigint
+pg_catalog,pg_stat_get_buf_alloc,,bigint
+pg_catalog,pg_stat_get_checkpointer_buffers_written,,bigint
+pg_catalog,pg_stat_get_checkpointer_num_requested,,bigint
+pg_catalog,pg_stat_get_checkpointer_num_timed,,bigint
+pg_catalog,pg_stat_get_checkpointer_restartpoints_performed,,bigint
+pg_catalog,pg_stat_get_checkpointer_restartpoints_requested,,bigint
+pg_catalog,pg_stat_get_checkpointer_restartpoints_timed,,bigint
+pg_catalog,pg_stat_get_checkpointer_stat_reset_time,,timestamp with time zone
+pg_catalog,pg_stat_get_checkpointer_sync_time,,double precision
+pg_catalog,pg_stat_get_checkpointer_write_time,,double precision
+pg_catalog,pg_stat_get_db_active_time,oid,double precision
+pg_catalog,pg_stat_get_db_blk_read_time,oid,double precision
+pg_catalog,pg_stat_get_db_blk_write_time,oid,double precision
+pg_catalog,pg_stat_get_db_blocks_fetched,oid,bigint
+pg_catalog,pg_stat_get_db_blocks_hit,oid,bigint
+pg_catalog,pg_stat_get_db_checksum_failures,oid,bigint
+pg_catalog,pg_stat_get_db_checksum_last_failure,oid,timestamp with time zone
+pg_catalog,pg_stat_get_db_conflict_all,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_bufferpin,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_lock,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_logicalslot,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_snapshot,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_startup_deadlock,oid,bigint
+pg_catalog,pg_stat_get_db_conflict_tablespace,oid,bigint
+pg_catalog,pg_stat_get_db_deadlocks,oid,bigint
+pg_catalog,pg_stat_get_db_idle_in_transaction_time,oid,double precision
+pg_catalog,pg_stat_get_db_numbackends,oid,integer
+pg_catalog,pg_stat_get_db_session_time,oid,double precision
+pg_catalog,pg_stat_get_db_sessions,oid,bigint
+pg_catalog,pg_stat_get_db_sessions_abandoned,oid,bigint
+pg_catalog,pg_stat_get_db_sessions_fatal,oid,bigint
+pg_catalog,pg_stat_get_db_sessions_killed,oid,bigint
+pg_catalog,pg_stat_get_db_stat_reset_time,oid,timestamp with time zone
+pg_catalog,pg_stat_get_db_temp_bytes,oid,bigint
+pg_catalog,pg_stat_get_db_temp_files,oid,bigint
+pg_catalog,pg_stat_get_db_tuples_deleted,oid,bigint
+pg_catalog,pg_stat_get_db_tuples_fetched,oid,bigint
+pg_catalog,pg_stat_get_db_tuples_inserted,oid,bigint
+pg_catalog,pg_stat_get_db_tuples_returned,oid,bigint
+pg_catalog,pg_stat_get_db_tuples_updated,oid,bigint
+pg_catalog,pg_stat_get_db_xact_commit,oid,bigint
+pg_catalog,pg_stat_get_db_xact_rollback,oid,bigint
+pg_catalog,pg_stat_get_dead_tuples,oid,bigint
+pg_catalog,pg_stat_get_function_calls,oid,bigint
+pg_catalog,pg_stat_get_function_self_time,oid,double precision
+pg_catalog,pg_stat_get_function_total_time,oid,double precision
+pg_catalog,pg_stat_get_ins_since_vacuum,oid,bigint
+pg_catalog,pg_stat_get_io,"OUT backend_type text, OUT object text, OUT context text, OUT reads bigint, OUT read_time double precision, OUT writes bigint, OUT write_time double precision, OUT writebacks bigint, OUT writeback_time double precision, OUT extends bigint, OUT extend_time double precision, OUT op_bytes bigint, OUT hits bigint, OUT evictions bigint, OUT reuses bigint, OUT fsyncs bigint, OUT fsync_time double precision, OUT stats_reset timestamp with time zone",SETOF record
+pg_catalog,pg_stat_get_last_analyze_time,oid,timestamp with time zone
+pg_catalog,pg_stat_get_last_autoanalyze_time,oid,timestamp with time zone
+pg_catalog,pg_stat_get_last_autovacuum_time,oid,timestamp with time zone
+pg_catalog,pg_stat_get_last_vacuum_time,oid,timestamp with time zone
+pg_catalog,pg_stat_get_lastscan,oid,timestamp with time zone
+pg_catalog,pg_stat_get_live_tuples,oid,bigint
+pg_catalog,pg_stat_get_mod_since_analyze,oid,bigint
+pg_catalog,pg_stat_get_numscans,oid,bigint
+pg_catalog,pg_stat_get_progress_info,"cmdtype text, OUT pid integer, OUT datid oid, OUT relid oid, OUT param1 bigint, OUT param2 bigint, OUT param3 bigint, OUT param4 bigint, OUT param5 bigint, OUT param6 bigint, OUT param7 bigint, OUT param8 bigint, OUT param9 bigint, OUT param10 bigint, OUT param11 bigint, OUT param12 bigint, OUT param13 bigint, OUT param14 bigint, OUT param15 bigint, OUT param16 bigint, OUT param17 bigint, OUT param18 bigint, OUT param19 bigint, OUT param20 bigint",SETOF record
+pg_catalog,pg_stat_get_recovery_prefetch,"OUT stats_reset timestamp with time zone, OUT prefetch bigint, OUT hit bigint, OUT skip_init bigint, OUT skip_new bigint, OUT skip_fpw bigint, OUT skip_rep bigint, OUT wal_distance integer, OUT block_distance integer, OUT io_depth integer",SETOF record
+pg_catalog,pg_stat_get_replication_slot,"slot_name text, OUT slot_name text, OUT spill_txns bigint, OUT spill_count bigint, OUT spill_bytes bigint, OUT stream_txns bigint, OUT stream_count bigint, OUT stream_bytes bigint, OUT total_txns bigint, OUT total_bytes bigint, OUT stats_reset timestamp with time zone",record
+pg_catalog,pg_stat_get_slru,"OUT name text, OUT blks_zeroed bigint, OUT blks_hit bigint, OUT blks_read bigint, OUT blks_written bigint, OUT blks_exists bigint, OUT flushes bigint, OUT truncates bigint, OUT stats_reset timestamp with time zone",SETOF record
+pg_catalog,pg_stat_get_snapshot_timestamp,,timestamp with time zone
+pg_catalog,pg_stat_get_subscription,"subid oid, OUT subid oid, OUT relid oid, OUT pid integer, OUT leader_pid integer, OUT received_lsn pg_lsn, OUT last_msg_send_time timestamp with time zone, OUT last_msg_receipt_time timestamp with time zone, OUT latest_end_lsn pg_lsn, OUT latest_end_time timestamp with time zone, OUT worker_type text",SETOF record
+pg_catalog,pg_stat_get_subscription_stats,"subid oid, OUT subid oid, OUT apply_error_count bigint, OUT sync_error_count bigint, OUT stats_reset timestamp with time zone",record
+pg_catalog,pg_stat_get_tuples_deleted,oid,bigint
+pg_catalog,pg_stat_get_tuples_fetched,oid,bigint
+pg_catalog,pg_stat_get_tuples_hot_updated,oid,bigint
+pg_catalog,pg_stat_get_tuples_inserted,oid,bigint
+pg_catalog,pg_stat_get_tuples_newpage_updated,oid,bigint
+pg_catalog,pg_stat_get_tuples_returned,oid,bigint
+pg_catalog,pg_stat_get_tuples_updated,oid,bigint
+pg_catalog,pg_stat_get_vacuum_count,oid,bigint
+pg_catalog,pg_stat_get_wal,"OUT wal_records bigint, OUT wal_fpi bigint, OUT wal_bytes numeric, OUT wal_buffers_full bigint, OUT wal_write bigint, OUT wal_sync bigint, OUT wal_write_time double precision, OUT wal_sync_time double precision, OUT stats_reset timestamp with time zone",record
+pg_catalog,pg_stat_get_wal_receiver,"OUT pid integer, OUT status text, OUT receive_start_lsn pg_lsn, OUT receive_start_tli integer, OUT written_lsn pg_lsn, OUT flushed_lsn pg_lsn, OUT received_tli integer, OUT last_msg_send_time timestamp with time zone, OUT last_msg_receipt_time timestamp with time zone, OUT latest_end_lsn pg_lsn, OUT latest_end_time timestamp with time zone, OUT slot_name text, OUT sender_host text, OUT sender_port integer, OUT conninfo text",record
+pg_catalog,pg_stat_get_wal_senders,"OUT pid integer, OUT state text, OUT sent_lsn pg_lsn, OUT write_lsn pg_lsn, OUT flush_lsn pg_lsn, OUT replay_lsn pg_lsn, OUT write_lag interval, OUT flush_lag interval, OUT replay_lag interval, OUT sync_priority integer, OUT sync_state text, OUT reply_time timestamp with time zone",SETOF record
+pg_catalog,pg_stat_get_xact_blocks_fetched,oid,bigint
+pg_catalog,pg_stat_get_xact_blocks_hit,oid,bigint
+pg_catalog,pg_stat_get_xact_function_calls,oid,bigint
+pg_catalog,pg_stat_get_xact_function_self_time,oid,double precision
+pg_catalog,pg_stat_get_xact_function_total_time,oid,double precision
+pg_catalog,pg_stat_get_xact_numscans,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_deleted,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_fetched,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_hot_updated,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_inserted,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_newpage_updated,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_returned,oid,bigint
+pg_catalog,pg_stat_get_xact_tuples_updated,oid,bigint
+pg_catalog,pg_stat_have_stats,"text, oid, oid",boolean
+pg_catalog,pg_stat_reset,,void
+pg_catalog,pg_stat_reset_replication_slot,text,void
+pg_catalog,pg_stat_reset_shared,target text,void
+pg_catalog,pg_stat_reset_single_function_counters,oid,void
+pg_catalog,pg_stat_reset_single_table_counters,oid,void
+pg_catalog,pg_stat_reset_slru,target text,void
+pg_catalog,pg_stat_reset_subscription_stats,oid,void
+pg_catalog,pg_statistics_obj_is_visible,oid,boolean
+pg_catalog,pg_stop_making_pinned_objects,,void
+pg_catalog,pg_switch_wal,,pg_lsn
+pg_catalog,pg_sync_replication_slots,,void
+pg_catalog,pg_table_is_visible,oid,boolean
+pg_catalog,pg_table_size,regclass,bigint
+pg_catalog,pg_tablespace_databases,oid,SETOF oid
+pg_catalog,pg_tablespace_location,oid,text
+pg_catalog,pg_tablespace_size,name,bigint
+pg_catalog,pg_tablespace_size,oid,bigint
+pg_catalog,pg_terminate_backend,"pid integer, timeout bigint",boolean
+pg_catalog,pg_timezone_abbrevs,"OUT abbrev text, OUT utc_offset interval, OUT is_dst boolean",SETOF record
+pg_catalog,pg_timezone_names,"OUT name text, OUT abbrev text, OUT utc_offset interval, OUT is_dst boolean",SETOF record
+pg_catalog,pg_total_relation_size,regclass,bigint
+pg_catalog,pg_trigger_depth,,integer
+pg_catalog,pg_try_advisory_lock,bigint,boolean
+pg_catalog,pg_try_advisory_lock,"integer, integer",boolean
+pg_catalog,pg_try_advisory_lock_shared,bigint,boolean
+pg_catalog,pg_try_advisory_lock_shared,"integer, integer",boolean
+pg_catalog,pg_try_advisory_xact_lock,bigint,boolean
+pg_catalog,pg_try_advisory_xact_lock,"integer, integer",boolean
+pg_catalog,pg_try_advisory_xact_lock_shared,bigint,boolean
+pg_catalog,pg_try_advisory_xact_lock_shared,"integer, integer",boolean
+pg_catalog,pg_ts_config_is_visible,oid,boolean
+pg_catalog,pg_ts_dict_is_visible,oid,boolean
+pg_catalog,pg_ts_parser_is_visible,oid,boolean
+pg_catalog,pg_ts_template_is_visible,oid,boolean
+pg_catalog,pg_type_is_visible,oid,boolean
+pg_catalog,pg_typeof,"""any""",regtype
+pg_catalog,pg_visible_in_snapshot,"xid8, pg_snapshot",boolean
+pg_catalog,pg_wal_lsn_diff,"pg_lsn, pg_lsn",numeric
+pg_catalog,pg_wal_replay_pause,,void
+pg_catalog,pg_wal_replay_resume,,void
+pg_catalog,pg_wal_summary_contents,"tli bigint, start_lsn pg_lsn, end_lsn pg_lsn, OUT relfilenode oid, OUT reltablespace oid, OUT reldatabase oid, OUT relforknumber smallint, OUT relblocknumber bigint, OUT is_limit_block boolean",SETOF record
+pg_catalog,pg_walfile_name,pg_lsn,text
+pg_catalog,pg_walfile_name_offset,"lsn pg_lsn, OUT file_name text, OUT file_offset integer",record
+pg_catalog,pg_xact_commit_timestamp,xid,timestamp with time zone
+pg_catalog,pg_xact_commit_timestamp_origin,"xid xid, OUT ""timestamp"" timestamp with time zone, OUT roident oid",record
+pg_catalog,pg_xact_status,xid8,text
+pg_catalog,phraseto_tsquery,"regconfig, text",tsquery
+pg_catalog,phraseto_tsquery,text,tsquery
+pg_catalog,pi,,double precision
+pg_catalog,plainto_tsquery,"regconfig, text",tsquery
+pg_catalog,plainto_tsquery,text,tsquery
+pg_catalog,plpgsql_call_handler,,language_handler
+pg_catalog,plpgsql_inline_handler,internal,void
+pg_catalog,plpgsql_validator,oid,void
+pg_catalog,point,box,point
+pg_catalog,point,circle,point
+pg_catalog,point,"double precision, double precision",point
+pg_catalog,point,lseg,point
+pg_catalog,point,polygon,point
+pg_catalog,point_above,"point, point",boolean
+pg_catalog,point_add,"point, point",point
+pg_catalog,point_below,"point, point",boolean
+pg_catalog,point_distance,"point, point",double precision
+pg_catalog,point_div,"point, point",point
+pg_catalog,point_eq,"point, point",boolean
+pg_catalog,point_horiz,"point, point",boolean
+pg_catalog,point_in,cstring,point
+pg_catalog,point_left,"point, point",boolean
+pg_catalog,point_mul,"point, point",point
+pg_catalog,point_ne,"point, point",boolean
+pg_catalog,point_out,point,cstring
+pg_catalog,point_recv,internal,point
+pg_catalog,point_right,"point, point",boolean
+pg_catalog,point_send,point,bytea
+pg_catalog,point_sub,"point, point",point
+pg_catalog,point_vert,"point, point",boolean
+pg_catalog,poly_above,"polygon, polygon",boolean
+pg_catalog,poly_below,"polygon, polygon",boolean
+pg_catalog,poly_center,polygon,point
+pg_catalog,poly_contain,"polygon, polygon",boolean
+pg_catalog,poly_contain_pt,"polygon, point",boolean
+pg_catalog,poly_contained,"polygon, polygon",boolean
+pg_catalog,poly_distance,"polygon, polygon",double precision
+pg_catalog,poly_in,cstring,polygon
+pg_catalog,poly_left,"polygon, polygon",boolean
+pg_catalog,poly_npoints,polygon,integer
+pg_catalog,poly_out,polygon,cstring
+pg_catalog,poly_overabove,"polygon, polygon",boolean
+pg_catalog,poly_overbelow,"polygon, polygon",boolean
+pg_catalog,poly_overlap,"polygon, polygon",boolean
+pg_catalog,poly_overleft,"polygon, polygon",boolean
+pg_catalog,poly_overright,"polygon, polygon",boolean
+pg_catalog,poly_recv,internal,polygon
+pg_catalog,poly_right,"polygon, polygon",boolean
+pg_catalog,poly_same,"polygon, polygon",boolean
+pg_catalog,poly_send,polygon,bytea
+pg_catalog,polygon,box,polygon
+pg_catalog,polygon,circle,polygon
+pg_catalog,polygon,"integer, circle",polygon
+pg_catalog,polygon,path,polygon
+pg_catalog,popen,path,path
+pg_catalog,position,"bit, bit",integer
+pg_catalog,position,"bytea, bytea",integer
+pg_catalog,position,"text, text",integer
+pg_catalog,positionjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,positionsel,"internal, oid, internal, integer",double precision
+pg_catalog,postgresql_fdw_validator,"text[], oid",boolean
+pg_catalog,pow,"double precision, double precision",double precision
+pg_catalog,pow,"numeric, numeric",numeric
+pg_catalog,power,"double precision, double precision",double precision
+pg_catalog,power,"numeric, numeric",numeric
+pg_catalog,prefixjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,prefixsel,"internal, oid, internal, integer",double precision
+pg_catalog,prsd_end,internal,void
+pg_catalog,prsd_headline,"internal, internal, tsquery",internal
+pg_catalog,prsd_lextype,internal,internal
+pg_catalog,prsd_nexttoken,"internal, internal, internal",internal
+pg_catalog,prsd_start,"internal, integer",internal
+pg_catalog,pt_contained_circle,"point, circle",boolean
+pg_catalog,pt_contained_poly,"point, polygon",boolean
+pg_catalog,query_to_xml,"query text, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,query_to_xml_and_xmlschema,"query text, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,query_to_xmlschema,"query text, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,querytree,tsquery,text
+pg_catalog,quote_ident,text,text
+pg_catalog,quote_literal,anyelement,text
+pg_catalog,quote_literal,text,text
+pg_catalog,quote_nullable,anyelement,text
+pg_catalog,quote_nullable,text,text
+pg_catalog,radians,double precision,double precision
+pg_catalog,radius,circle,double precision
+pg_catalog,random,,double precision
+pg_catalog,random,"min bigint, max bigint",bigint
+pg_catalog,random,"min integer, max integer",integer
+pg_catalog,random,"min numeric, max numeric",numeric
+pg_catalog,random_normal,"mean double precision, stddev double precision",double precision
+pg_catalog,range_adjacent,"anyrange, anyrange",boolean
+pg_catalog,range_adjacent_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_after,"anyrange, anyrange",boolean
+pg_catalog,range_after_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_agg,anymultirange,anymultirange
+pg_catalog,range_agg,anyrange,anymultirange
+pg_catalog,range_agg_finalfn,"internal, anyrange",anymultirange
+pg_catalog,range_agg_transfn,"internal, anyrange",internal
+pg_catalog,range_before,"anyrange, anyrange",boolean
+pg_catalog,range_before_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_cmp,"anyrange, anyrange",integer
+pg_catalog,range_contained_by,"anyrange, anyrange",boolean
+pg_catalog,range_contained_by_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_contains,"anyrange, anyrange",boolean
+pg_catalog,range_contains_elem,"anyrange, anyelement",boolean
+pg_catalog,range_contains_elem_support,internal,internal
+pg_catalog,range_contains_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_eq,"anyrange, anyrange",boolean
+pg_catalog,range_ge,"anyrange, anyrange",boolean
+pg_catalog,range_gist_consistent,"internal, anyrange, smallint, oid, internal",boolean
+pg_catalog,range_gist_penalty,"internal, internal, internal",internal
+pg_catalog,range_gist_picksplit,"internal, internal",internal
+pg_catalog,range_gist_same,"anyrange, anyrange, internal",internal
+pg_catalog,range_gist_union,"internal, internal",anyrange
+pg_catalog,range_gt,"anyrange, anyrange",boolean
+pg_catalog,range_in,"cstring, oid, integer",anyrange
+pg_catalog,range_intersect,"anyrange, anyrange",anyrange
+pg_catalog,range_intersect_agg,anymultirange,anymultirange
+pg_catalog,range_intersect_agg,anyrange,anyrange
+pg_catalog,range_intersect_agg_transfn,"anyrange, anyrange",anyrange
+pg_catalog,range_le,"anyrange, anyrange",boolean
+pg_catalog,range_lt,"anyrange, anyrange",boolean
+pg_catalog,range_merge,anymultirange,anyrange
+pg_catalog,range_merge,"anyrange, anyrange",anyrange
+pg_catalog,range_minus,"anyrange, anyrange",anyrange
+pg_catalog,range_ne,"anyrange, anyrange",boolean
+pg_catalog,range_out,anyrange,cstring
+pg_catalog,range_overlaps,"anyrange, anyrange",boolean
+pg_catalog,range_overlaps_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_overleft,"anyrange, anyrange",boolean
+pg_catalog,range_overleft_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_overright,"anyrange, anyrange",boolean
+pg_catalog,range_overright_multirange,"anyrange, anymultirange",boolean
+pg_catalog,range_recv,"internal, oid, integer",anyrange
+pg_catalog,range_send,anyrange,bytea
+pg_catalog,range_typanalyze,internal,boolean
+pg_catalog,range_union,"anyrange, anyrange",anyrange
+pg_catalog,rangesel,"internal, oid, internal, integer",double precision
+pg_catalog,rank,,bigint
+pg_catalog,rank,"VARIADIC ""any"" ORDER BY VARIADIC ""any""",bigint
+pg_catalog,rank_final,"internal, VARIADIC ""any""",bigint
+pg_catalog,raw_array_subscript_handler,internal,internal
+pg_catalog,record_eq,"record, record",boolean
+pg_catalog,record_ge,"record, record",boolean
+pg_catalog,record_gt,"record, record",boolean
+pg_catalog,record_image_eq,"record, record",boolean
+pg_catalog,record_image_ge,"record, record",boolean
+pg_catalog,record_image_gt,"record, record",boolean
+pg_catalog,record_image_le,"record, record",boolean
+pg_catalog,record_image_lt,"record, record",boolean
+pg_catalog,record_image_ne,"record, record",boolean
+pg_catalog,record_in,"cstring, oid, integer",record
+pg_catalog,record_le,"record, record",boolean
+pg_catalog,record_lt,"record, record",boolean
+pg_catalog,record_ne,"record, record",boolean
+pg_catalog,record_out,record,cstring
+pg_catalog,record_recv,"internal, oid, integer",record
+pg_catalog,record_send,record,bytea
+pg_catalog,regclass,text,regclass
+pg_catalog,regclassin,cstring,regclass
+pg_catalog,regclassout,regclass,cstring
+pg_catalog,regclassrecv,internal,regclass
+pg_catalog,regclasssend,regclass,bytea
+pg_catalog,regcollationin,cstring,regcollation
+pg_catalog,regcollationout,regcollation,cstring
+pg_catalog,regcollationrecv,internal,regcollation
+pg_catalog,regcollationsend,regcollation,bytea
+pg_catalog,regconfigin,cstring,regconfig
+pg_catalog,regconfigout,regconfig,cstring
+pg_catalog,regconfigrecv,internal,regconfig
+pg_catalog,regconfigsend,regconfig,bytea
+pg_catalog,regdictionaryin,cstring,regdictionary
+pg_catalog,regdictionaryout,regdictionary,cstring
+pg_catalog,regdictionaryrecv,internal,regdictionary
+pg_catalog,regdictionarysend,regdictionary,bytea
+pg_catalog,regexeqjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,regexeqsel,"internal, oid, internal, integer",double precision
+pg_catalog,regexnejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,regexnesel,"internal, oid, internal, integer",double precision
+pg_catalog,regexp_count,"text, text",integer
+pg_catalog,regexp_count,"text, text, integer",integer
+pg_catalog,regexp_count,"text, text, integer, text",integer
+pg_catalog,regexp_instr,"text, text",integer
+pg_catalog,regexp_instr,"text, text, integer",integer
+pg_catalog,regexp_instr,"text, text, integer, integer",integer
+pg_catalog,regexp_instr,"text, text, integer, integer, integer",integer
+pg_catalog,regexp_instr,"text, text, integer, integer, integer, text",integer
+pg_catalog,regexp_instr,"text, text, integer, integer, integer, text, integer",integer
+pg_catalog,regexp_like,"text, text",boolean
+pg_catalog,regexp_like,"text, text, text",boolean
+pg_catalog,regexp_match,"text, text",text[]
+pg_catalog,regexp_match,"text, text, text",text[]
+pg_catalog,regexp_matches,"text, text",SETOF text[]
+pg_catalog,regexp_matches,"text, text, text",SETOF text[]
+pg_catalog,regexp_replace,"text, text, text",text
+pg_catalog,regexp_replace,"text, text, text, integer",text
+pg_catalog,regexp_replace,"text, text, text, integer, integer",text
+pg_catalog,regexp_replace,"text, text, text, integer, integer, text",text
+pg_catalog,regexp_replace,"text, text, text, text",text
+pg_catalog,regexp_split_to_array,"text, text",text[]
+pg_catalog,regexp_split_to_array,"text, text, text",text[]
+pg_catalog,regexp_split_to_table,"text, text",SETOF text
+pg_catalog,regexp_split_to_table,"text, text, text",SETOF text
+pg_catalog,regexp_substr,"text, text",text
+pg_catalog,regexp_substr,"text, text, integer",text
+pg_catalog,regexp_substr,"text, text, integer, integer",text
+pg_catalog,regexp_substr,"text, text, integer, integer, text",text
+pg_catalog,regexp_substr,"text, text, integer, integer, text, integer",text
+pg_catalog,regnamespacein,cstring,regnamespace
+pg_catalog,regnamespaceout,regnamespace,cstring
+pg_catalog,regnamespacerecv,internal,regnamespace
+pg_catalog,regnamespacesend,regnamespace,bytea
+pg_catalog,regoperatorin,cstring,regoperator
+pg_catalog,regoperatorout,regoperator,cstring
+pg_catalog,regoperatorrecv,internal,regoperator
+pg_catalog,regoperatorsend,regoperator,bytea
+pg_catalog,regoperin,cstring,regoper
+pg_catalog,regoperout,regoper,cstring
+pg_catalog,regoperrecv,internal,regoper
+pg_catalog,regopersend,regoper,bytea
+pg_catalog,regprocedurein,cstring,regprocedure
+pg_catalog,regprocedureout,regprocedure,cstring
+pg_catalog,regprocedurerecv,internal,regprocedure
+pg_catalog,regproceduresend,regprocedure,bytea
+pg_catalog,regprocin,cstring,regproc
+pg_catalog,regprocout,regproc,cstring
+pg_catalog,regprocrecv,internal,regproc
+pg_catalog,regprocsend,regproc,bytea
+pg_catalog,regr_avgx,"double precision, double precision",double precision
+pg_catalog,regr_avgy,"double precision, double precision",double precision
+pg_catalog,regr_count,"double precision, double precision",bigint
+pg_catalog,regr_intercept,"double precision, double precision",double precision
+pg_catalog,regr_r2,"double precision, double precision",double precision
+pg_catalog,regr_slope,"double precision, double precision",double precision
+pg_catalog,regr_sxx,"double precision, double precision",double precision
+pg_catalog,regr_sxy,"double precision, double precision",double precision
+pg_catalog,regr_syy,"double precision, double precision",double precision
+pg_catalog,regrolein,cstring,regrole
+pg_catalog,regroleout,regrole,cstring
+pg_catalog,regrolerecv,internal,regrole
+pg_catalog,regrolesend,regrole,bytea
+pg_catalog,regtypein,cstring,regtype
+pg_catalog,regtypeout,regtype,cstring
+pg_catalog,regtyperecv,internal,regtype
+pg_catalog,regtypesend,regtype,bytea
+pg_catalog,repeat,"text, integer",text
+pg_catalog,replace,"text, text, text",text
+pg_catalog,reverse,text,text
+pg_catalog,right,"text, integer",text
+pg_catalog,round,double precision,double precision
+pg_catalog,round,numeric,numeric
+pg_catalog,round,"numeric, integer",numeric
+pg_catalog,row_number,,bigint
+pg_catalog,row_security_active,oid,boolean
+pg_catalog,row_security_active,text,boolean
+pg_catalog,row_to_json,record,json
+pg_catalog,row_to_json,"record, boolean",json
+pg_catalog,rpad,"text, integer",text
+pg_catalog,rpad,"text, integer, text",text
+pg_catalog,rtrim,"bytea, bytea",bytea
+pg_catalog,rtrim,text,text
+pg_catalog,rtrim,"text, text",text
+pg_catalog,satisfies_hash_partition,"oid, integer, integer, VARIADIC ""any""",boolean
+pg_catalog,scalargejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,scalargesel,"internal, oid, internal, integer",double precision
+pg_catalog,scalargtjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,scalargtsel,"internal, oid, internal, integer",double precision
+pg_catalog,scalarlejoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,scalarlesel,"internal, oid, internal, integer",double precision
+pg_catalog,scalarltjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,scalarltsel,"internal, oid, internal, integer",double precision
+pg_catalog,scale,numeric,integer
+pg_catalog,schema_to_xml,"schema name, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,schema_to_xml_and_xmlschema,"schema name, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,schema_to_xmlschema,"schema name, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,session_user,,name
+pg_catalog,set_bit,"bit, integer, integer",bit
+pg_catalog,set_bit,"bytea, bigint, integer",bytea
+pg_catalog,set_byte,"bytea, integer, integer",bytea
+pg_catalog,set_config,"text, text, boolean",text
+pg_catalog,set_masklen,"cidr, integer",cidr
+pg_catalog,set_masklen,"inet, integer",inet
+pg_catalog,setseed,double precision,void
+pg_catalog,setval,"regclass, bigint",bigint
+pg_catalog,setval,"regclass, bigint, boolean",bigint
+pg_catalog,setweight,"tsvector, ""char""",tsvector
+pg_catalog,setweight,"tsvector, ""char"", text[]",tsvector
+pg_catalog,sha224,bytea,bytea
+pg_catalog,sha256,bytea,bytea
+pg_catalog,sha384,bytea,bytea
+pg_catalog,sha512,bytea,bytea
+pg_catalog,shell_in,cstring,void
+pg_catalog,shell_out,void,cstring
+pg_catalog,shift_jis_2004_to_euc_jis_2004,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,shift_jis_2004_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,shobj_description,"oid, name",text
+pg_catalog,sign,double precision,double precision
+pg_catalog,sign,numeric,numeric
+pg_catalog,similar_escape,"text, text",text
+pg_catalog,similar_to_escape,text,text
+pg_catalog,similar_to_escape,"text, text",text
+pg_catalog,sin,double precision,double precision
+pg_catalog,sind,double precision,double precision
+pg_catalog,sinh,double precision,double precision
+pg_catalog,sjis_to_euc_jp,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,sjis_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,sjis_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,slope,"point, point",double precision
+pg_catalog,spg_bbox_quad_config,"internal, internal",void
+pg_catalog,spg_box_quad_choose,"internal, internal",void
+pg_catalog,spg_box_quad_config,"internal, internal",void
+pg_catalog,spg_box_quad_inner_consistent,"internal, internal",void
+pg_catalog,spg_box_quad_leaf_consistent,"internal, internal",boolean
+pg_catalog,spg_box_quad_picksplit,"internal, internal",void
+pg_catalog,spg_kd_choose,"internal, internal",void
+pg_catalog,spg_kd_config,"internal, internal",void
+pg_catalog,spg_kd_inner_consistent,"internal, internal",void
+pg_catalog,spg_kd_picksplit,"internal, internal",void
+pg_catalog,spg_poly_quad_compress,polygon,box
+pg_catalog,spg_quad_choose,"internal, internal",void
+pg_catalog,spg_quad_config,"internal, internal",void
+pg_catalog,spg_quad_inner_consistent,"internal, internal",void
+pg_catalog,spg_quad_leaf_consistent,"internal, internal",boolean
+pg_catalog,spg_quad_picksplit,"internal, internal",void
+pg_catalog,spg_range_quad_choose,"internal, internal",void
+pg_catalog,spg_range_quad_config,"internal, internal",void
+pg_catalog,spg_range_quad_inner_consistent,"internal, internal",void
+pg_catalog,spg_range_quad_leaf_consistent,"internal, internal",boolean
+pg_catalog,spg_range_quad_picksplit,"internal, internal",void
+pg_catalog,spg_text_choose,"internal, internal",void
+pg_catalog,spg_text_config,"internal, internal",void
+pg_catalog,spg_text_inner_consistent,"internal, internal",void
+pg_catalog,spg_text_leaf_consistent,"internal, internal",boolean
+pg_catalog,spg_text_picksplit,"internal, internal",void
+pg_catalog,spghandler,internal,index_am_handler
+pg_catalog,split_part,"text, text, integer",text
+pg_catalog,sqrt,double precision,double precision
+pg_catalog,sqrt,numeric,numeric
+pg_catalog,starts_with,"text, text",boolean
+pg_catalog,statement_timestamp,,timestamp with time zone
+pg_catalog,stddev,bigint,numeric
+pg_catalog,stddev,double precision,double precision
+pg_catalog,stddev,integer,numeric
+pg_catalog,stddev,numeric,numeric
+pg_catalog,stddev,real,double precision
+pg_catalog,stddev,smallint,numeric
+pg_catalog,stddev_pop,bigint,numeric
+pg_catalog,stddev_pop,double precision,double precision
+pg_catalog,stddev_pop,integer,numeric
+pg_catalog,stddev_pop,numeric,numeric
+pg_catalog,stddev_pop,real,double precision
+pg_catalog,stddev_pop,smallint,numeric
+pg_catalog,stddev_samp,bigint,numeric
+pg_catalog,stddev_samp,double precision,double precision
+pg_catalog,stddev_samp,integer,numeric
+pg_catalog,stddev_samp,numeric,numeric
+pg_catalog,stddev_samp,real,double precision
+pg_catalog,stddev_samp,smallint,numeric
+pg_catalog,string_agg,"value bytea, delimiter bytea",bytea
+pg_catalog,string_agg,"value text, delimiter text",text
+pg_catalog,string_agg_combine,"internal, internal",internal
+pg_catalog,string_agg_deserialize,"bytea, internal",internal
+pg_catalog,string_agg_finalfn,internal,text
+pg_catalog,string_agg_serialize,internal,bytea
+pg_catalog,string_agg_transfn,"internal, text, text",internal
+pg_catalog,string_to_array,"text, text",text[]
+pg_catalog,string_to_array,"text, text, text",text[]
+pg_catalog,string_to_table,"text, text",SETOF text
+pg_catalog,string_to_table,"text, text, text",SETOF text
+pg_catalog,strip,tsvector,tsvector
+pg_catalog,strpos,"text, text",integer
+pg_catalog,substr,"bytea, integer",bytea
+pg_catalog,substr,"bytea, integer, integer",bytea
+pg_catalog,substr,"text, integer",text
+pg_catalog,substr,"text, integer, integer",text
+pg_catalog,substring,"bit, integer",bit
+pg_catalog,substring,"bit, integer, integer",bit
+pg_catalog,substring,"bytea, integer",bytea
+pg_catalog,substring,"bytea, integer, integer",bytea
+pg_catalog,substring,"text, integer",text
+pg_catalog,substring,"text, integer, integer",text
+pg_catalog,substring,"text, text",text
+pg_catalog,substring,"text, text, text",text
+pg_catalog,sum,bigint,numeric
+pg_catalog,sum,double precision,double precision
+pg_catalog,sum,integer,bigint
+pg_catalog,sum,interval,interval
+pg_catalog,sum,money,money
+pg_catalog,sum,numeric,numeric
+pg_catalog,sum,real,real
+pg_catalog,sum,smallint,bigint
+pg_catalog,suppress_redundant_updates_trigger,,trigger
+pg_catalog,system,internal,tsm_handler
+pg_catalog,system_user,,text
+pg_catalog,table_am_handler_in,cstring,table_am_handler
+pg_catalog,table_am_handler_out,table_am_handler,cstring
+pg_catalog,table_to_xml,"tbl regclass, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,table_to_xml_and_xmlschema,"tbl regclass, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,table_to_xmlschema,"tbl regclass, nulls boolean, tableforest boolean, targetns text",xml
+pg_catalog,tan,double precision,double precision
+pg_catalog,tand,double precision,double precision
+pg_catalog,tanh,double precision,double precision
+pg_catalog,text,boolean,text
+pg_catalog,text,"""char""",text
+pg_catalog,text,character,text
+pg_catalog,text,inet,text
+pg_catalog,text,name,text
+pg_catalog,text,xml,text
+pg_catalog,text_ge,"text, text",boolean
+pg_catalog,text_gt,"text, text",boolean
+pg_catalog,text_larger,"text, text",text
+pg_catalog,text_le,"text, text",boolean
+pg_catalog,text_lt,"text, text",boolean
+pg_catalog,text_pattern_ge,"text, text",boolean
+pg_catalog,text_pattern_gt,"text, text",boolean
+pg_catalog,text_pattern_le,"text, text",boolean
+pg_catalog,text_pattern_lt,"text, text",boolean
+pg_catalog,text_smaller,"text, text",text
+pg_catalog,text_starts_with_support,internal,internal
+pg_catalog,textanycat,"text, anynonarray",text
+pg_catalog,textcat,"text, text",text
+pg_catalog,texteq,"text, text",boolean
+pg_catalog,texteqname,"text, name",boolean
+pg_catalog,textgename,"text, name",boolean
+pg_catalog,textgtname,"text, name",boolean
+pg_catalog,texticlike,"text, text",boolean
+pg_catalog,texticlike_support,internal,internal
+pg_catalog,texticnlike,"text, text",boolean
+pg_catalog,texticregexeq,"text, text",boolean
+pg_catalog,texticregexeq_support,internal,internal
+pg_catalog,texticregexne,"text, text",boolean
+pg_catalog,textin,cstring,text
+pg_catalog,textlen,text,integer
+pg_catalog,textlename,"text, name",boolean
+pg_catalog,textlike,"text, text",boolean
+pg_catalog,textlike_support,internal,internal
+pg_catalog,textltname,"text, name",boolean
+pg_catalog,textne,"text, text",boolean
+pg_catalog,textnename,"text, name",boolean
+pg_catalog,textnlike,"text, text",boolean
+pg_catalog,textout,text,cstring
+pg_catalog,textrecv,internal,text
+pg_catalog,textregexeq,"text, text",boolean
+pg_catalog,textregexeq_support,internal,internal
+pg_catalog,textregexne,"text, text",boolean
+pg_catalog,textsend,text,bytea
+pg_catalog,thesaurus_init,internal,internal
+pg_catalog,thesaurus_lexize,"internal, internal, internal, internal",internal
+pg_catalog,tideq,"tid, tid",boolean
+pg_catalog,tidge,"tid, tid",boolean
+pg_catalog,tidgt,"tid, tid",boolean
+pg_catalog,tidin,cstring,tid
+pg_catalog,tidlarger,"tid, tid",tid
+pg_catalog,tidle,"tid, tid",boolean
+pg_catalog,tidlt,"tid, tid",boolean
+pg_catalog,tidne,"tid, tid",boolean
+pg_catalog,tidout,tid,cstring
+pg_catalog,tidrecv,internal,tid
+pg_catalog,tidsend,tid,bytea
+pg_catalog,tidsmaller,"tid, tid",tid
+pg_catalog,time,interval,time without time zone
+pg_catalog,time,timestamp without time zone,time without time zone
+pg_catalog,time,timestamp with time zone,time without time zone
+pg_catalog,time,"time without time zone, integer",time without time zone
+pg_catalog,time,time with time zone,time without time zone
+pg_catalog,time_cmp,"time without time zone, time without time zone",integer
+pg_catalog,time_eq,"time without time zone, time without time zone",boolean
+pg_catalog,time_ge,"time without time zone, time without time zone",boolean
+pg_catalog,time_gt,"time without time zone, time without time zone",boolean
+pg_catalog,time_hash,time without time zone,integer
+pg_catalog,time_hash_extended,"time without time zone, bigint",bigint
+pg_catalog,time_in,"cstring, oid, integer",time without time zone
+pg_catalog,time_larger,"time without time zone, time without time zone",time without time zone
+pg_catalog,time_le,"time without time zone, time without time zone",boolean
+pg_catalog,time_lt,"time without time zone, time without time zone",boolean
+pg_catalog,time_mi_interval,"time without time zone, interval",time without time zone
+pg_catalog,time_mi_time,"time without time zone, time without time zone",interval
+pg_catalog,time_ne,"time without time zone, time without time zone",boolean
+pg_catalog,time_out,time without time zone,cstring
+pg_catalog,time_pl_interval,"time without time zone, interval",time without time zone
+pg_catalog,time_recv,"internal, oid, integer",time without time zone
+pg_catalog,time_send,time without time zone,bytea
+pg_catalog,time_smaller,"time without time zone, time without time zone",time without time zone
+pg_catalog,time_support,internal,internal
+pg_catalog,timedate_pl,"time without time zone, date",timestamp without time zone
+pg_catalog,timeofday,,text
+pg_catalog,timestamp,date,timestamp without time zone
+pg_catalog,timestamp,"date, time without time zone",timestamp without time zone
+pg_catalog,timestamp,"timestamp without time zone, integer",timestamp without time zone
+pg_catalog,timestamp,timestamp with time zone,timestamp without time zone
+pg_catalog,timestamp_cmp,"timestamp without time zone, timestamp without time zone",integer
+pg_catalog,timestamp_cmp_date,"timestamp without time zone, date",integer
+pg_catalog,timestamp_cmp_timestamptz,"timestamp without time zone, timestamp with time zone",integer
+pg_catalog,timestamp_eq,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_eq_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_eq_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_ge,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_ge_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_ge_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_gt,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_gt_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_gt_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_hash,timestamp without time zone,integer
+pg_catalog,timestamp_hash_extended,"timestamp without time zone, bigint",bigint
+pg_catalog,timestamp_in,"cstring, oid, integer",timestamp without time zone
+pg_catalog,timestamp_larger,"timestamp without time zone, timestamp without time zone",timestamp without time zone
+pg_catalog,timestamp_le,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_le_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_le_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_lt,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_lt_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_lt_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_mi,"timestamp without time zone, timestamp without time zone",interval
+pg_catalog,timestamp_mi_interval,"timestamp without time zone, interval",timestamp without time zone
+pg_catalog,timestamp_ne,"timestamp without time zone, timestamp without time zone",boolean
+pg_catalog,timestamp_ne_date,"timestamp without time zone, date",boolean
+pg_catalog,timestamp_ne_timestamptz,"timestamp without time zone, timestamp with time zone",boolean
+pg_catalog,timestamp_out,timestamp without time zone,cstring
+pg_catalog,timestamp_pl_interval,"timestamp without time zone, interval",timestamp without time zone
+pg_catalog,timestamp_recv,"internal, oid, integer",timestamp without time zone
+pg_catalog,timestamp_send,timestamp without time zone,bytea
+pg_catalog,timestamp_smaller,"timestamp without time zone, timestamp without time zone",timestamp without time zone
+pg_catalog,timestamp_sortsupport,internal,void
+pg_catalog,timestamp_support,internal,internal
+pg_catalog,timestamptypmodin,cstring[],integer
+pg_catalog,timestamptypmodout,integer,cstring
+pg_catalog,timestamptz,date,timestamp with time zone
+pg_catalog,timestamptz,"date, time without time zone",timestamp with time zone
+pg_catalog,timestamptz,"date, time with time zone",timestamp with time zone
+pg_catalog,timestamptz,timestamp without time zone,timestamp with time zone
+pg_catalog,timestamptz,"timestamp with time zone, integer",timestamp with time zone
+pg_catalog,timestamptz_cmp,"timestamp with time zone, timestamp with time zone",integer
+pg_catalog,timestamptz_cmp_date,"timestamp with time zone, date",integer
+pg_catalog,timestamptz_cmp_timestamp,"timestamp with time zone, timestamp without time zone",integer
+pg_catalog,timestamptz_eq,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_eq_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_eq_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_ge,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_ge_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_ge_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_gt,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_gt_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_gt_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_in,"cstring, oid, integer",timestamp with time zone
+pg_catalog,timestamptz_larger,"timestamp with time zone, timestamp with time zone",timestamp with time zone
+pg_catalog,timestamptz_le,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_le_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_le_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_lt,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_lt_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_lt_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_mi,"timestamp with time zone, timestamp with time zone",interval
+pg_catalog,timestamptz_mi_interval,"timestamp with time zone, interval",timestamp with time zone
+pg_catalog,timestamptz_ne,"timestamp with time zone, timestamp with time zone",boolean
+pg_catalog,timestamptz_ne_date,"timestamp with time zone, date",boolean
+pg_catalog,timestamptz_ne_timestamp,"timestamp with time zone, timestamp without time zone",boolean
+pg_catalog,timestamptz_out,timestamp with time zone,cstring
+pg_catalog,timestamptz_pl_interval,"timestamp with time zone, interval",timestamp with time zone
+pg_catalog,timestamptz_recv,"internal, oid, integer",timestamp with time zone
+pg_catalog,timestamptz_send,timestamp with time zone,bytea
+pg_catalog,timestamptz_smaller,"timestamp with time zone, timestamp with time zone",timestamp with time zone
+pg_catalog,timestamptztypmodin,cstring[],integer
+pg_catalog,timestamptztypmodout,integer,cstring
+pg_catalog,timetypmodin,cstring[],integer
+pg_catalog,timetypmodout,integer,cstring
+pg_catalog,timetz,timestamp with time zone,time with time zone
+pg_catalog,timetz,time without time zone,time with time zone
+pg_catalog,timetz,"time with time zone, integer",time with time zone
+pg_catalog,timetz_cmp,"time with time zone, time with time zone",integer
+pg_catalog,timetz_eq,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_ge,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_gt,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_hash,time with time zone,integer
+pg_catalog,timetz_hash_extended,"time with time zone, bigint",bigint
+pg_catalog,timetz_in,"cstring, oid, integer",time with time zone
+pg_catalog,timetz_larger,"time with time zone, time with time zone",time with time zone
+pg_catalog,timetz_le,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_lt,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_mi_interval,"time with time zone, interval",time with time zone
+pg_catalog,timetz_ne,"time with time zone, time with time zone",boolean
+pg_catalog,timetz_out,time with time zone,cstring
+pg_catalog,timetz_pl_interval,"time with time zone, interval",time with time zone
+pg_catalog,timetz_recv,"internal, oid, integer",time with time zone
+pg_catalog,timetz_send,time with time zone,bytea
+pg_catalog,timetz_smaller,"time with time zone, time with time zone",time with time zone
+pg_catalog,timetzdate_pl,"time with time zone, date",timestamp with time zone
+pg_catalog,timetztypmodin,cstring[],integer
+pg_catalog,timetztypmodout,integer,cstring
+pg_catalog,timezone,"interval, timestamp without time zone",timestamp with time zone
+pg_catalog,timezone,"interval, timestamp with time zone",timestamp without time zone
+pg_catalog,timezone,"interval, time with time zone",time with time zone
+pg_catalog,timezone,"text, timestamp without time zone",timestamp with time zone
+pg_catalog,timezone,"text, timestamp with time zone",timestamp without time zone
+pg_catalog,timezone,"text, time with time zone",time with time zone
+pg_catalog,timezone,timestamp without time zone,timestamp with time zone
+pg_catalog,timezone,timestamp with time zone,timestamp without time zone
+pg_catalog,timezone,time with time zone,time with time zone
+pg_catalog,to_ascii,text,text
+pg_catalog,to_ascii,"text, integer",text
+pg_catalog,to_ascii,"text, name",text
+pg_catalog,to_bin,bigint,text
+pg_catalog,to_bin,integer,text
+pg_catalog,to_char,"bigint, text",text
+pg_catalog,to_char,"double precision, text",text
+pg_catalog,to_char,"integer, text",text
+pg_catalog,to_char,"interval, text",text
+pg_catalog,to_char,"numeric, text",text
+pg_catalog,to_char,"real, text",text
+pg_catalog,to_char,"timestamp without time zone, text",text
+pg_catalog,to_char,"timestamp with time zone, text",text
+pg_catalog,to_date,"text, text",date
+pg_catalog,to_hex,bigint,text
+pg_catalog,to_hex,integer,text
+pg_catalog,to_json,anyelement,json
+pg_catalog,to_jsonb,anyelement,jsonb
+pg_catalog,to_number,"text, text",numeric
+pg_catalog,to_oct,bigint,text
+pg_catalog,to_oct,integer,text
+pg_catalog,to_regclass,text,regclass
+pg_catalog,to_regcollation,text,regcollation
+pg_catalog,to_regnamespace,text,regnamespace
+pg_catalog,to_regoper,text,regoper
+pg_catalog,to_regoperator,text,regoperator
+pg_catalog,to_regproc,text,regproc
+pg_catalog,to_regprocedure,text,regprocedure
+pg_catalog,to_regrole,text,regrole
+pg_catalog,to_regtype,text,regtype
+pg_catalog,to_regtypemod,text,integer
+pg_catalog,to_timestamp,double precision,timestamp with time zone
+pg_catalog,to_timestamp,"text, text",timestamp with time zone
+pg_catalog,to_tsquery,"regconfig, text",tsquery
+pg_catalog,to_tsquery,text,tsquery
+pg_catalog,to_tsvector,json,tsvector
+pg_catalog,to_tsvector,jsonb,tsvector
+pg_catalog,to_tsvector,"regconfig, json",tsvector
+pg_catalog,to_tsvector,"regconfig, jsonb",tsvector
+pg_catalog,to_tsvector,"regconfig, text",tsvector
+pg_catalog,to_tsvector,text,tsvector
+pg_catalog,transaction_timestamp,,timestamp with time zone
+pg_catalog,translate,"text, text, text",text
+pg_catalog,trigger_in,cstring,trigger
+pg_catalog,trigger_out,trigger,cstring
+pg_catalog,trim_array,"anyarray, integer",anyarray
+pg_catalog,trim_scale,numeric,numeric
+pg_catalog,trunc,double precision,double precision
+pg_catalog,trunc,macaddr,macaddr
+pg_catalog,trunc,macaddr8,macaddr8
+pg_catalog,trunc,numeric,numeric
+pg_catalog,trunc,"numeric, integer",numeric
+pg_catalog,ts_debug,"config regconfig, document text, OUT alias text, OUT description text, OUT token text, OUT dictionaries regdictionary[], OUT dictionary regdictionary, OUT lexemes text[]",SETOF record
+pg_catalog,ts_debug,"document text, OUT alias text, OUT description text, OUT token text, OUT dictionaries regdictionary[], OUT dictionary regdictionary, OUT lexemes text[]",SETOF record
+pg_catalog,ts_delete,"tsvector, text",tsvector
+pg_catalog,ts_delete,"tsvector, text[]",tsvector
+pg_catalog,ts_filter,"tsvector, ""char""[]",tsvector
+pg_catalog,ts_headline,"jsonb, tsquery",jsonb
+pg_catalog,ts_headline,"jsonb, tsquery, text",jsonb
+pg_catalog,ts_headline,"json, tsquery",json
+pg_catalog,ts_headline,"json, tsquery, text",json
+pg_catalog,ts_headline,"regconfig, jsonb, tsquery",jsonb
+pg_catalog,ts_headline,"regconfig, jsonb, tsquery, text",jsonb
+pg_catalog,ts_headline,"regconfig, json, tsquery",json
+pg_catalog,ts_headline,"regconfig, json, tsquery, text",json
+pg_catalog,ts_headline,"regconfig, text, tsquery",text
+pg_catalog,ts_headline,"regconfig, text, tsquery, text",text
+pg_catalog,ts_headline,"text, tsquery",text
+pg_catalog,ts_headline,"text, tsquery, text",text
+pg_catalog,ts_lexize,"regdictionary, text",text[]
+pg_catalog,ts_match_qv,"tsquery, tsvector",boolean
+pg_catalog,ts_match_tq,"text, tsquery",boolean
+pg_catalog,ts_match_tt,"text, text",boolean
+pg_catalog,ts_match_vq,"tsvector, tsquery",boolean
+pg_catalog,ts_parse,"parser_name text, txt text, OUT tokid integer, OUT token text",SETOF record
+pg_catalog,ts_parse,"parser_oid oid, txt text, OUT tokid integer, OUT token text",SETOF record
+pg_catalog,ts_rank,"real[], tsvector, tsquery",real
+pg_catalog,ts_rank,"real[], tsvector, tsquery, integer",real
+pg_catalog,ts_rank,"tsvector, tsquery",real
+pg_catalog,ts_rank,"tsvector, tsquery, integer",real
+pg_catalog,ts_rank_cd,"real[], tsvector, tsquery",real
+pg_catalog,ts_rank_cd,"real[], tsvector, tsquery, integer",real
+pg_catalog,ts_rank_cd,"tsvector, tsquery",real
+pg_catalog,ts_rank_cd,"tsvector, tsquery, integer",real
+pg_catalog,ts_rewrite,"tsquery, text",tsquery
+pg_catalog,ts_rewrite,"tsquery, tsquery, tsquery",tsquery
+pg_catalog,ts_stat,"query text, OUT word text, OUT ndoc integer, OUT nentry integer",SETOF record
+pg_catalog,ts_stat,"query text, weights text, OUT word text, OUT ndoc integer, OUT nentry integer",SETOF record
+pg_catalog,ts_token_type,"parser_name text, OUT tokid integer, OUT alias text, OUT description text",SETOF record
+pg_catalog,ts_token_type,"parser_oid oid, OUT tokid integer, OUT alias text, OUT description text",SETOF record
+pg_catalog,ts_typanalyze,internal,boolean
+pg_catalog,tsm_handler_in,cstring,tsm_handler
+pg_catalog,tsm_handler_out,tsm_handler,cstring
+pg_catalog,tsmatchjoinsel,"internal, oid, internal, smallint, internal",double precision
+pg_catalog,tsmatchsel,"internal, oid, internal, integer",double precision
+pg_catalog,tsmultirange,,tsmultirange
+pg_catalog,tsmultirange,tsrange,tsmultirange
+pg_catalog,tsmultirange,VARIADIC tsrange[],tsmultirange
+pg_catalog,tsq_mcontained,"tsquery, tsquery",boolean
+pg_catalog,tsq_mcontains,"tsquery, tsquery",boolean
+pg_catalog,tsquery_and,"tsquery, tsquery",tsquery
+pg_catalog,tsquery_cmp,"tsquery, tsquery",integer
+pg_catalog,tsquery_eq,"tsquery, tsquery",boolean
+pg_catalog,tsquery_ge,"tsquery, tsquery",boolean
+pg_catalog,tsquery_gt,"tsquery, tsquery",boolean
+pg_catalog,tsquery_le,"tsquery, tsquery",boolean
+pg_catalog,tsquery_lt,"tsquery, tsquery",boolean
+pg_catalog,tsquery_ne,"tsquery, tsquery",boolean
+pg_catalog,tsquery_not,tsquery,tsquery
+pg_catalog,tsquery_or,"tsquery, tsquery",tsquery
+pg_catalog,tsquery_phrase,"tsquery, tsquery",tsquery
+pg_catalog,tsquery_phrase,"tsquery, tsquery, integer",tsquery
+pg_catalog,tsqueryin,cstring,tsquery
+pg_catalog,tsqueryout,tsquery,cstring
+pg_catalog,tsqueryrecv,internal,tsquery
+pg_catalog,tsquerysend,tsquery,bytea
+pg_catalog,tsrange,"timestamp without time zone, timestamp without time zone",tsrange
+pg_catalog,tsrange,"timestamp without time zone, timestamp without time zone, text",tsrange
+pg_catalog,tsrange_subdiff,"timestamp without time zone, timestamp without time zone",double precision
+pg_catalog,tstzmultirange,,tstzmultirange
+pg_catalog,tstzmultirange,tstzrange,tstzmultirange
+pg_catalog,tstzmultirange,VARIADIC tstzrange[],tstzmultirange
+pg_catalog,tstzrange,"timestamp with time zone, timestamp with time zone",tstzrange
+pg_catalog,tstzrange,"timestamp with time zone, timestamp with time zone, text",tstzrange
+pg_catalog,tstzrange_subdiff,"timestamp with time zone, timestamp with time zone",double precision
+pg_catalog,tsvector_cmp,"tsvector, tsvector",integer
+pg_catalog,tsvector_concat,"tsvector, tsvector",tsvector
+pg_catalog,tsvector_eq,"tsvector, tsvector",boolean
+pg_catalog,tsvector_ge,"tsvector, tsvector",boolean
+pg_catalog,tsvector_gt,"tsvector, tsvector",boolean
+pg_catalog,tsvector_le,"tsvector, tsvector",boolean
+pg_catalog,tsvector_lt,"tsvector, tsvector",boolean
+pg_catalog,tsvector_ne,"tsvector, tsvector",boolean
+pg_catalog,tsvector_to_array,tsvector,text[]
+pg_catalog,tsvector_update_trigger,,trigger
+pg_catalog,tsvector_update_trigger_column,,trigger
+pg_catalog,tsvectorin,cstring,tsvector
+pg_catalog,tsvectorout,tsvector,cstring
+pg_catalog,tsvectorrecv,internal,tsvector
+pg_catalog,tsvectorsend,tsvector,bytea
+pg_catalog,txid_current,,bigint
+pg_catalog,txid_current_if_assigned,,bigint
+pg_catalog,txid_current_snapshot,,txid_snapshot
+pg_catalog,txid_snapshot_in,cstring,txid_snapshot
+pg_catalog,txid_snapshot_out,txid_snapshot,cstring
+pg_catalog,txid_snapshot_recv,internal,txid_snapshot
+pg_catalog,txid_snapshot_send,txid_snapshot,bytea
+pg_catalog,txid_snapshot_xip,txid_snapshot,SETOF bigint
+pg_catalog,txid_snapshot_xmax,txid_snapshot,bigint
+pg_catalog,txid_snapshot_xmin,txid_snapshot,bigint
+pg_catalog,txid_status,bigint,text
+pg_catalog,txid_visible_in_snapshot,"bigint, txid_snapshot",boolean
+pg_catalog,uhc_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,unicode_assigned,text,boolean
+pg_catalog,unicode_version,,text
+pg_catalog,unique_key_recheck,,trigger
+pg_catalog,unistr,text,text
+pg_catalog,unknownin,cstring,unknown
+pg_catalog,unknownout,unknown,cstring
+pg_catalog,unknownrecv,internal,unknown
+pg_catalog,unknownsend,unknown,bytea
+pg_catalog,unnest,anyarray,SETOF anyelement
+pg_catalog,unnest,anymultirange,SETOF anyrange
+pg_catalog,unnest,"tsvector tsvector, OUT lexeme text, OUT positions smallint[], OUT weights text[]",SETOF record
+pg_catalog,upper,anymultirange,anyelement
+pg_catalog,upper,anyrange,anyelement
+pg_catalog,upper,text,text
+pg_catalog,upper_inc,anymultirange,boolean
+pg_catalog,upper_inc,anyrange,boolean
+pg_catalog,upper_inf,anymultirange,boolean
+pg_catalog,upper_inf,anyrange,boolean
+pg_catalog,utf8_to_big5,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_euc_cn,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_euc_jis_2004,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_euc_jp,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_euc_kr,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_euc_tw,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_gb18030,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_gbk,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_iso8859,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_iso8859_1,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_johab,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_koi8r,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_koi8u,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_shift_jis_2004,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_sjis,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_uhc,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,utf8_to_win,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,uuid_cmp,"uuid, uuid",integer
+pg_catalog,uuid_eq,"uuid, uuid",boolean
+pg_catalog,uuid_extract_timestamp,uuid,timestamp with time zone
+pg_catalog,uuid_extract_version,uuid,smallint
+pg_catalog,uuid_ge,"uuid, uuid",boolean
+pg_catalog,uuid_gt,"uuid, uuid",boolean
+pg_catalog,uuid_hash,uuid,integer
+pg_catalog,uuid_hash_extended,"uuid, bigint",bigint
+pg_catalog,uuid_in,cstring,uuid
+pg_catalog,uuid_le,"uuid, uuid",boolean
+pg_catalog,uuid_lt,"uuid, uuid",boolean
+pg_catalog,uuid_ne,"uuid, uuid",boolean
+pg_catalog,uuid_out,uuid,cstring
+pg_catalog,uuid_recv,internal,uuid
+pg_catalog,uuid_send,uuid,bytea
+pg_catalog,uuid_sortsupport,internal,void
+pg_catalog,var_pop,bigint,numeric
+pg_catalog,var_pop,double precision,double precision
+pg_catalog,var_pop,integer,numeric
+pg_catalog,var_pop,numeric,numeric
+pg_catalog,var_pop,real,double precision
+pg_catalog,var_pop,smallint,numeric
+pg_catalog,var_samp,bigint,numeric
+pg_catalog,var_samp,double precision,double precision
+pg_catalog,var_samp,integer,numeric
+pg_catalog,var_samp,numeric,numeric
+pg_catalog,var_samp,real,double precision
+pg_catalog,var_samp,smallint,numeric
+pg_catalog,varbit,"bit varying, integer, boolean",bit varying
+pg_catalog,varbit_in,"cstring, oid, integer",bit varying
+pg_catalog,varbit_out,bit varying,cstring
+pg_catalog,varbit_recv,"internal, oid, integer",bit varying
+pg_catalog,varbit_send,bit varying,bytea
+pg_catalog,varbit_support,internal,internal
+pg_catalog,varbitcmp,"bit varying, bit varying",integer
+pg_catalog,varbiteq,"bit varying, bit varying",boolean
+pg_catalog,varbitge,"bit varying, bit varying",boolean
+pg_catalog,varbitgt,"bit varying, bit varying",boolean
+pg_catalog,varbitle,"bit varying, bit varying",boolean
+pg_catalog,varbitlt,"bit varying, bit varying",boolean
+pg_catalog,varbitne,"bit varying, bit varying",boolean
+pg_catalog,varbittypmodin,cstring[],integer
+pg_catalog,varbittypmodout,integer,cstring
+pg_catalog,varchar,"character varying, integer, boolean",character varying
+pg_catalog,varchar,name,character varying
+pg_catalog,varchar_support,internal,internal
+pg_catalog,varcharin,"cstring, oid, integer",character varying
+pg_catalog,varcharout,character varying,cstring
+pg_catalog,varcharrecv,"internal, oid, integer",character varying
+pg_catalog,varcharsend,character varying,bytea
+pg_catalog,varchartypmodin,cstring[],integer
+pg_catalog,varchartypmodout,integer,cstring
+pg_catalog,variance,bigint,numeric
+pg_catalog,variance,double precision,double precision
+pg_catalog,variance,integer,numeric
+pg_catalog,variance,numeric,numeric
+pg_catalog,variance,real,double precision
+pg_catalog,variance,smallint,numeric
+pg_catalog,version,,text
+pg_catalog,void_in,cstring,void
+pg_catalog,void_out,void,cstring
+pg_catalog,void_recv,internal,void
+pg_catalog,void_send,void,bytea
+pg_catalog,websearch_to_tsquery,"regconfig, text",tsquery
+pg_catalog,websearch_to_tsquery,text,tsquery
+pg_catalog,width,box,double precision
+pg_catalog,width_bucket,"anycompatible, anycompatiblearray",integer
+pg_catalog,width_bucket,"double precision, double precision, double precision, integer",integer
+pg_catalog,width_bucket,"numeric, numeric, numeric, integer",integer
+pg_catalog,win1250_to_latin2,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win1250_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win1251_to_iso,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win1251_to_koi8r,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win1251_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win1251_to_win866,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win866_to_iso,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win866_to_koi8r,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win866_to_mic,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win866_to_win1251,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,win_to_utf8,"integer, integer, cstring, internal, integer, boolean",integer
+pg_catalog,window_cume_dist_support,internal,internal
+pg_catalog,window_dense_rank_support,internal,internal
+pg_catalog,window_ntile_support,internal,internal
+pg_catalog,window_percent_rank_support,internal,internal
+pg_catalog,window_rank_support,internal,internal
+pg_catalog,window_row_number_support,internal,internal
+pg_catalog,xid,xid8,xid
+pg_catalog,xid8_larger,"xid8, xid8",xid8
+pg_catalog,xid8_smaller,"xid8, xid8",xid8
+pg_catalog,xid8cmp,"xid8, xid8",integer
+pg_catalog,xid8eq,"xid8, xid8",boolean
+pg_catalog,xid8ge,"xid8, xid8",boolean
+pg_catalog,xid8gt,"xid8, xid8",boolean
+pg_catalog,xid8in,cstring,xid8
+pg_catalog,xid8le,"xid8, xid8",boolean
+pg_catalog,xid8lt,"xid8, xid8",boolean
+pg_catalog,xid8ne,"xid8, xid8",boolean
+pg_catalog,xid8out,xid8,cstring
+pg_catalog,xid8recv,internal,xid8
+pg_catalog,xid8send,xid8,bytea
+pg_catalog,xideq,"xid, xid",boolean
+pg_catalog,xideqint4,"xid, integer",boolean
+pg_catalog,xidin,cstring,xid
+pg_catalog,xidneq,"xid, xid",boolean
+pg_catalog,xidneqint4,"xid, integer",boolean
+pg_catalog,xidout,xid,cstring
+pg_catalog,xidrecv,internal,xid
+pg_catalog,xidsend,xid,bytea
+pg_catalog,xml,text,xml
+pg_catalog,xml_in,cstring,xml
+pg_catalog,xml_is_well_formed,text,boolean
+pg_catalog,xml_is_well_formed_content,text,boolean
+pg_catalog,xml_is_well_formed_document,text,boolean
+pg_catalog,xml_out,xml,cstring
+pg_catalog,xml_recv,internal,xml
+pg_catalog,xml_send,xml,bytea
+pg_catalog,xmlagg,xml,xml
+pg_catalog,xmlcomment,text,xml
+pg_catalog,xmlconcat2,"xml, xml",xml
+pg_catalog,xmlexists,"text, xml",boolean
+pg_catalog,xmltext,text,xml
+pg_catalog,xmlvalidate,"xml, text",boolean
+pg_catalog,xpath,"text, xml",xml[]
+pg_catalog,xpath,"text, xml, text[]",xml[]
+pg_catalog,xpath_exists,"text, xml",boolean
+pg_catalog,xpath_exists,"text, xml, text[]",boolean

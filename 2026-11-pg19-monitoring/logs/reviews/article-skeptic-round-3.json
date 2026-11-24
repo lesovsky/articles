@@ -1,0 +1,26 @@
+{
+  "reviewer": "dev-skeptic",
+  "status": "approved",
+  "go_no_go": "go; one minor, non-blocking output-label correction remains",
+  "summary": "Checked all seven SQL/example-output pairs against primary result files. Every displayed value is correct, including both recovery rows and the independently verified 16 MB LSN difference. One shortened-output label incompletely lists the omitted columns.",
+  "findings": [
+    {
+      "severity": "minor",
+      "type": "name_mismatch",
+      "article_location": "pg19-monitoring.md:80-102",
+      "claim": "The autovacuum output is described as shortened by omitting xid_score, mxid_score, and for_wraparound.",
+      "evidence": "The displayed rows also omit schemaname, although the SQL selects it. All displayed values and the insert_score alias otherwise match autovacuum-scores.log.",
+      "source": "data/results/autovacuum-scores.log:30-35",
+      "fix": "Add schemaname to the listed omissions, or include that column in the output."
+    }
+  ],
+  "verified_coverage": {
+    "lock": "PASS: first two rows, rounded wait_ms values, counters, and stats_reset exactly match article-queries.log:1-4; the label explicitly says first two rows.",
+    "autovacuum_values": "PASS: all three rows and every displayed value match autovacuum-scores.log:30-35; only the omission-label issue above remains.",
+    "progress": "PASS: PIDs 1990627 and 1994011 and all values match progress-manual-vacuum.csv and progress-auto-vacuum.csv. Combining two runs is explicitly labeled. The separate ANALYZE CSV agrees with the prose.",
+    "global_wal": "PASS: 1813789, 16371, 296084740, 61722584, 20.85, and stats_reset exactly match article-queries.log:25-28.",
+    "backend_wal_deltas": "PASS: both phase rows and all counters match wal-decoding.log:26-47; the text correctly identifies them as per-backend deltas rather than output of the preceding active-backend query.",
+    "replication_slot": "PASS: lab_decode, mem_exceeded_count=10, spill_txns=1, spill_count=11, and spill_bytes=10880000 match wal-decoding.log:85-88; omitted stream columns are explicitly disclosed.",
+    "recovery": "PASS: paused LSNs/state match recovery-paused.csv and recovery-wal-receiver.csv; read-only SQL returned 16 MB for the stated LSN difference. The post-resume row matches recovery-after.csv and article-queries.log:55-58. Combining pause and resume outputs is explicitly labeled."
+  }
+}

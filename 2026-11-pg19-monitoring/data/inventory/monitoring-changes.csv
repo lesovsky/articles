@@ -1,0 +1,35 @@
+area,object,change,article_scope
+locking,pg_stat_lock,"New cumulative per-lock-type view: waits, wait_time, fastpath_exceeded, stats_reset",main
+locking,pg_stat_get_lock(),"New function backing pg_stat_lock",reference
+locking,wait events,"BUFFERPIN renamed to BUFFER; BufferPin renamed to BufferCleanup; BufferContent replaced by BufferShared, BufferShareExclusive and BufferExclusive",main
+vacuum,pg_stat_autovacuum_scores,"New per-table scores and do_vacuum/do_analyze/for_wraparound indicators",main
+vacuum,pg_stat_progress_vacuum,"New started_by and mode columns",main
+vacuum,pg_stat_progress_analyze,"New started_by column",main
+vacuum,log_autoanalyze_min_duration,"New separate logging threshold for autoanalyze; log_autovacuum_min_duration now applies only to vacuum",main
+vacuum,autovacuum score weights,"New GUCs for freeze, multixact freeze, vacuum, insert vacuum and analyze score weights",reference
+recovery,pg_stat_recovery,"New recovery status view with replay LSNs, timeline, transaction time and pause state",main
+replication,pg_stat_replication_slots.mem_exceeded_count,"New count of logical_decoding_work_mem overruns",main
+replication,replication slot synchronization,"New slotsync_skip_count and slotsync_last_skip statistics plus slotsync_skip_reason in pg_replication_slots",main
+replication,pg_stat_subscription_stats.update_deleted,"New count of updates ignored because of concurrent deletes when retain_dead_tuples is enabled",reference
+replication,pg_stat_subscription_stats.sync_seq_error_count,"New separate sequence synchronization error counter",reference
+replication,pg_stat_subscription_stats.sync_error_count,"Renamed to sync_table_error_count",main
+replication,pg_stat_wal_receiver.status,"New connecting state",reference
+wal,pg_stat_wal.wal_fpi_bytes,"New full-page-image WAL byte counter",main
+wal,pg_stat_get_backend_wal(),"New wal_fpi_bytes value for an individual backend",main
+wal,VACUUM and ANALYZE logs,"Log full-page-image WAL bytes",reference
+wal,wait events,"New CommitDelay and WaitForWalWrite/Flush/Replay events",reference
+maintenance,pg_stat_progress_repack,"New progress view for REPACK, CLUSTER and VACUUM FULL",linked_existing_article
+maintenance,pg_stat_progress_basebackup.backup_type,"New full or incremental backup type",reference
+statistics,stats_reset,"Added to table, index, sequence I/O, function and database-conflict statistics views",main
+statistics,pg_stats and pg_stats_ext,"New relation, attribute and statistics-object OID columns",reference
+statistics,pg_stats_ext_exprs,"New range-type extended statistics",reference
+memory,pg_dsm_registry_allocations,"New dynamic shared memory registry allocation view",main
+multixact,pg_get_multixact_stats(),"New multixact count, member storage and oldest multixact statistics",main
+logging,log_min_messages,"Per-process-type levels using type:level syntax",reference
+logging,log_lock_waits,"Now enabled by default",main
+logging,remote server messages,"Remote postgres_fdw, dblink and replication messages use local log format",reference
+io,COPY wait events,"New CopyFromRead and CopyToWrite events",reference
+io,EXPLAIN (IO),"New per-node I/O statistics",linked_existing_article
+configuration,effective_wal_level,"Reports effective WAL level while logical decoding is enabled dynamically",main
+configuration,pg_available_extensions.location,"New extension filesystem location column",reference
+sequence,pg_get_sequence_data(),"Now returns sequence page LSN",reference

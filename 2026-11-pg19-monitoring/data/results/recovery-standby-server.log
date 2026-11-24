@@ -1,0 +1,42 @@
+2026-11-22 12:12:49.810 GMT [1987985] LOG:  starting PostgreSQL 19.0 (Ubuntu 19.0-2.pgdg24.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-22 12:12:49.810 GMT [1987985] LOG:  listening on Unix socket "/tmp/.s.PGSQL.55432"
+2026-11-22 12:12:49.813 GMT [1987985] LOG:  could not open file "/home/lesovsky/Git/github.com/lesovsky/articles/2026-11-pg19-monitoring/data/standby/pg_ident.conf": No such file or directory
+2026-11-22 12:12:49.848 GMT [1988003] LOG:  database system was interrupted; last known up at 2026-11-22 12:12:00 GMT
+2026-11-22 12:12:50.463 GMT [1988003] LOG:  starting backup recovery with redo LSN A4/31000028, checkpoint LSN A4/31000080, on timeline ID 1
+2026-11-22 12:12:50.463 GMT [1988003] LOG:  entering standby mode
+2026-11-22 12:12:50.508 GMT [1988003] LOG:  redo starts at A4/31000028
+2026-11-22 12:12:50.511 GMT [1988003] LOG:  completed backup recovery with redo LSN A4/31000028 and end LSN A4/31015C98
+2026-11-22 12:12:50.511 GMT [1988003] LOG:  consistent recovery state reached at A4/31015C98
+2026-11-22 12:12:50.511 GMT [1987985] LOG:  database system is ready to accept read-only connections
+2026-11-22 12:12:50.519 GMT [1988037] LOG:  started streaming WAL from primary at A4/32000000 on timeline 1
+2026-11-22 12:14:20.725 GMT [1988003] LOG:  recovery has paused
+2026-11-22 12:14:20.725 GMT [1988003] HINT:  Execute pg_wal_replay_resume() to continue.
+2026-11-22 12:17:28.164 GMT [1987985] LOG:  received fast shutdown request
+2026-11-22 12:17:28.165 GMT [1987985] LOG:  aborting any active transactions
+2026-11-22 12:17:28.165 GMT [1988037] FATAL:  terminating walreceiver process due to administrator command
+2026-11-22 12:17:28.165 GMT [1988037] DETAIL:  Signal sent by PID 1987985, UID 1000.
+2026-11-22 12:17:28.169 GMT [1988001] LOG:  shutting down
+2026-11-22 12:17:28.186 GMT [1987985] LOG:  database system is shut down
+2026-11-22 15:05:51.180 GMT [2039300] LOG:  starting PostgreSQL 19.0 (Ubuntu 19.0-2.pgdg24.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-22 15:05:51.181 GMT [2039300] LOG:  listening on Unix socket "/tmp/.s.PGSQL.55432"
+2026-11-22 15:05:51.184 GMT [2039300] LOG:  could not open file "/home/lesovsky/Git/github.com/lesovsky/articles/2026-11-pg19-monitoring/data/standby/pg_ident.conf": No such file or directory
+2026-11-22 15:05:51.188 GMT [2039305] LOG:  database system was interrupted; last known up at 2026-11-22 15:05:45 GMT
+2026-11-22 15:05:51.658 GMT [2039305] LOG:  starting backup recovery with redo LSN A4/35000028, checkpoint LSN A4/35000080, on timeline ID 1
+2026-11-22 15:05:51.659 GMT [2039305] LOG:  entering standby mode
+2026-11-22 15:05:51.662 GMT [2039305] LOG:  redo starts at A4/35000028
+2026-11-22 15:05:51.663 GMT [2039305] LOG:  completed backup recovery with redo LSN A4/35000028 and end LSN A4/35000128
+2026-11-22 15:05:51.663 GMT [2039305] LOG:  consistent recovery state reached at A4/35000128
+2026-11-22 15:05:51.663 GMT [2039300] LOG:  database system is ready to accept read-only connections
+2026-11-22 15:05:51.668 GMT [2039307] LOG:  started streaming WAL from primary at A4/36000000 on timeline 1
+2026-11-22 15:05:51.867 GMT [2039305] LOG:  recovery has paused
+2026-11-22 15:05:51.867 GMT [2039305] HINT:  Execute pg_wal_replay_resume() to continue.
+2026-11-22 15:10:51.287 GMT [2039303] LOG:  restartpoint starting: time
+2026-11-22 15:10:51.705 GMT [2039303] LOG:  restartpoint complete: time: wrote 4 buffers (0.0%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.403 s, sync=0.001 s, total=0.418 s; sync files=4, longest=0.001 s, average=0.001 s; distance=32768 kB, estimate=32768 kB; lsn=A4/370000E0, redo lsn=A4/37000088
+2026-11-22 15:10:51.705 GMT [2039303] LOG:  recovery restart point at A4/37000088
+2026-11-22 15:10:51.705 GMT [2039303] DETAIL:  Last completed transaction was at log time 2026-11-22 15:05:51.940489+00.
+2026-11-22 15:48:22.798 GMT [2039300] LOG:  received fast shutdown request
+2026-11-22 15:48:22.806 GMT [2039300] LOG:  aborting any active transactions
+2026-11-22 15:48:22.807 GMT [2039307] FATAL:  terminating walreceiver process due to administrator command
+2026-11-22 15:48:22.807 GMT [2039307] DETAIL:  Signal sent by PID 2039300, UID 1000.
+2026-11-22 15:48:22.809 GMT [2039303] LOG:  shutting down
+2026-11-22 15:48:22.822 GMT [2039300] LOG:  database system is shut down

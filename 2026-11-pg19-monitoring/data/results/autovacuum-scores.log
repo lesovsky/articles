@@ -1,0 +1,56 @@
+UPDATE 18000
+UPDATE 18000
+UPDATE 1000
+INSERT 0 20000
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+   relname   | n_live_tup | n_dead_tup | n_mod_since_analyze 
+-------------+------------+------------+---------------------
+ insert_only |      60000 |          0 |               40000
+ vacuum_cold |      40000 |       1000 |               21000
+ vacuum_hot  |      40000 |      36000 |               56000
+(3 строки)
+
+   relname   | score  | vacuum_score | vacuum_insert_score | analyze_score | do_vacuum | do_analyze 
+-------------+--------+--------------+---------------------+---------------+-----------+------------
+ vacuum_hot  | 27.317 |        8.889 |               4.000 |        27.317 | t         | t
+ insert_only | 19.512 |        0.000 |               8.000 |        19.512 | t         | t
+ vacuum_cold | 10.244 |        0.247 |               4.000 |        10.244 | t         | t
+(3 строки)
+
+  relname   | stats_reset 
+------------+-------------
+ vacuum_hot | 
+(1 строка)
+
+ pg_stat_reset_single_table_counters 
+-------------------------------------
+ 
+(1 строка)
+
+ pg_stat_clear_snapshot 
+------------------------
+ 
+(1 строка)
+
+  relname   |          stats_reset          
+------------+-------------------------------
+ vacuum_hot | 2026-11-22 17:10:38.967468+05
+(1 строка)
+

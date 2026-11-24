@@ -1,0 +1,74 @@
+{
+  "reviewer": "dev-skeptic",
+  "status": "approved",
+  "go_no_go": "go after the listed factual clarifications",
+  "summary": "Checked all numeric claims, named objects, version attributions, and the requested operational interpretations against primary result files, PostgreSQL 19.0 documentation/release notes, and read-only SQL. All reported numbers and recovery LSNs match the raw evidence. Found one material omission about pg_stat_lock coverage and two smaller overstatements/ambiguities; no nonexistent objects or PG18-as-PG19 attributions found.",
+  "findings": [
+    {
+      "severity": "major",
+      "type": "missing_pattern",
+      "article_location": "pg19-monitoring.md:31-45, 54-63 (section 'Блокировки: теперь виден не только текущий момент')",
+      "claim": "The presentation and operational advice describe waits/wait_time as cumulative lock-wait frequency, total waiting cost, and a source for average wait duration without defining which waits are counted.",
+      "evidence": "PostgreSQL 19.0 documentation for both waits and wait_time states: 'Only incremented when the lock was successfully acquired after waiting longer than deadlock_timeout.' Thus waits shorter than deadlock_timeout and waits that do not end in successful acquisition are not represented. The article's experimental waits are valid: wait_time is in milliseconds, and the raw deltas are exactly transactionid +1/+3036.145 ms and tuple +2/+6061.728 ms, totaling 9097.873 ms.",
+      "reality": "pg_stat_lock is cluster-wide and cumulative, but it is not a complete census of every lock wait; averages derived from it apply only to successfully acquired locks whose waits exceeded deadlock_timeout.",
+      "source": "https://www.postgresql.org/docs/19/monitoring-stats.html#MONITORING-PG-STAT-LOCK-VIEW; data/results/lock-before.csv; data/results/lock-activity.csv; data/results/lock-after.csv",
+      "fix": "Add the deadlock_timeout and successful-acquisition qualification next to the first description of the counters, and qualify the frequency/total/average advice accordingly. Keep the measured millisecond values and the transactionid-versus-tuple observation unchanged.",
+      "suggested_correction": "Уточнить, что waits и wait_time учитывают только ожидания дольше deadlock_timeout, завершившиеся успешным получением блокировки; средняя длительность и сумма относятся именно к этой выборке, а не ко всем ожиданиям блокировок."
+    },
+    {
+      "severity": "minor",
+      "type": "missing_pattern",
+      "article_location": "pg19-monitoring.md:83-95, especially line 95 ('Для наблюдения за порядком обслуживания...')",
+      "claim": "The wording can be read as using pg_stat_autovacuum_scores to observe the actual autovacuum processing order.",
+      "evidence": "The score definition and higher-score/higher-priority statement are correct, and every published score matches autovacuum-scores.log. However, the official documentation explicitly warns that the view uses current source information, which can differ from what an autovacuum worker sees, and therefore is not a completely reliable indicator of which tables will be processed or their order.",
+      "reality": "The view exposes current scores and intended prioritization, not a guaranteed future execution queue or observed historical order.",
+      "source": "https://www.postgresql.org/docs/19/monitoring-stats.html#MONITORING-PG-STAT-AUTOVACUUM-SCORES-VIEW; data/results/autovacuum-scores.log",
+      "fix": "Change the order-of-service wording to 'оценки текущего приоритета' and add a short caveat that the actual order can differ. The article's rejection of a universal score > 10 alert is appropriate and should remain.",
+      "suggested_correction": "Заменить утверждение о наблюдении за порядком обслуживания на оценку текущего приоритета и отметить, что фактический выбор и порядок autovacuum могут отличаться."
+    },
+    {
+      "severity": "minor",
+      "type": "missing_pattern",
+      "article_location": "pg19-monitoring.md:227 (final 'Минимальный следующий шаг после апгрейда...')",
+      "claim": "Adding pg_stat_lock, wal_fpi_bytes, mem_exceeded_count, and stats_reset is presented as the universal minimum next step after every upgrade.",
+      "evidence": "The experiments establish that these counters exist and work, but not that every installation needs all of them. In particular, mem_exceeded_count is meaningful only where logical replication/decoding slots are used; the article's own query returns no rows when no slots exist.",
+      "reality": "This is a reasonable baseline for the demonstrated workloads, not an evidence-backed universal operational minimum.",
+      "source": "pg19-monitoring.md:147-168,227; data/results/wal-decoding.log; data/results/article-queries.log",
+      "fix": "Qualify the recommendation by workload: collect mem_exceeded_count when logical slots are present, and present the remaining items as a suggested baseline rather than a universal minimum.",
+      "suggested_correction": "Смягчить формулировку до рекомендуемого базового набора и отдельно оговорить mem_exceeded_count для кластеров, использующих логическое декодирование."
+    }
+  ],
+  "verified_coverage": {
+    "lock_numbers_and_interpretation": {
+      "result": "verified with scope caveat above",
+      "details": "One Lock/transactionid waiter and two Lock/tuple waiters match lock-activity.csv. Units are milliseconds. Deltas and the approximate 9.1-second total match lock-before.csv and lock-after.csv exactly."
+    },
+    "autovacuum": {
+      "result": "verified",
+      "details": "Three initial 20000-row tables, two 90% updates, one 5% update, 20000 inserted rows, n_dead_tup values, all component scores, final scores, and do_vacuum/do_analyze=true agree with scripts and autovacuum-scores.log. score is the maximum component score and higher score means higher priority; it is not a percentage or dead-tuple count."
+    },
+    "wal_fpi": {
+      "result": "verified",
+      "details": "wal-decoding.log exactly reports 3/1/4641/4508 and 4/0/370/0 for wal_records/wal_fpi/wal_bytes/wal_fpi_bytes. Read-only SQL confirmed full_page_writes=on, wal_compression=off, wal_block_size=8192. The caution not to calculate wal_fpi_bytes as wal_fpi * 8192 is correct; the measured FPI payload need not equal a full 8192-byte page."
+    },
+    "logical_decoding": {
+      "result": "verified",
+      "details": "The 1MB setting, 20000-row update, spill_txns=1, mem_exceeded_count=10, spill_count=11, and spill_bytes=10880000 all match wal-decoding.log. The distinction between memory-limit overruns and spill-file writes is correct. effective_wal_level changed replica -> logical -> replica in the raw log."
+    },
+    "recovery": {
+      "result": "verified",
+      "details": "Paused last_replayed_end_lsn=A4/36000000, pause_state=paused, receiver flushed_lsn=A4/37000050, and post-resume replay end A4/37000050 match recovery-before.csv, recovery-paused.csv, recovery-wal-receiver.csv, and recovery-after.csv exactly. flushed_lsn is received and flushed WAL; last_replayed_end_lsn is the end position of replayed WAL. Primary returned zero rows in read-only SQL."
+    },
+    "privileges_and_supplementary_objects": {
+      "result": "verified",
+      "details": "privileges.log confirms plain-role reads of pg_stat_lock and pg_stat_autovacuum_scores, permission denied for pg_dsm_registry_allocations, NULL multixact fields for the plain role, and visible results for pg_monitor. Multixact values 0/0/0 -> 1/2/10 match primary CSV files. Progress started_by/mode values and stats_reset behavior match their raw files."
+    },
+    "version_attribution_and_object_existence": {
+      "result": "verified",
+      "details": "The named PG19 additions, log_lock_waits default, log_autoanalyze_min_duration split, effective_wal_level, COPY/WAL wait events, stats_reset additions, subscription counter rename, and buffer wait-event renames are supported by the official PostgreSQL 19.0 release notes and/or 19.0 documentation. No claim was accepted solely from the local 17-to-19 inventory diff."
+    },
+    "numeric_discrepancies": 0,
+    "nonexistent_objects_found": 0,
+    "pg18_features_misattributed_to_pg19": 0
+  }
+}

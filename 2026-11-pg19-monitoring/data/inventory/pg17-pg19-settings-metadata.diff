@@ -1,0 +1,317 @@
+--- 2026-11-pg19-monitoring/data/inventory/pg17/settings-metadata.csv	2026-11-22 16:28:30.322520675 +0500
++++ 2026-11-pg19-monitoring/data/inventory/pg19/settings-metadata.csv	2026-11-22 16:52:37.952852251 +0500
+@@ -10,21 +10,29 @@
+ archive_timeout,Write-Ahead Log / Archiving,sighup,integer,s,0
+ array_nulls,Version and Platform Compatibility / Previous PostgreSQL Versions,user,bool,,on
+ authentication_timeout,Connections and Authentication / Authentication,sighup,integer,s,60
+-autovacuum,Autovacuum,sighup,bool,,on
+-autovacuum_analyze_scale_factor,Autovacuum,sighup,real,,0.1
+-autovacuum_analyze_threshold,Autovacuum,sighup,integer,,50
+-autovacuum_freeze_max_age,Autovacuum,postmaster,integer,,200000000
+-autovacuum_max_workers,Autovacuum,postmaster,integer,,3
+-autovacuum_multixact_freeze_max_age,Autovacuum,postmaster,integer,,400000000
+-autovacuum_naptime,Autovacuum,sighup,integer,s,60
+-autovacuum_vacuum_cost_delay,Autovacuum,sighup,real,ms,2
+-autovacuum_vacuum_cost_limit,Autovacuum,sighup,integer,,-1
+-autovacuum_vacuum_insert_scale_factor,Autovacuum,sighup,real,,0.2
+-autovacuum_vacuum_insert_threshold,Autovacuum,sighup,integer,,1000
+-autovacuum_vacuum_scale_factor,Autovacuum,sighup,real,,0.2
+-autovacuum_vacuum_threshold,Autovacuum,sighup,integer,,50
++autovacuum,Vacuuming / Automatic Vacuuming,sighup,bool,,on
++autovacuum_analyze_scale_factor,Vacuuming / Automatic Vacuuming,sighup,real,,0.1
++autovacuum_analyze_score_weight,Vacuuming / Automatic Vacuuming,sighup,real,,1
++autovacuum_analyze_threshold,Vacuuming / Automatic Vacuuming,sighup,integer,,50
++autovacuum_freeze_max_age,Vacuuming / Automatic Vacuuming,postmaster,integer,,200000000
++autovacuum_freeze_score_weight,Vacuuming / Automatic Vacuuming,sighup,real,,1
++autovacuum_max_parallel_workers,Vacuuming / Automatic Vacuuming,sighup,integer,,0
++autovacuum_max_workers,Vacuuming / Automatic Vacuuming,sighup,integer,,3
++autovacuum_multixact_freeze_max_age,Vacuuming / Automatic Vacuuming,postmaster,integer,,400000000
++autovacuum_multixact_freeze_score_weight,Vacuuming / Automatic Vacuuming,sighup,real,,1
++autovacuum_naptime,Vacuuming / Automatic Vacuuming,sighup,integer,s,60
++autovacuum_vacuum_cost_delay,Vacuuming / Automatic Vacuuming,sighup,real,ms,2
++autovacuum_vacuum_cost_limit,Vacuuming / Automatic Vacuuming,sighup,integer,,-1
++autovacuum_vacuum_insert_scale_factor,Vacuuming / Automatic Vacuuming,sighup,real,,0.2
++autovacuum_vacuum_insert_score_weight,Vacuuming / Automatic Vacuuming,sighup,real,,1
++autovacuum_vacuum_insert_threshold,Vacuuming / Automatic Vacuuming,sighup,integer,,1000
++autovacuum_vacuum_max_threshold,Vacuuming / Automatic Vacuuming,sighup,integer,,100000000
++autovacuum_vacuum_scale_factor,Vacuuming / Automatic Vacuuming,sighup,real,,0.2
++autovacuum_vacuum_score_weight,Vacuuming / Automatic Vacuuming,sighup,real,,1
++autovacuum_vacuum_threshold,Vacuuming / Automatic Vacuuming,sighup,integer,,50
++autovacuum_worker_slots,Vacuuming / Automatic Vacuuming,postmaster,integer,,16
+ autovacuum_work_mem,Resource Usage / Memory,sighup,integer,kB,-1
+-backend_flush_after,Resource Usage / Asynchronous Behavior,user,integer,8kB,0
++backend_flush_after,Resource Usage / I/O,user,integer,8kB,0
+ backslash_quote,Version and Platform Compatibility / Previous PostgreSQL Versions,user,enum,,safe_encoding
+ backtrace_functions,Developer Options,superuser,string,,
+ bgwriter_delay,Resource Usage / Background Writer,sighup,integer,ms,200
+@@ -47,6 +55,7 @@
+ commit_delay,Write-Ahead Log / Settings,superuser,integer,,0
+ commit_siblings,Write-Ahead Log / Settings,user,integer,,5
+ commit_timestamp_buffers,Resource Usage / Memory,postmaster,integer,8kB,0
++composite_type_mismatch,Developer Options,superuser,enum,,error
+ compute_query_id,Statistics / Monitoring,superuser,enum,,auto
+ config_file,File Locations,postmaster,string,,
+ constraint_exclusion,Query Tuning / Other Planner Options,user,enum,,partition
+@@ -63,27 +72,32 @@
+ deadlock_timeout,Lock Management,superuser,integer,ms,1000
+ debug_assertions,Preset Options,internal,bool,,off
+ debug_discard_caches,Developer Options,superuser,integer,,0
++debug_exec_backend,Preset Options,internal,bool,,off
+ debug_io_direct,Developer Options,postmaster,string,,
+ debug_logical_replication_streaming,Developer Options,user,enum,,buffered
+ debug_parallel_query,Developer Options,user,enum,,off
+ debug_pretty_print,Reporting and Logging / What to Log,user,bool,,on
+ debug_print_parse,Reporting and Logging / What to Log,user,bool,,off
+ debug_print_plan,Reporting and Logging / What to Log,user,bool,,off
++debug_print_raw_parse,Reporting and Logging / What to Log,user,bool,,off
+ debug_print_rewritten,Reporting and Logging / What to Log,user,bool,,off
+ default_statistics_target,Query Tuning / Other Planner Options,user,integer,,100
+ default_table_access_method,Client Connection Defaults / Statement Behavior,user,string,,heap
+ default_tablespace,Client Connection Defaults / Statement Behavior,user,string,,
+ default_text_search_config,Client Connection Defaults / Locale and Formatting,user,string,,pg_catalog.simple
+-default_toast_compression,Client Connection Defaults / Statement Behavior,user,enum,,pglz
++default_toast_compression,Client Connection Defaults / Statement Behavior,user,enum,,lz4
+ default_transaction_deferrable,Client Connection Defaults / Statement Behavior,user,bool,,off
+ default_transaction_isolation,Client Connection Defaults / Statement Behavior,user,enum,,read committed
+ default_transaction_read_only,Client Connection Defaults / Statement Behavior,user,bool,,off
+ dynamic_library_path,Client Connection Defaults / Other Defaults,superuser,string,,$libdir
+ dynamic_shared_memory_type,Resource Usage / Memory,postmaster,enum,,posix
+ effective_cache_size,Query Tuning / Planner Cost Constants,user,integer,8kB,524288
+-effective_io_concurrency,Resource Usage / Asynchronous Behavior,user,integer,,1
++effective_io_concurrency,Resource Usage / I/O,user,integer,,16
++effective_wal_level,Preset Options,internal,enum,,replica
+ enable_async_append,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_bitmapscan,Query Tuning / Planner Method Configuration,user,bool,,on
++enable_distinct_reordering,Query Tuning / Planner Method Configuration,user,bool,,on
++enable_eager_aggregate,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_gathermerge,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_group_by_reordering,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_hashagg,Query Tuning / Planner Method Configuration,user,bool,,on
+@@ -101,16 +115,17 @@
+ enable_partitionwise_aggregate,Query Tuning / Planner Method Configuration,user,bool,,off
+ enable_partitionwise_join,Query Tuning / Planner Method Configuration,user,bool,,off
+ enable_presorted_aggregate,Query Tuning / Planner Method Configuration,user,bool,,on
++enable_self_join_elimination,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_seqscan,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_sort,Query Tuning / Planner Method Configuration,user,bool,,on
+ enable_tidscan,Query Tuning / Planner Method Configuration,user,bool,,on
+-escape_string_warning,Version and Platform Compatibility / Previous PostgreSQL Versions,user,bool,,on
+ event_source,Reporting and Logging / Where to Log,postmaster,string,,PostgreSQL
+ event_triggers,Client Connection Defaults / Statement Behavior,superuser,bool,,on
+ exit_on_error,Error Handling,user,bool,,off
+-extension_destdir,File Locations,superuser,string,,
++extension_control_path,Client Connection Defaults / Other Defaults,superuser,string,,$system
+ external_pid_file,File Locations,postmaster,string,,
+ extra_float_digits,Client Connection Defaults / Locale and Formatting,user,integer,,1
++file_copy_method,Resource Usage / Disk,user,enum,,copy
+ file_extend_method,Resource Usage / Disk,sighup,enum,,posix_fallocate
+ from_collapse_limit,Query Tuning / Other Planner Options,user,integer,,8
+ fsync,Write-Ahead Log / Settings,sighup,bool,,on
+@@ -127,6 +142,7 @@
+ gss_accept_delegation,Connections and Authentication / Authentication,sighup,bool,,off
+ hash_mem_multiplier,Resource Usage / Memory,user,real,,2
+ hba_file,File Locations,postmaster,string,,
++hosts_file,File Locations,postmaster,string,,
+ hot_standby,Replication / Standby Servers,postmaster,bool,,on
+ hot_standby_feedback,Replication / Standby Servers,sighup,bool,,off
+ huge_pages,Resource Usage / Memory,postmaster,enum,,try
+@@ -135,6 +151,7 @@
+ icu_validation_level,Client Connection Defaults / Locale and Formatting,user,enum,,warning
+ ident_file,File Locations,postmaster,string,,
+ idle_in_transaction_session_timeout,Client Connection Defaults / Statement Behavior,user,integer,ms,0
++idle_replication_slot_timeout,Replication / Sending Servers,sighup,integer,s,0
+ idle_session_timeout,Client Connection Defaults / Statement Behavior,user,integer,ms,0
+ ignore_checksum_failure,Developer Options,superuser,bool,,off
+ ignore_invalid_pages,Developer Options,postmaster,bool,,off
+@@ -142,8 +159,15 @@
+ in_hot_standby,Preset Options,internal,bool,,off
+ integer_datetimes,Preset Options,internal,bool,,on
+ IntervalStyle,Client Connection Defaults / Locale and Formatting,user,enum,,postgres
+-io_combine_limit,Resource Usage / Asynchronous Behavior,user,integer,8kB,16
+-jit,Query Tuning / Other Planner Options,user,bool,,on
++io_combine_limit,Resource Usage / I/O,user,integer,8kB,16
++io_max_combine_limit,Resource Usage / I/O,postmaster,integer,8kB,16
++io_max_concurrency,Resource Usage / I/O,postmaster,integer,,-1
++io_max_workers,Resource Usage / I/O,sighup,integer,,8
++io_method,Resource Usage / I/O,postmaster,enum,,worker
++io_min_workers,Resource Usage / I/O,sighup,integer,,2
++io_worker_idle_timeout,Resource Usage / I/O,sighup,integer,ms,60000
++io_worker_launch_interval,Resource Usage / I/O,sighup,integer,ms,100
++jit,Query Tuning / Other Planner Options,user,bool,,off
+ jit_above_cost,Query Tuning / Planner Cost Constants,user,real,,100000
+ jit_debugging_support,Developer Options,superuser-backend,bool,,off
+ jit_dump_bitcode,Developer Options,superuser,bool,,off
+@@ -164,9 +188,10 @@
+ local_preload_libraries,Client Connection Defaults / Shared Library Preloading,user,string,,
+ lock_timeout,Client Connection Defaults / Statement Behavior,user,integer,ms,0
+ lo_compat_privileges,Version and Platform Compatibility / Previous PostgreSQL Versions,superuser,bool,,off
++log_autoanalyze_min_duration,Reporting and Logging / What to Log,sighup,integer,ms,600000
+ log_autovacuum_min_duration,Reporting and Logging / What to Log,sighup,integer,ms,600000
+ log_checkpoints,Reporting and Logging / What to Log,sighup,bool,,on
+-log_connections,Reporting and Logging / What to Log,superuser-backend,bool,,off
++log_connections,Reporting and Logging / What to Log,superuser-backend,string,,
+ log_destination,Reporting and Logging / Where to Log,sighup,string,,stderr
+ log_directory,Reporting and Logging / Where to Log,sighup,string,,log
+ log_disconnections,Reporting and Logging / What to Log,superuser-backend,bool,,off
+@@ -179,11 +204,12 @@
+ log_hostname,Reporting and Logging / What to Log,sighup,bool,,off
+ logical_decoding_work_mem,Resource Usage / Memory,user,integer,kB,65536
+ log_line_prefix,Reporting and Logging / What to Log,sighup,string,,%m [%p] 
+-log_lock_waits,Reporting and Logging / What to Log,superuser,bool,,off
++log_lock_failures,Reporting and Logging / What to Log,superuser,bool,,off
++log_lock_waits,Reporting and Logging / What to Log,superuser,bool,,on
+ log_min_duration_sample,Reporting and Logging / When to Log,superuser,integer,ms,-1
+ log_min_duration_statement,Reporting and Logging / When to Log,superuser,integer,ms,-1
+ log_min_error_statement,Reporting and Logging / When to Log,superuser,enum,,error
+-log_min_messages,Reporting and Logging / When to Log,superuser,enum,,warning
++log_min_messages,Reporting and Logging / When to Log,superuser,string,,warning
+ log_parameter_max_length,Reporting and Logging / What to Log,superuser,integer,B,-1
+ log_parameter_max_length_on_error,Reporting and Logging / What to Log,user,integer,B,0
+ log_parser_stats,Statistics / Monitoring,superuser,bool,,off
+@@ -200,24 +226,26 @@
+ log_timezone,Reporting and Logging / What to Log,sighup,string,,GMT
+ log_transaction_sample_rate,Reporting and Logging / When to Log,superuser,real,,0
+ log_truncate_on_rotation,Reporting and Logging / Where to Log,sighup,bool,,off
+-maintenance_io_concurrency,Resource Usage / Asynchronous Behavior,user,integer,,10
++maintenance_io_concurrency,Resource Usage / I/O,user,integer,,16
+ maintenance_work_mem,Resource Usage / Memory,user,integer,kB,65536
++max_active_replication_origins,Replication / Subscribers,postmaster,integer,,10
+ max_connections,Connections and Authentication / Connection Settings,postmaster,integer,,100
+ max_files_per_process,Resource Usage / Kernel Resources,postmaster,integer,,1000
+ max_function_args,Preset Options,internal,integer,,100
+ max_identifier_length,Preset Options,internal,integer,,63
+ max_index_keys,Preset Options,internal,integer,,32
+-max_locks_per_transaction,Lock Management,postmaster,integer,,64
++max_locks_per_transaction,Lock Management,postmaster,integer,,128
+ max_logical_replication_workers,Replication / Subscribers,postmaster,integer,,4
+ max_notify_queue_pages,Resource Usage / Disk,postmaster,integer,,1048576
+ max_parallel_apply_workers_per_subscription,Replication / Subscribers,sighup,integer,,2
+-max_parallel_maintenance_workers,Resource Usage / Asynchronous Behavior,user,integer,,2
+-max_parallel_workers,Resource Usage / Asynchronous Behavior,user,integer,,8
+-max_parallel_workers_per_gather,Resource Usage / Asynchronous Behavior,user,integer,,2
++max_parallel_maintenance_workers,Resource Usage / Worker Processes,user,integer,,2
++max_parallel_workers,Resource Usage / Worker Processes,user,integer,,8
++max_parallel_workers_per_gather,Resource Usage / Worker Processes,user,integer,,2
+ max_pred_locks_per_page,Lock Management,sighup,integer,,2
+ max_pred_locks_per_relation,Lock Management,sighup,integer,,-2
+ max_pred_locks_per_transaction,Lock Management,postmaster,integer,,64
+ max_prepared_transactions,Resource Usage / Memory,postmaster,integer,,0
++max_repack_replication_slots,Replication / Sending Servers,postmaster,integer,,5
+ max_replication_slots,Replication / Sending Servers,postmaster,integer,,10
+ max_slot_wal_keep_size,Replication / Sending Servers,sighup,integer,MB,-1
+ max_stack_depth,Resource Usage / Memory,superuser,integer,kB,100
+@@ -226,19 +254,24 @@
+ max_sync_workers_per_subscription,Replication / Subscribers,sighup,integer,,2
+ max_wal_senders,Replication / Sending Servers,postmaster,integer,,10
+ max_wal_size,Write-Ahead Log / Checkpoints,sighup,integer,MB,1024
+-max_worker_processes,Resource Usage / Asynchronous Behavior,postmaster,integer,,8
++max_worker_processes,Resource Usage / Worker Processes,postmaster,integer,,8
++md5_password_warnings,Connections and Authentication / Authentication,user,bool,,on
+ min_dynamic_shared_memory,Resource Usage / Memory,postmaster,integer,MB,0
++min_eager_agg_group_size,Query Tuning / Planner Cost Constants,user,real,,8
+ min_parallel_index_scan_size,Query Tuning / Planner Cost Constants,user,integer,8kB,64
+ min_parallel_table_scan_size,Query Tuning / Planner Cost Constants,user,integer,8kB,1024
+ min_wal_size,Write-Ahead Log / Checkpoints,sighup,integer,MB,80
+ multixact_member_buffers,Resource Usage / Memory,postmaster,integer,8kB,32
+ multixact_offset_buffers,Resource Usage / Memory,postmaster,integer,8kB,16
+ notify_buffers,Resource Usage / Memory,postmaster,integer,8kB,16
++num_os_semaphores,Preset Options,internal,integer,,0
++oauth_validator_libraries,Connections and Authentication / Authentication,sighup,string,,
+ output_plugin_libraries,Replication / Sending Servers,superuser,string,,"pgoutput, test_decoding"
+-parallel_leader_participation,Resource Usage / Asynchronous Behavior,user,bool,,on
++parallel_leader_participation,Resource Usage / Worker Processes,user,bool,,on
+ parallel_setup_cost,Query Tuning / Planner Cost Constants,user,real,,1000
+ parallel_tuple_cost,Query Tuning / Planner Cost Constants,user,real,,0.1
+ password_encryption,Connections and Authentication / Authentication,user,enum,,scram-sha-256
++password_expiration_warning_threshold,Connections and Authentication / Authentication,sighup,integer,s,604800
+ pg_stat_statements.max,Customized Options,postmaster,integer,,5000
+ pg_stat_statements.save,Customized Options,sighup,bool,,on
+ pg_stat_statements.track,Customized Options,superuser,enum,,top
+@@ -279,8 +312,8 @@
+ seq_page_cost,Query Tuning / Planner Cost Constants,user,real,,1
+ serializable_buffers,Resource Usage / Memory,postmaster,integer,8kB,32
+ server_encoding,Preset Options,internal,string,,SQL_ASCII
+-server_version,Preset Options,internal,string,,17.11 (Ubuntu 17.11-1.pgdg24.04+2)
+-server_version_num,Preset Options,internal,integer,,170011
++server_version,Preset Options,internal,string,,19.0 (Ubuntu 19.0-2.pgdg24.04+1)
++server_version_num,Preset Options,internal,integer,,190000
+ session_preload_libraries,Client Connection Defaults / Shared Library Preloading,superuser,string,,
+ session_replication_role,Client Connection Defaults / Statement Behavior,superuser,enum,,origin
+ shared_buffers,Resource Usage / Memory,postmaster,integer,8kB,16384
+@@ -295,7 +328,7 @@
+ ssl_crl_dir,Connections and Authentication / SSL,sighup,string,,
+ ssl_crl_file,Connections and Authentication / SSL,sighup,string,,
+ ssl_dh_params_file,Connections and Authentication / SSL,sighup,string,,
+-ssl_ecdh_curve,Connections and Authentication / SSL,sighup,string,,prime256v1
++ssl_groups,Connections and Authentication / SSL,sighup,string,,X25519:prime256v1
+ ssl_key_file,Connections and Authentication / SSL,sighup,string,,server.key
+ ssl_library,Preset Options,internal,string,,OpenSSL
+ ssl_max_protocol_version,Connections and Authentication / SSL,sighup,enum,,
+@@ -303,6 +336,8 @@
+ ssl_passphrase_command,Connections and Authentication / SSL,sighup,string,,
+ ssl_passphrase_command_supports_reload,Connections and Authentication / SSL,sighup,bool,,off
+ ssl_prefer_server_ciphers,Connections and Authentication / SSL,sighup,bool,,on
++ssl_sni,Connections and Authentication / SSL,sighup,bool,,off
++ssl_tls13_ciphers,Connections and Authentication / SSL,sighup,string,,
+ standard_conforming_strings,Version and Platform Compatibility / Previous PostgreSQL Versions,user,bool,,on
+ statement_timeout,Client Connection Defaults / Statement Behavior,user,integer,ms,0
+ stats_fetch_consistency,Statistics / Cumulative Query and Index Statistics,user,enum,,cache
+@@ -327,12 +362,14 @@
+ temp_tablespaces,Client Connection Defaults / Statement Behavior,user,string,,
+ TimeZone,Client Connection Defaults / Locale and Formatting,user,string,,GMT
+ timezone_abbreviations,Client Connection Defaults / Locale and Formatting,user,string,,
++timing_clock_source,Resource Usage / Time,superuser,enum,,auto
+ trace_connection_negotiation,Developer Options,postmaster,bool,,off
+ trace_notify,Developer Options,user,bool,,off
+ trace_sort,Developer Options,user,bool,,off
+ track_activities,Statistics / Cumulative Query and Index Statistics,superuser,bool,,on
+ track_activity_query_size,Statistics / Cumulative Query and Index Statistics,postmaster,integer,B,1024
+ track_commit_timestamp,Replication / Sending Servers,postmaster,bool,,off
++track_cost_delay_timing,Statistics / Cumulative Query and Index Statistics,superuser,bool,,off
+ track_counts,Statistics / Cumulative Query and Index Statistics,superuser,bool,,on
+ track_functions,Statistics / Cumulative Query and Index Statistics,superuser,enum,,none
+ track_io_timing,Statistics / Cumulative Query and Index Statistics,superuser,bool,,off
+@@ -348,17 +385,19 @@
+ unix_socket_permissions,Connections and Authentication / Connection Settings,postmaster,integer,,511
+ update_process_title,Reporting and Logging / Process Title,superuser,bool,,on
+ vacuum_buffer_usage_limit,Resource Usage / Memory,user,integer,kB,2048
+-vacuum_cost_delay,Resource Usage / Cost-Based Vacuum Delay,user,real,ms,0
+-vacuum_cost_limit,Resource Usage / Cost-Based Vacuum Delay,user,integer,,200
+-vacuum_cost_page_dirty,Resource Usage / Cost-Based Vacuum Delay,user,integer,,20
+-vacuum_cost_page_hit,Resource Usage / Cost-Based Vacuum Delay,user,integer,,1
+-vacuum_cost_page_miss,Resource Usage / Cost-Based Vacuum Delay,user,integer,,2
+-vacuum_failsafe_age,Client Connection Defaults / Statement Behavior,user,integer,,1600000000
+-vacuum_freeze_min_age,Client Connection Defaults / Statement Behavior,user,integer,,50000000
+-vacuum_freeze_table_age,Client Connection Defaults / Statement Behavior,user,integer,,150000000
+-vacuum_multixact_failsafe_age,Client Connection Defaults / Statement Behavior,user,integer,,1600000000
+-vacuum_multixact_freeze_min_age,Client Connection Defaults / Statement Behavior,user,integer,,5000000
+-vacuum_multixact_freeze_table_age,Client Connection Defaults / Statement Behavior,user,integer,,150000000
++vacuum_cost_delay,Vacuuming / Cost-Based Vacuum Delay,user,real,ms,0
++vacuum_cost_limit,Vacuuming / Cost-Based Vacuum Delay,user,integer,,200
++vacuum_cost_page_dirty,Vacuuming / Cost-Based Vacuum Delay,user,integer,,20
++vacuum_cost_page_hit,Vacuuming / Cost-Based Vacuum Delay,user,integer,,1
++vacuum_cost_page_miss,Vacuuming / Cost-Based Vacuum Delay,user,integer,,2
++vacuum_failsafe_age,Vacuuming / Freezing,user,integer,,1600000000
++vacuum_freeze_min_age,Vacuuming / Freezing,user,integer,,50000000
++vacuum_freeze_table_age,Vacuuming / Freezing,user,integer,,150000000
++vacuum_max_eager_freeze_failure_rate,Vacuuming / Freezing,user,real,,0.03
++vacuum_multixact_failsafe_age,Vacuuming / Freezing,user,integer,,1600000000
++vacuum_multixact_freeze_min_age,Vacuuming / Freezing,user,integer,,5000000
++vacuum_multixact_freeze_table_age,Vacuuming / Freezing,user,integer,,150000000
++vacuum_truncate,Vacuuming / Default Behavior,user,bool,,on
+ wal_block_size,Preset Options,internal,integer,,8192
+ wal_buffers,Write-Ahead Log / Settings,postmaster,integer,8kB,-1
+ wal_compression,Write-Ahead Log / Settings,superuser,enum,,off
+@@ -370,10 +409,11 @@
+ wal_log_hints,Write-Ahead Log / Settings,postmaster,bool,,off
+ wal_receiver_create_temp_slot,Replication / Standby Servers,sighup,bool,,off
+ wal_receiver_status_interval,Replication / Standby Servers,sighup,integer,s,10
+-wal_receiver_timeout,Replication / Standby Servers,sighup,integer,ms,60000
++wal_receiver_timeout,Replication / Standby Servers,user,integer,ms,60000
+ wal_recycle,Write-Ahead Log / Settings,superuser,bool,,on
+ wal_retrieve_retry_interval,Replication / Standby Servers,sighup,integer,ms,5000
+ wal_segment_size,Preset Options,internal,integer,B,16777216
++wal_sender_shutdown_timeout,Replication / Sending Servers,user,integer,ms,-1
+ wal_sender_timeout,Replication / Sending Servers,user,integer,ms,60000
+ wal_skip_threshold,Write-Ahead Log / Settings,user,integer,kB,2048
+ wal_summary_keep_time,Write-Ahead Log / Summarization,sighup,integer,min,14400

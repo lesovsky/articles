@@ -1,0 +1,2 @@
+status,receive_start_lsn,written_lsn,flushed_lsn,latest_end_lsn
+streaming,A4/36000000,A4/37000050,A4/37000050,A4/37000050

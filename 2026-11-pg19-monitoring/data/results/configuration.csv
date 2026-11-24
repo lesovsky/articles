@@ -1,0 +1,8 @@
+name,setting,boot_val,context
+effective_wal_level,replica,replica,internal
+log_autoanalyze_min_duration,600000,600000,sighup
+log_autovacuum_min_duration,600000,600000,sighup
+logical_decoding_work_mem,65536,65536,user
+log_lock_waits,on,on,superuser
+stats_fetch_consistency,cache,cache,user
+wal_level,replica,replica,postmaster

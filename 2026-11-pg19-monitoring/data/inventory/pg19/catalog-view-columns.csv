@@ -1,0 +1,908 @@
+schema,view,position,column,data_type
+pg_catalog,pg_aios,1,pid,integer
+pg_catalog,pg_aios,2,io_id,integer
+pg_catalog,pg_aios,3,io_generation,bigint
+pg_catalog,pg_aios,4,state,text
+pg_catalog,pg_aios,5,operation,text
+pg_catalog,pg_aios,6,off,bigint
+pg_catalog,pg_aios,7,length,bigint
+pg_catalog,pg_aios,8,target,text
+pg_catalog,pg_aios,9,handle_data_len,smallint
+pg_catalog,pg_aios,10,raw_result,integer
+pg_catalog,pg_aios,11,result,text
+pg_catalog,pg_aios,12,target_desc,text
+pg_catalog,pg_aios,13,f_sync,boolean
+pg_catalog,pg_aios,14,f_localmem,boolean
+pg_catalog,pg_aios,15,f_buffered,boolean
+pg_catalog,pg_available_extension_versions,1,name,name
+pg_catalog,pg_available_extension_versions,2,version,text
+pg_catalog,pg_available_extension_versions,3,installed,boolean
+pg_catalog,pg_available_extension_versions,4,superuser,boolean
+pg_catalog,pg_available_extension_versions,5,trusted,boolean
+pg_catalog,pg_available_extension_versions,6,relocatable,boolean
+pg_catalog,pg_available_extension_versions,7,schema,name
+pg_catalog,pg_available_extension_versions,8,requires,name[]
+pg_catalog,pg_available_extension_versions,9,location,text
+pg_catalog,pg_available_extension_versions,10,comment,text
+pg_catalog,pg_available_extensions,1,name,name
+pg_catalog,pg_available_extensions,2,default_version,text
+pg_catalog,pg_available_extensions,3,installed_version,text
+pg_catalog,pg_available_extensions,4,location,text
+pg_catalog,pg_available_extensions,5,comment,text
+pg_catalog,pg_backend_memory_contexts,1,name,text
+pg_catalog,pg_backend_memory_contexts,2,ident,text
+pg_catalog,pg_backend_memory_contexts,3,type,text
+pg_catalog,pg_backend_memory_contexts,4,level,integer
+pg_catalog,pg_backend_memory_contexts,5,path,integer[]
+pg_catalog,pg_backend_memory_contexts,6,total_bytes,bigint
+pg_catalog,pg_backend_memory_contexts,7,total_nblocks,bigint
+pg_catalog,pg_backend_memory_contexts,8,free_bytes,bigint
+pg_catalog,pg_backend_memory_contexts,9,free_chunks,bigint
+pg_catalog,pg_backend_memory_contexts,10,used_bytes,bigint
+pg_catalog,pg_config,1,name,text
+pg_catalog,pg_config,2,setting,text
+pg_catalog,pg_cursors,1,name,text
+pg_catalog,pg_cursors,2,statement,text
+pg_catalog,pg_cursors,3,is_holdable,boolean
+pg_catalog,pg_cursors,4,is_binary,boolean
+pg_catalog,pg_cursors,5,is_scrollable,boolean
+pg_catalog,pg_cursors,6,creation_time,timestamp with time zone
+pg_catalog,pg_dsm_registry_allocations,1,name,text
+pg_catalog,pg_dsm_registry_allocations,2,type,text
+pg_catalog,pg_dsm_registry_allocations,3,size,bigint
+pg_catalog,pg_file_settings,1,sourcefile,text
+pg_catalog,pg_file_settings,2,sourceline,integer
+pg_catalog,pg_file_settings,3,seqno,integer
+pg_catalog,pg_file_settings,4,name,text
+pg_catalog,pg_file_settings,5,setting,text
+pg_catalog,pg_file_settings,6,applied,boolean
+pg_catalog,pg_file_settings,7,error,text
+pg_catalog,pg_group,1,groname,name
+pg_catalog,pg_group,2,grosysid,oid
+pg_catalog,pg_group,3,grolist,oid[]
+pg_catalog,pg_hba_file_rules,1,rule_number,integer
+pg_catalog,pg_hba_file_rules,2,file_name,text
+pg_catalog,pg_hba_file_rules,3,line_number,integer
+pg_catalog,pg_hba_file_rules,4,type,text
+pg_catalog,pg_hba_file_rules,5,database,text[]
+pg_catalog,pg_hba_file_rules,6,user_name,text[]
+pg_catalog,pg_hba_file_rules,7,address,text
+pg_catalog,pg_hba_file_rules,8,netmask,text
+pg_catalog,pg_hba_file_rules,9,auth_method,text
+pg_catalog,pg_hba_file_rules,10,options,text[]
+pg_catalog,pg_hba_file_rules,11,error,text
+pg_catalog,pg_ident_file_mappings,1,map_number,integer
+pg_catalog,pg_ident_file_mappings,2,file_name,text
+pg_catalog,pg_ident_file_mappings,3,line_number,integer
+pg_catalog,pg_ident_file_mappings,4,map_name,text
+pg_catalog,pg_ident_file_mappings,5,sys_name,text
+pg_catalog,pg_ident_file_mappings,6,pg_username,text
+pg_catalog,pg_ident_file_mappings,7,error,text
+pg_catalog,pg_indexes,1,schemaname,name
+pg_catalog,pg_indexes,2,tablename,name
+pg_catalog,pg_indexes,3,indexname,name
+pg_catalog,pg_indexes,4,tablespace,name
+pg_catalog,pg_indexes,5,indexdef,text
+pg_catalog,pg_locks,1,locktype,text
+pg_catalog,pg_locks,2,database,oid
+pg_catalog,pg_locks,3,relation,oid
+pg_catalog,pg_locks,4,page,integer
+pg_catalog,pg_locks,5,tuple,smallint
+pg_catalog,pg_locks,6,virtualxid,text
+pg_catalog,pg_locks,7,transactionid,xid
+pg_catalog,pg_locks,8,classid,oid
+pg_catalog,pg_locks,9,objid,oid
+pg_catalog,pg_locks,10,objsubid,smallint
+pg_catalog,pg_locks,11,virtualtransaction,text
+pg_catalog,pg_locks,12,pid,integer
+pg_catalog,pg_locks,13,mode,text
+pg_catalog,pg_locks,14,granted,boolean
+pg_catalog,pg_locks,15,fastpath,boolean
+pg_catalog,pg_locks,16,waitstart,timestamp with time zone
+pg_catalog,pg_matviews,1,schemaname,name
+pg_catalog,pg_matviews,2,matviewname,name
+pg_catalog,pg_matviews,3,matviewowner,name
+pg_catalog,pg_matviews,4,tablespace,name
+pg_catalog,pg_matviews,5,hasindexes,boolean
+pg_catalog,pg_matviews,6,ispopulated,boolean
+pg_catalog,pg_matviews,7,definition,text
+pg_catalog,pg_policies,1,schemaname,name
+pg_catalog,pg_policies,2,tablename,name
+pg_catalog,pg_policies,3,policyname,name
+pg_catalog,pg_policies,4,permissive,text
+pg_catalog,pg_policies,5,roles,name[]
+pg_catalog,pg_policies,6,cmd,text
+pg_catalog,pg_policies,7,qual,text
+pg_catalog,pg_policies,8,with_check,text
+pg_catalog,pg_prepared_statements,1,name,text
+pg_catalog,pg_prepared_statements,2,statement,text
+pg_catalog,pg_prepared_statements,3,prepare_time,timestamp with time zone
+pg_catalog,pg_prepared_statements,4,parameter_types,regtype[]
+pg_catalog,pg_prepared_statements,5,result_types,regtype[]
+pg_catalog,pg_prepared_statements,6,from_sql,boolean
+pg_catalog,pg_prepared_statements,7,generic_plans,bigint
+pg_catalog,pg_prepared_statements,8,custom_plans,bigint
+pg_catalog,pg_prepared_xacts,1,transaction,xid
+pg_catalog,pg_prepared_xacts,2,gid,text
+pg_catalog,pg_prepared_xacts,3,prepared,timestamp with time zone
+pg_catalog,pg_prepared_xacts,4,owner,name
+pg_catalog,pg_prepared_xacts,5,database,name
+pg_catalog,pg_publication_sequences,1,pubname,name
+pg_catalog,pg_publication_sequences,2,schemaname,name
+pg_catalog,pg_publication_sequences,3,sequencename,name
+pg_catalog,pg_publication_tables,1,pubname,name
+pg_catalog,pg_publication_tables,2,schemaname,name
+pg_catalog,pg_publication_tables,3,tablename,name
+pg_catalog,pg_publication_tables,4,attnames,name[]
+pg_catalog,pg_publication_tables,5,rowfilter,text
+pg_catalog,pg_replication_origin_status,1,local_id,oid
+pg_catalog,pg_replication_origin_status,2,external_id,text
+pg_catalog,pg_replication_origin_status,3,remote_lsn,pg_lsn
+pg_catalog,pg_replication_origin_status,4,local_lsn,pg_lsn
+pg_catalog,pg_replication_slots,1,slot_name,name
+pg_catalog,pg_replication_slots,2,plugin,name
+pg_catalog,pg_replication_slots,3,slot_type,text
+pg_catalog,pg_replication_slots,4,datoid,oid
+pg_catalog,pg_replication_slots,5,database,name
+pg_catalog,pg_replication_slots,6,temporary,boolean
+pg_catalog,pg_replication_slots,7,active,boolean
+pg_catalog,pg_replication_slots,8,active_pid,integer
+pg_catalog,pg_replication_slots,9,xmin,xid
+pg_catalog,pg_replication_slots,10,catalog_xmin,xid
+pg_catalog,pg_replication_slots,11,restart_lsn,pg_lsn
+pg_catalog,pg_replication_slots,12,confirmed_flush_lsn,pg_lsn
+pg_catalog,pg_replication_slots,13,wal_status,text
+pg_catalog,pg_replication_slots,14,safe_wal_size,bigint
+pg_catalog,pg_replication_slots,15,two_phase,boolean
+pg_catalog,pg_replication_slots,16,two_phase_at,pg_lsn
+pg_catalog,pg_replication_slots,17,inactive_since,timestamp with time zone
+pg_catalog,pg_replication_slots,18,conflicting,boolean
+pg_catalog,pg_replication_slots,19,invalidation_reason,text
+pg_catalog,pg_replication_slots,20,failover,boolean
+pg_catalog,pg_replication_slots,21,synced,boolean
+pg_catalog,pg_replication_slots,22,slotsync_skip_reason,text
+pg_catalog,pg_roles,1,rolname,name
+pg_catalog,pg_roles,2,rolsuper,boolean
+pg_catalog,pg_roles,3,rolinherit,boolean
+pg_catalog,pg_roles,4,rolcreaterole,boolean
+pg_catalog,pg_roles,5,rolcreatedb,boolean
+pg_catalog,pg_roles,6,rolcanlogin,boolean
+pg_catalog,pg_roles,7,rolreplication,boolean
+pg_catalog,pg_roles,8,rolconnlimit,integer
+pg_catalog,pg_roles,9,rolpassword,text
+pg_catalog,pg_roles,10,rolvaliduntil,timestamp with time zone
+pg_catalog,pg_roles,11,rolbypassrls,boolean
+pg_catalog,pg_roles,12,rolconfig,text[]
+pg_catalog,pg_roles,13,oid,oid
+pg_catalog,pg_rules,1,schemaname,name
+pg_catalog,pg_rules,2,tablename,name
+pg_catalog,pg_rules,3,rulename,name
+pg_catalog,pg_rules,4,definition,text
+pg_catalog,pg_seclabels,1,objoid,oid
+pg_catalog,pg_seclabels,2,classoid,oid
+pg_catalog,pg_seclabels,3,objsubid,integer
+pg_catalog,pg_seclabels,4,objtype,text
+pg_catalog,pg_seclabels,5,objnamespace,oid
+pg_catalog,pg_seclabels,6,objname,text
+pg_catalog,pg_seclabels,7,provider,text
+pg_catalog,pg_seclabels,8,label,text
+pg_catalog,pg_sequences,1,schemaname,name
+pg_catalog,pg_sequences,2,sequencename,name
+pg_catalog,pg_sequences,3,sequenceowner,name
+pg_catalog,pg_sequences,4,data_type,regtype
+pg_catalog,pg_sequences,5,start_value,bigint
+pg_catalog,pg_sequences,6,min_value,bigint
+pg_catalog,pg_sequences,7,max_value,bigint
+pg_catalog,pg_sequences,8,increment_by,bigint
+pg_catalog,pg_sequences,9,cycle,boolean
+pg_catalog,pg_sequences,10,cache_size,bigint
+pg_catalog,pg_sequences,11,last_value,bigint
+pg_catalog,pg_settings,1,name,text
+pg_catalog,pg_settings,2,setting,text
+pg_catalog,pg_settings,3,unit,text
+pg_catalog,pg_settings,4,category,text
+pg_catalog,pg_settings,5,short_desc,text
+pg_catalog,pg_settings,6,extra_desc,text
+pg_catalog,pg_settings,7,context,text
+pg_catalog,pg_settings,8,vartype,text
+pg_catalog,pg_settings,9,source,text
+pg_catalog,pg_settings,10,min_val,text
+pg_catalog,pg_settings,11,max_val,text
+pg_catalog,pg_settings,12,enumvals,text[]
+pg_catalog,pg_settings,13,boot_val,text
+pg_catalog,pg_settings,14,reset_val,text
+pg_catalog,pg_settings,15,sourcefile,text
+pg_catalog,pg_settings,16,sourceline,integer
+pg_catalog,pg_settings,17,pending_restart,boolean
+pg_catalog,pg_shadow,1,usename,name
+pg_catalog,pg_shadow,2,usesysid,oid
+pg_catalog,pg_shadow,3,usecreatedb,boolean
+pg_catalog,pg_shadow,4,usesuper,boolean
+pg_catalog,pg_shadow,5,userepl,boolean
+pg_catalog,pg_shadow,6,usebypassrls,boolean
+pg_catalog,pg_shadow,7,passwd,text
+pg_catalog,pg_shadow,8,valuntil,timestamp with time zone
+pg_catalog,pg_shadow,9,useconfig,text[]
+pg_catalog,pg_shmem_allocations,1,name,text
+pg_catalog,pg_shmem_allocations,2,off,bigint
+pg_catalog,pg_shmem_allocations,3,size,bigint
+pg_catalog,pg_shmem_allocations,4,allocated_size,bigint
+pg_catalog,pg_shmem_allocations_numa,1,name,text
+pg_catalog,pg_shmem_allocations_numa,2,numa_node,integer
+pg_catalog,pg_shmem_allocations_numa,3,size,bigint
+pg_catalog,pg_stat_activity,1,datid,oid
+pg_catalog,pg_stat_activity,2,datname,name
+pg_catalog,pg_stat_activity,3,pid,integer
+pg_catalog,pg_stat_activity,4,leader_pid,integer
+pg_catalog,pg_stat_activity,5,usesysid,oid
+pg_catalog,pg_stat_activity,6,usename,name
+pg_catalog,pg_stat_activity,7,application_name,text
+pg_catalog,pg_stat_activity,8,client_addr,inet
+pg_catalog,pg_stat_activity,9,client_hostname,text
+pg_catalog,pg_stat_activity,10,client_port,integer
+pg_catalog,pg_stat_activity,11,backend_start,timestamp with time zone
+pg_catalog,pg_stat_activity,12,xact_start,timestamp with time zone
+pg_catalog,pg_stat_activity,13,query_start,timestamp with time zone
+pg_catalog,pg_stat_activity,14,state_change,timestamp with time zone
+pg_catalog,pg_stat_activity,15,wait_event_type,text
+pg_catalog,pg_stat_activity,16,wait_event,text
+pg_catalog,pg_stat_activity,17,state,text
+pg_catalog,pg_stat_activity,18,backend_xid,xid
+pg_catalog,pg_stat_activity,19,backend_xmin,xid
+pg_catalog,pg_stat_activity,20,query_id,bigint
+pg_catalog,pg_stat_activity,21,query,text
+pg_catalog,pg_stat_activity,22,backend_type,text
+pg_catalog,pg_stat_all_indexes,1,relid,oid
+pg_catalog,pg_stat_all_indexes,2,indexrelid,oid
+pg_catalog,pg_stat_all_indexes,3,schemaname,name
+pg_catalog,pg_stat_all_indexes,4,relname,name
+pg_catalog,pg_stat_all_indexes,5,indexrelname,name
+pg_catalog,pg_stat_all_indexes,6,idx_scan,bigint
+pg_catalog,pg_stat_all_indexes,7,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_all_indexes,8,idx_tup_read,bigint
+pg_catalog,pg_stat_all_indexes,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_all_indexes,10,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_all_tables,1,relid,oid
+pg_catalog,pg_stat_all_tables,2,schemaname,name
+pg_catalog,pg_stat_all_tables,3,relname,name
+pg_catalog,pg_stat_all_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_all_tables,5,last_seq_scan,timestamp with time zone
+pg_catalog,pg_stat_all_tables,6,seq_tup_read,bigint
+pg_catalog,pg_stat_all_tables,7,idx_scan,bigint
+pg_catalog,pg_stat_all_tables,8,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_all_tables,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_all_tables,10,n_tup_ins,bigint
+pg_catalog,pg_stat_all_tables,11,n_tup_upd,bigint
+pg_catalog,pg_stat_all_tables,12,n_tup_del,bigint
+pg_catalog,pg_stat_all_tables,13,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_all_tables,14,n_tup_newpage_upd,bigint
+pg_catalog,pg_stat_all_tables,15,n_live_tup,bigint
+pg_catalog,pg_stat_all_tables,16,n_dead_tup,bigint
+pg_catalog,pg_stat_all_tables,17,n_mod_since_analyze,bigint
+pg_catalog,pg_stat_all_tables,18,n_ins_since_vacuum,bigint
+pg_catalog,pg_stat_all_tables,19,last_vacuum,timestamp with time zone
+pg_catalog,pg_stat_all_tables,20,last_autovacuum,timestamp with time zone
+pg_catalog,pg_stat_all_tables,21,last_analyze,timestamp with time zone
+pg_catalog,pg_stat_all_tables,22,last_autoanalyze,timestamp with time zone
+pg_catalog,pg_stat_all_tables,23,vacuum_count,bigint
+pg_catalog,pg_stat_all_tables,24,autovacuum_count,bigint
+pg_catalog,pg_stat_all_tables,25,analyze_count,bigint
+pg_catalog,pg_stat_all_tables,26,autoanalyze_count,bigint
+pg_catalog,pg_stat_all_tables,27,total_vacuum_time,double precision
+pg_catalog,pg_stat_all_tables,28,total_autovacuum_time,double precision
+pg_catalog,pg_stat_all_tables,29,total_analyze_time,double precision
+pg_catalog,pg_stat_all_tables,30,total_autoanalyze_time,double precision
+pg_catalog,pg_stat_all_tables,31,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_archiver,1,archived_count,bigint
+pg_catalog,pg_stat_archiver,2,last_archived_wal,text
+pg_catalog,pg_stat_archiver,3,last_archived_time,timestamp with time zone
+pg_catalog,pg_stat_archiver,4,failed_count,bigint
+pg_catalog,pg_stat_archiver,5,last_failed_wal,text
+pg_catalog,pg_stat_archiver,6,last_failed_time,timestamp with time zone
+pg_catalog,pg_stat_archiver,7,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_autovacuum_scores,1,relid,oid
+pg_catalog,pg_stat_autovacuum_scores,2,schemaname,name
+pg_catalog,pg_stat_autovacuum_scores,3,relname,name
+pg_catalog,pg_stat_autovacuum_scores,4,score,double precision
+pg_catalog,pg_stat_autovacuum_scores,5,xid_score,double precision
+pg_catalog,pg_stat_autovacuum_scores,6,mxid_score,double precision
+pg_catalog,pg_stat_autovacuum_scores,7,vacuum_score,double precision
+pg_catalog,pg_stat_autovacuum_scores,8,vacuum_insert_score,double precision
+pg_catalog,pg_stat_autovacuum_scores,9,analyze_score,double precision
+pg_catalog,pg_stat_autovacuum_scores,10,do_vacuum,boolean
+pg_catalog,pg_stat_autovacuum_scores,11,do_analyze,boolean
+pg_catalog,pg_stat_autovacuum_scores,12,for_wraparound,boolean
+pg_catalog,pg_stat_bgwriter,1,buffers_clean,bigint
+pg_catalog,pg_stat_bgwriter,2,maxwritten_clean,bigint
+pg_catalog,pg_stat_bgwriter,3,buffers_alloc,bigint
+pg_catalog,pg_stat_bgwriter,4,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_checkpointer,1,num_timed,bigint
+pg_catalog,pg_stat_checkpointer,2,num_requested,bigint
+pg_catalog,pg_stat_checkpointer,3,num_done,bigint
+pg_catalog,pg_stat_checkpointer,4,restartpoints_timed,bigint
+pg_catalog,pg_stat_checkpointer,5,restartpoints_req,bigint
+pg_catalog,pg_stat_checkpointer,6,restartpoints_done,bigint
+pg_catalog,pg_stat_checkpointer,7,write_time,double precision
+pg_catalog,pg_stat_checkpointer,8,sync_time,double precision
+pg_catalog,pg_stat_checkpointer,9,buffers_written,bigint
+pg_catalog,pg_stat_checkpointer,10,slru_written,bigint
+pg_catalog,pg_stat_checkpointer,11,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_database,1,datid,oid
+pg_catalog,pg_stat_database,2,datname,name
+pg_catalog,pg_stat_database,3,numbackends,integer
+pg_catalog,pg_stat_database,4,xact_commit,bigint
+pg_catalog,pg_stat_database,5,xact_rollback,bigint
+pg_catalog,pg_stat_database,6,blks_read,bigint
+pg_catalog,pg_stat_database,7,blks_hit,bigint
+pg_catalog,pg_stat_database,8,tup_returned,bigint
+pg_catalog,pg_stat_database,9,tup_fetched,bigint
+pg_catalog,pg_stat_database,10,tup_inserted,bigint
+pg_catalog,pg_stat_database,11,tup_updated,bigint
+pg_catalog,pg_stat_database,12,tup_deleted,bigint
+pg_catalog,pg_stat_database,13,conflicts,bigint
+pg_catalog,pg_stat_database,14,temp_files,bigint
+pg_catalog,pg_stat_database,15,temp_bytes,bigint
+pg_catalog,pg_stat_database,16,deadlocks,bigint
+pg_catalog,pg_stat_database,17,checksum_failures,bigint
+pg_catalog,pg_stat_database,18,checksum_last_failure,timestamp with time zone
+pg_catalog,pg_stat_database,19,blk_read_time,double precision
+pg_catalog,pg_stat_database,20,blk_write_time,double precision
+pg_catalog,pg_stat_database,21,session_time,double precision
+pg_catalog,pg_stat_database,22,active_time,double precision
+pg_catalog,pg_stat_database,23,idle_in_transaction_time,double precision
+pg_catalog,pg_stat_database,24,sessions,bigint
+pg_catalog,pg_stat_database,25,sessions_abandoned,bigint
+pg_catalog,pg_stat_database,26,sessions_fatal,bigint
+pg_catalog,pg_stat_database,27,sessions_killed,bigint
+pg_catalog,pg_stat_database,28,parallel_workers_to_launch,bigint
+pg_catalog,pg_stat_database,29,parallel_workers_launched,bigint
+pg_catalog,pg_stat_database,30,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_database_conflicts,1,datid,oid
+pg_catalog,pg_stat_database_conflicts,2,datname,name
+pg_catalog,pg_stat_database_conflicts,3,confl_tablespace,bigint
+pg_catalog,pg_stat_database_conflicts,4,confl_lock,bigint
+pg_catalog,pg_stat_database_conflicts,5,confl_snapshot,bigint
+pg_catalog,pg_stat_database_conflicts,6,confl_bufferpin,bigint
+pg_catalog,pg_stat_database_conflicts,7,confl_deadlock,bigint
+pg_catalog,pg_stat_database_conflicts,8,confl_active_logicalslot,bigint
+pg_catalog,pg_stat_database_conflicts,9,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_gssapi,1,pid,integer
+pg_catalog,pg_stat_gssapi,2,gss_authenticated,boolean
+pg_catalog,pg_stat_gssapi,3,principal,text
+pg_catalog,pg_stat_gssapi,4,encrypted,boolean
+pg_catalog,pg_stat_gssapi,5,credentials_delegated,boolean
+pg_catalog,pg_stat_io,1,backend_type,text
+pg_catalog,pg_stat_io,2,object,text
+pg_catalog,pg_stat_io,3,context,text
+pg_catalog,pg_stat_io,4,reads,bigint
+pg_catalog,pg_stat_io,5,read_bytes,numeric
+pg_catalog,pg_stat_io,6,read_time,double precision
+pg_catalog,pg_stat_io,7,writes,bigint
+pg_catalog,pg_stat_io,8,write_bytes,numeric
+pg_catalog,pg_stat_io,9,write_time,double precision
+pg_catalog,pg_stat_io,10,writebacks,bigint
+pg_catalog,pg_stat_io,11,writeback_time,double precision
+pg_catalog,pg_stat_io,12,extends,bigint
+pg_catalog,pg_stat_io,13,extend_bytes,numeric
+pg_catalog,pg_stat_io,14,extend_time,double precision
+pg_catalog,pg_stat_io,15,hits,bigint
+pg_catalog,pg_stat_io,16,evictions,bigint
+pg_catalog,pg_stat_io,17,reuses,bigint
+pg_catalog,pg_stat_io,18,fsyncs,bigint
+pg_catalog,pg_stat_io,19,fsync_time,double precision
+pg_catalog,pg_stat_io,20,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_lock,1,locktype,text
+pg_catalog,pg_stat_lock,2,waits,bigint
+pg_catalog,pg_stat_lock,3,wait_time,double precision
+pg_catalog,pg_stat_lock,4,fastpath_exceeded,bigint
+pg_catalog,pg_stat_lock,5,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_progress_analyze,1,pid,integer
+pg_catalog,pg_stat_progress_analyze,2,datid,oid
+pg_catalog,pg_stat_progress_analyze,3,datname,name
+pg_catalog,pg_stat_progress_analyze,4,relid,oid
+pg_catalog,pg_stat_progress_analyze,5,phase,text
+pg_catalog,pg_stat_progress_analyze,6,sample_blks_total,bigint
+pg_catalog,pg_stat_progress_analyze,7,sample_blks_scanned,bigint
+pg_catalog,pg_stat_progress_analyze,8,ext_stats_total,bigint
+pg_catalog,pg_stat_progress_analyze,9,ext_stats_computed,bigint
+pg_catalog,pg_stat_progress_analyze,10,child_tables_total,bigint
+pg_catalog,pg_stat_progress_analyze,11,child_tables_done,bigint
+pg_catalog,pg_stat_progress_analyze,12,current_child_table_relid,oid
+pg_catalog,pg_stat_progress_analyze,13,delay_time,double precision
+pg_catalog,pg_stat_progress_analyze,14,started_by,text
+pg_catalog,pg_stat_progress_basebackup,1,pid,integer
+pg_catalog,pg_stat_progress_basebackup,2,phase,text
+pg_catalog,pg_stat_progress_basebackup,3,backup_total,bigint
+pg_catalog,pg_stat_progress_basebackup,4,backup_streamed,bigint
+pg_catalog,pg_stat_progress_basebackup,5,tablespaces_total,bigint
+pg_catalog,pg_stat_progress_basebackup,6,tablespaces_streamed,bigint
+pg_catalog,pg_stat_progress_basebackup,7,backup_type,text
+pg_catalog,pg_stat_progress_cluster,1,pid,integer
+pg_catalog,pg_stat_progress_cluster,2,datid,oid
+pg_catalog,pg_stat_progress_cluster,3,datname,name
+pg_catalog,pg_stat_progress_cluster,4,relid,oid
+pg_catalog,pg_stat_progress_cluster,5,command,text
+pg_catalog,pg_stat_progress_cluster,6,phase,text
+pg_catalog,pg_stat_progress_cluster,7,cluster_index_relid,oid
+pg_catalog,pg_stat_progress_cluster,8,heap_tuples_scanned,bigint
+pg_catalog,pg_stat_progress_cluster,9,heap_tuples_written,bigint
+pg_catalog,pg_stat_progress_cluster,10,heap_blks_total,bigint
+pg_catalog,pg_stat_progress_cluster,11,heap_blks_scanned,bigint
+pg_catalog,pg_stat_progress_cluster,12,index_rebuild_count,bigint
+pg_catalog,pg_stat_progress_copy,1,pid,integer
+pg_catalog,pg_stat_progress_copy,2,datid,oid
+pg_catalog,pg_stat_progress_copy,3,datname,name
+pg_catalog,pg_stat_progress_copy,4,relid,oid
+pg_catalog,pg_stat_progress_copy,5,command,text
+pg_catalog,pg_stat_progress_copy,6,type,text
+pg_catalog,pg_stat_progress_copy,7,bytes_processed,bigint
+pg_catalog,pg_stat_progress_copy,8,bytes_total,bigint
+pg_catalog,pg_stat_progress_copy,9,tuples_processed,bigint
+pg_catalog,pg_stat_progress_copy,10,tuples_excluded,bigint
+pg_catalog,pg_stat_progress_copy,11,tuples_skipped,bigint
+pg_catalog,pg_stat_progress_create_index,1,pid,integer
+pg_catalog,pg_stat_progress_create_index,2,datid,oid
+pg_catalog,pg_stat_progress_create_index,3,datname,name
+pg_catalog,pg_stat_progress_create_index,4,relid,oid
+pg_catalog,pg_stat_progress_create_index,5,index_relid,oid
+pg_catalog,pg_stat_progress_create_index,6,command,text
+pg_catalog,pg_stat_progress_create_index,7,phase,text
+pg_catalog,pg_stat_progress_create_index,8,lockers_total,bigint
+pg_catalog,pg_stat_progress_create_index,9,lockers_done,bigint
+pg_catalog,pg_stat_progress_create_index,10,current_locker_pid,bigint
+pg_catalog,pg_stat_progress_create_index,11,blocks_total,bigint
+pg_catalog,pg_stat_progress_create_index,12,blocks_done,bigint
+pg_catalog,pg_stat_progress_create_index,13,tuples_total,bigint
+pg_catalog,pg_stat_progress_create_index,14,tuples_done,bigint
+pg_catalog,pg_stat_progress_create_index,15,partitions_total,bigint
+pg_catalog,pg_stat_progress_create_index,16,partitions_done,bigint
+pg_catalog,pg_stat_progress_repack,1,pid,integer
+pg_catalog,pg_stat_progress_repack,2,datid,oid
+pg_catalog,pg_stat_progress_repack,3,datname,name
+pg_catalog,pg_stat_progress_repack,4,relid,oid
+pg_catalog,pg_stat_progress_repack,5,command,text
+pg_catalog,pg_stat_progress_repack,6,phase,text
+pg_catalog,pg_stat_progress_repack,7,repack_index_relid,oid
+pg_catalog,pg_stat_progress_repack,8,heap_tuples_scanned,bigint
+pg_catalog,pg_stat_progress_repack,9,heap_tuples_inserted,bigint
+pg_catalog,pg_stat_progress_repack,10,heap_tuples_updated,bigint
+pg_catalog,pg_stat_progress_repack,11,heap_tuples_deleted,bigint
+pg_catalog,pg_stat_progress_repack,12,heap_blks_total,bigint
+pg_catalog,pg_stat_progress_repack,13,heap_blks_scanned,bigint
+pg_catalog,pg_stat_progress_repack,14,index_rebuild_count,bigint
+pg_catalog,pg_stat_progress_vacuum,1,pid,integer
+pg_catalog,pg_stat_progress_vacuum,2,datid,oid
+pg_catalog,pg_stat_progress_vacuum,3,datname,name
+pg_catalog,pg_stat_progress_vacuum,4,relid,oid
+pg_catalog,pg_stat_progress_vacuum,5,phase,text
+pg_catalog,pg_stat_progress_vacuum,6,heap_blks_total,bigint
+pg_catalog,pg_stat_progress_vacuum,7,heap_blks_scanned,bigint
+pg_catalog,pg_stat_progress_vacuum,8,heap_blks_vacuumed,bigint
+pg_catalog,pg_stat_progress_vacuum,9,index_vacuum_count,bigint
+pg_catalog,pg_stat_progress_vacuum,10,max_dead_tuple_bytes,bigint
+pg_catalog,pg_stat_progress_vacuum,11,dead_tuple_bytes,bigint
+pg_catalog,pg_stat_progress_vacuum,12,num_dead_item_ids,bigint
+pg_catalog,pg_stat_progress_vacuum,13,indexes_total,bigint
+pg_catalog,pg_stat_progress_vacuum,14,indexes_processed,bigint
+pg_catalog,pg_stat_progress_vacuum,15,delay_time,double precision
+pg_catalog,pg_stat_progress_vacuum,16,mode,text
+pg_catalog,pg_stat_progress_vacuum,17,started_by,text
+pg_catalog,pg_stat_recovery,1,promote_triggered,boolean
+pg_catalog,pg_stat_recovery,2,last_replayed_read_lsn,pg_lsn
+pg_catalog,pg_stat_recovery,3,last_replayed_end_lsn,pg_lsn
+pg_catalog,pg_stat_recovery,4,last_replayed_tli,integer
+pg_catalog,pg_stat_recovery,5,replay_end_lsn,pg_lsn
+pg_catalog,pg_stat_recovery,6,replay_end_tli,integer
+pg_catalog,pg_stat_recovery,7,recovery_last_xact_time,timestamp with time zone
+pg_catalog,pg_stat_recovery,8,current_chunk_start_time,timestamp with time zone
+pg_catalog,pg_stat_recovery,9,pause_state,text
+pg_catalog,pg_stat_recovery_prefetch,1,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_recovery_prefetch,2,prefetch,bigint
+pg_catalog,pg_stat_recovery_prefetch,3,hit,bigint
+pg_catalog,pg_stat_recovery_prefetch,4,skip_init,bigint
+pg_catalog,pg_stat_recovery_prefetch,5,skip_new,bigint
+pg_catalog,pg_stat_recovery_prefetch,6,skip_fpw,bigint
+pg_catalog,pg_stat_recovery_prefetch,7,skip_rep,bigint
+pg_catalog,pg_stat_recovery_prefetch,8,wal_distance,integer
+pg_catalog,pg_stat_recovery_prefetch,9,block_distance,integer
+pg_catalog,pg_stat_recovery_prefetch,10,io_depth,integer
+pg_catalog,pg_stat_replication,1,pid,integer
+pg_catalog,pg_stat_replication,2,usesysid,oid
+pg_catalog,pg_stat_replication,3,usename,name
+pg_catalog,pg_stat_replication,4,application_name,text
+pg_catalog,pg_stat_replication,5,client_addr,inet
+pg_catalog,pg_stat_replication,6,client_hostname,text
+pg_catalog,pg_stat_replication,7,client_port,integer
+pg_catalog,pg_stat_replication,8,backend_start,timestamp with time zone
+pg_catalog,pg_stat_replication,9,backend_xmin,xid
+pg_catalog,pg_stat_replication,10,state,text
+pg_catalog,pg_stat_replication,11,sent_lsn,pg_lsn
+pg_catalog,pg_stat_replication,12,write_lsn,pg_lsn
+pg_catalog,pg_stat_replication,13,flush_lsn,pg_lsn
+pg_catalog,pg_stat_replication,14,replay_lsn,pg_lsn
+pg_catalog,pg_stat_replication,15,write_lag,interval
+pg_catalog,pg_stat_replication,16,flush_lag,interval
+pg_catalog,pg_stat_replication,17,replay_lag,interval
+pg_catalog,pg_stat_replication,18,sync_priority,integer
+pg_catalog,pg_stat_replication,19,sync_state,text
+pg_catalog,pg_stat_replication,20,reply_time,timestamp with time zone
+pg_catalog,pg_stat_replication_slots,1,slot_name,text
+pg_catalog,pg_stat_replication_slots,2,spill_txns,bigint
+pg_catalog,pg_stat_replication_slots,3,spill_count,bigint
+pg_catalog,pg_stat_replication_slots,4,spill_bytes,bigint
+pg_catalog,pg_stat_replication_slots,5,stream_txns,bigint
+pg_catalog,pg_stat_replication_slots,6,stream_count,bigint
+pg_catalog,pg_stat_replication_slots,7,stream_bytes,bigint
+pg_catalog,pg_stat_replication_slots,8,mem_exceeded_count,bigint
+pg_catalog,pg_stat_replication_slots,9,total_txns,bigint
+pg_catalog,pg_stat_replication_slots,10,total_bytes,bigint
+pg_catalog,pg_stat_replication_slots,11,slotsync_skip_count,bigint
+pg_catalog,pg_stat_replication_slots,12,slotsync_last_skip,timestamp with time zone
+pg_catalog,pg_stat_replication_slots,13,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_slru,1,name,text
+pg_catalog,pg_stat_slru,2,blks_zeroed,bigint
+pg_catalog,pg_stat_slru,3,blks_hit,bigint
+pg_catalog,pg_stat_slru,4,blks_read,bigint
+pg_catalog,pg_stat_slru,5,blks_written,bigint
+pg_catalog,pg_stat_slru,6,blks_exists,bigint
+pg_catalog,pg_stat_slru,7,flushes,bigint
+pg_catalog,pg_stat_slru,8,truncates,bigint
+pg_catalog,pg_stat_slru,9,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_ssl,1,pid,integer
+pg_catalog,pg_stat_ssl,2,ssl,boolean
+pg_catalog,pg_stat_ssl,3,version,text
+pg_catalog,pg_stat_ssl,4,cipher,text
+pg_catalog,pg_stat_ssl,5,bits,integer
+pg_catalog,pg_stat_ssl,6,client_dn,text
+pg_catalog,pg_stat_ssl,7,client_serial,numeric
+pg_catalog,pg_stat_ssl,8,issuer_dn,text
+pg_catalog,pg_stat_subscription,1,subid,oid
+pg_catalog,pg_stat_subscription,2,subname,name
+pg_catalog,pg_stat_subscription,3,worker_type,text
+pg_catalog,pg_stat_subscription,4,pid,integer
+pg_catalog,pg_stat_subscription,5,leader_pid,integer
+pg_catalog,pg_stat_subscription,6,relid,oid
+pg_catalog,pg_stat_subscription,7,received_lsn,pg_lsn
+pg_catalog,pg_stat_subscription,8,last_msg_send_time,timestamp with time zone
+pg_catalog,pg_stat_subscription,9,last_msg_receipt_time,timestamp with time zone
+pg_catalog,pg_stat_subscription,10,latest_end_lsn,pg_lsn
+pg_catalog,pg_stat_subscription,11,latest_end_time,timestamp with time zone
+pg_catalog,pg_stat_subscription_stats,1,subid,oid
+pg_catalog,pg_stat_subscription_stats,2,subname,name
+pg_catalog,pg_stat_subscription_stats,3,apply_error_count,bigint
+pg_catalog,pg_stat_subscription_stats,4,sync_seq_error_count,bigint
+pg_catalog,pg_stat_subscription_stats,5,sync_table_error_count,bigint
+pg_catalog,pg_stat_subscription_stats,6,confl_insert_exists,bigint
+pg_catalog,pg_stat_subscription_stats,7,confl_update_origin_differs,bigint
+pg_catalog,pg_stat_subscription_stats,8,confl_update_exists,bigint
+pg_catalog,pg_stat_subscription_stats,9,confl_update_deleted,bigint
+pg_catalog,pg_stat_subscription_stats,10,confl_update_missing,bigint
+pg_catalog,pg_stat_subscription_stats,11,confl_delete_origin_differs,bigint
+pg_catalog,pg_stat_subscription_stats,12,confl_delete_missing,bigint
+pg_catalog,pg_stat_subscription_stats,13,confl_multiple_unique_conflicts,bigint
+pg_catalog,pg_stat_subscription_stats,14,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_sys_indexes,1,relid,oid
+pg_catalog,pg_stat_sys_indexes,2,indexrelid,oid
+pg_catalog,pg_stat_sys_indexes,3,schemaname,name
+pg_catalog,pg_stat_sys_indexes,4,relname,name
+pg_catalog,pg_stat_sys_indexes,5,indexrelname,name
+pg_catalog,pg_stat_sys_indexes,6,idx_scan,bigint
+pg_catalog,pg_stat_sys_indexes,7,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_sys_indexes,8,idx_tup_read,bigint
+pg_catalog,pg_stat_sys_indexes,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_sys_indexes,10,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,1,relid,oid
+pg_catalog,pg_stat_sys_tables,2,schemaname,name
+pg_catalog,pg_stat_sys_tables,3,relname,name
+pg_catalog,pg_stat_sys_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_sys_tables,5,last_seq_scan,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,6,seq_tup_read,bigint
+pg_catalog,pg_stat_sys_tables,7,idx_scan,bigint
+pg_catalog,pg_stat_sys_tables,8,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_sys_tables,10,n_tup_ins,bigint
+pg_catalog,pg_stat_sys_tables,11,n_tup_upd,bigint
+pg_catalog,pg_stat_sys_tables,12,n_tup_del,bigint
+pg_catalog,pg_stat_sys_tables,13,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_sys_tables,14,n_tup_newpage_upd,bigint
+pg_catalog,pg_stat_sys_tables,15,n_live_tup,bigint
+pg_catalog,pg_stat_sys_tables,16,n_dead_tup,bigint
+pg_catalog,pg_stat_sys_tables,17,n_mod_since_analyze,bigint
+pg_catalog,pg_stat_sys_tables,18,n_ins_since_vacuum,bigint
+pg_catalog,pg_stat_sys_tables,19,last_vacuum,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,20,last_autovacuum,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,21,last_analyze,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,22,last_autoanalyze,timestamp with time zone
+pg_catalog,pg_stat_sys_tables,23,vacuum_count,bigint
+pg_catalog,pg_stat_sys_tables,24,autovacuum_count,bigint
+pg_catalog,pg_stat_sys_tables,25,analyze_count,bigint
+pg_catalog,pg_stat_sys_tables,26,autoanalyze_count,bigint
+pg_catalog,pg_stat_sys_tables,27,total_vacuum_time,double precision
+pg_catalog,pg_stat_sys_tables,28,total_autovacuum_time,double precision
+pg_catalog,pg_stat_sys_tables,29,total_analyze_time,double precision
+pg_catalog,pg_stat_sys_tables,30,total_autoanalyze_time,double precision
+pg_catalog,pg_stat_sys_tables,31,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_user_functions,1,funcid,oid
+pg_catalog,pg_stat_user_functions,2,schemaname,name
+pg_catalog,pg_stat_user_functions,3,funcname,name
+pg_catalog,pg_stat_user_functions,4,calls,bigint
+pg_catalog,pg_stat_user_functions,5,total_time,double precision
+pg_catalog,pg_stat_user_functions,6,self_time,double precision
+pg_catalog,pg_stat_user_functions,7,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_user_indexes,1,relid,oid
+pg_catalog,pg_stat_user_indexes,2,indexrelid,oid
+pg_catalog,pg_stat_user_indexes,3,schemaname,name
+pg_catalog,pg_stat_user_indexes,4,relname,name
+pg_catalog,pg_stat_user_indexes,5,indexrelname,name
+pg_catalog,pg_stat_user_indexes,6,idx_scan,bigint
+pg_catalog,pg_stat_user_indexes,7,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_user_indexes,8,idx_tup_read,bigint
+pg_catalog,pg_stat_user_indexes,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_user_indexes,10,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_user_tables,1,relid,oid
+pg_catalog,pg_stat_user_tables,2,schemaname,name
+pg_catalog,pg_stat_user_tables,3,relname,name
+pg_catalog,pg_stat_user_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_user_tables,5,last_seq_scan,timestamp with time zone
+pg_catalog,pg_stat_user_tables,6,seq_tup_read,bigint
+pg_catalog,pg_stat_user_tables,7,idx_scan,bigint
+pg_catalog,pg_stat_user_tables,8,last_idx_scan,timestamp with time zone
+pg_catalog,pg_stat_user_tables,9,idx_tup_fetch,bigint
+pg_catalog,pg_stat_user_tables,10,n_tup_ins,bigint
+pg_catalog,pg_stat_user_tables,11,n_tup_upd,bigint
+pg_catalog,pg_stat_user_tables,12,n_tup_del,bigint
+pg_catalog,pg_stat_user_tables,13,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_user_tables,14,n_tup_newpage_upd,bigint
+pg_catalog,pg_stat_user_tables,15,n_live_tup,bigint
+pg_catalog,pg_stat_user_tables,16,n_dead_tup,bigint
+pg_catalog,pg_stat_user_tables,17,n_mod_since_analyze,bigint
+pg_catalog,pg_stat_user_tables,18,n_ins_since_vacuum,bigint
+pg_catalog,pg_stat_user_tables,19,last_vacuum,timestamp with time zone
+pg_catalog,pg_stat_user_tables,20,last_autovacuum,timestamp with time zone
+pg_catalog,pg_stat_user_tables,21,last_analyze,timestamp with time zone
+pg_catalog,pg_stat_user_tables,22,last_autoanalyze,timestamp with time zone
+pg_catalog,pg_stat_user_tables,23,vacuum_count,bigint
+pg_catalog,pg_stat_user_tables,24,autovacuum_count,bigint
+pg_catalog,pg_stat_user_tables,25,analyze_count,bigint
+pg_catalog,pg_stat_user_tables,26,autoanalyze_count,bigint
+pg_catalog,pg_stat_user_tables,27,total_vacuum_time,double precision
+pg_catalog,pg_stat_user_tables,28,total_autovacuum_time,double precision
+pg_catalog,pg_stat_user_tables,29,total_analyze_time,double precision
+pg_catalog,pg_stat_user_tables,30,total_autoanalyze_time,double precision
+pg_catalog,pg_stat_user_tables,31,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_wal,1,wal_records,bigint
+pg_catalog,pg_stat_wal,2,wal_fpi,bigint
+pg_catalog,pg_stat_wal,3,wal_bytes,numeric
+pg_catalog,pg_stat_wal,4,wal_fpi_bytes,numeric
+pg_catalog,pg_stat_wal,5,wal_buffers_full,bigint
+pg_catalog,pg_stat_wal,6,stats_reset,timestamp with time zone
+pg_catalog,pg_stat_wal_receiver,1,pid,integer
+pg_catalog,pg_stat_wal_receiver,2,status,text
+pg_catalog,pg_stat_wal_receiver,3,receive_start_lsn,pg_lsn
+pg_catalog,pg_stat_wal_receiver,4,receive_start_tli,integer
+pg_catalog,pg_stat_wal_receiver,5,written_lsn,pg_lsn
+pg_catalog,pg_stat_wal_receiver,6,flushed_lsn,pg_lsn
+pg_catalog,pg_stat_wal_receiver,7,received_tli,integer
+pg_catalog,pg_stat_wal_receiver,8,last_msg_send_time,timestamp with time zone
+pg_catalog,pg_stat_wal_receiver,9,last_msg_receipt_time,timestamp with time zone
+pg_catalog,pg_stat_wal_receiver,10,latest_end_lsn,pg_lsn
+pg_catalog,pg_stat_wal_receiver,11,latest_end_time,timestamp with time zone
+pg_catalog,pg_stat_wal_receiver,12,slot_name,text
+pg_catalog,pg_stat_wal_receiver,13,sender_host,text
+pg_catalog,pg_stat_wal_receiver,14,sender_port,integer
+pg_catalog,pg_stat_wal_receiver,15,conninfo,text
+pg_catalog,pg_stat_xact_all_tables,1,relid,oid
+pg_catalog,pg_stat_xact_all_tables,2,schemaname,name
+pg_catalog,pg_stat_xact_all_tables,3,relname,name
+pg_catalog,pg_stat_xact_all_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_xact_all_tables,5,seq_tup_read,bigint
+pg_catalog,pg_stat_xact_all_tables,6,idx_scan,bigint
+pg_catalog,pg_stat_xact_all_tables,7,idx_tup_fetch,bigint
+pg_catalog,pg_stat_xact_all_tables,8,n_tup_ins,bigint
+pg_catalog,pg_stat_xact_all_tables,9,n_tup_upd,bigint
+pg_catalog,pg_stat_xact_all_tables,10,n_tup_del,bigint
+pg_catalog,pg_stat_xact_all_tables,11,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_xact_all_tables,12,n_tup_newpage_upd,bigint
+pg_catalog,pg_stat_xact_sys_tables,1,relid,oid
+pg_catalog,pg_stat_xact_sys_tables,2,schemaname,name
+pg_catalog,pg_stat_xact_sys_tables,3,relname,name
+pg_catalog,pg_stat_xact_sys_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_xact_sys_tables,5,seq_tup_read,bigint
+pg_catalog,pg_stat_xact_sys_tables,6,idx_scan,bigint
+pg_catalog,pg_stat_xact_sys_tables,7,idx_tup_fetch,bigint
+pg_catalog,pg_stat_xact_sys_tables,8,n_tup_ins,bigint
+pg_catalog,pg_stat_xact_sys_tables,9,n_tup_upd,bigint
+pg_catalog,pg_stat_xact_sys_tables,10,n_tup_del,bigint
+pg_catalog,pg_stat_xact_sys_tables,11,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_xact_sys_tables,12,n_tup_newpage_upd,bigint
+pg_catalog,pg_stat_xact_user_functions,1,funcid,oid
+pg_catalog,pg_stat_xact_user_functions,2,schemaname,name
+pg_catalog,pg_stat_xact_user_functions,3,funcname,name
+pg_catalog,pg_stat_xact_user_functions,4,calls,bigint
+pg_catalog,pg_stat_xact_user_functions,5,total_time,double precision
+pg_catalog,pg_stat_xact_user_functions,6,self_time,double precision
+pg_catalog,pg_stat_xact_user_tables,1,relid,oid
+pg_catalog,pg_stat_xact_user_tables,2,schemaname,name
+pg_catalog,pg_stat_xact_user_tables,3,relname,name
+pg_catalog,pg_stat_xact_user_tables,4,seq_scan,bigint
+pg_catalog,pg_stat_xact_user_tables,5,seq_tup_read,bigint
+pg_catalog,pg_stat_xact_user_tables,6,idx_scan,bigint
+pg_catalog,pg_stat_xact_user_tables,7,idx_tup_fetch,bigint
+pg_catalog,pg_stat_xact_user_tables,8,n_tup_ins,bigint
+pg_catalog,pg_stat_xact_user_tables,9,n_tup_upd,bigint
+pg_catalog,pg_stat_xact_user_tables,10,n_tup_del,bigint
+pg_catalog,pg_stat_xact_user_tables,11,n_tup_hot_upd,bigint
+pg_catalog,pg_stat_xact_user_tables,12,n_tup_newpage_upd,bigint
+pg_catalog,pg_statio_all_indexes,1,relid,oid
+pg_catalog,pg_statio_all_indexes,2,indexrelid,oid
+pg_catalog,pg_statio_all_indexes,3,schemaname,name
+pg_catalog,pg_statio_all_indexes,4,relname,name
+pg_catalog,pg_statio_all_indexes,5,indexrelname,name
+pg_catalog,pg_statio_all_indexes,6,idx_blks_read,bigint
+pg_catalog,pg_statio_all_indexes,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_all_indexes,8,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_all_sequences,1,relid,oid
+pg_catalog,pg_statio_all_sequences,2,schemaname,name
+pg_catalog,pg_statio_all_sequences,3,relname,name
+pg_catalog,pg_statio_all_sequences,4,blks_read,bigint
+pg_catalog,pg_statio_all_sequences,5,blks_hit,bigint
+pg_catalog,pg_statio_all_sequences,6,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_all_tables,1,relid,oid
+pg_catalog,pg_statio_all_tables,2,schemaname,name
+pg_catalog,pg_statio_all_tables,3,relname,name
+pg_catalog,pg_statio_all_tables,4,heap_blks_read,bigint
+pg_catalog,pg_statio_all_tables,5,heap_blks_hit,bigint
+pg_catalog,pg_statio_all_tables,6,idx_blks_read,bigint
+pg_catalog,pg_statio_all_tables,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_all_tables,8,toast_blks_read,bigint
+pg_catalog,pg_statio_all_tables,9,toast_blks_hit,bigint
+pg_catalog,pg_statio_all_tables,10,tidx_blks_read,bigint
+pg_catalog,pg_statio_all_tables,11,tidx_blks_hit,bigint
+pg_catalog,pg_statio_all_tables,12,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_sys_indexes,1,relid,oid
+pg_catalog,pg_statio_sys_indexes,2,indexrelid,oid
+pg_catalog,pg_statio_sys_indexes,3,schemaname,name
+pg_catalog,pg_statio_sys_indexes,4,relname,name
+pg_catalog,pg_statio_sys_indexes,5,indexrelname,name
+pg_catalog,pg_statio_sys_indexes,6,idx_blks_read,bigint
+pg_catalog,pg_statio_sys_indexes,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_sys_indexes,8,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_sys_sequences,1,relid,oid
+pg_catalog,pg_statio_sys_sequences,2,schemaname,name
+pg_catalog,pg_statio_sys_sequences,3,relname,name
+pg_catalog,pg_statio_sys_sequences,4,blks_read,bigint
+pg_catalog,pg_statio_sys_sequences,5,blks_hit,bigint
+pg_catalog,pg_statio_sys_sequences,6,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_sys_tables,1,relid,oid
+pg_catalog,pg_statio_sys_tables,2,schemaname,name
+pg_catalog,pg_statio_sys_tables,3,relname,name
+pg_catalog,pg_statio_sys_tables,4,heap_blks_read,bigint
+pg_catalog,pg_statio_sys_tables,5,heap_blks_hit,bigint
+pg_catalog,pg_statio_sys_tables,6,idx_blks_read,bigint
+pg_catalog,pg_statio_sys_tables,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_sys_tables,8,toast_blks_read,bigint
+pg_catalog,pg_statio_sys_tables,9,toast_blks_hit,bigint
+pg_catalog,pg_statio_sys_tables,10,tidx_blks_read,bigint
+pg_catalog,pg_statio_sys_tables,11,tidx_blks_hit,bigint
+pg_catalog,pg_statio_sys_tables,12,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_user_indexes,1,relid,oid
+pg_catalog,pg_statio_user_indexes,2,indexrelid,oid
+pg_catalog,pg_statio_user_indexes,3,schemaname,name
+pg_catalog,pg_statio_user_indexes,4,relname,name
+pg_catalog,pg_statio_user_indexes,5,indexrelname,name
+pg_catalog,pg_statio_user_indexes,6,idx_blks_read,bigint
+pg_catalog,pg_statio_user_indexes,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_user_indexes,8,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_user_sequences,1,relid,oid
+pg_catalog,pg_statio_user_sequences,2,schemaname,name
+pg_catalog,pg_statio_user_sequences,3,relname,name
+pg_catalog,pg_statio_user_sequences,4,blks_read,bigint
+pg_catalog,pg_statio_user_sequences,5,blks_hit,bigint
+pg_catalog,pg_statio_user_sequences,6,stats_reset,timestamp with time zone
+pg_catalog,pg_statio_user_tables,1,relid,oid
+pg_catalog,pg_statio_user_tables,2,schemaname,name
+pg_catalog,pg_statio_user_tables,3,relname,name
+pg_catalog,pg_statio_user_tables,4,heap_blks_read,bigint
+pg_catalog,pg_statio_user_tables,5,heap_blks_hit,bigint
+pg_catalog,pg_statio_user_tables,6,idx_blks_read,bigint
+pg_catalog,pg_statio_user_tables,7,idx_blks_hit,bigint
+pg_catalog,pg_statio_user_tables,8,toast_blks_read,bigint
+pg_catalog,pg_statio_user_tables,9,toast_blks_hit,bigint
+pg_catalog,pg_statio_user_tables,10,tidx_blks_read,bigint
+pg_catalog,pg_statio_user_tables,11,tidx_blks_hit,bigint
+pg_catalog,pg_statio_user_tables,12,stats_reset,timestamp with time zone
+pg_catalog,pg_stats,1,schemaname,name
+pg_catalog,pg_stats,2,tablename,name
+pg_catalog,pg_stats,3,tableid,oid
+pg_catalog,pg_stats,4,attname,name
+pg_catalog,pg_stats,5,attnum,smallint
+pg_catalog,pg_stats,6,inherited,boolean
+pg_catalog,pg_stats,7,null_frac,real
+pg_catalog,pg_stats,8,avg_width,integer
+pg_catalog,pg_stats,9,n_distinct,real
+pg_catalog,pg_stats,10,most_common_vals,anyarray
+pg_catalog,pg_stats,11,most_common_freqs,real[]
+pg_catalog,pg_stats,12,histogram_bounds,anyarray
+pg_catalog,pg_stats,13,correlation,real
+pg_catalog,pg_stats,14,most_common_elems,anyarray
+pg_catalog,pg_stats,15,most_common_elem_freqs,real[]
+pg_catalog,pg_stats,16,elem_count_histogram,real[]
+pg_catalog,pg_stats,17,range_length_histogram,anyarray
+pg_catalog,pg_stats,18,range_empty_frac,real
+pg_catalog,pg_stats,19,range_bounds_histogram,anyarray
+pg_catalog,pg_stats_ext,1,schemaname,name
+pg_catalog,pg_stats_ext,2,tablename,name
+pg_catalog,pg_stats_ext,3,tableid,oid
+pg_catalog,pg_stats_ext,4,statistics_schemaname,name
+pg_catalog,pg_stats_ext,5,statistics_name,name
+pg_catalog,pg_stats_ext,6,statistics_id,oid
+pg_catalog,pg_stats_ext,7,statistics_owner,name
+pg_catalog,pg_stats_ext,8,attnames,name[]
+pg_catalog,pg_stats_ext,9,exprs,text[]
+pg_catalog,pg_stats_ext,10,kinds,"""char""[]"
+pg_catalog,pg_stats_ext,11,inherited,boolean
+pg_catalog,pg_stats_ext,12,n_distinct,pg_ndistinct
+pg_catalog,pg_stats_ext,13,dependencies,pg_dependencies
+pg_catalog,pg_stats_ext,14,most_common_vals,text[]
+pg_catalog,pg_stats_ext,15,most_common_val_nulls,boolean[]
+pg_catalog,pg_stats_ext,16,most_common_freqs,double precision[]
+pg_catalog,pg_stats_ext,17,most_common_base_freqs,double precision[]
+pg_catalog,pg_stats_ext_exprs,1,schemaname,name
+pg_catalog,pg_stats_ext_exprs,2,tablename,name
+pg_catalog,pg_stats_ext_exprs,3,tableid,oid
+pg_catalog,pg_stats_ext_exprs,4,statistics_schemaname,name
+pg_catalog,pg_stats_ext_exprs,5,statistics_name,name
+pg_catalog,pg_stats_ext_exprs,6,statistics_id,oid
+pg_catalog,pg_stats_ext_exprs,7,statistics_owner,name
+pg_catalog,pg_stats_ext_exprs,8,expr,text
+pg_catalog,pg_stats_ext_exprs,9,inherited,boolean
+pg_catalog,pg_stats_ext_exprs,10,null_frac,real
+pg_catalog,pg_stats_ext_exprs,11,avg_width,integer
+pg_catalog,pg_stats_ext_exprs,12,n_distinct,real
+pg_catalog,pg_stats_ext_exprs,13,most_common_vals,anyarray
+pg_catalog,pg_stats_ext_exprs,14,most_common_freqs,real[]
+pg_catalog,pg_stats_ext_exprs,15,histogram_bounds,anyarray
+pg_catalog,pg_stats_ext_exprs,16,correlation,real
+pg_catalog,pg_stats_ext_exprs,17,most_common_elems,anyarray
+pg_catalog,pg_stats_ext_exprs,18,most_common_elem_freqs,real[]
+pg_catalog,pg_stats_ext_exprs,19,elem_count_histogram,real[]
+pg_catalog,pg_stats_ext_exprs,20,range_length_histogram,anyarray
+pg_catalog,pg_stats_ext_exprs,21,range_empty_frac,real
+pg_catalog,pg_stats_ext_exprs,22,range_bounds_histogram,anyarray
+pg_catalog,pg_tables,1,schemaname,name
+pg_catalog,pg_tables,2,tablename,name
+pg_catalog,pg_tables,3,tableowner,name
+pg_catalog,pg_tables,4,tablespace,name
+pg_catalog,pg_tables,5,hasindexes,boolean
+pg_catalog,pg_tables,6,hasrules,boolean
+pg_catalog,pg_tables,7,hastriggers,boolean
+pg_catalog,pg_tables,8,rowsecurity,boolean
+pg_catalog,pg_timezone_abbrevs,1,abbrev,text
+pg_catalog,pg_timezone_abbrevs,2,utc_offset,interval
+pg_catalog,pg_timezone_abbrevs,3,is_dst,boolean
+pg_catalog,pg_timezone_names,1,name,text
+pg_catalog,pg_timezone_names,2,abbrev,text
+pg_catalog,pg_timezone_names,3,utc_offset,interval
+pg_catalog,pg_timezone_names,4,is_dst,boolean
+pg_catalog,pg_user,1,usename,name
+pg_catalog,pg_user,2,usesysid,oid
+pg_catalog,pg_user,3,usecreatedb,boolean
+pg_catalog,pg_user,4,usesuper,boolean
+pg_catalog,pg_user,5,userepl,boolean
+pg_catalog,pg_user,6,usebypassrls,boolean
+pg_catalog,pg_user,7,passwd,text
+pg_catalog,pg_user,8,valuntil,timestamp with time zone
+pg_catalog,pg_user,9,useconfig,text[]
+pg_catalog,pg_user_mappings,1,umid,oid
+pg_catalog,pg_user_mappings,2,srvid,oid
+pg_catalog,pg_user_mappings,3,srvname,name
+pg_catalog,pg_user_mappings,4,umuser,oid
+pg_catalog,pg_user_mappings,5,usename,name
+pg_catalog,pg_user_mappings,6,umoptions,text[]
+pg_catalog,pg_views,1,schemaname,name
+pg_catalog,pg_views,2,viewname,name
+pg_catalog,pg_views,3,viewowner,name
+pg_catalog,pg_views,4,definition,text
+pg_catalog,pg_wait_events,1,type,text
+pg_catalog,pg_wait_events,2,name,text
+pg_catalog,pg_wait_events,3,description,text

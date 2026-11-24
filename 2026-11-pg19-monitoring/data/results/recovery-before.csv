@@ -1,0 +1,2 @@
+promote_triggered,last_replayed_read_lsn,last_replayed_end_lsn,last_replayed_tli,replay_end_lsn,replay_end_tli,recovery_last_xact_time,current_chunk_start_time,pause_state
+f,A4/35000128,A4/36000000,1,A4/36000000,1,,,not paused

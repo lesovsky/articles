@@ -1,0 +1,4 @@
+extname,extversion,schema
+dblink,1.2,public
+pg_stat_statements,1.11,public
+plpgsql,1.0,pg_catalog
